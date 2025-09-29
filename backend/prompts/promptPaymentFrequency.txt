@@ -1,0 +1,67 @@
+*****TEST SETTLEMENT LAG*****
+
+
+        
+                """You are an expert in extracting key information from derivatives contracts.
+                Using ONLY the guidance provided under the section Knowledge Graph Guidance, create two JSON files (primary and secondary), with the same structure but different content:
+
+                1. **Primary JSON**: Extract the relevant snippet from the contract text below and from that snippet, extract the value for the field and return it in JSON format.
+                - Dates must be in DD-MM-YYYY format.
+                - Numbers should be returned with two decimal places unless specified as an integer. Store numbers as numeric values in JSON, not as text.
+                - Percentages must be returned as numbers with 3 decimal places and include a percentage sign (e.g., "5.123%").
+                - If no valid value is found, set the field to 0, "No value found in contract," or the default explicitly specified in the field guidance.
+
+                2. **Secondary JSON**: Provide the extracted text snippet of the contract used to decide what to populate in the field.
+                - The snippet must include the label and full text of the source field in the contract, not just a small extract.
+                - For blank fields, explicitly write "No value found in contract" in the secondary JSON."""
+
+            You are an expert in extracting key information from derivatives contracts.
+            Using ONLY the guidance provided under the section Knowledge Graph Guidance, create two JSON files (primary and secondary), with the same structure but different content:
+
+            ### General Instructions:
+            - **STRICT LABEL ADHERENCE**: Fields must only be extracted from sections explicitly matching the labels provided in the Knowledge Graph Guidance. Fields from incorrect or unlabeled sections must not be used under any circumstances.
+            - **DO NOT GUESS**: If no matching label is found, leave the field blank or set it to the specified default value.
+            - **ZERO TOLERANCE FOR INCORRECT EXTRACTIONS**: If you find a value in an unrelated section (e.g., Settlement FX Lag incorrectly extracted from Valuation Date), you must treat it as invalid and not include it in the JSON output.
+
+            ### Contract-Level Fields (this MUST be a level in the JSON output, labelled as "header")
+            This Party (This should always be Banco ABC in the JSON, do not extract from the contract), Counterparty (the other entity in the contract), Trade Date, Start Date, Termination Date, Settlement Type, Settlement Currency (expressed as an ISO Code), Settlement FX Reference, Cashflow Calendar, Payment Calendar.
+
+            ### Leg-Level Fields (this MUST be a level in the JSON output, do not abbreviate to Contract-Level)
+            For each leg (Leg 1 and Leg 2), extract Notional (a numeric value), Currency (ISO Code, likely extract from the Notional field. If you detect that the currency is 'UF', this should be saved in the JSON as CLF, which is the correct ISO code), Rate, Spread, Date Basis, Coupon Frequency, Coupon Business Day Adjustment, Payment Frequency, Payment Business Day Adjustment, Payment Offset, Compounding, Lookback, Settlement FX Lag.
+            Also, each leg should have a Payer field which should not be read from the leg sections of the contract, rather should simply use the EXACT VALUE of the Party 1 and Party 2 Contract-Level Fields extracted earlier. This Payer field should be the first within each leg in the JSON file.
+
+            ### Knowledge Graph Guidance
+            Follow the detailed descriptions of each field as provided below. Adhere strictly to valid labels and prohibited labels as specified. Reiterate the zero-tolerance rule for misinterpreted fields. If in doubt, leave the field blank or use the default value.
+
+            '- **Description**: This indicates the number of business days between the period or calculation end date and the payment date for each leg. If nothing is detected, set to 0.
+            - **Valid Labels**: 
+	    - **Other Guidance** If there is no field called Period End Dates for the leg, then the value for this field should be set to 0, because the contract has only specified Payment Dates. If there is a field called Period End 		Dates for the leg, then the difference in days between what is referred to in the Period End Dates for the leg and the Payment Dates for the leg is therefore the value for this field. If there is no difference, it should 		be set to 0. In some cases there is an explicit field called Delayed Payment which will give the specific value we are looking for, and will override and take precedence over any logic regarding Period End Dates and Payment Dates and the differences between them. Some contracts will make references to specific dates within the Payment Dates fields, such as in the following example: "The 4th of March and September in each year from (and including) March 4, 2024 to (and including) the Termination Date; subject to adjustment in accordance with the Modified Following Business Day Convention." This likely indicates that the Payment Dates are the same as the Period End Dates, even if Period End Dates are not explicitly mentioned. In some cases, the contracts will contain a cashflow table towards the end of the contract. If the dates (e.g. 26th of January and July in this case) match, then this confirms that the Period End Dates and Payment Dates are the same, therefore the value of our paymentDateOffset field can be set to 0. The same logic can be applied when instead of referring to a specific date, it refers to a date concept, such as Termination Date, as in the following example: "The Termination Date; subject to adjustment in accordance with the Modified Following Business Day Convention."
+In the case of contracts issued by some Chilean counterparties, the clearest indicator should be a field named VALUTA DE PAGO, however it makes reference (often through text such as "LOS PAGOS SE GENERAN EL DIA DE VENCIMIENTO DE CADA FLUJO, SEGÚN TABLA ADJUNTA" to the payment dates in the cashflow schedule usually towards the end of the contract. Despite this text hinting that the payments are made on the end date of each cashflow, which suggests that the paymentDateOffset would be 0, this logic should be discarded and you should look to the cashflows as suggested, and determine the number of days between the fecha pago and the fecha termino. As these dates may have business day conventions applied to them to account for weekends and holidays that you are unaware of, it is probably reasonable to calculate an average number of days and round to the nearest full number.
+	    - **Prohibited Labels**: DO NOT use values from fields labeled **Valuation Date**. If detected, discard these values immediately and do not include them in the JSON output.
+            - **Default Value**: 0 if no valid data is found.
+
+            Then structure the extracted information into JSON with the following schema (for primary JSON and secondary JSON if applicable). Note, after each field, there is a boolean field (with the same name as the main field, but the word Clear appended to the name. If you are confident that the contract is clear in indicating this value, then put true in the Boolean field. If it is somewhat ambiguous, then put false in the Boolean field):
+            {{
+                "header": {{
+		    "source": "contrato" (hardcoded)
+                }}
+                "legs": {{
+                    {{
+	                    "paymentDateOffset": "Integer",
+                        "paymentDateOffsetClear": "Boolean"
+                    }},
+                    {{
+	                    "paymentDateOffset": "Integer",
+                        "paymentDateOffsetClear": "Boolean"
+                    }}
+                        
+                }}
+            }}    
+
+### Contract Text:
+
+{contract_text}
+
+
+If you are unsure of anything, leave the value blank."
+

@@ -132,12 +132,12 @@ leg_mappings:
       source_field: "legs[{idx}].leg_generator.settlement_calendar"
       transformation: "business_centers"
 
-  # Calculated period frequencies
+  # Both frequencies use settlement_periodicity
   calculationPeriodFrequency:
     source_fields:
-      years: "legs[{idx}].leg_generator.maturity.agnos"
-      months: "legs[{idx}].leg_generator.maturity.meses"
-      days: "legs[{idx}].leg_generator.maturity.dias"
+      years: "legs[{idx}].leg_generator.settlement_periodicity.agnos"
+      months: "legs[{idx}].leg_generator.settlement_periodicity.meses"
+      days: "legs[{idx}].leg_generator.settlement_periodicity.dias"
       start_date: "legs[{idx}].leg_generator.start_date.fecha"
       end_date: "legs[{idx}].leg_generator.end_date.fecha"
     calculation_type: "period_frequency"
@@ -193,9 +193,9 @@ conditional_leg_mappings:
 
       resetFrequency:
         source_fields:
-          years: "legs[{idx}].leg_generator.maturity.agnos"
-          months: "legs[{idx}].leg_generator.maturity.meses"
-          days: "legs[{idx}].leg_generator.maturity.dias"
+          years: "legs[{idx}].leg_generator.settlement_periodicity.agnos"
+          months: "legs[{idx}].leg_generator.settlement_periodicity.meses"
+          days: "legs[{idx}].leg_generator.settlement_periodicity.dias"
           start_date: "legs[{idx}].leg_generator.start_date.fecha"
           end_date: "legs[{idx}].leg_generator.end_date.fecha"
         calculation_type: "period_frequency"

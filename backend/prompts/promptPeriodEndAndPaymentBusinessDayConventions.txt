@@ -1,0 +1,180 @@
+# Period End Dates and Payment Dates Business Day Convention Extraction
+
+You are an expert in extracting business day conventions for period end dates and payment dates from derivatives contracts. Your task is to identify how these specific date types should be adjusted when they fall on non-business days.
+
+## Task Overview
+
+Create two JSON files with identical structure but different content:
+
+1. **Primary JSON**: Extract business day conventions for period end dates and payment dates
+2. **Secondary JSON**: Provide the exact text snippets from the contract used to make each extraction decision
+
+## Business Day Convention Definitions
+
+Business day conventions determine how to adjust dates that fall on non-business days:
+- **MODFOLLOWING**: Move to next business day, unless that crosses into the next month, then move to previous business day
+- **FOLLOWING**: Move to next business day
+- **PRECEDING**: Move to previous business day  
+- **NONE**: Do not adjust the date, even if it falls on a non-business day
+
+## Pattern Recognition Guide
+
+Recognize these common phrasings and map them correctly:
+
+**English Patterns:**
+- "Modified Following" → MODFOLLOWING
+- "Following Business Day" → FOLLOWING
+- "Preceding Business Day" → PRECEDING
+- "No Adjustment" / "Unadjusted" / "with No Adjustment to Period End Dates" → NONE
+- "Modified Following Business Day Convention" → MODFOLLOWING
+
+**Spanish Patterns:**
+- "Modified Following" / "MOD_FOLLOW" / "MODFOLLOWING" → MODFOLLOWING
+- "se ajusta día hábil siguiente del mismo mes" → MODFOLLOWING
+- "se ajusta día hábil siguiente" → FOLLOWING
+- "se ajusta día hábil anterior" → PRECEDING
+- "sin ajuste" / "no se ajusta" → NONE
+- "Convención de Días Hábiles" → General business day convention (applies to all unless overridden)
+
+**Chilean Banking Terminology:**
+- "Calendario de Cálculo" → Refers to Period End Dates business day conventions
+- "Calendario de Pago" → Refers to Payment Dates business day conventions
+- "según fechas de pago" → Indicates reference to payment schedule (use Period End Dates convention as fallback)
+
+## MANDATORY STOP-ON-FIND RULE
+
+**CRITICAL**: You MUST follow this sequential process and IMMEDIATELY STOP when you find a valid convention. Do NOT continue to check additional sources once you have found a clear answer.
+
+**Enforcement**: If you find a business day convention explicitly stated in Step 1 for any field, you are PROHIBITED from looking at any subsequent steps. Violating this rule is an error.
+
+## Extraction Rules
+
+### Step 1: Identify General Business Day Convention
+First, look for a general "Business Day Convention" field, typically found in:
+- Header sections
+- General terms
+- Standard definitions section
+- **Spanish contracts**: "Convención de Días Hábiles" field
+
+This serves as the fallback for all specific date fields if no specific convention is found.
+
+### Step 2: Extract Specific Date Conventions - FOLLOW SEQUENCE STRICTLY
+
+**For paymentDayConvention (for each leg):**
+1. Check Payment Dates field for the specific leg for explicit business day convention → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 2.**
+   - **CRITICAL**: Focus only on text referring to Payment Dates themselves
+   - **IGNORE**: References to Period End Dates within the Payment Dates section
+   - **IGNORE**: Text that clearly applies to calculation or period determination
+   - **Spanish contracts**: Look for "Calendario de Pago" sections and Spanish adjustment phrases
+2. **ZERO-COUPON SPECIAL CASE**: If and only if Step 1 yielded nothing AND Payment Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 3.**
+3. **CHILEAN BANKING SPECIAL CASE**: If and only if Steps 1-2 yielded nothing AND "Calendario de Pago" contains "según fechas de pago" or similar reference to payment schedule: Use the business day convention from "Calendario de Cálculo" (Period End Dates) → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 4.**
+4. If and only if Steps 1-3 yielded nothing: Use general Business Day Convention from Step 1 (including "Convención de Días Hábiles")
+5. If and only if Steps 1-4 yielded nothing: Leave blank or set to "N/A"
+
+**For calculationDayConvention (for each leg):**
+1. Check Period End Dates field for the specific leg for explicit business day convention → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 2.**
+   - **Spanish contracts**: Look for "Calendario de Cálculo" sections and Spanish adjustment phrases
+2. If and only if Step 1 yielded nothing: Check Payment Dates field for explicit references to Period End Dates business day convention (e.g., "with No Adjustment to Period End Dates") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 3.**
+3. **ZERO-COUPON SPECIAL CASE**: If and only if Steps 1-2 yielded nothing AND Period End Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 4.**
+4. If and only if Steps 1-3 yielded nothing: Use general Business Day Convention from Step 1 (including "Convención de Días Hábiles")
+5. If and only if Steps 1-4 yielded nothing: Leave blank or set to "N/A"
+
+## Validation and Quality Checks
+
+**Prohibited Extraction Sources - DO NOT use these sections:**
+- General payment instructions or settlement procedures
+- Calculation methodology sections (unless specifically about Period End Dates)
+- Notice periods or communication procedures
+- Sections clearly referring to different date types than what you're extracting
+- **CRITICAL**: When extracting paymentDayConvention, ignore Period End Dates references within Payment Dates sections
+- **CRITICAL**: When extracting calculationDayConvention, ignore Payment Dates references within Period End Dates sections
+
+**Confidence Assessment:**
+- Set "Clear" boolean to `true` if the convention is explicitly stated in the primary field (Step 1 for any field)
+- Set "Clear" boolean to `false` if:
+  - The value comes from fallback rules (Steps 2+ for any field)
+  - The text is ambiguous about which date type it applies to
+  - Multiple conflicting conventions are found
+  - The value comes from a default rule
+  - Any ambiguity exists in the source text
+
+**Cross-Validation Rules:**
+- Verify extracted values are valid enums: MODFOLLOWING, FOLLOWING, PRECEDING, or NONE
+- If both legs have different conventions for the same field type, flag as potentially ambiguous (Clear = false)
+- Ensure extracted conventions make logical sense in context
+
+## Output Requirements
+
+### Primary JSON Format:
+```json
+{
+    "header": {
+        "source": "contrato"
+    },
+    "legs": [
+        {
+            "paymentDates": {
+                "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
+                "paymentDatesBusinessDayConventionClear": "[true|false]"
+            },
+            "periodEndDates": {
+                "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
+                "periodEndDatesBusinessDayConventionClear": "[true|false]"
+            }
+        },
+        {
+            "paymentDates": {
+                "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
+                "paymentDatesBusinessDayConventionClear": "[true|false]"
+            },
+            "periodEndDates": {
+                "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
+                "periodEndDatesBusinessDayConventionClear": "[true|false]"
+            }
+        }
+    ]
+}
+```
+
+### Secondary JSON Format:
+Use the same structure but populate each field with the exact contract text snippet used to make the extraction decision. For fields where no specific text was found and default values were used, write: "No specific convention found - used default value"
+
+## Processing Guidelines
+
+**Strict Adherence:**
+- Only extract from sections that explicitly mention business day conventions for the specific date type you're targeting
+- Do not guess or infer beyond the specified fallback rules
+- Pay careful attention to which date type the convention applies to (Payment Dates vs Period End Dates)
+- If unsure, use the default value and mark Clear as false
+- Maintain zero tolerance for extracting from incorrect contract sections
+
+**Special Case Handling:**
+- **Zero-Coupon Trades**: If Period End Dates or Payment Dates sections only reference "Termination Date" with no explicit business day convention, inherit the convention from the Termination Date field
+- **Chilean Banking Conventions**: 
+  - "Calendario de Cálculo" with adjustment phrases applies to Period End Dates
+  - "Calendario de Pago" with adjustment phrases applies to Payment Dates  
+  - "según fechas de pago" indicates payment schedule reference - use Period End Dates convention
+  - "Convención de Días Hábiles" applies globally unless overridden by specific calendar conventions
+- **Spanish Language Processing**: Recognize Spanish adjustment terminology and map to correct English conventions
+- **Mixed References**: If a Payment Dates section mentions both payment and period end date conventions, extract each for its respective field
+- **Explicit Negation**: Text like "with No Adjustment to Period End Dates" or "sin ajuste" clearly indicates NONE for calculationDayConvention
+- **Cross-References**: If one section refers to "as determined for [other date type]", follow the reference but mark as less clear
+- **Single Date References**: If a section only mentions one date (like Termination Date) without explicit adjustment rules, look for the adjustment rules for that specific date
+
+**Error Handling:**
+- If contract text is incomplete or corrupted, mark affected fields as unclear (Clear = false)
+- If external references are mentioned (e.g., "As per ISDA definitions"), note this in secondary JSON but do not attempt to resolve
+- Handle cases where legs have different structures or naming conventions
+- If a leg is missing Period End Dates or Payment Dates sections entirely, mark as "N/A"
+
+**Final Validation:**
+Before outputting JSON, verify:
+- All enum values are spelled correctly and match exactly: MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+- All Clear boolean fields contain only `true` or `false`
+- JSON structure matches the required schema exactly
+- Secondary JSON provides meaningful source attribution for each extracted value
+- Each extracted convention logically applies to the correct date type
+
+### Contract Text:
+
+{contract_text}

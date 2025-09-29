@@ -70,7 +70,7 @@
               "CLSA"
             ]
           },
-          "calculationPeriodFrequency": "TERM",
+          "calculationPeriodFrequency": "6M",
           "paymentFrequency": "6M",
           "paymentDateOffset": 0,
           "paymentDayConvention": "NONE",
@@ -124,7 +124,7 @@
               "CLSA"
             ]
           },
-          "calculationPeriodFrequency": "TERM",
+          "calculationPeriodFrequency": "6M",
           "paymentFrequency": "6M",
           "paymentDateOffset": 0,
           "paymentDayConvention": "NONE",
@@ -135,7 +135,7 @@
           "settlementType": "CASH",
           "settlementCurrency": "USD",
           "floatingRateIndex": "CLP-ICP",
-          "resetFrequency": "TERM",
+          "resetFrequency": "6M",
           "resetDayConvention": "FOLLOWING",
           "resetBusinessCenters": [
             "USNY",

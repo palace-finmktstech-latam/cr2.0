@@ -106,9 +106,10 @@ def main():
 
         # Check if promptPaymentDateOffset.txt exists
         prompts_dir = Path(__file__).parent / "prompts"
-        if (prompts_dir / "promptPaymentDateOffset.txt").exists() and (prompts_dir / "contract.txt").exists():
-            print("Loading promptPaymentDateOffset.txt with contract.txt...")
-            response = query_claude_with_prompt_file("promptPaymentDateOffset.txt", "contract.txt")
+        #if (prompts_dir / "promptPaymentDateOffset.txt").exists() and (prompts_dir / "contract.txt").exists():
+        if (prompts_dir / "promptHeaderBusinessDayConventions.txt").exists() and (prompts_dir / "contract.txt").exists():
+            print("Loading promptHeaderBusinessDayConventions.txt...")
+            response = query_claude_with_prompt_file("promptHeaderBusinessDayConventions.txt", "contract.txt")
             print("Response from Claude:")
             print(response)
         else:

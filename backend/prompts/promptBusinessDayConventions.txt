@@ -1,0 +1,132 @@
+*****TEST BUSINESS DAY CONVENTIONS*****
+
+
+        
+                """You are an expert in extracting the many business day conventions from derivatives contracts that apply to different date concepts.
+                Using ONLY the guidance provided under the section Knowledge Graph Guidance, create two JSON files (primary and secondary), with the same structure but different content:
+
+                1. **Primary JSON**: Extract the relevant snippet from the contract text below and from that snippet, extract the value for the field and return it in JSON format.
+                - Dates must be in DD-MM-YYYY format.
+                - Numbers should be returned with two decimal places unless specified as an integer. Store numbers as numeric values in JSON, not as text.
+                - Percentages must be returned as numbers with 3 decimal places and include a percentage sign (e.g., "5.123%").
+                - If no valid value is found, set the field to 0, "No value found in contract," or the default explicitly specified in the field guidance.
+
+                2. **Secondary JSON**: Provide the extracted text snippet of the contract used to decide what to populate in the field.
+                - The snippet must include the label and full text of the source field in the contract, not just a small extract.
+                - For blank fields, explicitly write "No value found in contract" in the secondary JSON."""
+
+            You are an expert in extracting key information from derivatives contracts.
+            Using ONLY the guidance provided under the section Knowledge Graph Guidance, create two JSON files (primary and secondary), with the same structure but different content:
+
+            ### General Instructions:
+            - **STRICT LABEL ADHERENCE**: Fields must only be extracted from sections explicitly matching the labels provided in the Knowledge Graph Guidance. Fields from incorrect or unlabeled sections must not be used under any circumstances.
+            - **DO NOT GUESS**: If no matching label is found, leave the field blank or set it to the specified default value.
+            - **ZERO TOLERANCE FOR INCORRECT EXTRACTIONS**: If you find a value in an unrelated section (e.g., Settlement FX Lag incorrectly extracted from Valuation Date), you must treat it as invalid and not include it in the JSON output.
+
+            ### Contract-Level Fields (this MUST be a level in the JSON output, labelled as "header")
+            This Party (This should always be Banco ABC in the JSON, do not extract from the contract), Counterparty (the other entity in the contract), Trade Date, Effective Date, Termination Date, Settlement Type, Settlement Currency (expressed as an ISO Code), Settlement FX Reference, Cashflow Calendar, Payment Calendar.
+
+            ### Leg-Level Fields (this MUST be a level in the JSON output, do not abbreviate to Contract-Level)
+            For each leg (Leg 1 and Leg 2), extract Notional (a numeric value), Currency (ISO Code, likely extract from the Notional field. If you detect that the currency is 'UF', this should be saved in the JSON as CLF, which is the correct ISO code), Rate, Spread, Date Basis, Coupon Frequency, Coupon Business Day Adjustment, Payment Frequency, Payment Business Day Adjustment, Payment Offset, Compounding, Lookback, Settlement FX Lag.
+            Also, each leg should have a Payer field which should not be read from the leg sections of the contract, rather should simply use the EXACT VALUE of the Party 1 and Party 2 Contract-Level Fields extracted earlier. This Payer field should be the first within each leg in the JSON file.
+
+            ### Knowledge Graph Guidance
+            Follow the detailed descriptions of each field as provided below. Adhere strictly to valid labels and prohibited labels as specified. Reiterate the zero-tolerance rule for misinterpreted fields. If in doubt, leave the field blank or use the default value.
+
+            '- **Description**: These are conventions used to instruct how to change dates if the date in question falls on a non-working day. For example, the Following convention would move the date to the next working date, Modified Following would do the same if the next working date falls within the same month, and if not would go back to the previous working day, Preceding moves back to the previous working day, etc. A perfectly valid convention would be NONE, which indicates that the date should not be modified, even if it is a non-working date. If nothing is detected, set to "N/A".
+            - **Valid Labels**: 
+	    - **Other Guidance**: First thing to look at: a general field, usually in one of the first, header-type sections called Business Day Convention. If this is present, then it can be used as the fallback businessDayConvention for all of the fields we are looking to populate in this process, if they do not have a specific value for their case. If they do have a specific value, then it takes precedent over the general Business Day Convention.
+
+paymentDayConvention Business Day Convention can generally be determined from the text referring to the field called Payment Dates for each leg, and can sometimes, if not explicitly mentioned here, refer to the general Business Day Convention. However, be aware that in some cases you will find within this text references to the Period End Dates. Do not be confused by this, concentrate on the text that refers to the Payment Dates. 
+
+calculationDayConvention Business Day Convention can generally be determined from the text referring to the field called Period End Dates for each leg. 
+    However, be aware that you should also look within the Payment Dates field for the leg, as this may make specific reference to a Business Day Convention for the Period End Dates, 
+    especially if the Period End Dates field itself does not explicitly mention a Business Day Convention. For example, text in a Payment Dates field may say something like, 
+    "The 5th of each month in each year from (and including) August 5, 2023 to (and including) the Termination Date; subject to adjustment in accordance with the
+    Modified Following Business Day Convention; with No Adjustment to Period End Dates." This clearly indicates that the calculationDayConvention is "NONE".
+    If no specific Period End Dates business day convention can be explicitly found, use the fallback value for Business Day Convention.
+
+resetDayConvention Business Day Convention can be found in the text for the field called Reset Dates for each leg, although this is only applicable to Floating legs. Fixed legs will never have a Reset Dates field and therefore the resetDatesAdjustments Business Day Convention can be set to "N/A" for fixed legs.
+
+terminationDateAdjustmentBusinessDayConvention Business Day Convention can usually be found in the Termination Date field. If indeed it is not specified, you can use the fallback general Business Day Convention if it has been defined. If it has not been defined, use the Business Day Convention defined in the Period End Dates for each leg, which often refer to the Termination Date, which by definition is the last Period End Date of them all
+
+effectiveDateAdjustmentBusinessDayConvention Business Day Convention will very rarely be specified in the Effective Date field. If indeed it is not specified, you can use the fallback general Business Day Convention if it has been defined. If it has not been defined, use the Business Day Convention defined in the Period End Dates for each leg, which often refer to the Termination Date, which by definition is the last Period End Date of them all. If this happens it is not a concern, and you can set it to "MODFOLLOWING". This is because the business day convention for this field is very rarely explicitly specified, as it can by definition only take place on business days, and therefore is very unlikely to be adjusted.
+
+tradeDateAdjustments Business Day Convention will very rarely be specified in the Trade Date field. If indeed it is not specified, you can use the fallback general Business Day Convention if it has been defined or, in its absence, use the same Business Day Convention as has been determined for the terminationDateAdjustments Business Day Convention. If this happens it is not a concern, and you can set it to "MODFOLLOWING". This is because the business day convention for this field is very rarely explicitly specified, as it can by definition only take place on business days, and therefore is very unlikely to be adjusted.
+
+	    - **Prohibited Labels**: Adjustment to Payment Dates and Exchange Dates
+            - **Default Value**: "N/A" if no valid data is found.
+
+            Then structure the extracted information into JSON with the following schema (for primary JSON and secondary JSON if applicable). Note, after each field, there is a boolean field (with the same name as the main field, but the word Clear appended to the name. If you are confident that the contract is clear in indicating this value, then put true in the Boolean field. If it is somewhat ambiguous, then put false in the Boolean field). Do not write any other text in these "Clear"-suffixed boolean fields. Only true or false are valid values:
+            {{
+                "header": {{
+		            "source": "contrato" (hardcoded)
+                    "tradeDate": {
+                        "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                        "tradeDateBusinessDayConventionClear": "Boolean" (only write true or false)
+                    },
+                    "effectiveDate": {
+                        "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                        "effectiveDateBusinessDayConventionClear": "Boolean" (only write true or false)
+                    },
+                    
+                    "terminationDate": {
+                        "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                        "terminationDateBusinessDayConventionClear": "Boolean" (only write true or false)
+                    }
+                }}
+                "legs": {{
+                    {{
+	                    "calculationDayConvention": 
+                            "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                            "calculationDayConventionBusinessDayConventionClear": "Boolean" (only write true or false)
+                        },
+                        "effectiveDate": {
+                            "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                            "effectiveDateBusinessDayConventionClear": "Boolean" (only write true or false)
+                        },
+                        "terminationDate": {
+                            "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                            "terminationDateBusinessDayConventionClear": "Boolean" (only write true or false)
+                        },
+                        "paymentDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE,
+                        "paymentDayConventionClear": "Boolean" (only write true or false)
+                        "resetDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONEN/A if a fixed leg,
+                        "resetDayConventionClear": "Boolean" (only write true or false)
+                        "fxFixing"{
+                            "fxFixingDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE, 
+                            "fxFixingDayConventionClear": "Boolean" (only write true or false)
+                        }
+                    {{
+	                    "calculationDayConvention": 
+                            "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                            "calculationDayConventionBusinessDayConventionClear": "Boolean" (only write true or false)
+                        },
+                        "effectiveDate": {
+                            "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                            "effectiveDateBusinessDayConventionClear": "Boolean" (only write true or false)
+                        },
+                        "terminationDate": {
+                            "businessDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+                            "terminationDateBusinessDayConventionClear": "Boolean" (only write true or false)
+                        },
+                        "paymentDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE,
+                        "paymentDayConventionClear": "Boolean" (only write true or false)
+                        "resetDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONEN/A if a fixed leg,
+                        "resetDayConventionClear": "Boolean" (only write true or false)
+                        "fxFixing"{
+                            "fxFixingDayConvention": enum of MODFOLLOWING, FOLLOWING, PRECEDING, NONE, 
+                            "fxFixingDayConventionClear": "Boolean" (only write true or false)
+                        }
+                    }}
+                        
+                }}
+            }}    
+
+### Contract Text:
+
+{contract_text}
+
+
+If you are unsure of anything, leave the value blank."
+
