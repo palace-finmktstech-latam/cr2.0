@@ -1,0 +1,198 @@
+{
+  "trades": [
+    {
+      "header": {
+        "tradeId": "7555",
+        "tradeIdType": "INTERNAL",
+        "tradeDate": {
+          "date": "11/09/2025",
+          "businessDayConvention": "MODFOLLOWING",
+          "businessCenters": [
+            "USNY",
+            "CLSA"
+          ]
+        },
+        "effectiveDate": {
+          "date": "15/09/2025",
+          "businessDayConvention": "MODFOLLOWING",
+          "businessCenters": [
+            "USNY",
+            "CLSA"
+          ]
+        },
+        "terminationDate": {
+          "date": "15/06/2026",
+          "businessDayConvention": "MODFOLLOWING",
+          "businessCenters": [
+            "USNY",
+            "CLSA"
+          ]
+        },
+        "party1": {
+          "partyId": "ThisBank",
+          "partyName": "Banco ABC"
+        },
+        "party2": {
+          "partyId": "OurCounterparty",
+          "partyName": "MORGAN STANLEY AND CO"
+        }
+      },
+      "legs": [
+        {
+          "legId": "Pata-Activa",
+          "payerPartyReference": "OurCounterparty",
+          "receiverPartyReference": "ThisBank",
+          "notionalAmount": 65200000000.0,
+          "notionalCurrency": "CLP",
+          "rateType": "FLOATING",
+          "dayCountFraction": "ACT/360",
+          "floatingRateIndex": "CLP-ICP",
+          "resetFrequency": "TERM",
+          "resetDayConvention": "FOLLOWING",
+          "resetBusinessCenters": [
+            "USNY",
+            "CLSA"
+          ],
+          "rateRoundingPrecision": 6,
+          "rateRoundingDirection": "NEAREST",
+          "spread": 0.0,
+          "calculationPeriodFrequency": "TERM",
+          "paymentFrequency": "ATMATURITY",
+          "paymentDateOffset": 0,
+          "paymentDayConvention": "NONE",
+          "paymentBusinessCenters": [
+            "USNY",
+            "CLSA"
+          ],
+          "settlementType": "CASH",
+          "settlementCurrency": "USD",
+          "fxFixing": {
+            "fxFixingReference": "CLP_DOLAR_OBS_CLP10",
+            "fxFixingOffset": -2,
+            "fxFixingDayType": "BUSINESS",
+            "dateRelativeTo": "PAYMENT_DATES",
+            "fxFixingDayConvention": "PRECEDING",
+            "fxFixingBusinessCenters": [
+              "USNY",
+              "CLSA"
+            ]
+          }
+        },
+        {
+          "legId": "Pata-Pasiva",
+          "payerPartyReference": "ThisBank",
+          "receiverPartyReference": "OurCounterparty",
+          "notionalAmount": 65200000000.0,
+          "notionalCurrency": "CLP",
+          "rateType": "FIXED",
+          "dayCountFraction": "ACT/360",
+          "fixedRate": 0.0463,
+          "calculationPeriodFrequency": "TERM",
+          "paymentFrequency": "ATMATURITY",
+          "paymentDateOffset": 0,
+          "paymentDayConvention": "NONE",
+          "paymentBusinessCenters": [
+            "USNY",
+            "CLSA"
+          ],
+          "settlementType": "CASH",
+          "settlementCurrency": "USD",
+          "fxFixing": {
+            "fxFixingReference": "CLP_DOLAR_OBS_CLP10",
+            "fxFixingOffset": -2,
+            "fxFixingDayType": "BUSINESS",
+            "dateRelativeTo": "PAYMENT_DATES",
+            "fxFixingDayConvention": "PRECEDING",
+            "fxFixingBusinessCenters": [
+              "USNY",
+              "CLSA"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "header": {
+        "tradeId": "7556",
+        "tradeIdType": "INTERNAL",
+        "tradeDate": {
+          "date": "11/09/2025",
+          "businessDayConvention": "MODFOLLOWING",
+          "businessCenters": [
+            "CLSA"
+          ]
+        },
+        "effectiveDate": {
+          "date": "15/09/2025",
+          "businessDayConvention": "MODFOLLOWING",
+          "businessCenters": [
+            "CLSA"
+          ]
+        },
+        "terminationDate": {
+          "date": "05/01/2026",
+          "businessDayConvention": "MODFOLLOWING",
+          "businessCenters": [
+            "CLSA"
+          ]
+        },
+        "party1": {
+          "partyId": "ThisBank",
+          "partyName": "Banco ABC"
+        },
+        "party2": {
+          "partyId": "OurCounterparty",
+          "partyName": "SCOTIABANK CHILE"
+        }
+      },
+      "legs": [
+        {
+          "legId": "Pata-Activa",
+          "payerPartyReference": "OurCounterparty",
+          "receiverPartyReference": "ThisBank",
+          "notionalAmount": 300000000000.0,
+          "notionalCurrency": "CLP",
+          "rateType": "FLOATING",
+          "dayCountFraction": "ACT/360",
+          "floatingRateIndex": "CLP-ICP",
+          "resetFrequency": "TERM",
+          "resetDayConvention": "FOLLOWING",
+          "resetBusinessCenters": [
+            "CLSA"
+          ],
+          "rateRoundingPrecision": 4,
+          "rateRoundingDirection": "NEAREST",
+          "spread": 0.0,
+          "calculationPeriodFrequency": "TERM",
+          "paymentFrequency": "ATMATURITY",
+          "paymentDateOffset": 0,
+          "paymentDayConvention": "NONE",
+          "paymentBusinessCenters": [
+            "CLSA"
+          ],
+          "settlementType": "CASH",
+          "settlementCurrency": "CLP"
+        },
+        {
+          "legId": "Pata-Pasiva",
+          "payerPartyReference": "ThisBank",
+          "receiverPartyReference": "OurCounterparty",
+          "notionalAmount": 300000000000.0,
+          "notionalCurrency": "CLP",
+          "rateType": "FIXED",
+          "dayCountFraction": "ACT/360",
+          "fixedRate": 0.0472,
+          "calculationPeriodFrequency": "TERM",
+          "paymentFrequency": "ATMATURITY",
+          "paymentDateOffset": 0,
+          "paymentDayConvention": "NONE",
+          "paymentBusinessCenters": [
+            "CLSA"
+          ],
+          "settlementType": "CASH",
+          "settlementCurrency": "CLP"
+        }
+      ]
+    }
+  ]
+}

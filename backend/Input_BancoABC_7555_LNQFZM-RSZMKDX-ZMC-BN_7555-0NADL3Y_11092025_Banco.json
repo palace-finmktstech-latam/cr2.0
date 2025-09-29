@@ -1,0 +1,85 @@
+{
+  "header": {
+    "tradeId": "7555",
+    "tradeIdType": "INTERNAL",
+    "tradeDate": {
+      "date": "11/09/2025",
+      "businessDayConvention": "MODFOLLOWING",
+      "businessCenters": ["USNY", "CLSA"]
+    },
+    "effectiveDate": {
+      "date": "15/09/2025",
+      "businessDayConvention": "MODFOLLOWING",
+      "businessCenters": ["USNY", "CLSA"]
+    },
+    "terminationDate": {
+      "date": "15/06/2026",
+      "businessDayConvention": "MODFOLLOWING",
+      "businessCenters": ["USNY", "CLSA"]
+    },
+    "party1": {
+      "partyId": "ThisBank",
+      "partyName": "Banco ABC"
+    },
+    "party2": {
+      "partyId": "OurCounterparty",
+      "partyName": "MORGAN STANLEY AND CO"
+    }
+  },
+  "legs": [
+    {
+      "legId": "Pata-Activa",
+      "payerPartyReference": "OurCounterparty",
+      "receiverPartyReference": "ThisBank",
+      "notionalAmount": 65200000000,
+      "notionalCurrency": "CLP",
+      "rateType": "FLOATING",
+      "dayCountFraction": "ACT/360",
+      "calculationPeriodFrequency": "TERM",
+      "resetFrequency": "TERM",
+      "resetDayConvention": "FOLLOWING",
+      "resetBusinessCenters": ["CLSA"],
+      "floatingRateIndex": "CLP-ICP",
+      "rateRoundingPrecision": 6,
+      "rateRoundingDirection": "NEAREST",
+      "spread": 0.0,
+      "paymentDayConvention": "NONE",
+      "paymentBusinessCenters": ["USNY","CLSA"],
+      "paymentDateOffset": 0,
+      "fxFixing": {
+        "fxFixingReference": "CLP_DOLAR_OBS_CLP10",
+        "fxFixingOffset": -2,
+        "fxFixingDayType": "BUSINESS",
+        "dateRelativeTo": "PAYMENT_DATES",
+        "fxFixingDayConvention": "PRECEDING",
+        "fxFixingBusinessCenters": ["USNY", "CLSA"]
+      },
+      "settlementCurrency": "USD",
+      "settlementType": "CASH"
+    },
+    {
+      "legId": "Pata-Pasiva",
+      "payerPartyReference": "ThisBank",
+      "receiverPartyReference": "OurCounterparty",
+      "notionalAmount": 65200000000,
+      "notionalCurrency": "CLP",
+      "rateType": "FIXED",
+      "fixedRate": 0.0463,
+      "dayCountFraction": "ACT/360",
+      "calculationPeriodFrequency": "TERM",
+      "paymentDayConvention": "NONE",
+      "paymentBusinessCenters": ["USNY","CLSA"],
+      "paymentDateOffset": 0,
+      "settlementCurrency": "USD",
+      "settlementType": "CASH",
+      "fxFixing": {
+        "fxFixingReference": "CLP_DOLAR_OBS_CLP10",
+        "fxFixingOffset": -2,
+        "fxFixingDayType": "BUSINESS",
+        "dateRelativeTo": "PAYMENT_DATES",
+        "fxFixingDayConvention": "PRECEDING",
+        "fxFixingBusinessCenters": ["CLSA", "USNY"]
+      }
+    }
+  ]
+}

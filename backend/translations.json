@@ -1,0 +1,9 @@
+{
+    "trade.product.economicTerms.payout[0].interestRatePayout.paymentDates.paymentDaysOffset.periodMultiplier": "Pata Activa Settlement Lag",
+    "trade.product.economicTerms.payout[1].interestRatePayout.paymentDates.paymentDaysOffset.periodMultiplier": "Pata Pasiva Settlement Lag",
+    "trade.product.economicTerms.payout[0].interestRatePayout.calculationPeriodDates.calculationPeriodDatesAdjustments.businessDayConvention": "Pata Activa Coupon Business Day Convention",
+    "trade.product.economicTerms.payout[1].interestRatePayout.calculationPeriodDates.calculationPeriodDatesAdjustments.businessDayConvention": "Pata Pasiva Coupon Business Day Convention",
+    "trade.product.economicTerms.payout[0].interestRatePayout.paymentDates.paymentDatesAdjustments.businessDayConvention": "Pata Activa Settlement Lag Behaviour",
+    "trade.product.economicTerms.payout[1].interestRatePayout.paymentDates.paymentDatesAdjustments.businessDayConvention": "Pata Pasiva Settlement Lag Behaviour",
+    "trade.tradeIdentifier[0].assignedIdentifier[0].identifier.value": "Numero de Operacion"
+  }
