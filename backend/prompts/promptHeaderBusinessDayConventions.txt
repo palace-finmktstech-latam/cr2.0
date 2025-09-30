@@ -1,21 +1,43 @@
-# Business Day Convention Extraction from Interest Rate Swap Contracts
+**Business Center Pattern Mapping:**
+- "NYC" / "NY" / "New York" → USNY
+- "SAN" / "SCL" / "Santiago" / "Santiago de Chile" → CLSA  
+- "NYC_BOND" / "BMA" / "Día Hábil para U.S. Government Securities" → USGS
+- "Londres" / "London" / "LON" → GBLO
+- "TKY" / "Tokyo" → JPTO
+- "EUR" / "Frankfurt" / "ECB" → EUTA
+- "TOR" / "Toronto" → CATO
+- "SYD" / "Sydney" → AUSY
+- "HKG" / "Hong Kong" → HKHK
+- "ZUR" / "Zurich" → CHZU# Business Day Convention Extraction from Interest Rate Swap Contracts
 
-You are an expert in extracting business day conventions from derivatives contracts. Your task is to identify how dates should be adjusted when they fall on non-business days.
+You are an expert in extracting business day conventions and business centers from derivatives contracts. Your task is to identify how dates should be adjusted when they fall on non-business days and which business center calendars apply to those adjustments.
 
 ## Task Overview
 
 Create two JSON files with identical structure but different content:
 
-1. **Primary JSON**: Extract business day conventions and populate the specified fields
+1. **Primary JSON**: Extract business day conventions and business centers and populate the specified fields
 2. **Secondary JSON**: Provide the exact text snippets from the contract used to make each extraction decision
 
-## Business Day Convention Definitions
+## Business Day Convention and Business Center Definitions
 
 Business day conventions determine how to adjust dates that fall on non-business days:
 - **MODFOLLOWING**: Move to next business day, unless that crosses into the next month, then move to previous business day
 - **FOLLOWING**: Move to next business day
 - **PRECEDING**: Move to previous business day  
 - **NONE**: Do not adjust the date, even if it falls on a non-business day
+
+Business centers define which calendar(s) determine what constitutes a business day:
+- **USNY**: New York (also expressed as NYC, NY, New York)
+- **CLSA**: Santiago (also expressed as SCL, SAN, Santiago, Santiago de Chile)
+- **USGS**: US Government Securities (also expressed as Día Hábil para U.S. Government Securities, NYC_BOND, BMA)
+- **GBLO**: London (also expressed as Londres, LON, London)
+- **JPTO**: Tokyo (also expressed as TKY, Tokyo)
+- **EUTA**: Target/ECB (also expressed as EUR, Frankfurt, ECB)
+- **CATO**: Toronto (also expressed as TOR)
+- **AUSY**: Sydney (also expressed as SYD)
+- **HKHK**: Hong Kong (also expressed as HKG)
+- **CHZU**: Zurich (also expressed as ZUR)
 
 ## Pattern Recognition Guide
 
@@ -37,14 +59,48 @@ Recognize these common phrasings and map them correctly:
 - "Convención de Días Hábiles" → General business day convention (applies to all unless overridden)
 
 **Chilean Banking Terminology:**
-- "Calendario de Cálculo" → Often contains Period End Dates business day conventions that can serve as fallback for main dates
+- "Calendario de Cálculo" → Often contains Period End Dates business day conventions that can serve as fallback for main dates, may also specify business centers
 - "Fecha de cierre" → Trade/Start Date field
 - "Fecha de inicio" → Effective Date field  
 - "Fecha de vencimiento" → Termination Date field
 
+## Business Center Field Recognition
+
+**English Contract Business Center Fields:**
+Look for variations of these field names:
+
+**For Trade/Effective/Termination Dates:**
+- "Relevant Cities for Business Days for Valuation Dates"
+- "Relevant City for Business Day(s): For the purposes of Valuation Dates"
+- "Business Days" 
+- "Business Days for [Currency]" (e.g., "Business Days for USD", "Business Days for CLP", "Business Days for CLF")
+- "Relevant Cities for Business Day(s) for Valuation Date(s)"
+- "Business Day (as defined in the FX Definitions) for Valuation Date(s)"
+- "Business Day (as defined in the 1998 FX Definitions) for Valuation Date(s)"
+- "Business Day (as defined in the FX Definitions) for Valuation Date"
+- "Business Oays" (note: may contain typos like "Oays" instead of "Days")
+
+**For Payment Dates:**
+- "Business Day (as defined in the 2006 Definitions) for Payment Dates and Exchange Dates"
+- "Business Day (as defined in the 2006 Definitions) for all other purposes"
+- "Business Day (as defined in the 2021 Definitions) for all other purposes"
+- "Relevant Cities for Business Day(s) for Settlement/Payment Date(s)"
+- "Relevant City for Business Day(s): For the purposes of Payment Dates"
+- "Relevant Cities for Business Days for Payment Dates"
+
+**Spanish Contract Business Center Fields:**
+- "Calendario de Cálculo" → Primary source for business centers (applies to trade/effective/termination dates and period end dates)
+- "Calendario de Pago" → Primary source for payment dates business centers
+- Business centers often specified as: "SAN, NYC" or "Santiago, New York"
+
+**Payment Dates Spanish Patterns:**
+- "Calendario de Pago: SAN, NYC, según fechas de pago"
+- "Calendario de Pago: Nueva York-Santiago, se ajusta día hábil siguiente"
+- "Calendario Pago: NYC y SAN"
+
 ## CRITICAL INSTRUCTION FOR CHILEAN CONTRACTS
 
-**MANDATORY FALLBACK RULE**: If header-level date fields (Trade Date, Effective Date, Termination Date) cannot find specific conventions, you MUST check leg-level "Calendario de Cálculo" sections before setting any field to "N/A". The leg-level conventions serve as valid fallbacks for header-level fields.
+**MANDATORY FALLBACK RULE**: If header-level date fields (Trade Date, Effective Date, Termination Date) cannot find specific conventions or business centers, you MUST check leg-level "Calendario de Cálculo" sections before setting any field to "N/A". The leg-level conventions and business centers serve as valid fallbacks for header-level fields.
 
 **ENFORCEMENT**: If you find "MOD_FOLLOW", "MODFOLLOWING", or Spanish adjustment phrases in ANY leg's "Calendario de Cálculo", you MUST use this as the convention for header-level fields that lack specific conventions. Setting header fields to "N/A" when leg-level conventions exist is an error.
 
@@ -71,37 +127,61 @@ NOT:
 
 ## Extraction Rules
 
-### Step 1: Identify General Business Day Convention
-First, look for a general "Business Day Convention" field, typically found in:
+### Step 1: Identify General Business Day Convention and Business Centers
+First, look for general "Business Day Convention" and business center fields, typically found in:
 - Header sections
 - General terms
 - Standard definitions section
-- **Spanish contracts**: "Convención de Días Hábiles" field
+- **Spanish contracts**: "Convención de Días Hábiles" field and "Calendario de Cálculo" sections
+- **English contracts**: Fields like "Business Days", "Relevant Cities for Business Days", "Business Day (as defined in the FX Definitions)", etc.
 
-This serves as the fallback for all specific date fields if no specific convention is found.
+These serve as fallbacks for all specific date fields if no specific conventions or business centers are found.
 
 ### Step 2: Extract Specific Date Conventions - FOLLOW SEQUENCE STRICTLY
 
-**For tradeDateAdjustmentBusinessDayConvention:**
-1. Check Trade Date field for explicit business day convention → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 2.**
-2. If and only if Step 1 yielded nothing: Use general Business Day Convention from Step 1
-3. If and only if Steps 1-2 yielded nothing: Leave blank or set to "N/A"
+**For tradeDateAdjustmentBusinessDayConvention and Business Centers:**
+1. Check Trade Date field for explicit business day convention AND business centers → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
+2. If and only if Step 1 yielded nothing: Use general Business Day Convention and Business Centers from Step 1
+3. If and only if Steps 1-2 yielded nothing: Leave blank or set to "N/A" / empty array
 
-**For effectiveDateAdjustmentBusinessDayConvention:**
-1. Check Effective Date field for explicit business day convention → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 2.**
-2. If and only if Step 1 yielded nothing: Use general Business Day Convention from Step 1  
-3. If and only if Steps 1-2 yielded nothing: Leave blank or set to "N/A"
+**For effectiveDateAdjustmentBusinessDayConvention and Business Centers:**
+1. Check Effective Date field for explicit business day convention AND business centers → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
+2. If and only if Step 1 yielded nothing: Use general Business Day Convention and Business Centers from Step 1  
+3. If and only if Steps 1-2 yielded nothing: Leave blank or set to "N/A" / empty array
 
-**For terminationDateAdjustmentBusinessDayConvention:**
-1. Check Termination Date field for explicit business day convention (e.g., "subject to adjustment in accordance with the Modified Following Business Day Convention") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEPS 2-3.**
+**For terminationDateAdjustmentBusinessDayConvention and Business Centers:**
+1. Check Termination Date field for explicit business day convention AND business centers → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEPS 2-3.**
 2. If and only if Step 1 yielded nothing: Check Period End Dates sections for each leg
-3. If and only if Steps 1-2 yielded nothing: Use general Business Day Convention from Step 1
-4. If and only if Steps 1-3 yielded nothing: Leave blank or set to "N/A"
+3. If and only if Steps 1-2 yielded nothing: Use general Business Day Convention and Business Centers from Step 1
+4. If and only if Steps 1-3 yielded nothing: Leave blank or set to "N/A" / empty array
 
-**For leg-level effective and termination date conventions:**
-1. Look for leg-specific business day conventions in each leg's documentation
+**For leg-level effective and termination date conventions and business centers:**
+1. Look for leg-specific business day conventions and business centers in each leg's documentation
 2. If not found, inherit from header-level equivalent field
-3. Cross-validate that both legs have consistent conventions where logical
+3. Cross-validate that both legs have consistent conventions and business centers where logical
+
+## Business Center Extraction Rules
+
+**Multiple Business Centers**: 
+- Parse comma-separated or space-separated lists: "NYC, SAN" → ["USNY", "CLSA"]
+- Handle various separators: "Nueva York-Santiago" → ["USNY", "CLSA"]
+- Convert all variations to standardized enum values using pattern mapping
+- Always output as array even for single business center
+
+**Business Center Inheritance**:
+- If leg-level business centers not specified, inherit from header-level
+- If header-level not specified, check general business center definitions
+- Empty array if no business centers can be determined
+
+**Payment Dates Business Centers**:
+- **English contracts**: Look for "Business Day for all other purposes" or specific payment date field labels
+- **Spanish contracts**: Look for "Calendario de Pago" sections
+- Ignore contingent provisions (e.g., "provided however, that in the event of an Unscheduled Holiday following the Trade Date, then New York only") and extract only the regular business centers
+
+**Period End Dates Business Centers**:
+- Use the same sources as trade/effective/termination dates
+- **English contracts**: Business day fields for valuation dates  
+- **Spanish contracts**: "Calendario de Cálculo" sections
 
 ## Validation and Quality Checks
 
@@ -134,39 +214,68 @@ This serves as the fallback for all specific date fields if no specific conventi
 ```json
 {
     "header": {
-        "source": "contrato",
         "tradeDate": {
             "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-            "tradeDateBusinessDayConventionClear": "[true|false]"
+            "tradeDateBusinessDayConventionClear": "[true|false]",
+            "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+            "tradeDateBusinessCentersClear": "[true|false]"
         },
         "effectiveDate": {
             "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]", 
-            "effectiveDateBusinessDayConventionClear": "[true|false]"
+            "effectiveDateBusinessDayConventionClear": "[true|false]",
+            "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+            "effectiveDateBusinessCentersClear": "[true|false]"
         },
         "terminationDate": {
             "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-            "terminationDateBusinessDayConventionClear": "[true|false]"
+            "terminationDateBusinessDayConventionClear": "[true|false]",
+            "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+            "terminationDateBusinessCentersClear": "[true|false]"
         }
     },
     "legs": [
         {
             "effectiveDate": {
                 "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "effectiveDateBusinessDayConventionClear": "[true|false]"
+                "effectiveDateBusinessDayConventionClear": "[true|false]",
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "effectiveDateBusinessCentersClear": "[true|false]"
             },
             "terminationDate": {
                 "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "terminationDateBusinessDayConventionClear": "[true|false]"
+                "terminationDateBusinessDayConventionClear": "[true|false]",
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "terminationDateBusinessCentersClear": "[true|false]"
+            },
+            "paymentDates": {
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "paymentDatesBusinessCentersClear": "[true|false]"
+            },
+            "periodEndDates": {
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "periodEndDatesBusinessCentersClear": "[true|false]"
             }
         },
         {
             "effectiveDate": {
                 "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "effectiveDateBusinessDayConventionClear": "[true|false]"
+                "effectiveDateBusinessDayConventionClear": "[true|false]",
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "effectiveDateBusinessCentersClear": "[true|false]"
             },
             "terminationDate": {
                 "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "terminationDateBusinessDayConventionClear": "[true|false]"
+                "terminationDateBusinessDayConventionClear": "[true|false]",
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "terminationDateBusinessCentersClear": "[true|false]"
+            },
+            "paymentDates": {
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "paymentDatesBusinessCentersClear": "[true|false]"
+            },
+            "periodEndDates": {
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+                "periodEndDatesBusinessCentersClear": "[true|false]"
             }
         }
     ]

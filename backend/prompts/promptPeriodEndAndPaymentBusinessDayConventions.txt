@@ -109,7 +109,7 @@ This serves as the fallback for all specific date fields if no specific conventi
 ```json
 {
     "header": {
-        "source": "contrato"
+        
     },
     "legs": [
         {

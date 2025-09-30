@@ -110,6 +110,12 @@ class JSONComparator:
             return 'removed'
         elif type(val1) != type(val2):
             return 'type_changed'
+        elif isinstance(val1, list) and isinstance(val2, list) and 'businessCenters' in key:
+            # Special handling for businessCenters arrays - ignore order
+            if sorted(val1) == sorted(val2):
+                return 'same'
+            else:
+                return 'modified'
         elif val1 != val2:
             return 'modified'
         else:
