@@ -38,12 +38,10 @@ Create two JSON files with identical structure but different content:
 ## Valid Enumerations
 
 **Floating Rate Index:**
-- CLP-ICP
-- USD-LIBOR
+- CLP_ICP
 - USD-SOFR
+- USD_SOFR_Average_180D
 - EUR-EURIBOR
-- GBP-LIBOR
-- JPY-LIBOR
 - [Additional indices to be added as identified]
 
 **Day Count Fraction:**
@@ -95,10 +93,16 @@ Create two JSON files with identical structure but different content:
 - Extract fixedRate and convert to decimal with 6 places (4.53% → 0.045300)
 - **CRITICAL: Do NOT include floatingRateIndex or spread fields in the JSON output at all**
 
-**If rateType = "FLOATING":**
-- Extract floatingRateIndex from valid enum list
-- Extract spread and convert to decimal with 6 places  
-- **CRITICAL: Do NOT include fixedRate field in the JSON output at all**
+**floatingRateIndex:**
+1. Look for floating rate specification in each leg
+2. Map contract expressions to standardized enum values:
+   - "CLP-ICP" → CLP_ICP
+   - "USD SOFR" / "USD-SOFR" → USD-SOFR
+   - "USD TERM_SOFR 6M" / "USD TERM SOFR 6M" / "USD SOFR Average 180D" → USD_SOFR_Average_180D
+   - "EUR EURIBOR" / "EUR-EURIBOR" → EUR-EURIBOR
+   
+3. Use exact enum values from Valid Enumerations list
+4. If floating rate index cannot be found, mark as null
 
 **If conditional fields cannot be found:**
 - Mark as null in JSON only if the field should be present based on rate type
@@ -123,23 +127,67 @@ Create two JSON files with identical structure but different content:
 - Copy effectiveDate and terminationDate from header to each leg
 - Override with leg-specific dates if explicitly stated
 
-### Leg Direction Assignment (Mandatory Structure)
+### Leg Direction Assignment with Intelligent Detection
 
-**CRITICAL**: Always use this exact leg structure regardless of contract content:
+**CRITICAL CONTEXT**: Banco ABC is ALWAYS the client/counterparty in these contracts. All contracts are written by the other bank with Banco ABC as their counterparty.
 
-**First Leg (Always):**
-- "legId": "Pata-Activa"
-- "payerPartyReference": "OurCounterparty" 
-- "receiverPartyReference": "ThisBank"
-- This represents the leg where Banco ABC receives payments
+**Step 1: Identify Contract Parties**
+First, identify how parties are referenced in the contract:
+- **Spanish contracts**: Look for introductory text identifying "Banco"/"BANCO" (the contract writer) and "Cliente"/"CLIENTE" (Banco ABC)
+- **English contracts**: Look for party definitions like "Party A/Party B", "Counterparty" (Banco ABC), and the other bank's name
 
-**Second Leg (Always):**
-- "legId": "Pata-Pasiva"
-- "payerPartyReference": "ThisBank"
-- "receiverPartyReference": "OurCounterparty"
-- This represents the leg where Banco ABC pays payments
+**Step 2: Map Leg Payers to Determine Direction**
 
-**Do NOT attempt to determine payer/receiver from contract text. Use the hardcoded structure above.**
+**For English Contracts - Look for these payer indicators:**
+- "Fixed Rate Payer: [Party]" / "Floating Rate Payer: [Party]"
+- "Fixed Amount Payer: [Party]" / "Floating Amount Payer: [Party]"
+- "First/Second Floating Amount Payer: [Party]"
+- "Fixed/Floating Reference Currency Payer: [Party]"
+
+**For Spanish Contracts - Look for these field patterns:**
+- "Monto Contratado por [Party]" → [Party] pays this leg
+- "Tasa de Interés Pactada por [Party]" → [Party] pays this leg  
+- "Spread pactado por [Party]" → [Party] pays this leg
+- "Base de Cálculo [Party]" → [Party] pays this leg
+- "Modalidad para días festivos [Party]" → [Party] pays this leg
+
+**Step 3: Assign Leg IDs Based on Banco ABC's Role**
+
+**If Banco ABC (Counterparty/Cliente) PAYS the leg:**
+- This leg data goes to: legId "Pata-Pasiva"
+- payerPartyReference: "ThisBank" 
+- receiverPartyReference: "OurCounterparty"
+
+**If the OTHER BANK pays the leg (Banco ABC receives):**
+- This leg data goes to: legId "Pata-Activa"
+- payerPartyReference: "OurCounterparty"
+- receiverPartyReference: "ThisBank"
+
+**Example Logic:**
+- "Fixed Rate Payer: Counterparty" → Banco ABC pays fixed → Fixed leg data goes to Pata-Pasiva
+- "Floating Rate Payer: US Bank 1" → US Bank 1 pays floating → Floating leg data goes to Pata-Activa
+
+**Step 4: Always Order Output Consistently**
+
+**MANDATORY JSON STRUCTURE**: Regardless of how legs appear in the contract or detection results, ALWAYS output legs in this exact order:
+
+**First Leg in JSON Array (Index 0):**
+- legId: "Pata-Activa"  
+- payerPartyReference: "OurCounterparty"
+- receiverPartyReference: "ThisBank"
+- (Contains data from whichever contract leg has OurCounterparty as payer)
+
+**Second Leg in JSON Array (Index 1):**
+- legId: "Pata-Pasiva"
+- payerPartyReference: "ThisBank" 
+- receiverPartyReference: "OurCounterparty"
+- (Contains data from whichever contract leg has ThisBank as payer)
+
+**Step 5: Fallback for Unclear Cases**
+If payer identification fails completely:
+- First contract leg → Map to Pata-Activa structure 
+- Second contract leg → Map to Pata-Pasiva structure
+- This ensures consistent JSON output even when detection fails
 
 ## Output Requirements
 
@@ -147,7 +195,7 @@ Create two JSON files with identical structure but different content:
 ```json
 {
     "header": {
-        "source": "banco",
+        "source": "contrato",
         "tradeDate": {
             "date": "DD/MM/YYYY"
         },
