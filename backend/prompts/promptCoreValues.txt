@@ -211,7 +211,7 @@ If payer identification fails completely:
 ```json
 {
     "header": {
-        "source": "contrato",
+        "source": "banco",
         "tradeDate": {
             "date": "DD/MM/YYYY"
         },
@@ -247,9 +247,10 @@ If payer identification fails completely:
             },
             "settlementType": "[CASH|PHYSICAL]",
             "settlementCurrency": "USD",
-            "fixedRate": 0.045300,
             "floatingRateIndex": "CLP-ICP",
-            "spread": 0.000000
+            "spread": 0.000000,
+            "rateRoundingPrecision": 4,
+            "rateRoundingDirection": "NEAREST"
         }
     ]
 }

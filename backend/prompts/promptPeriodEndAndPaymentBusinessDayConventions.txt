@@ -74,7 +74,12 @@ First, look for a general "Business Day Convention" field, typically found in:
 - Standard definitions section
 - **Spanish contracts**: "Convención de Días Hábiles" field
 
-This serves as the fallback for all specific date fields if no specific convention is found.
+**CRITICAL**: Check if the general convention specifies different rules for different date types:
+- Look for differentiated specifications like "Fecha Pago: [Convention] / Fecha de Término: [Convention]"
+- "Fecha Pago" / "Payment Date" conventions apply to paymentDayConvention
+- "Fecha de Término" / "Termination Date" conventions apply to calculationDayConvention
+- If differentiated, use the specific convention for each date type
+- If not differentiated, use as fallback for all specific date fields if no specific convention is found
 
 ### Step 2: Extract Specific Date Conventions - FOLLOW SEQUENCE STRICTLY
 
@@ -85,20 +90,22 @@ This serves as the fallback for all specific date fields if no specific conventi
    - **IGNORE**: Text that clearly applies to calculation or period determination
    - **Spanish contracts**: Look for "Calendario de Pago" sections and Spanish adjustment phrases
    - **Frequency extraction**: Look for explicit frequency terms or infer from date patterns
-2. **ZERO-COUPON SPECIAL CASE**: If and only if Step 1 yielded nothing AND Payment Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field and set frequency to "TERM" → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 3.**
-3. **CHILEAN BANKING SPECIAL CASE**: If and only if Steps 1-2 yielded nothing AND "Calendario de Pago" contains "según fechas de pago" or similar reference to payment schedule: Use the business day convention from "Calendario de Cálculo" (Period End Dates) → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 4.**
-4. If and only if Steps 1-3 yielded nothing: Use general Business Day Convention from Step 1 (including "Convención de Días Hábiles")
-5. If and only if Steps 1-4 yielded nothing: Leave blank or set to "N/A"
+2. **DIFFERENTIATED GENERAL CONVENTION**: If and only if Step 1 yielded nothing: Check if general "Convención de Días Hábiles" specifies payment date convention (e.g., "Fecha Pago: Modified Following") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 3.**
+3. **ZERO-COUPON SPECIAL CASE**: If and only if Steps 1-2 yielded nothing AND Payment Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field and set frequency to "TERM" → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 4.**
+4. **CHILEAN BANKING SPECIAL CASE**: If and only if Steps 1-3 yielded nothing AND "Calendario de Pago" contains "según fechas de pago" or similar reference to payment schedule: Use the business day convention from "Calendario de Cálculo" (Period End Dates) → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 5.**
+5. If and only if Steps 1-4 yielded nothing: Use general Business Day Convention from Step 1 (including undifferentiated "Convención de Días Hábiles")
+6. If and only if Steps 1-5 yielded nothing: Leave blank or set to "N/A"
 
 **For calculationDayConvention and calculationPeriodFrequency (for each leg):**
 1. Check Period End Dates field for the specific leg for explicit business day convention AND calculation frequency → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
    - **Spanish contracts**: Look for "Calendario de Cálculo" sections and Spanish adjustment phrases
    - **Frequency extraction**: Look for explicit frequency terms or infer from date patterns
-2. If and only if Step 1 yielded nothing: Check Payment Dates field for explicit references to Period End Dates business day convention (e.g., "with No Adjustment to Period End Dates") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 3.**
+2. **DIFFERENTIATED GENERAL CONVENTION**: If and only if Step 1 yielded nothing: Check if general "Convención de Días Hábiles" specifies termination/calculation date convention (e.g., "Fecha de Término: Unadjusted") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 3.**
+3. If and only if Steps 1-2 yielded nothing: Check Payment Dates field for explicit references to Period End Dates business day convention (e.g., "with No Adjustment to Period End Dates") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 4.**
    - **CRITICAL**: If Period End Dates field does not exist, use Payment Dates frequency for BOTH calculationPeriodFrequency AND paymentFrequency
-3. **ZERO-COUPON SPECIAL CASE**: If and only if Steps 1-2 yielded nothing AND Period End Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field and set frequency to "TERM" → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 4.**
-4. If and only if Steps 1-3 yielded nothing: Use general Business Day Convention from Step 1 (including "Convención de Días Hábiles")
-5. If and only if Steps 1-4 yielded nothing: Leave blank or set to "N/A"
+4. **ZERO-COUPON SPECIAL CASE**: If and only if Steps 1-3 yielded nothing AND Period End Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field and set frequency to "TERM" → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 5.**
+5. If and only if Steps 1-4 yielded nothing: Use general Business Day Convention from Step 1 (including undifferentiated "Convención de Días Hábiles")
+6. If and only if Steps 1-5 yielded nothing: Leave blank or set to "N/A"
 
 ## Validation and Quality Checks
 
@@ -130,7 +137,7 @@ This serves as the fallback for all specific date fields if no specific conventi
 ```json
 {
     "header": {
-        
+        "source": "contrato"
     },
     "legs": [
         {
