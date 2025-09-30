@@ -143,6 +143,25 @@ Create two JSON files with identical structure but different content:
 - Copy effectiveDate and terminationDate from header to each leg
 - Override with leg-specific dates if explicitly stated
 
+**Reset Data Extraction (for floating legs only):**
+
+**resetFrequency:**
+1. Look for explicit frequency in Reset Dates fields
+2. If not explicitly specified, use the same frequency as calculationPeriodFrequency
+3. For zero-coupon contracts, set to "TERM"
+
+**resetDayConvention:**
+1. Extract business day convention from Reset Dates field specifications
+2. Look for phrases like "subject to adjustment in accordance with the [Convention]"
+3. If not specified in Reset Dates, check related Calculation Period or general convention sections
+4. Map to standard enum: MODFOLLOWING, FOLLOWING, PRECEDING, NONE
+
+**resetBusinessCenters:**
+1. Extract business centers from Reset Dates fields or "Calendario Fijación Variable" sections
+2. Look for business center codes in reset-related sections
+3. Convert to standardized business center codes (NYC→USNY, SAN→CLSA, etc.)
+4. If not specified in reset sections, inherit from calculation period business centers
+
 ### Leg Direction Assignment with Intelligent Detection
 
 **CRITICAL CONTEXT**: Banco ABC is ALWAYS the client/counterparty in these contracts. All contracts are written by the other bank with Banco ABC as their counterparty.
@@ -249,6 +268,9 @@ If payer identification fails completely:
             "settlementCurrency": "USD",
             "floatingRateIndex": "CLP-ICP",
             "spread": 0.000000,
+            "resetFrequency": "3M",
+            "resetDayConvention": "MODFOLLOWING",
+            "resetBusinessCenters": ["USNY", "CLSA"],
             "rateRoundingPrecision": 4,
             "rateRoundingDirection": "NEAREST"
         }

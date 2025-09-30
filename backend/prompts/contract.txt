@@ -1,335 +1,327 @@
 
 
-Página: 1 
- 
-ANEXO No. 7 
- 
-Operación: 46192 
- 
-CONTRATO CROSS CURRENCY SWAP 
-SOBRE UNIDADES DE INTERES Y DIVISAS 
- 
-En  Santiago  de  Chile,  a  29  de  noviembre  de  2023,  entre,  por  una  parte,  Chilean Bank s,  empresa  
-bancaria,  con  Rol  Único  Tributario  N°  representada  por,  cédula  nacional  de  identidad  N°,  cédula  de  
-identidad  N°,  domiciliados  en  esta  ciudad,  AVDA.COSTANERA  SUR  2710  TORRE  A  ,  en  adelante  el  
-“BANCO”,  y  por  la  otra,  NOSOTROS,  Rol  único  Tributario  N°  representado  por  la(s)  persona(s)  que  se  
-individualiza(n)  al  final  del  presente  instrumento,  domiciliados  en  esta  ciudad,  calle en  adelante  el  
-"CLIENTE",  se  ha  convenido  el  Contrato  Cross  Currency  Swap  que  más  adelante  se  indica,  el  cual  se  
-regirá por las Condiciones Generales de Contratos de Derivados en el Mercado Local suscrito entre ambas 
-partes con fecha 14 de octubre de 2014, documento que, para todos los efectos, se entiende formar parte 
-integrante del presente instrumento: 
- 
-I.   Definiciones: 
- 
-i) Día Hábil: adicional a la definición establecida en las Condiciones Generales Contratos de Derivados 
-en el Mercado Local, numeral 3,    punto iv,    Día Hábil significa un día que en los bancos comerciales del 
-exterior o mercados financieros internacionales están generalmente abiertos para realizar cotizaciones 
-y/o pagos en el país de la moneda y/o tasa de interés extranjera, debiendo las partes convenir  en el 
-contrato la o las plazas que se utilizarán para efectuar el cálculo de la tasa de interés variable que se 
-deba pagar por la parte que corresponda y la Convención de Días Hábiles que se aplicará en el caso 
-que la Fecha de Fijación, de Pago o de Vencimiento recayere en un día inhábil. 
-ii) Fecha de Fijación significa el primer día de cada Período de Intereses. 
-iii) Fecha de Pago respecto de este Contrato significa las fechas pactadas por las partes en las cuales 
-deben cumplir las obligaciones de pago contraídas en este Contrato. 
-iv)    Fecha de Inicio es la Primera fecha de Fijación, esto es, la fecha en que comienza a devengarse los 
-respectivos intereses sobre los Montos de Capital establecidos por las Partes en el presente Contrato. 
-v) Fecha de Vencimiento significa la última Fecha de Pago estipulada en el Contrato. 
-vi)   Monto Contratado significa la cantidad de Moneda Extranjera, Unidades de Fomento, IVP y/o Moneda 
-Nacional que cada una de las partes han acordado en este Contrato, y que se encuentre vigente en 
-cada Fecha de Pago, cantidad sobre la cual y por el o los Periodos de Intereses pactados, se aplican 
-las Tasas de Interés convenidas en la sección III de este Contrato. 
-vii) Monto  de  Amortización  significa el o los montos de capital que las partes han acordado pagar en 
-cada Fecha de Pago. 
-viii) Periodos de Intereses significa (i) para el primer Período de Intereses, el período que comienza en la 
-primera Fecha de Fijación y termina el día que fijen las partes en este Contrato como primera Fecha de 
-Pago, (ii) y respecto de los siguientes Períodos de Intereses, cada uno de los periodos que comienzan 
+1/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+Date: 
+To: 
+Attn: 
+Phone: 
+Fax: 
+Email:
+From: 
+Phone:
+Fax:
+Email confirms:
+Email queries:
+August 4, 2023
+NOSOTROS  
+LEI: XXX
+Confirmation Unit
+backoffice_mesa@NOSOTROS
+US Bank C N.A., London Branch  
+US Bank C Centre 
+Canada Square 
+Canary Wharf, London E14 5LB 
+Authorized by the Prudential Regulation Authority and subject to 
+regulation by the Financial Conduct Authority and limited 
+regulation by the Prudential Regulation Authority. Registered 
+Number BR001018 
+LEI: US Bank C
+212-816-0400
+646-861-6419
+646-861-6418
+nyfiderivconfirms@US Bank C
+ficonfirms@US Bank C
+Our ref:      CE3G29910325 
+Your ref:
+UTI: E57ODZWZ7FF32TWEFA76TPSPROD10519112
+TRANSACTION
 
-Página: 2 
- 
-en la Fecha de Pago inmediatamente precedente y que termina en la siguiente Fecha de Pago, y así 
-sucesivamente. 
-ix)    Forma de Pago, (a) Los pagos que las partes deban efectuar en Moneda Extranjera deberán hacerse 
-mediante la entrega de cheque bancario girado sobre la ciudad de Nuevo York, Nueva York, Estados 
-Unidos de América (Cheque Bancario Nueva York) o a través de transferencia sobre la misma plaza o 
-ciudad con disponibilidad de cuarenta y ocho horas (valuta 48 horas) o entregando fondos disponibles 
-a las 14:00 horas de la respectiva Fecha de Pago, mediante abono acreditado en la cuenta corriente en 
-esa misma moneda que la parte acreedora haya indicado en el Contrato o que indique posteriormente 
-por  escrito  con  una  anticipación  de  tres  días  de  la  Fecha  de  Pago  o  cualquier  otra  que  se  pacte  
-expresamente en el Contrato respectivo. (b) Los pagos en Moneda Nacional deberán efectuarse en 
-cada  fecha  de  pago  mediante  la  entrega  de  vale  vista  de  la  plaza  o  a  través  de  depósitos  en  la 
-cuenta corriente indicada por cada parte o en cualquier otra que se pacte expresamente en el Contrato 
-Respectivo. 
- 
-II.    Convención de Días Hábiles 
- 
-Se denomina Convención de Días Hábiles el acuerdo de las partes en el Contrato para ajustar alguna fecha 
-que recayere en un día inhábil, de manera que las Fechas de Fijación, de Pago o de Vencimiento que hubieren 
-estipulado, serán aquellas que resulten de aplicar la Convención de Días Hábiles que hubieren establecido 
-para cada una de ellas, de acuerdo a lo siguiente: 
-a)   Si se estipula como “Siguiente” o “Following”, significará que si cualquier Fecha de Fijación, de Pago o 
-de Vencimiento recayere en un día no hábil, se entenderá prorrogada al Día Hábil siguiente. 
-b)   Si se estipula como “Siguiente Modificado” o “Modified Following”, significará que si cualquier Fecha de 
-Fijación, de Pago o de Vencimiento recayere en un Día no Hábil, se entenderá prorrogada al Día Hábil 
-siguiente, salvo que ese día corresponda a un día del mes calendario siguiente. En tal caso, la Fecha 
-de Fijación, de Pago, o de Vencimiento, será el Día Hábil inmediatamente anterior al especificado. 
-c)   Si se estipula como “Anterior” o “Preceding”, significará que si cualquier Fecha de Fijación, de Pago o 
-de Vencimiento recayere en un Día no Hábil, la Fecha de Fijación, de Pago, o de Vencimiento, será 
-el Día Hábil inmediatamente anterior. 
+2/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+The purpose of this letter (this "Confirmation") is to confirm the terms and conditions of the Swap 
+Transaction entered into between NOSOTROS  ('Counterparty')  and US Bank C N.A., London Branch  
+('US Bank C') on the Trade Date specified below. This confirmation constitutes a "Confirmation" as 
+referred to in the "Agreement" as specified below. 
+Your counterparty to the Transaction is US Bank C, N.A., London branch, which is authorized by the 
+Prudential Regulation Authority (the " PRA  ") and subject to regulation by the Financial Conduct 
+Authority (the " FCA  ") and limited regulation by the PRA. In the event that you have dealt with 
+employees of an affiliate of US Bank C, N.A., London branch in placing the order for or otherwise arranging 
+the Transaction (which is likely if you are not a UK person), then the Transaction has been introduced to 
+you, and arranged, by such affiliate. Such affiliate does not act as agent for US Bank C, N.A., London 
+branch, which is the principal to the Transaction with you. In the European Union, such affiliate may be 
+US Bank C Global Markets Limited (which is authorized by the PRA and regulated by the FCA and the PRA) 
+or US Bank C Europe PLC-UK Branch (authorised by the Central Bank of Ireland and by the Prudential 
+Regulation Authority and subject to regulation by the Central Bank of Ireland and limited regulation by 
+the Financial Conduct Authority and the Prudential Regulation Authority). 
+US Bank C N.A., London Branch is authorized by the Prudential Regulation Authority and subject to 
+regulation by the Financial Conduct Authority and limited regulation by the Prudential Regulation 
+Authority. US Bank C N.A., London Branch is entering into this Transaction as principal and not as an agent 
+for any other party. 
+Unless specified herein, information about the time of dealing and the amount or basis of any charges 
+shared with any third party in connection with this Transaction will be made available on request. 
+1. The definitions and provisions contained in the 2021 ISDA Interest Rate Derivatives Definitions  (the " 
+2021 Definitions  "), and the 1998 FX and Currency Option Definitions (the "FX Definitions") as published 
+by the International Swaps and Derivatives Association, Inc. ("ISDA"), the EMTA and the Foreign 
+Exchange Committee (together, the "Definitions") are incorporated into this Confirmation. In the event 
+of any inconsistency between the Definitions and this Confirmation, this Confirmation will prevail. In the 
+event of any inconsistency between FX Definitions and the  2021 Definitions , the  2021 Definitions  shall 
+govern except that the FX Definitions will prevail for the purposes of the Settlement Terms set out 
+below and the definition of Valuation Date. References herein to a "Transaction" shall be deemed to be 
+references to a "Swap Transaction" for purposes of the  2021 Definitions .
+This Confirmation constitutes a "Confirmation" as referred to in, and supplements, forms part of and is 
+subject to, the ISDA Master Agreement  dated as of November 6, 2020 , as amended and supplemented 
+from time to time (the "Agreement"), between Counterparty and US Bank C. All provisions contained in 
 
-Página: 3 
+3/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+the Agreement govern this Confirmation except as expressly modified below. 
+2. The terms of the particular  Transaction to which this Confirmation relates are as follows: 
+Trade Date: August 4, 2023
+Effective Date: August 8, 2023 
+Termination Date: August 8, 2026 ,  subject to adjustment in accordance with the 
+Modified Following  Business Day Convention 
+Fixed Reference Currency Payment Amounts: 
+Fixed Reference Currency Payer: Counterparty 
+Fixed Reference Currency 
+Payer Currency Payment 
+Amount: 
+In respect of each Calculation Period, an amount in CLP equal to the 
+product of (i) the Fixed Reference Currency Payer Fixed Rate, (ii) the 
+Fixed Reference Currency Payer Day Count Fraction, (iii) the Fixed 
+Reference Currency Payer CLP-UF Notional Amount and (iv) the 
+CLPUF Rate. 
+Fixed Reference Currency 
+Payer CLP-UF Notional Amount:
+UF 800,000.00
+Fixed Reference Currency Payer 
+Fixed Rate: 
  
-III. Condiciones Financieras: 
-01. Monto Contratado por Cliente: CLF 120.000,0000 
-02. Monto Contratado por Banco: CLP 4.388.248.800 
-03. Fecha de Inicio: 01/12/2023 
-04. Fecha de Vencimiento: 09/03/2028 
-05. Tasa de Interés Pactada por Cliente: 
-2.26 % Tasa Fija 
-Spread: 
-Base de Cálculo: 
-Calendario Pago: 
-Calendario Fijación Tasa: 
-Calendario Paridad / Tipo de Cambio: 
-N/A 
-30/360 
-SAN 
-N/A 
-N/A 
-06. Tasa de Interés Pactada por Banco: 
-ÍNDICE CÁMARA PROMEDIO 
-Spread: 
-Base de Cálculo: 
-Calendario Pago: 
-Calendario Fijación Tasa: 
-Calendario Paridad / Tipo de Cambio: 
-0% 
-ACT/360 
-SAN 
-SAN 
-N/A 
-07. Tipo de Cambio Referencial: N/A 
-08. Paridad Referencial: Unidad de Fomento del día del pago 
-09. Lugar de Cumplimiento: Santiago de Chile 
-10. Banco de Referencia: Banco BANCO_C, BANCO_B y   Banco Estado 
-11. Modalidad de Cumplimiento Compensación en CLP 
-12. Forma de Pago: 
-LBTR / LBTR 
-13. Intercambio de Principales: FINAL 
-14. Valuta de Pago: T + 0 
-15. Convención de Días Hábiles: Fecha Pago: Modified Following / Fecha de Término: Unadjusted 
-16. Break Clause: No 
-17. Broker: DIRECTO 
-18. Observaciones: Sin Observaciones 
- 
- 
-IV. Obligaciones de las Partes; Swap 
- 
-(i)   NOSOTROS se obliga a pagar a Chilean Bank s en cada una de las Fechas de Pago que se indican a 
-continuación, (i) los intereses devengados conforme la  Tasa de Interés Pactada por sobre el Monto Contratado 
-en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización: 
- 
-Fecha 
-Inicio 
-Fecha 
-Término 
-Fecha 
-Paridad 
-Fecha 
-Pago 
-Plazo Saldo Capital Amortiza Interés Tasa Tipo Tasa Spread Moneda 
-01/12/2023 09/03/2024 11/03/2024 11/03/2024 98 120.000,0000 0 738,2667 2,26% TASA FIJA 0% CLF 
+2.69%
+Fixed Reference Currency 
+Payer Day Count Fraction: 
+Actual/360
 
-Página: 4 
- 
-09/03/2024 09/09/2024 09/09/2024 09/09/2024 180 120.000,0000 0 1.356,0000 2,26% TASA FIJA 0% CLF 
-09/09/2024 09/03/2025 10/03/2025 10/03/2025 180 120.000,0000 0 1.356,0000 2,26% TASA FIJA 0% CLF 
-09/03/2025 09/09/2025 09/09/2025 09/09/2025 180 120.000,0000 0 1.356,0000 2,26% TASA FIJA 0% CLF 
-09/09/2025 09/03/2026 09/03/2026 09/03/2026 180 120.000,0000 0 1.356,0000 2,26% TASA FIJA 0% CLF 
-09/03/2026 09/09/2026 09/09/2026 09/09/2026 180 120.000,0000 0 1.356,0000 2,26% TASA FIJA 0% CLF 
-09/09/2026 09/03/2027 09/03/2027 09/03/2027 180 120.000,0000 0 1.356,0000 2,26% TASA FIJA 0% CLF 
-09/03/2027 09/09/2027 09/09/2027 09/09/2027 180 120.000,0000 0 1.356,0000 2,26% TASA FIJA 0% CLF 
-09/09/2027 09/03/2028 09/03/2028 09/03/2028 180 120.000,0000 120.000,0000 1.356,0000 2,26% TASA FIJA 0% CLF 
- 
- 
- 
-(ii)  Por su parte, Chilean Bank s se obliga a pagar a NOSOTROS en cada una de las Fechas de Pago que se 
-indican a continuación, (i)   los intereses  devengados conforme la  Tasa de Interés  Pactada  por sobre  el  Monto  
-Contratado en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización: 
- 
-Fecha 
-Inicio 
-Fecha 
-Término 
-Fijación 
-Tasa 
-Fecha 
-Pago 
-Plazo Saldo Capital Amortiza Interés Tasa Tipo Tasa Spread Moneda 
-01/12/2023 09/03/2024 09/03/2024 11/03/2024 99 4.388.248.800 0 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
-09/03/2024 09/09/2024 09/09/2024 09/09/2024 184 4.388.248.800 0 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
-09/09/2024 09/03/2025 09/03/2025 10/03/2025 181 4.388.248.800 0 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
-09/03/2025 09/09/2025 09/09/2025 09/09/2025 184 4.388.248.800 0 Por Determinar 
-Dete
-P
-r
-o
-m
-r
-inar 
-ICP 0 % CLP 
-09/09/2025 09/03/2026 09/03/2026 09/03/2026 181 4.388.248.800 0 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
-09/03/2026 09/09/2026 09/09/2026 09/09/2026 184 4.388.248.800 0 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
-09/09/2026 09/03/2027 09/03/2027 09/03/2027 181 4.388.248.800 0 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
-09/03/2027 09/09/2027 09/09/2027 09/09/2027 184 4.388.248.800 0 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
-09/09/2027 09/03/2028 09/03/2028 09/03/2028 182 4.388.248.800 4.388.248.800 Por Determinar 
-Det 
-Por
-inar 
-erm 
-ICP 0 % CLP 
- 
- 
-(iii) Las  obligaciones  de  pago  de  las  partes  se  cumplirán  bajo  la  modalidad  de  Compensación.  El  Diferencial  de  
-Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o 
-Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago. 
- 
-V. Intercambios 
- 
-(i)   Intercambio Inicial: 
-• Fecha Intercambio Inicial: N/A 
-• Monto Intercambio Inicial para Chilean Bank s: N/A 
-• Monto Intercambio Inicial para NOSOTROS: N/A 
-(ii)  Intercambio Final: 
-• Fecha Intercambio Final: 09/03/2028 
-• Monto Intercambio Final para Chilean Bank s: CLP 4.388.248.800 + Intereses 
-• Monto Intercambio Final para NOSOTROS:  CLF 120.000,0000 + Intereses 
- 
- 
-VI. Cumplimiento 
- 
-(i)   Entrega Física 
- 
-(A)  En cada Fecha de Pago o Fecha de Liquidación Anticipada, según corresponda, cada Parte se obliga 
-a pagar a la otra los intereses devengados durante el periodo transcurrido entre la respectiva Fecha 
-de Fijación y la respectiva Fecha de Pago o Fecha de Liquidación Anticipada, según corresponda, por 
+4/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+CLPUF Rate: The CLP/UF rate, expressed as an amount of CLP per one UF for 
+settlement on the same day reported by the Banco Central de 
+Chile (the "Central Bank") which appears on the Central Bank's 
+website (currently 
+http://si3.bcentral.cl/Indicadoressiete/secure/Indicadoresdiarios.a
+spx) under the heading "Unidad de Fomento (UF)" on such 
+Reference Currency Payer Payment Date. In the event such rate 
+does not appear on the Central Bank's website, the CLPUF shall be 
+the rate reported by the Central Bank which appears on 
+Bloomberg Page CLUFUF Index on such Reference Currency Payer 
+Payment Date. In the event such rate does not appear at such time 
+on the Central Bank's website or such Bloomberg page, the CLPUF 
+shall be determined by the Calculation Agent in a   commercially 
+reasonable manner. 
+Fixed Reference Currency 
+Payer Period End Dates:
+Each February 8   and August 8   commencing February 8, 2024, 
+through and including the Termination Date, subject to adjustment 
+in accordance with the Modified Following Business Day 
+Convention
+Fixed Reference Currency
+Payer Payment Date:
+Each February 8   and August 8   commencing February 8, 2024, 
+through and including the Termination Date, subject to adjustment 
+in accordance with the Modified Following Business Day 
+Convention
+Floating Reference Currency Payment Amounts: 
+Floating Reference Currency Payer:  US Bank C
+Floating Reference Currency Payer 
+Currency Payment Amount: 
+In respect of each Floating Rate Reference Currency Payer 
+Calculation Period, an amount in CLP equal to the product of 
+(i) the Floating Reference Currency Payer CLP Notional 
+Amount; (ii) the Floating Rate for such Floating Rate Currency 
 
-Página: 5 
- 
-sobre el o   los Montos Contratados acordados en este Contrato y vigentes durante el respectivo Periodo 
-de Intereses, y conforme a la Tasas de Interés pactadas por cada una de las Partes. 
-(B)  Además de los pagos que las Partes deban efectuarse de conformidad a la letra (A) anterior, las Partes 
-podrán acordar el pago en cada Fecha de Pago, del Monto de Amortización pactado en este Contrato 
-para cada Fecha de Pago. 
- 
-(ii)  Compensación 
- 
-1. Pago de Intereses 
- 
-(A) En el último día de cada Periodo de Intereses las Partes calcularán los intereses devengados entre la 
-respectiva Fecha de Fijación y    la respectiva Fecha de Pago o Fecha de Liquidación Anticipada, según 
-corresponda,  por  sobre  los  Montos  Contratados,  y  conforme  las  Tasas  de  Interés  pactadas  por  las  
-Partes en este Contrato. 
-(B) Establecida  la  cuantía  en  Moneda  Nacional  de  las  obligaciones  de  cada  parte  de  conformidad  a  lo  
-establecido  en  la  cláusula  4.3.  de  las  Condiciones  Generales,  dichas  cantidades  se  compensarán  
-extinguiéndose recíprocamente hasta la concurrencia de sus valores. La parte que resultare deudora 
-deberá pagar en cada Fecha de Pago la diferencia (el “Diferencial de Intereses”) a la parte que resulte 
-acreedora. 
-El Diferencial de Intereses se pagará en Moneda Nacional, en Dólares u otra Moneda Extranjera según se 
-estipule en la  sección III    de este Contrato. En este último caso, el Diferencial de Intereses deberá convertirse 
-a   Dólares o a la Moneda Extranjera conforme al Tipo de Cambio Referencial o Paridad Referencial pactada 
-en  la  sección  III  de  este  Contrato  que  se  encuentre  vigente  en  la  respectiva  Fecha  de  Pago  o  Fecha  de  
-Liquidación Anticipada, según corresponda. 
- 
-2. Pago de Capital 
-(A) Además de los pagos que las Partes deban efectuarse de conformidad a la letra (B) del numeral 1 ítem ii) de 
-esta sección V, las Partes pagarán en cada Fecha de Pago los Montos de Amortización que hubieren pactado 
-en la sección IV de este Contrato. 
-(B) Establecida en Moneda Nacional la cuantía de los respectivos Montos de Amortización conforme lo dispuesto 
-en  la  cláusula  4.3  de  las  Condiciones  Generales,  las  cantidades  respectivas  se  compensarán  extinguiéndose  
-recíprocamente  hasta  la  concurrencia  de  sus  valores.  La  Parte  que  resultare  deudora  deberá  pagar  en  cada  
-Fecha de Pago la diferencia (el “Diferencial de Amortización”) a la Parte que resulte acreedora. 
-El  Diferencial  de  Amortización  se  pagará  en  Moneda  Nacional  o  en  Dólares,  según  se  estipule  en  la  sección III  de  
-este Contrato. En este último caso, el Diferencial de Intereses deberá convertirse a Dólares o a la Moneda Extranjera 
-conforme  al  Tipo  de  Cambio  Referencial  o  Paridad  Referencial  pactada  en  la  sección  III  de  este  Contrato  que  se  
-encuentre vigente en la respectiva Fecha de Pago. 
- 
- 
-VII. Definiciones: Ejemplares 
+5/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+Calculation Period, and (iii) the Floating Reference Currency 
+Payer Day Count Fraction. 
+Floating Reference Currency 
+Payer CLP Notional:
+CLP 28,848,344,000.00
+Floating Reference Currency 
+Payer Period End Dates:
+Each February 8   and August 8   commencing February 8, 2024, 
+through and including the Termination Date, subject to adjustment 
+in accordance with the Modified Following Business Day 
+Convention
+Floating Reference Currency Payer 
+Payment Date:
+Each February 8   and August 8   commencing February 8, 2024, 
+through and including the Termination Date, subject to adjustment 
+in accordance with the Modified Following Business Day 
+Convention
+Floating Rate Option:CLP-ICP
+ Spread: None
+Floating Reference Currency   Payer 
+Day Count Fraction: 
+Actual/360
 
-Página: 6 
- 
-A menos que se exprese lo contrario en este instrumento, los términos en mayúsculas tendrán el significado 
-que para ellos se señala en las Condiciones Generales. El presente contrato se firma en dos ejemplares de 
-idéntico tenor y fecha, quedando uno en poder de cada parte. 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-o
-u
-=
-M
-P
-K
-I
- 
- 
- 
-   
-Sánchez 
-pp. Chilean Bank s: 
-RUT:  
- 
-pp. NOSOTROS RUT: 
-Domicilio: AVDA.COSTANERA SUR 2710 
-TORRE A 
-Teléfono:  
-Rep. Legal:  RUT:  
-Rep. Legal:  RUT:  
-Domicilio:  
-Teléfono:   Rep. 
-Legal: 
-RUT: 
-Rep. Legal: 
-RUT: 
+6/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+Reset Dates: The last Santiago Business Day of each Floating  Amount  Payer 
+Calculation  Period. 
+Compounding: Inapplicable 
+  
+Final Exchange
+Final Exchange Date: The Termination Date 
+Fixed Reference Currency 
+Payer Final Exchange Amount: 
+An Amount in CLP equal to the product of (i) the Fixed Reference 
+Currency Payer CLP- UF Notional Amount and (ii) the CLPUF Rate as 
+of the Termination Date. 
+Floating Reference Currency 
+Payer Final Exchange Amount: The Floating Reference Currency 
+Payer  CLP Notional Amount. 
+SETTLEMENT PROVISIONS: 
+Settlement: 
+Non-Deliverable, with the effect that any amounts denominated in the Reference Currency 
+payable hereunder on any Payment or Exchange Date shall be converted into the Settlement 
+Currency by reference to the Settlement Rate Option on the applicable Valuation Date and 
+payable on the related Settlement Date. All payments (including exchanges) hereunder shall be 
+made in the Settlement Currency. 
+Settlement Rate Option: CLP Dollar OBS (as defined below) 
+Reference Currency: CLP 
+Settlement Currency: USD 
+
+7/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+Settlement Date: Each Payment Date or Exchange Date, provided however,  that  if  Valuation 
+Postponement applies the Settlement Date shall be  as soon as  practical, but in no event later 
+than, two Business Days after the date on which the Settlement Rate is    determined. 
+Further, if    payments are scheduled to be made by both parties on a   Settlement Date, and such 
+date is  adjusted due to the  occurrence of  an Unscheduled Holiday, then such Settlement Date 
+shall be adjusted in respect of both parties' payments. 
+Two Business Days preceding each Settlement Date, (each, a "Scheduled Valuation Date"), 
+subject to adjustment in accordance with the Preceding Business Day Convention; provided 
+however, that, in the event of an Unscheduled Holiday, subject to adjustment in accordance 
+with the Following Business Day Convention. 
+In the event the Scheduled Valuation Date becomes subject to the Following Business Day 
+Convention after the occurrence of an Unscheduled Holiday, and if   the Valuation Date has not 
+occurred on or before the 14
+th
+ consecutive day after the Scheduled Valuation Date (any such 
+period being a   "Deferral Period"), then the next day after the Deferral Period that would have 
+been a Business Day but for the Unscheduled Holiday, shall be deemed to be the Valuation 
+Date.
+DISRUPTION EVENT AND FALLBACK: 
+Event Currency: Reference Currency 
+Applicable Disruption Events: Price Source Disruption 
+FALLBACKS: 
+(1) Valuation Postponement 
+(2) Calculation Agent Determination of Settlement Rate 
+Adjustment to Termination Date, Payment Dates and Exchange Dates: 
+If    the Valuation Date in respect of a   Payment Date, an Exchange Date or the Termination Date is 
+not the Scheduled   Valuation   Date   in respect of   such Payment Date, Exchange   Date or 
+Termination Date or if  Valuation Postponement applies, then such Payment Date, Exchange 
+Date or Termination Date (as applicable) shall be as soon as practicable after the relevant Spot 
+Rate is determined, but in no  event  later than  the day which is  two Business  Days after  the 
+relevant Spot Rate is determined. Further, if payments are scheduled to be  made by both 
+parties on a   Payment Date, Exchange Date or Termination Date, and such date is adjusted due 
+to the occurrence of an  Unscheduled Holiday or Valuation Postponement in  accordance with 
+the previous sentence, then such  Payment  Date,  Exchange Date or  Termination Date shall be 
+adjusted in respect  of both parties'  payments.  For the  avoidance of doubt,  such adjustments 
+
+8/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+shall not apply in respect of Period End Dates (including the Termination Date) for the purpose 
+of determining the Calculation Periods. 
+Additional Definitions: 
+  
+"Maximum Days of Postponement" means Fourteen (14) calendar days. 
+"Unscheduled Holiday" shall mean, for the purpose  of this  Transaction, that a    day is not a 
+Business Day and the market was not aware of such fact (by means of public announcement or 
+by reference to other publicly available information) until a   time later than 9:00 a.m. local time 
+in Santiago, two Business Days prior to the Valuation Date. 
+"Valuation Postponement"  means, for purposes of obtaining a    Settlement  Rate, that the Spot 
+Rate will be determined on the Business Day first succeeding the day on which the Price Source 
+Disruption ceases to exist, unless the Price Source Disruption continues to exist (measured from 
+the date, that, but for  the  occurrence  of the Price Source Disruption, would have been the 
+Valuation Date) for  a    consecutive number of  calendar days  equal  to the Maximum Days of 
+Postponement. In such event, the Spot Rate will be determined on the next Business Day after 
+the Maximum Days of  Postponement in accordance with the next  applicable Disruption 
+Fallback. 
+Notwithstanding anything herein to the contrary,  in no event  shall the  total  number  of 
+consecutive calendar days  during  which  either (i) valuation is deferred due  to an Unscheduled 
+Holiday, or (ii) a   Valuation Postponement shall occur (or any combination of (i) and (ii)), exceed 
+14 consecutive calendar days in the aggregate. Accordingly, (x) if, upon the lapse of any such 14 
+day period, an Unscheduled Holiday shall have occurred or be continuing  on the day  following 
+such period, then such day shall be deemed to be a   Valuation Date, and (y) if, upon the lapse of 
+any such 14 day period,  a   Price Source Disruption  shall have occurred or be continuing on the 
+day following  such period, then Valuation Postponement shall  not  apply and the Settlement 
+Rate shall be determined in accordance with the next Disruption Fallback. 
+Relevant Cities for Business Day(s) 
+for Valuation Date(s):  New York, Santiago
+Relevant Cities for Business Day(s) 
+for Settlement/Payment Date(s): New York, Santiago; provided however, that in the event 
+of an Unscheduled Holiday following the Trade Date, then 
+New York only.
+Notwithstanding anything herein to the contrary, in no event shall the total number of consecutive 
+calendar days during which either (i) valuation is deferred due to an Unscheduled Holiday, or (ii) a 
+Valuation Postponement shall occur (or any combination of (i) and (ii)), exceed 14 consecutive calendar 
+days in the aggregate. Accordingly, (x) if, upon the lapse of any such 14 day period, an Unscheduled 
+Holiday shall have occurred or be continuing on the day following such period, then such day shall be 
+
+9/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+deemed to be a Valuation Date, and (y) if, upon the lapse of any such 14 day period, a Price Source 
+Disruption shall have occurred or be continuing on the day following such period, then Valuation 
+Postponement shall not apply and the Settlement Rate shall be determined in accordance with the next 
+Disruption Fallback
+Calculation Agent: US Bank C, unless otherwise stated in the Master Agreement.
+  
+ 7. Representations: 
+Each party represents to the other party that: 
+ (a) Non-Reliance. It    is    acting for its own account, and it   has made its own independent decisions to 
+enter into this Transaction and as to whether this Transaction is    appropriate or proper for it based upon 
+its own judgment and upon advice from such advisors as it   has deemed necessary. It    is    not relying on 
+any communication (written or oral) of the other party as investment advice or as a   recommendation to 
+enter into this Transaction; it   being understood that information and explanations related to the terms 
+and conditions of this Transaction shall not be considered investment advice or a recommendation to 
+enter into this Transaction. It    has not received from the other party any assurance or guarantee as to 
+the expected results of this Transaction. 
+ (b) Evaluation and Understanding. It is    capable of evaluating and understanding (on its own behalf or 
+through independent professional advice), and understands and accepts, the terms, conditions and risks 
+of this Transaction. It    is also capable of assuming, and assumes, the financial and other risks of this 
+Transaction. 
+ (c) Status of Parties. The other party is    not acting as a   fiduciary or an advisor for it in respect of this 
+Transaction. 
+ (d) Risk Management. It    has entered into this Transaction for the purpose of (i) managing its borrowings 
+or investments, (ii) hedging its underlying assets or liabilities or (iii) in connection with its line of 
+business. 
+  
+ 8. Account Details 
+Payments to US Bank C: As separately advised
+
+10/10Deal No: 93981188, Deal Alias: 
+CE3G29910325, ID: 
+1009706196(1-1)
+Payments to Counterparty: As separately advised
+If you have any questions regarding this letter agreement, please contact the Swap Operations 
+Department at the telephone numbers or the facsimile numbers indicated on this Confirmation. 
+Please confirm that the foregoing correctly sets forth the terms of our agreement by executing the copy 
+of this Confirmation enclosed for that purpose and returning it to us. 
+Very truly yours, 
+US Bank C N.A., London Branch 
+By:______________________ 
+Accepted and confirmed as 
+of the Trade Date: 
+NOSOTROS 
+By: ________________________________________ 
+Authorized Signatory 
