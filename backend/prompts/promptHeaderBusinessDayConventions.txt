@@ -1,7 +1,7 @@
 **Business Center Pattern Mapping:**
 - "NYC" / "NY" / "New York" → USNY
 - "SAN" / "SCL" / "Santiago" / "Santiago de Chile" → CLSA  
-- "NYC_BOND" / "BMA" / "Día Hábil para U.S. Government Securities" → USGS
+- "NYC_BOND" / "BMA" / "Día Hábil para U.S. Government Securities" / "US GVT BOND MARKET" → USGS
 - "Londres" / "London" / "LON" → GBLO
 - "TKY" / "Tokyo" → JPTO
 - "EUR" / "Frankfurt" / "ECB" → EUTA
