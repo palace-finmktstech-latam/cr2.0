@@ -38,10 +38,13 @@ Create two JSON files with identical structure but different content:
 ## Valid Enumerations
 
 **Floating Rate Index:**
-- CLP_ICP
+- CLP-ICP
+- USD-LIBOR
 - USD-SOFR
 - USD_SOFR_Average_180D
 - EUR-EURIBOR
+- GBP-LIBOR
+- JPY-LIBOR
 - [Additional indices to be added as identified]
 
 **Day Count Fraction:**
@@ -66,6 +69,17 @@ Create two JSON files with identical structure but different content:
 1. Look for explicit date fields with matching labels
 2. Extract date value and standardize to DD/MM/YYYY format
 3. If date not found, mark as null
+
+**For tradeId:**
+1. Look for trade reference fields with labels such as:
+   - **Spanish**: "Referencia", "Número contrato", "Operación"
+   - **English**: "Our Reference No", "OUR REF", "Reference", "Our ref", "OUR REF NO", "[Bank Name] Deal Number", "Transaction Ref. No."
+2. Extract the alphanumeric reference value (may include letters, numbers, periods, hyphens, slashes)
+3. If multiple references found, prioritize the most specific trade reference
+4. If no trade ID found, set to empty string ""
+
+**For tradeIdType:**
+1. Always set to "INTERNAL" (hardcoded value)
 
 **For party2.partyName (Counterparty):**
 1. Identify the entity that is NOT Banco ABC
@@ -96,11 +110,13 @@ Create two JSON files with identical structure but different content:
 **floatingRateIndex:**
 1. Look for floating rate specification in each leg
 2. Map contract expressions to standardized enum values:
-   - "CLP-ICP" → CLP_ICP
+   - "CLP-ICP" → CLP-ICP
+   - "USD LIBOR" / "USD-LIBOR" → USD-LIBOR
    - "USD SOFR" / "USD-SOFR" → USD-SOFR
    - "USD TERM_SOFR 6M" / "USD TERM SOFR 6M" / "USD SOFR Average 180D" → USD_SOFR_Average_180D
    - "EUR EURIBOR" / "EUR-EURIBOR" → EUR-EURIBOR
-   
+   - "GBP LIBOR" / "GBP-LIBOR" → GBP-LIBOR
+   - "JPY LIBOR" / "JPY-LIBOR" → JPY-LIBOR
 3. Use exact enum values from Valid Enumerations list
 4. If floating rate index cannot be found, mark as null
 
