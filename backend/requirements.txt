@@ -1,0 +1,23 @@
+# Core dependencies for Agentic Contract Reader
+# Install with: pip install -r requirements.txt
+
+# === Google ADK & Vertex AI ===
+google-adk>=1.0.0
+python-dotenv>=1.0.0
+
+# Fix for corrupted google-ai-generativelanguage package
+# Must be reinstalled to fix metadata issue
+google-ai-generativelanguage>=0.6.15
+
+# === Anthropic Claude API (for Vertex AI & direct access) ===
+anthropic[vertex]>=0.69.0
+
+# === Data Processing ===
+pydantic>=2.0.0
+
+# === HTTP Requests ===
+httpx>=0.28.0
+requests>=2.28.1
+
+# === Existing dependencies ===
+# Add any others you need for your mapping_program.py etc.
