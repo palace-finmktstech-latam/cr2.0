@@ -133,7 +133,7 @@ def extract_core_values() -> str:
     Returns:
         JSON string with extracted core values, or error message if extraction fails
     """
-    global _contract_cache, _session_contract_text  # Declare at function start
+    global _contract_cache, _session_contract_text
 
     # Check if contract is loaded in session
     if _session_contract_text is None:
@@ -224,9 +224,7 @@ def extract_core_values() -> str:
             return f"ERROR: AI returned invalid JSON - {str(e)}\n\nRaw response:\n{extracted_text}"
 
     except Exception as e:
-        # Reset cache on error so next attempt will create fresh cache
-        _contract_cache = None
-        return f"ERROR during extraction: {str(e)}\n\nCache has been reset. Please try again."
+        return f"ERROR during extraction: {str(e)}"
 
 
 # ==================== TEST TOOLS (from Hello World) ====================
