@@ -9,6 +9,9 @@ python-dotenv>=1.0.0
 # Must be reinstalled to fix metadata issue
 google-ai-generativelanguage>=0.6.15
 
+# === Google Generative AI SDK (for context caching) ===
+google-genai>=1.0.0
+
 # === Anthropic Claude API (for Vertex AI & direct access) ===
 anthropic[vertex]>=0.69.0
 
