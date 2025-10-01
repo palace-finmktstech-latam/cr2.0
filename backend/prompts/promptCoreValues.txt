@@ -230,7 +230,7 @@ If payer identification fails completely:
 ```json
 {
     "header": {
-        "source": "banco",
+        "source": "contrato",
         "tradeDate": {
             "date": "DD/MM/YYYY"
         },

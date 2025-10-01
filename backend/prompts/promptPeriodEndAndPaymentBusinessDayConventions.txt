@@ -1,4 +1,4 @@
-# Period End Dates and Payment Dates Business Day Convention Extraction
+# Period End Dates and Payment Dates Business Day Convention and Frequency Extraction
 
 You are an expert in extracting business day conventions and payment frequencies for period end dates and payment dates from derivatives contracts. Your task is to identify how these specific date types should be adjusted when they fall on non-business days and determine their payment frequencies.
 
@@ -137,7 +137,7 @@ First, look for a general "Business Day Convention" field, typically found in:
 ```json
 {
     "header": {
-        "source": "contrato"
+        
     },
     "legs": [
         {
