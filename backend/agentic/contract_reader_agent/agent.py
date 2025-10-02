@@ -155,11 +155,8 @@ def extract_core_values() -> str:
         # The prompt template ends with "### Contract Text:\n\n{contract_text}"
         system_instruction = prompt_template.replace("{contract_text}", "").strip()
 
-        # Create or reuse context cache
-        if _contract_cache is None:
-            print("Creating new context cache for contract...")
-
-            # Create cache with contract text as cached content
+        # Helper function to create cache (contract only, no system instruction)
+        def create_cache():
             contents = [
                 Content(
                     role="user",
@@ -169,40 +166,220 @@ def extract_core_values() -> str:
                 )
             ]
 
-            _contract_cache = genai_client.caches.create(
-                model="gemini-2.0-flash-exp",
+            cache = genai_client.caches.create(
+                model="gemini-2.5-pro",
                 config=CreateCachedContentConfig(
                     contents=contents,
-                    system_instruction=system_instruction,
+                    # NO system_instruction here - we'll pass it per request
                     display_name="contract-extraction-cache",
-                    ttl="300s",  # 5 minutes - perfect for multi-prompt workflow
+                    ttl="300s",  # 5 minutes
                 ),
             )
+            print(f"Cache created: {cache.name}")
+            print(f"Cached tokens: {cache.usage_metadata.total_token_count}")
+            return cache
 
-            print(f"Cache created: {_contract_cache.name}")
-            print(f"Cached tokens: {_contract_cache.usage_metadata.total_token_count}")
+        # Create or reuse context cache
+        if _contract_cache is None:
+            print("Creating new context cache for contract...")
+            _contract_cache = create_cache()
         else:
-            print(f"Reusing existing cache: {_contract_cache.name}")
+            print(f"Attempting to reuse cache: {_contract_cache.name}")
 
-        # Make extraction request using the cache
-        response = genai_client.models.generate_content(
-            model="gemini-2.0-flash-exp",
-            contents=[
+        # Make extraction request using the cache with system instruction passed per request
+        try:
+            response = genai_client.models.generate_content(
+                model="gemini-2.5-pro",
+                contents=[
+                    Content(
+                        role="user",
+                        parts=[
+                            Part.from_text(text=system_instruction),  # Pass prompt as part of request
+                            Part.from_text(
+                                text="\n\nPlease extract the core contract values according to the instructions above. "
+                                     "Return only the PRIMARY JSON (not the secondary evidence JSON)."
+                            )
+                        ]
+                    )
+                ],
+                config={
+                    "cached_content": _contract_cache.name,
+                    "temperature": 0.1,
+                }
+            )
+        except Exception as cache_error:
+            # If cache is expired or invalid, create a new one and retry
+            error_msg = str(cache_error).lower()
+            if "expired" in error_msg or "not found" in error_msg or "invalid" in error_msg:
+                print(f"Cache expired/invalid, creating fresh cache...")
+                _contract_cache = create_cache()
+
+                # Retry with new cache
+                response = genai_client.models.generate_content(
+                    model="gemini-2.0-flash-exp",
+                    contents=[
+                        Content(
+                            role="user",
+                            parts=[
+                                Part.from_text(text=system_instruction),
+                                Part.from_text(
+                                    text="\n\nPlease extract the core contract values according to the instructions above. "
+                                         "Return only the PRIMARY JSON (not the secondary evidence JSON)."
+                                )
+                            ]
+                        )
+                    ],
+                    config={
+                        "cached_content": _contract_cache.name,
+                        "temperature": 0.1,
+                    }
+                )
+            else:
+                # Re-raise if it's a different error
+                raise
+
+        # Extract JSON from response
+        extracted_text = response.text.strip()
+
+        # Try to parse as JSON to validate
+        try:
+            # Remove markdown code blocks if present
+            if extracted_text.startswith("```json"):
+                extracted_text = extracted_text.split("```json")[1].split("```")[0].strip()
+            elif extracted_text.startswith("```"):
+                extracted_text = extracted_text.split("```")[1].split("```")[0].strip()
+
+            parsed_json = json.loads(extracted_text)
+
+            # Return formatted JSON
+            return json.dumps(parsed_json, indent=2, ensure_ascii=False)
+
+        except json.JSONDecodeError as e:
+            return f"ERROR: AI returned invalid JSON - {str(e)}\n\nRaw response:\n{extracted_text}"
+
+    except Exception as e:
+        # Reset cache on error so next attempt will create fresh cache
+        _contract_cache = None
+        return f"ERROR during extraction: {str(e)}\n\nCache has been reset. Please try again."
+
+
+def extract_business_day_conventions() -> str:
+    """
+    Extracts business day conventions and business centers from the contract loaded in session.
+
+    Uses the promptHeaderBusinessDayConventions.txt extraction instructions and reuses
+    the same context cache created by extract_core_values() for cost savings.
+
+    IMPORTANT: Must call read_contract_file() first to load contract into session.
+
+    Returns:
+        JSON string with extracted business day conventions, or error message if extraction fails
+    """
+    global _contract_cache, _session_contract_text  # Declare at function start
+
+    # Check if contract is loaded in session
+    if _session_contract_text is None:
+        return "ERROR: No contract loaded in session. Please call read_contract_file() first."
+
+    contract_text = _session_contract_text
+
+    try:
+        # Read the extraction prompt template
+        prompt_path = BACKEND_DIR / "prompts" / "promptHeaderBusinessDayConventions.txt"
+
+        if not prompt_path.exists():
+            return f"ERROR: Business Day Conventions prompt not found at {prompt_path}"
+
+        with open(prompt_path, 'r', encoding='utf-8') as f:
+            prompt_template = f.read()
+
+        # Replace {contract_text} placeholder with actual contract
+        system_instruction = prompt_template.replace("{contract_text}", "").strip()
+
+        # Helper function to create cache (contract only, no system instruction)
+        def create_cache():
+            contents = [
                 Content(
                     role="user",
                     parts=[
-                        Part.from_text(
-                            text="Please extract the core contract values according to the instructions. "
-                                 "Return only the PRIMARY JSON (not the secondary evidence JSON)."
-                        )
+                        Part.from_text(text=f"Contract to analyze:\n\n{contract_text}")
                     ]
                 )
-            ],
-            config={
-                "cached_content": _contract_cache.name,
-                "temperature": 0.1,  # Low temperature for consistent extractions
-            }
-        )
+            ]
+
+            cache = genai_client.caches.create(
+                model="gemini-2.5-pro",
+                config=CreateCachedContentConfig(
+                    contents=contents,
+                    # NO system_instruction here - we'll pass it per request
+                    display_name="contract-extraction-cache",
+                    ttl="300s",  # 5 minutes
+                ),
+            )
+            print(f"Cache created: {cache.name}")
+            print(f"Cached tokens: {cache.usage_metadata.total_token_count}")
+            return cache
+
+        # Create or reuse context cache
+        if _contract_cache is None:
+            print("Creating new context cache for contract...")
+            _contract_cache = create_cache()
+        else:
+            print(f"Attempting to reuse cache: {_contract_cache.name}")
+
+        # Make extraction request using the cache with system instruction passed per request
+        try:
+            response = genai_client.models.generate_content(
+                model="gemini-2.5-pro",
+                contents=[
+                    Content(
+                        role="user",
+                        parts=[
+                            Part.from_text(text=system_instruction),  # Pass prompt as part of request
+                            Part.from_text(
+                                text="\n\nPlease extract the business day conventions and business centers "
+                                     "according to the instructions above. Return only the PRIMARY JSON "
+                                     "(not the secondary evidence JSON)."
+                            )
+                        ]
+                    )
+                ],
+                config={
+                    "cached_content": _contract_cache.name,
+                    "temperature": 0.1,
+                }
+            )
+        except Exception as cache_error:
+            # If cache is expired or invalid, create a new one and retry
+            error_msg = str(cache_error).lower()
+            if "expired" in error_msg or "not found" in error_msg or "invalid" in error_msg:
+                print(f"Cache expired/invalid, creating fresh cache...")
+                _contract_cache = create_cache()
+
+                # Retry with new cache
+                response = genai_client.models.generate_content(
+                    model="gemini-2.0-flash-exp",
+                    contents=[
+                        Content(
+                            role="user",
+                            parts=[
+                                Part.from_text(text=system_instruction),
+                                Part.from_text(
+                                    text="\n\nPlease extract the business day conventions and business centers "
+                                         "according to the instructions above. Return only the PRIMARY JSON "
+                                         "(not the secondary evidence JSON)."
+                                )
+                            ]
+                        )
+                    ],
+                    config={
+                        "cached_content": _contract_cache.name,
+                        "temperature": 0.1,
+                    }
+                )
+            else:
+                # Re-raise if it's a different error
+                raise
 
         # Extract JSON from response
         extracted_text = response.text.strip()
@@ -275,24 +452,35 @@ root_agent = Agent(
         "\n"
         "**Extraction (with Context Caching):**\n"
         "- extract_core_values(): Extracts core contract data using AI from loaded session\n"
-        "  IMPORTANT: Must call read_contract_file() first!\n"
         "  Returns JSON with: header (dates, parties, tradeId), legs (notional, rates, settlements)\n"
-        "  Uses context caching for 75% cost savings\n"
+        "  Creates cache on first call, 75% savings on subsequent extractions\n"
+        "\n"
+        "- extract_business_day_conventions(): Extracts business day conventions and business centers\n"
+        "  Returns JSON with: header dates (tradeDate, effectiveDate, terminationDate) + leg dates\n"
+        "  REUSES same cache created by extract_core_values() - demonstrating cost savings!\n"
+        "\n"
+        "**IMPORTANT:** Must call read_contract_file() first to load contract into session!\n"
         "\n"
         "**Test Tools:**\n"
         "- greet_user(name): Test greeting\n"
         "- calculate_sum(a, b): Test math\n"
         "\n\n"
-        "# Workflow Pattern:\n\n"
+        "# Workflow Patterns:\n\n"
+        "**Single extraction:**\n"
         "User: 'Extract core values from prompts/contract.txt and save to output/contract.json'\n"
+        "Steps:\n"
+        "1. read_contract_file('prompts/contract.txt') → Loads into session\n"
+        "2. extract_core_values() → Returns JSON, creates cache\n"
+        "3. write_output_json('contract.json', <json>) → Saves output\n"
         "\n"
-        "Your steps:\n"
-        "1. Call read_contract_file('prompts/contract.txt')\n"
-        "   → Loads contract into session (no need to pass text around)\n"
-        "2. Call extract_core_values()\n"
-        "   → Uses contract from session, returns JSON string\n"
-        "3. Call write_output_json('contract.json', <json_from_step_2>)\n"
-        "   → Saves the extracted JSON\n"
+        "**Multiple extractions (cache reuse):**\n"
+        "User: 'Extract core values AND business day conventions, save both'\n"
+        "Steps:\n"
+        "1. read_contract_file('prompts/contract.txt') → Loads into session\n"
+        "2. extract_core_values() → Returns JSON, creates cache\n"
+        "3. write_output_json('core_values.json', <json>) → Saves first\n"
+        "4. extract_business_day_conventions() → Returns JSON, REUSES cache (75% cheaper!)\n"
+        "5. write_output_json('business_day.json', <json>) → Saves second\n"
         "\n\n"
         "# Important Notes:\n"
         "- The session-based approach avoids passing large contract text between tools\n"
@@ -305,6 +493,7 @@ root_agent = Agent(
         read_contract_file,
         write_output_json,
         extract_core_values,
+        extract_business_day_conventions,
         greet_user,
         calculate_sum
     ]

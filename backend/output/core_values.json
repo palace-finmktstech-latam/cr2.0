@@ -1,0 +1,65 @@
+{
+  "header": {
+    "source": "contrato",
+    "tradeDate": {
+      "date": "12/05/2020"
+    },
+    "effectiveDate": {
+      "date": "12/05/2020"
+    },
+    "terminationDate": {
+      "date": "30/01/2024"
+    },
+    "tradeId": {
+      "id": "23615",
+      "idType": "INTERNAL"
+    },
+    "party1": {
+      "partyId": "ThisBank",
+      "partyName": "Banco ABC"
+    },
+    "party2": {
+      "partyId": "OurCounterparty",
+      "partyName": "Chilean Bank s"
+    }
+  },
+  "legs": [
+    {
+      "legId": "Pata-Activa",
+      "payerPartyReference": "OurCounterparty",
+      "receiverPartyReference": "ThisBank",
+      "notionalAmount": 14358260000.0,
+      "notionalCurrency": "CLP",
+      "rateType": "FLOATING",
+      "dayCountFraction": "ACT/360",
+      "effectiveDate": {
+        "date": "12/05/2020"
+      },
+      "terminationDate": {
+        "date": "30/01/2024"
+      },
+      "settlementType": "CASH",
+      "settlementCurrency": "CLP",
+      "floatingRateIndex": "CLP-ICP",
+      "spread": 0.0
+    },
+    {
+      "legId": "Pata-Pasiva",
+      "payerPartyReference": "ThisBank",
+      "receiverPartyReference": "OurCounterparty",
+      "notionalAmount": 500000.0,
+      "notionalCurrency": "CLF",
+      "rateType": "FIXED",
+      "dayCountFraction": "ACT/360",
+      "effectiveDate": {
+        "date": "12/05/2020"
+      },
+      "terminationDate": {
+        "date": "30/01/2024"
+      },
+      "settlementType": "CASH",
+      "settlementCurrency": "CLP",
+      "fixedRate": -0.0093
+    }
+  ]
+}

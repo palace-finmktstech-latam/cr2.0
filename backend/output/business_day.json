@@ -1,0 +1,90 @@
+{
+  "header": {
+    "tradeDate": {
+      "businessDayConvention": "MODFOLLOWING",
+      "tradeDateBusinessDayConventionClear": false,
+      "businessCenters": [
+        "CLSA"
+      ],
+      "tradeDateBusinessCentersClear": false
+    },
+    "effectiveDate": {
+      "businessDayConvention": "MODFOLLOWING",
+      "effectiveDateBusinessDayConventionClear": false,
+      "businessCenters": [
+        "CLSA"
+      ],
+      "effectiveDateBusinessCentersClear": false
+    },
+    "terminationDate": {
+      "businessDayConvention": "MODFOLLOWING",
+      "terminationDateBusinessDayConventionClear": false,
+      "businessCenters": [
+        "CLSA"
+      ],
+      "terminationDateBusinessCentersClear": false
+    }
+  },
+  "legs": [
+    {
+      "effectiveDate": {
+        "businessDayConvention": "MODFOLLOWING",
+        "effectiveDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "effectiveDateBusinessCentersClear": false
+      },
+      "terminationDate": {
+        "businessDayConvention": "MODFOLLOWING",
+        "terminationDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "terminationDateBusinessCentersClear": false
+      },
+      "paymentDates": {
+        "businessCenters": [
+          "CLSA"
+        ],
+        "paymentDatesBusinessCentersClear": true
+      },
+      "periodEndDates": {
+        "businessCenters": [
+          "CLSA"
+        ],
+        "periodEndDatesBusinessCentersClear": true
+      }
+    },
+    {
+      "effectiveDate": {
+        "businessDayConvention": "MODFOLLOWING",
+        "effectiveDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "effectiveDateBusinessCentersClear": false
+      },
+      "terminationDate": {
+        "businessDayConvention": "MODFOLLOWING",
+        "terminationDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "terminationDateBusinessCentersClear": false
+      },
+      "paymentDates": {
+        "businessCenters": [
+          "CLSA"
+        ],
+        "paymentDatesBusinessCentersClear": true
+      },
+      "periodEndDates": {
+        "businessCenters": [
+          "CLSA"
+        ],
+        "periodEndDatesBusinessCentersClear": true
+      }
+    }
+  ]
+}
