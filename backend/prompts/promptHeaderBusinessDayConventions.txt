@@ -19,6 +19,23 @@ Create two JSON files with identical structure but different content:
 1. **Primary JSON**: Extract business day conventions and business centers and populate the specified fields
 2. **Secondary JSON**: Provide the exact text snippets from the contract used to make each extraction decision
 
+## Leg Ordering and Identification
+
+**CRITICAL REQUIREMENT**: You must output legs in the correct order matching the contract structure.
+
+**If leg context is provided above**, use it to order your output legs correctly.
+
+**If no leg context is provided**, identify legs yourself using these indicators:
+- Notional currency (CLP, CLF, USD, etc.)
+- Rate type (FIXED vs FLOATING)
+- Payer/receiver references from contract text
+
+**Standard ordering convention**:
+1. First leg in output: The leg where OurCounterparty pays ThisBank (Pata-Activa)
+2. Second leg in output: The leg where ThisBank pays OurCounterparty (Pata-Pasiva)
+
+This ensures your extraction data merges correctly with core values data.
+
 ## Business Day Convention and Business Center Definitions
 
 Business day conventions determine how to adjust dates that fall on non-business days:

@@ -1,0 +1,874 @@
+
+
+- Page 01 of 17 -
+UK Bank B is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority and is a
+member of the London Stock Exchange. UK Bank B is registered in England No. 1026167 with its registered office at 1 Churchill Place, London E14 5HP.
+*BC/TRI/12351275/01/17
+*
+5 The North Colonnade
+Canary Wharf
+London
+E14 4BB
+United Kingdom
+Tel: +44 (0)20 7623 23 23
+To: NOSOTROS ("Counterparty") Attn: 
+Derivative Confirmations
+Email/Fax No: backoffice_mesa@abc.cl;
+From:
+Date:
+J Perez@abc.cl;
+gestionfinanciera@abc.cl;
+J Perez@abc.cl;
+J Perez@abc.cl;
+UK Bank B (LONDON HEAD OFFICE) ("UK Bank B") 
+07 December 2023
+Reference:emn0094aa8f / 70096619B / 142843940
+USI/UTI:G5GSEF7VJP5I7OUK5573101170096619BZZZZZZZZZZZZZZZZZZZ
+Non Deliverable Cross Currency Swap Confirmation
+The purpose of this letter (this “Confirmation”) is to confirm the terms and conditions of the Transaction entered
+into between us on the Trade Date specified below. This Confirmation supersedes any previous Confirmation or
+other communication with respect to the Transaction and evidences a complete and binding agreement between
+us as to the terms of the Transaction.
+The definitions and provisions contained in the 2021 ISDA Interest Rate Derivatives Definitions as published by
+the International Swaps and Derivatives Association, Inc. (“ISDA”) (the “2021 Definitions”) and the 1998 FX and
+Currency Option Definitions as published by ISDA, EMTA, Inc. and The Foreign Exchange Committee (the “FX
+Definitions”, and together with the 2021 Definitions, the “Definitions”) are incorporated into this Confirmation.
+In the event of any inconsistency between the Definitions and this Confirmation, this Confirmation will govern.
+In  the  event  of  any  inconsistency  between  the  2021  Definitions  and  the  FX  Definitions,  the  2021  Definitions
+will prevail except that the FX Definitions will prevail for the purposes of the “Settlement Provisions” set forth
+below. Each party hereto agrees to make payment to the other party hereto in accordance with the provisions of
+this Confirmation and of the Agreement.
+1. This  Confirmation  constitutes  a  “Confirmation”  as  referred  to  in,  and  supplements,  forms  a  part  of,  and  is
+subject to the ISDA Master Agreement dated as of December 6, 2022, as amended and supplemented from time to
+time (the “Agreement”) between you and us. All provisions contained in the Agreement govern this Confirmation
+except as expressly modified below.
+Each party represents to the other party as of the Trade Date that (absent a written agreement between the parties
+that expressly imposes affirmative obligations to the contrary):
+
+- Page 02 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/02/17*
+(a)Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter
+into  the  Transaction  and  as  to  whether  the  Transaction  is  appropriate  or  proper  based  upon  its  own
+judgement  and  upon  advice  from  such  advisers  as  it  has  deemed  necessary.  It  is  not  relying  on  any
+communication (written or oral) of the other party as investment advice or as a recommendation to enter
+into  the  Transaction:  it  being  understood  that  information  and  explanations  related  to  the  terms  and
+conditions of the Transaction shall not be considered investment advice or a recommendation to enter
+into the Transaction. No communication (written or oral) received from the other party shall be deemed
+to be an assurance or guarantee as to the expected results of the Transaction.
+(b)Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own
+behalf or through independent professional advice), and understands and accepts, the terms, conditions
+and risks of the Transaction. It is also capable of assuming, and assumes, the risks of the Transaction.
+(c)Status  of  Parties.  The  other  party  is  not  acting  as  a  fiduciary  for  or  an  adviser  to  it  in  respect  of  the
+Transaction.
+(d)No Agency. It is entering into the Transaction as principal and not as agent of any person.
+(e)Purpose.  It  is  entering  into  the  Transaction  for  the  purposes  of  hedging  its  assets  or  liabilities  or  in
+connection with a line of business.
+The terms of the particular Transaction to which this Confirmation relates are as follows:
+2.TRADE DETAILS
+Trade Date:December 6, 2023
+Effective Date:December 7, 2023
+Termination Date:May 28, 2046
+Notional Amount:CLP    8,392,257,341.00    subject    to    adjustment    in
+accordance with the relevant Schedule
+Fixed Amounts:
+Fixed Amount Payer:Counterparty
+UF Notional:UF 229,309.49 subject to adjustment in accordance with
+the relevant Schedule
+Fixed Amount Payer Currency Amount:In  respect  of  a  Calculation  Period,  an  amount  in  CLP
+determined by the Calculation Agent by reference to the
+following formula:
+(a) the UF Notional; multiplied by
+(b) the value of one UF expressed in CLP for value
+on the Payment Date that relates to such Calculation
+Period.
+Fixed Amount Payer Payment Date(s):The   28th   of   each   month   in   each   year   from   (and
+including)  December  28,  2023  to  (and  including)  the
+Termination Date; subject to adjustment in accordance
+with the Following Business Day Convention; with No
+Adjustment to Period End Dates.
+Fixed Rate:1.905% per annum
+Fixed Rate Day Count Fraction:Actual/360
+Floating Amounts:
+Floating Amount Payer:UK Bank B
+Floating Rate Payer Payment Date(s):The   28th   of   each   month   in   each   year   from   (and
+including)  December  28,  2023  to  (and  including)  the
+Termination Date; subject to adjustment in accordance
+with the Following Business Day Convention; with No
+Adjustment to Period End Dates.
+
+- Page 03 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/03/17*
+Floating Rate Option:CLP-ICP
+Spread:None
+Floating Rate Day Count Fraction:Actual/360
+Reset Dates:The last day in each Calculation Period
+Initial Exchange:None
+Final Exchange :
+Counterparty Final Exchange Amount:An amount in CLP determined by the Calculation Agent
+by reference to the following formula:
+(a) the UF Notional; multiplied by
+(b) the value of one UF expressed in CLP for value on
+the Final Exchange Date.
+UK Bank B Final Exchange Amount:CLP Fixed Amount Payer Currency Amount
+Additional Provision Relating to Payments:The provisions of Section 2(c) of the Agreement
+shall apply to payments due on each Payment Date in
+respect of this Swap Transaction, with the result that,
+on each Payment Date, a net amount shall be payable
+by one party to the other.
+Additional Provision Relating to Payment Dates:If, in respect of a scheduled Payment Date, (a)
+the Valuation Date that relates to such scheduled
+Payment Date is adjusted in accordance with the
+Following Business Day Convention or (b) Valuation
+Postponement applies in respect of the determination
+of the Spot Rate with respect to such scheduled
+Payment Date, then the Payment Date shall be the date
+that is two Business Days following the date on which
+the Spot Rate is determined.
+Settlement Provisions :
+Settlement Rate Option :CLP DÓLAR OBS (CLP10)
+Reference Currency :CLP
+Settlement Currency :USD
+Disruption Events and Fallbacks:
+Applicable Disruption Events:
+Price Source Disruption:Applicable.
+Applicable Disruption Fallbacks:
+1.Valuation Postponement
+2.Calculation Agent Determination of
+Settlement Rate
+
+- Page 04 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/04/17*
+Calculation Agent:UK Bank B  and  Counterparty  If  the  parties  are  unable
+to  agree  on  a  determination  within  one  Business  Day,
+each  party  agrees  to  be  bound  by  the  determination
+of  an  independent  leading  dealer  Reference  Currency/
+Settlement  Currency  Transactions  not  located  in  the
+Reference  Currency  jurisdiction  ("independent  leading
+dealer"),  mutually  selected  by  the  parties,  who  shall
+act  as  the  substitute  Calculation  Agent,  with  the  fees
+and  expenses  of  such  substitute  Calculation  Agent  (if
+any) to be met equally by the parties. If the parties are
+unable to agree on an independent leading dealer to act as
+substitute Calculation Agent, each party shall select an
+independent leading dealer and such independent dealers
+shall agree on an independent third party who shall be
+deemed to be the substitute Calculation Agent.
+Other terms:
+
+- Page 05 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/05/17*
+Valuation Postponement for Price Source Disruption:“Valuation   Postponement”   means,   for   purposes   of
+obtaining a Settlement Rate, that the Spot Rate will be
+determined on the Business Day first succeeding the day
+on  which  the  Price  Source  Disruption  ceases  to  exist,
+unless  the  Price  Source  Disruption  continues  to  exist
+(measured  from  the  date  that,  but  for  the  occurrence
+of  the  Price  Source  Disruption,  would  have  been  the
+Valuation  Date)  for  a  consecutive  number  of  calendar
+days  equal  to  the  Maximum  Days  of  Postponement.
+In  such  event,  the  Spot  Rate  will  be  determined  on
+the  next  Business  Day  after  the  Maximum  Days  of
+Postponement  in  accordance  with  the  next  applicable
+Disruption Fallback.
+Cumulative Events:Notwithstanding anything herein to the contrary, in no
+event  shall  the  total  number  of  consecutive  calendar
+days during which either (i) a Valuation Date is deferred
+due  to  an  Unscheduled  Holiday  or  (ii)  a  Valuation
+Postponement  shall  occur  (or  any  combination  of  (i)
+and  (ii)),  exceed  14  consecutive  calendar  days  in  the
+aggregate.  Accordingly,  (x)  if,  upon  the  lapse  of  any
+such  14  day  period,  an  Unscheduled  Holiday  shall
+have  occurred  or  be  continuing  on  the  day  following
+such  period,  then  such  day  shall  be  deemed  to  be  the
+Valuation  Date,  and  (y)  if,  upon  the  lapse  of  any  such
+14  day  period,  a  Price  Source  Disruption  shall  have
+occurred  or  be  continuing  on  the  day  following  such
+period, then Valuation Postponement shall not apply and
+the Spot Rate shall be determined in accordance with the
+next Disruption Fallback.
+Maximum Days of Postponement:Fourteen (14) calendar days
+Adjustment to Payment Dates and Exchange Dates:Each  Payment  Date  for  the  Swap  Transaction  shall  be
+as  specified  above.  If  payments  are  scheduled  to  be
+made by both parties on a Payment Date, and such date
+is  adjusted  due  to  the  occurrence  of  an  Unscheduled
+Holiday or the application of Valuation Postponement,
+then such Payment Date shall be adjusted in respect of
+both parties’ payment obligations. For the avoidance of
+doubt,  such  adjustments  shall  not  apply  in  respect  of
+Period End Dates (including the Termination Date) for
+the purpose of determining the Calculation Periods.
+2a.Definitions:
+As used in this Confirmation, the following terms shall have the meanings set forth below:
+“UF” means, in respect of any given date (the “UF Relevant Date”), the Unidad de Fomento, expressed as the
+number of CLP per one UF, determined by the Central Bank of Chile in respect of the UF Relevant Date and in
+accordance with article 35, number 9 of Law No. 18,840, as published daily in the Diario Oficial de la República
+de Chile in accordance with Chapter II.B.3 of the Compendio de Normas Financieras issued by the Central Bank
+of Chile. If UF is replaced or substituted for another unit by the Central Bank of Chile, references herein to UF
+
+- Page 06 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/06/17*
+shall be to the unit replacing or substituting the Unidad de Fomento to the extent that (a) such unit is applicable to
+cash lending transactions payable under the same conditions as the Unidad de Fomento, (b) such unit is determined
+by the Central Bank of Chile and (c) such unit is published in the Diario Oficial or another official publication in
+respect of the UF Relevant Date. If, for any reason, the Unidad de Fomento, or any unit replacing or substituting it
+is not determined and published by the Central Bank of Chile in respect of the UF Relevant Date, then the parties
+shall negotiate in good faith and shall determine UF by mutual agreement.
+Amendment to Credit Support Annex:UK Bank B and the Counterparty hereby agree that for the
+purposes of this Swap Transaction the terms of the Credit
+Support  Annex  entered  into  between  the  parties  that
+supplements and forms part of the Agreement, shall be
+amended as follows:
+With   effect   from   the   Trade   Date   the   Independent
+Amount for the purposes of this Swap Transaction, with
+respect to Counterparty, shall be an amount equal to CLF
+0.000000 (as determined by the Calculation Agent).
+In  all  other  respects  the  Credit  Support  Annex  and  the
+Agreement remain if full force and effect.
+3.ACCOUNT DETAILS
+Payments to UK Bank B:As per Standard Settlement Instructions
+Payments to Counterparty:As per Standard Settlement Instructions
+4.OFFICES AND NOTICE DETAILS
+UK Bank B:
+UK Bank B  is  acting  through  its  London  Office  for  the
+purposes of this Transaction.
+UK Bank B (London Head Office)
+c/o UK Bank B Shared Services Pvt. Ltd.
+15th Floor, Block – B6,
+Nirlon Knowledge Park,
+Off Western Express Highway
+Goregaon (East), Mumbai – 400063 - India
+Tel: +91 22 61752225
+Fax: +44 207 773 6810/6857
+Counterparty:Details  for  giving  notices  to  be  advised  separately  in
+writing.
+Please confirm that the foregoing correctly sets forth all the terms and conditions of our agreement with respect
+to the Transaction by responding as soon as practicable* by promptly signing in the space provided below by
+(i) irdconfirmations@UK Bank B.com or (ii) faxing the signed copy to Fax: +44 207 773 6810/6857 or (iii) mailing
+the signed copy to
+UK Bank B (London Head Office)
+c/o UK Bank B Shared Services Pvt. Ltd.
+15th Floor, Block – B6,
+
+- Page 07 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/07/17
+*
+Nirlon Knowledge Park,
+Off Western Express Highway
+Goregaon (East), Mumbai – 400063 - India
+Your failure to respond as soon as practicable shall not affect the validity or enforceability of the Transaction
+as against you.
+*Depending on a range of factors including your jurisdiction, the regulatory requirement that applies to trades with
+you may require execution of Confirmations by close of business one Business Day after the trade is executed.
+Where applicable this confirmation together with any other trade confirmation(s) provided to you sets out the
+information required pursuant to Article 59(4) of the Commission Delegated Regulation (EU) 2017/565 of 25
+April  2016  supplementing  Directive  2014/65/EU  of  the  European  Parliament  and  of  the  Council  as  regards
+organisational requirements and operating conditions for investment firms.
+Article 59Response
+(d) the trading time:2023-12-06T14:53:28.000Z
+(e) the type of the order:Other*
+(f) the venue identification:XOFF
+* Applicable only to orders. For RFQs and transactions not originated from orders, this is N/A.
+For and on behalf of
+UK Bank B
+For and on behalf of 
+NOSOTROS
+-------------------------------------
+NAME: Rince C
+Authorised Signatory
+Date: 07 December 2023
+-------------------------------------
+NAME:
+Authorised Signatory
+Date:
+
+- Page 08 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/08/17*
+Schedule for Counterparty:
+From and includingTo but excludingCurrencyCurrency Amount
+December 7, 2023December 28, 2023CLF229,309.490000
+December 28, 2023January 28, 2024CLF228,783.770000
+January 28, 2024February 28, 2024CLF228,282.300000
+February 28, 2024March 28, 2024CLF227,779.070000
+March 28, 2024April 28, 2024CLF227,222.170000
+April 28, 2024May 28, 2024CLF226,715.190000
+May 28, 2024June 28, 2024CLF226,180.600000
+June 28, 2024July 28, 2024CLF225,669.950000
+July 28, 2024August 28, 2024CLF225,131.790000
+August 28, 2024September 28, 2024CLF224,617.430000
+September 28, 2024October 28, 2024CLF224,101.250000
+October 28, 2024November 28, 2024CLF223,557.730000
+November 28, 2024December 28, 2024CLF223,037.820000
+December 28, 2024January 28, 2025CLF222,490.660000
+January 28, 2025February 28, 2025CLF221,966.980000
+February 28, 2025March 28, 2025CLF221,441.450000
+March 28, 2025April 28, 2025CLF220,838.400000
+April 28, 2025May 28, 2025CLF220,308.890000
+May 28, 2025June 28, 2025CLF219,752.410000
+June 28, 2025July 28, 2025CLF219,219.060000
+July 28, 2025August 28, 2025CLF218,658.860000
+August 28, 2025September 28, 2025CLF218,121.640000
+September 28, 2025October 28, 2025CLF217,582.540000
+October 28, 2025November 28, 2025CLF217,016.740000
+November 28, 2025December 28, 2025CLF216,473.730000
+December 28, 2025January 28, 2026CLF215,904.150000
+January 28, 2026February 28, 2026CLF215,357.220000
+February 28, 2026March 28, 2026CLF214,808.350000
+March 28, 2026April 28, 2026CLF214,184.150000
+April 28, 2026May 28, 2026CLF213,631.140000
+May 28, 2026June 28, 2026CLF213,051.850000
+June 28, 2026July 28, 2026CLF212,494.840000
+July 28, 2026August 28, 2026CLF211,911.660000
+August 28, 2026September 28, 2026CLF211,350.630000
+September 28, 2026October 28, 2026CLF210,787.620000
+October 28, 2026November 28, 2026CLF210,198.610000
+November 28, 2026December 28, 2026CLF209,631.530000
+December 28, 2026January 28, 2027CLF209,038.570000
+January 28, 2027February 28, 2027CLF208,467.390000
+February 28, 2027March 28, 2027CLF207,894.200000
+March 28, 2027April 28, 2027CLF207,247.950000
+April 28, 2027May 28, 2027CLF206,670.450000
+May 28, 2027June 28, 2027CLF206,067.380000
+June 28, 2027July 28, 2027CLF205,485.710000
+July 28, 2027August 28, 2027CLF204,878.590000
+August 28, 2027September 28, 2027CLF204,292.720000
+September 28, 2027October 28, 2027CLF203,704.790000
+October 28, 2027November 28, 2027CLF203,091.580000
+November 28, 2027December 28, 2027CLF202,499.410000
+December 28, 2027January 28, 2028CLF201,882.080000
+January 28, 2028February 28, 2028CLF201,285.640000
+February 28, 2028March 28, 2028CLF200,687.090000
+
+- Page 09 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/09/17*
+March 28, 2028April 28, 2028CLF200,040.720000
+April 28, 2028May 28, 2028CLF199,437.770000
+May 28, 2028June 28, 2028CLF198,809.990000
+June 28, 2028July 28, 2028CLF198,202.700000
+July 28, 2028August 28, 2028CLF197,570.690000
+August 28, 2028September 28, 2028CLF196,959.030000
+September 28, 2028October 28, 2028CLF196,345.200000
+October 28, 2028November 28, 2028CLF195,706.850000
+November 28, 2028December 28, 2028CLF195,088.600000
+December 28, 2028January 28, 2029CLF194,445.960000
+January 28, 2029February 28, 2029CLF193,823.260000
+February 28, 2029March 28, 2029CLF193,198.370000
+March 28, 2029April 28, 2029CLF192,505.250000
+April 28, 2029May 28, 2029CLF191,875.710000
+May 28, 2029June 28, 2029CLF191,222.080000
+June 28, 2029July 28, 2029CLF190,588.000000
+July 28, 2029August 28, 2029CLF189,929.980000
+August 28, 2029September 28, 2029CLF189,291.340000
+September 28, 2029October 28, 2029CLF188,650.440000
+October 28, 2029November 28, 2029CLF187,985.800000
+November 28, 2029December 28, 2029CLF187,340.300000
+December 28, 2029January 28, 2030CLF186,671.180000
+January 28, 2030February 28, 2030CLF186,021.030000
+February 28, 2030March 28, 2030CLF185,368.590000
+March 28, 2030April 28, 2030CLF184,650.510000
+April 28, 2030May 28, 2030CLF183,993.230000
+May 28, 2030June 28, 2030CLF183,312.670000
+June 28, 2030July 28, 2030CLF182,650.670000
+July 28, 2030August 28, 2030CLF181,965.530000
+August 28, 2030September 28, 2030CLF181,298.770000
+September 28, 2030October 28, 2030CLF180,629.650000
+October 28, 2030November 28, 2030CLF179,937.610000
+November 28, 2030December 28, 2030CLF179,263.690000
+December 28, 2030January 28, 2031CLF178,566.970000
+January 28, 2031February 28, 2031CLF177,888.210000
+February 28, 2031March 28, 2031CLF177,207.060000
+March 28, 2031April 28, 2031CLF176,462.950000
+April 28, 2031May 28, 2031CLF175,776.770000
+May 28, 2031June 28, 2031CLF175,068.140000
+June 28, 2031July 28, 2031CLF174,377.030000
+July 28, 2031August 28, 2031CLF173,663.610000
+August 28, 2031September 28, 2031CLF172,967.540000
+September 28, 2031October 28, 2031CLF172,269.020000
+October 28, 2031November 28, 2031CLF171,548.400000
+November 28, 2031December 28, 2031CLF170,844.870000
+December 28, 2031January 28, 2032CLF170,119.390000
+January 28, 2032February 28, 2032CLF169,410.800000
+February 28, 2032March 28, 2032CLF168,699.720000
+March 28, 2032April 28, 2032CLF167,947.700000
+April 28, 2032May 28, 2032CLF167,231.450000
+May 28, 2032June 28, 2032CLF166,493.620000
+June 28, 2032July 28, 2032CLF165,772.240000
+July 28, 2032August 28, 2032CLF165,029.430000
+August 28, 2032September 28, 2032CLF164,302.870000
+September 28, 2032October 28, 2032CLF163,573.760000
+October 28, 2032November 28, 2032CLF162,823.430000
+
+- Page 10 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/10/17*
+November 28, 2032December 28, 2032CLF162,089.090000
+December 28, 2032January 28, 2033CLF161,333.700000
+January 28, 2033February 28, 2033CLF160,594.100000
+February 28, 2033March 28, 2033CLF159,851.880000
+March 28, 2033April 28, 2033CLF159,052.430000
+April 28, 2033May 28, 2033CLF158,304.780000
+May 28, 2033June 28, 2033CLF157,536.450000
+June 28, 2033July 28, 2033CLF156,783.440000
+July 28, 2033August 28, 2033CLF156,009.920000
+August 28, 2033September 28, 2033CLF155,251.530000
+September 28, 2033October 28, 2033CLF154,490.450000
+October 28, 2033November 28, 2033CLF153,709.090000
+November 28, 2033December 28, 2033CLF152,942.570000
+December 28, 2033January 28, 2034CLF152,155.930000
+January 28, 2034February 28, 2034CLF151,383.920000
+February 28, 2034March 28, 2034CLF150,609.190000
+March 28, 2034April 28, 2034CLF149,780.270000
+April 28, 2034May 28, 2034CLF148,999.880000
+May 28, 2034June 28, 2034CLF148,199.760000
+June 28, 2034July 28, 2034CLF147,413.790000
+July 28, 2034August 28, 2034CLF146,608.260000
+August 28, 2034September 28, 2034CLF145,816.670000
+September 28, 2034October 28, 2034CLF145,022.280000
+October 28, 2034November 28, 2034CLF144,208.570000
+November 28, 2034December 28, 2034CLF143,408.510000
+December 28, 2034January 28, 2035CLF142,589.290000
+January 28, 2035February 28, 2035CLF141,783.510000
+February 28, 2035March 28, 2035CLF140,974.890000
+March 28, 2035April 28, 2035CLF140,115.240000
+April 28, 2035May 28, 2035CLF139,300.730000
+May 28, 2035June 28, 2035CLF138,467.470000
+June 28, 2035July 28, 2035CLF137,647.140000
+July 28, 2035August 28, 2035CLF136,808.230000
+August 28, 2035September 28, 2035CLF135,982.040000
+September 28, 2035October 28, 2035CLF135,152.940000
+October 28, 2035November 28, 2035CLF134,305.510000
+November 28, 2035December 28, 2035CLF133,470.490000
+December 28, 2035January 28, 2036CLF132,617.310000
+January 28, 2036February 28, 2036CLF131,776.320000
+February 28, 2036March 28, 2036CLF130,932.370000
+March 28, 2036April 28, 2036CLF130,055.610000
+April 28, 2036May 28, 2036CLF129,205.580000
+May 28, 2036June 28, 2036CLF128,337.830000
+June 28, 2036July 28, 2036CLF127,481.740000
+July 28, 2036August 28, 2036CLF126,608.100000
+August 28, 2036September 28, 2036CLF125,745.900000
+September 28, 2036October 28, 2036CLF124,880.650000
+October 28, 2036November 28, 2036CLF123,998.130000
+November 28, 2036December 28, 2036CLF123,126.710000
+December 28, 2036January 28, 2037CLF122,238.200000
+January 28, 2037February 28, 2037CLF121,360.570000
+February 28, 2037March 28, 2037CLF120,479.840000
+March 28, 2037April 28, 2037CLF119,554.830000
+April 28, 2037May 28, 2037CLF118,667.730000
+May 28, 2037June 28, 2037CLF117,763.980000
+June 28, 2037July 28, 2037CLF116,870.550000
+
+- Page 11 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/11/17*
+July 28, 2037August 28, 2037CLF115,960.660000
+August 28, 2037September 28, 2037CLF115,060.870000
+September 28, 2037October 28, 2037CLF114,157.900000
+October 28, 2037November 28, 2037CLF113,238.740000
+November 28, 2037December 28, 2037CLF112,329.330000
+December 28, 2037January 28, 2038CLF111,403.930000
+January 28, 2038February 28, 2038CLF110,488.050000
+February 28, 2038March 28, 2038CLF109,568.930000
+March 28, 2038April 28, 2038CLF108,609.140000
+April 28, 2038May 28, 2038CLF107,683.390000
+May 28, 2038June 28, 2038CLF106,742.110000
+June 28, 2038July 28, 2038CLF105,809.770000
+July 28, 2038August 28, 2038CLF104,862.080000
+August 28, 2038September 28, 2038CLF103,923.110000
+September 28, 2038October 28, 2038CLF102,980.810000
+October 28, 2038November 28, 2038CLF102,023.460000
+November 28, 2038December 28, 2038CLF101,074.470000
+December 28, 2038January 28, 2039CLF100,110.600000
+January 28, 2039February 28, 2039CLF99,154.850000
+February 28, 2039March 28, 2039CLF98,195.720000
+March 28, 2039April 28, 2039CLF97,199.660000
+April 28, 2039May 28, 2039CLF96,233.630000
+May 28, 2039June 28, 2039CLF95,253.230000
+June 28, 2039July 28, 2039CLF94,280.330000
+July 28, 2039August 28, 2039CLF93,293.250000
+August 28, 2039September 28, 2039CLF92,313.430000
+September 28, 2039October 28, 2039CLF91,330.150000
+October 28, 2039November 28, 2039CLF90,332.990000
+November 28, 2039December 28, 2039CLF89,342.720000
+December 28, 2039January 28, 2040CLF88,338.770000
+January 28, 2040February 28, 2040CLF87,341.460000
+February 28, 2040March 28, 2040CLF86,340.630000
+March 28, 2040April 28, 2040CLF85,316.590000
+April 28, 2040May 28, 2040CLF84,308.610000
+May 28, 2040June 28, 2040CLF83,287.460000
+June 28, 2040July 28, 2040CLF82,272.310000
+July 28, 2040August 28, 2040CLF81,244.210000
+August 28, 2040September 28, 2040CLF80,221.850000
+September 28, 2040October 28, 2040CLF79,195.880000
+October 28, 2040November 28, 2040CLF78,157.260000
+November 28, 2040December 28, 2040CLF77,124.000000
+December 28, 2040January 28, 2041CLF76,078.310000
+January 28, 2041February 28, 2041CLF75,037.710000
+February 28, 2041March 28, 2041CLF73,993.440000
+March 28, 2041April 28, 2041CLF72,920.200000
+April 28, 2041May 28, 2041CLF71,868.440000
+May 28, 2041June 28, 2041CLF70,804.800000
+June 28, 2041July 28, 2041CLF69,745.580000
+July 28, 2041August 28, 2041CLF68,674.680000
+August 28, 2041September 28, 2041CLF67,607.940000
+September 28, 2041October 28, 2041CLF66,537.430000
+October 28, 2041November 28, 2041CLF65,455.570000
+November 28, 2041December 28, 2041CLF64,377.460000
+December 28, 2041January 28, 2042CLF63,288.220000
+January 28, 2042February 28, 2042CLF62,202.460000
+February 28, 2042March 28, 2042CLF61,112.870000
+
+- Page 12 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/12/17*
+March 28, 2042April 28, 2042CLF59,998.560000
+April 28, 2042May 28, 2042CLF58,901.190000
+May 28, 2042June 28, 2042CLF57,793.230000
+June 28, 2042July 28, 2042CLF56,688.080000
+July 28, 2042August 28, 2042CLF55,572.560000
+August 28, 2042September 28, 2042CLF54,459.560000
+September 28, 2042October 28, 2042CLF53,342.640000
+October 28, 2042November 28, 2042CLF52,215.690000
+November 28, 2042December 28, 2042CLF51,090.840000
+December 28, 2042January 28, 2043CLF49,956.210000
+January 28, 2043February 28, 2043CLF48,823.380000
+February 28, 2043March 28, 2043CLF47,686.550000
+March 28, 2043April 28, 2043CLF46,529.420000
+April 28, 2043May 28, 2043CLF45,384.500000
+May 28, 2043June 28, 2043CLF44,230.360000
+June 28, 2043July 28, 2043CLF43,077.320000
+July 28, 2043August 28, 2043CLF41,915.300000
+August 28, 2043September 28, 2043CLF40,754.090000
+September 28, 2043October 28, 2043CLF39,588.770000
+October 28, 2043November 28, 2043CLF38,414.840000
+November 28, 2043December 28, 2043CLF37,241.260000
+December 28, 2043January 28, 2044CLF36,059.300000
+January 28, 2044February 28, 2044CLF34,877.410000
+February 28, 2044March 28, 2044CLF33,691.350000
+March 28, 2044April 28, 2044CLF32,493.430000
+April 28, 2044May 28, 2044CLF31,298.950000
+May 28, 2044June 28, 2044CLF30,096.690000
+June 28, 2044July 28, 2044CLF28,893.750000
+July 28, 2044August 28, 2044CLF27,683.270000
+August 28, 2044September 28, 2044CLF26,471.810000
+September 28, 2044October 28, 2044CLF25,256.070000
+October 28, 2044November 28, 2044CLF24,033.160000
+November 28, 2044December 28, 2044CLF22,808.810000
+December 28, 2044January 28, 2045CLF21,577.540000
+January 28, 2045February 28, 2045CLF20,344.520000
+February 28, 2045March 28, 2045CLF19,107.150000
+March 28, 2045April 28, 2045CLF17,858.880000
+April 28, 2045May 28, 2045CLF16,612.740000
+May 28, 2045June 28, 2045CLF15,360.300000
+June 28, 2045July 28, 2045CLF14,105.330000
+July 28, 2045August 28, 2045CLF12,844.320000
+August 28, 2045September 28, 2045CLF11,580.470000
+September 28, 2045October 28, 2045CLF10,312.160000
+October 28, 2045November 28, 2045CLF9,038.190000
+November 28, 2045December 28, 2045CLF7,760.900000
+December 28, 2045January 28, 2046CLF6,478.220000
+January 28, 2046February 28, 2046CLF5,191.890000
+February 28, 2046March 28, 2046CLF3,901.020000
+March 28, 2046April 28, 2046CLF2,604.260000
+April 28, 2046May 28, 2046CLF1,304.260000
+The above dates are subject to No Adjustment
+Schedule for UK Bank B:
+From and includingTo but excludingCurrencyCurrency Amount
+
+- Page 13 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/13/17*
+December 7, 2023December 28, 2023CLP8,392,257,341
+December 28, 2023January 28, 2024CLP8,373,016,884
+January 28, 2024February 28, 2024CLP8,354,664,282
+February 28, 2024March 28, 2024CLP8,336,246,887
+March 28, 2024April 28, 2024CLP8,315,865,653
+April 28, 2024May 28, 2024CLP8,297,311,276
+May 28, 2024June 28, 2024CLP8,277,746,418
+June 28, 2024July 28, 2024CLP8,259,057,459
+July 28, 2024August 28, 2024CLP8,239,361,903
+August 28, 2024September 28, 2024CLP8,220,537,425
+September 28, 2024October 28, 2024CLP8,201,646,485
+October 28, 2024November 28, 2024CLP8,181,754,775
+November 28, 2024December 28, 2024CLP8,162,726,912
+December 28, 2024January 28, 2025CLP8,142,702,227
+January 28, 2025February 28, 2025CLP8,Chilean Bank,536,488
+February 28, 2025March 28, 2025CLP8,104,303,083
+March 28, 2025April 28, 2025CLP8,082,232,795
+April 28, 2025May 28, 2025CLP8,062,853,566
+May 28, 2025June 28, 2025CLP8,042,487,645
+June 28, 2025July 28, 2025CLP8,022,968,092
+July 28, 2025August 28, 2025CLP8,002,465,895
+August 28, 2025September 28, 2025CLP7,982,805,044
+September 28, 2025October 28, 2025CLP7,963,074,778
+October 28, 2025November 28, 2025CLP7,942,367,947
+November 28, 2025December 28, 2025CLP7,922,494,916
+December 28, 2025January 28, 2026CLP7,901,649,437
+January 28, 2026February 28, 2026CLP7,881,632,646
+February 28, 2026March 28, 2026CLP7,861,545,188
+March 28, 2026April 28, 2026CLP7,838,700,773
+April 28, 2026May 28, 2026CLP7,818,461,741
+May 28, 2026June 28, 2026CLP7,797,260,816
+June 28, 2026July 28, 2026CLP7,776,875,476
+July 28, 2026August 28, 2026CLP7,755,532,463
+August 28, 2026September 28, 2026CLP7,734,999,798
+September 28, 2026October 28, 2026CLP7,714,394,643
+October 28, 2026November 28, 2026CLP7,692,838,154
+November 28, 2026December 28, 2026CLP7,672,084,145
+December 28, 2026January 28, 2027CLP7,650,383,094
+January 28, 2027February 28, 2027CLP7,629,479,194
+February 28, 2027March 28, 2027CLP7,608,501,491
+March 28, 2027April 28, 2027CLP7,584,850,150
+April 28, 2027May 28, 2027CLP7,563,714,881
+May 28, 2027June 28, 2027CLP7,541,643,569
+June 28, 2027July 28, 2027CLP7,520,355,760
+July 28, 2027August 28, 2027CLP7,498,136,306
+August 28, 2027September 28, 2027CLP7,476,694,892
+September 28, 2027October 28, 2027CLP7,455,177,775
+October 28, 2027November 28, 2027CLP7,432,735,627
+November 28, 2027December 28, 2027CLP7,411,063,313
+December 28, 2027January 28, 2028CLP7,388,470,443
+January 28, 2028February 28, 2028CLP7,366,641,848
+February 28, 2028March 28, 2028CLP7,344,736,185
+March 28, 2028April 28, 2028CLP7,321,080,211
+April 28, 2028May 28, 2028CLP7,299,013,689
+May 28, 2028June 28, 2028CLP7,276,037,983
+June 28, 2028July 28, 2028CLP7,253,812,436
+
+- Page 14 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/14/17*
+July 28, 2028August 28, 2028CLP7,230,682,290
+August 28, 2028September 28, 2028CLP7,208,296,612
+September 28, 2028October 28, 2028CLP7,185,831,901
+October 28, 2028November 28, 2028CLP7,162,469,490
+November 28, 2028December 28, 2028CLP7,139,842,983
+December 28, 2028January 28, 2029CLP7,116,323,442
+January 28, 2029February 28, 2029CLP7,093,534,016
+February 28, 2029March 28, 2029CLP7,070,664,129
+March 28, 2029April 28, 2029CLP7,045,297,684
+April 28, 2029May 28, 2029CLP7,022,257,496
+May 28, 2029June 28, 2029CLP6,998,336,205
+June 28, 2029July 28, 2029CLP6,975,130,217
+July 28, 2029August 28, 2029CLP6,951,047,910
+August 28, 2029September 28, 2029CLP6,927,674,970
+September 28, 2029October 28, 2029CLP6,904,219,509
+October 28, 2029November 28, 2029CLP6,879,894,923
+November 28, 2029December 28, 2029CLP6,856,270,771
+December 28, 2029January 28, 2030CLP6,831,782,358
+January 28, 2030February 28, 2030CLP6,807,988,344
+February 28, 2030March 28, 2030CLP6,784,110,323
+March 28, 2030April 28, 2030CLP6,757,830,089
+April 28, 2030May 28, 2030CLP6,733,774,981
+May 28, 2030June 28, 2030CLP6,708,868,041
+June 28, 2030July 28, 2030CLP6,684,640,070
+July 28, 2030August 28, 2030CLP6,659,565,252
+August 28, 2030September 28, 2030CLP6,635,163,214
+September 28, 2030October 28, 2030CLP6,610,675,024
+October 28, 2030November 28, 2030CLP6,585,347,493
+November 28, 2030December 28, 2030CLP6,560,683,424
+December 28, 2030January 28, 2031CLP6,535,185,087
+January 28, 2031February 28, 2031CLP6,510,343,917
+February 28, 2031March 28, 2031CLP6,485,415,048
+March 28, 2031April 28, 2031CLP6,458,182,308
+April 28, 2031May 28, 2031CLP6,433,069,278
+May 28, 2031June 28, 2031CLP6,407,134,928
+June 28, 2031July 28, 2031CLP6,381,841,671
+July 28, 2031August 28, 2031CLP6,355,732,291
+August 28, 2031September 28, 2031CLP6,330,257,556
+September 28, 2031October 28, 2031CLP6,304,692,881
+October 28, 2031November 28, 2031CLP6,278,319,911
+November 28, 2031December 28, 2031CLP6,252,571,866
+December 28, 2031January 28, 2032CLP6,226,020,815
+January 28, 2032February 28, 2032CLP6,200,088,126
+February 28, 2032March 28, 2032CLP6,174,063,880
+March 28, 2032April 28, 2032CLP6,146,541,435
+April 28, 2032May 28, 2032CLP6,120,328,139
+May 28, 2032June 28, 2032CLP6,093,325,257
+June 28, 2032July 28, 2032CLP6,066,924,078
+July 28, 2032August 28, 2032CLP6,039,738,733
+August 28, 2032September 28, 2032CLP6,013,148,364
+September 28, 2032October 28, 2032CLP5,986,464,118
+October 28, 2032November 28, 2032CLP5,959,003,867
+November 28, 2032December 28, 2032CLP5,932,128,459
+December 28, 2032January 28, 2033CLP5,904,482,562
+January 28, 2033February 28, 2033CLP5,877,414,663
+February 28, 2033March 28, 2033CLP5,850,251,200
+
+- Page 15 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/15/17*
+March 28, 2033April 28, 2033CLP5,820,992,991
+April 28, 2033May 28, 2033CLP5,793,630,329
+May 28, 2033June 28, 2033CLP5,765,511,227
+June 28, 2033July 28, 2033CLP5,737,952,682
+July 28, 2033August 28, 2033CLP5,709,643,348
+August 28, 2033September 28, 2033CLP5,681,887,558
+September 28, 2033October 28, 2033CLP5,654,033,777
+October 28, 2033November 28, 2033CLP5,625,437,720
+November 28, 2033December 28, 2033CLP5,597,384,637
+December 28, 2033January 28, 2034CLP5,568,595,032
+January 28, 2034February 28, 2034CLP5,540,341,265
+February 28, 2034March 28, 2034CLP5,511,987,746
+March 28, 2034April 28, 2034CLP5,481,650,853
+April 28, 2034May 28, 2034CLP5,453,090,124
+May 28, 2034June 28, 2034CLP5,423,807,511
+June 28, 2034July 28, 2034CLP5,395,042,562
+July 28, 2034August 28, 2034CLP5,365,561,621
+August 28, 2034September 28, 2034CLP5,336,591,031
+September 28, 2034October 28, 2034CLP5,307,518,161
+October 28, 2034November 28, 2034CLP5,277,738,179
+November 28, 2034December 28, 2034CLP5,248,457,524
+December 28, 2034January 28, 2035CLP5,218,475,751
+January 28, 2035February 28, 2035CLP5,188,985,866
+February 28, 2035March 28, 2035CLP5,159,391,867
+March 28, 2035April 28, 2035CLP5,127,930,586
+April 28, 2035May 28, 2035CLP5,098,121,029
+May 28, 2035June 28, 2035CLP5,067,625,604
+June 28, 2035July 28, 2035CLP5,037,603,134
+July 28, 2035August 28, 2035CLP5,006,900,942
+August 28, 2035September 28, 2035CLP4,976,664,082
+September 28, 2035October 28, 2035CLP4,946,320,469
+October 28, 2035November 28, 2035CLP4,915,306,393
+November 28, 2035December 28, 2035CLP4,884,746,153
+December 28, 2035January 28, 2036CLP4,853,521,697
+January 28, 2036February 28, 2036CLP4,822,743,322
+February 28, 2036March 28, 2036CLP4,791,856,284
+March 28, 2036April 28, 2036CLP4,759,768,713
+April 28, 2036May 28, 2036CLP4,728,659,339
+May 28, 2036June 28, 2036CLP4,696,901,589
+June 28, 2036July 28, 2036CLP4,665,570,260
+July 28, 2036August 28, 2036CLP4,633,596,955
+August 28, 2036September 28, 2036CLP4,602,042,126
+September 28, 2036October 28, 2036CLP4,570,375,889
+October 28, 2036November 28, 2036CLP4,538,077,334
+November 28, 2036December 28, 2036CLP4,506,185,266
+December 28, 2036January 28, 2037CLP4,473,667,395
+January 28, 2037February 28, 2037CLP4,441,547,925
+February 28, 2037March 28, 2037CLP4,409,315,056
+March 28, 2037April 28, 2037CLP4,375,461,864
+April 28, 2037May 28, 2037CLP4,342,995,673
+May 28, 2037June 28, 2037CLP4,309,920,239
+June 28, 2037July 28, 2037CLP4,277,222,650
+July 28, 2037August 28, 2037CLP4,243,922,490
+August 28, 2037September 28, 2037CLP4,210,991,892
+September 28, 2037October 28, 2037CLP4,177,945,030
+October 28, 2037November 28, 2037CLP4,144,305,673
+
+- Page 16 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/16/17*
+November 28, 2037December 28, 2037CLP4,111,023,373
+December 28, 2037January 28, 2038CLP4,077,155,367
+January 28, 2038February 28, 2038CLP4,043,635,989
+February 28, 2038March 28, 2038CLP4,009,998,268
+March 28, 2038April 28, 2038CLP3,974,871,698
+April 28, 2038May 28, 2038CLP3,940,991,201
+May 28, 2038June 28, 2038CLP3,906,542,250
+June 28, 2038July 28, 2038CLP3,872,420,514
+July 28, 2038August 28, 2038CLP3,837,737,281
+August 28, 2038September 28, 2038CLP3,803,372,622
+September 28, 2038October 28, 2038CLP3,768,886,637
+October 28, 2038November 28, 2038CLP3,733,849,663
+November 28, 2038December 28, 2038CLP3,699,118,223
+December 28, 2038January 28, 2039CLP3,663,842,872
+January 28, 2039February 28, 2039CLP3,628,864,271
+February 28, 2039March 28, 2039CLP3,593,762,174
+March 28, 2039April 28, 2039CLP3,557,308,274
+April 28, 2039May 28, 2039CLP3,521,953,545
+May 28, 2039June 28, 2039CLP3,486,072,882
+June 28, 2039July 28, 2039CLP3,450,466,652
+July 28, 2039August 28, 2039CLP3,414,341,741
+August 28, 2039September 28, 2039CLP3,378,482,261
+September 28, 2039October 28, 2039CLP3,342,496,177
+October 28, 2039November 28, 2039CLP3,306,002,366
+November 28, 2039December 28, 2039CLP3,269,760,390
+December 28, 2039January 28, 2040CLP3,233,018,068
+January 28, 2040February 28, 2040CLP3,196,518,416
+February 28, 2040March 28, 2040CLP3,159,889,899
+March 28, 2040April 28, 2040CLP3,122,412,306
+April 28, 2040May 28, 2040CLP3,085,522,154
+May 28, 2040June 28, 2040CLP3,048,150,351
+June 28, 2040July 28, 2040CLP3,010,998,012
+July 28, 2040August 28, 2040CLP2,973,371,583
+August 28, 2040September 28, 2040CLP2,935,955,233
+September 28, 2040October 28, 2040CLP2,898,406,783
+October 28, 2040November 28, 2040CLP2,860,395,669
+November 28, 2040December 28, 2040CLP2,822,580,453
+December 28, 2040January 28, 2041CLP2,784,310,266
+January 28, 2041February 28, 2041CLP2,746,226,425
+February 28, 2041March 28, 2041CLP2,708,008,126
+March 28, 2041April 28, 2041CLP2,668,729,654
+April 28, 2041May 28, 2041CLP2,630,237,749
+May 28, 2041June 28, 2041CLP2,591,310,391
+June 28, 2041July 28, 2041CLP2,552,545,154
+July 28, 2041August 28, 2041CLP2,513,352,347
+August 28, 2041September 28, 2041CLP2,474,311,875
+September 28, 2041October 28, 2041CLP2,435,133,568
+October 28, 2041November 28, 2041CLP2,395,539,604
+November 28, 2041December 28, 2041CLP2,356,083,189
+December 28, 2041January 28, 2042CLP2,316,219,135
+January 28, 2042February 28, 2042CLP2,276,482,673
+February 28, 2042March 28, 2042CLP2,236,605,920
+March 28, 2042April 28, 2042CLP2,195,824,198
+April 28, 2042May 28, 2042CLP2,155,662,676
+May 28, 2042June 28, 2042CLP2,115,113,853
+June 28, 2042July 28, 2042CLP2,074,667,380
+
+- Page 17 of 17 -
+December 6, 2023demn0094aa8f / 70096619BsSUv2c1
+*BC/TRI/12351275/17/17*
+July 28, 2042August 28, 2042CLP2,033,841,821
+August 28, 2042September 28, 2042CLP1,993,108,412
+September 28, 2042October 28, 2042CLP1,952,231,192
+October 28, 2042November 28, 2042CLP1,910,987,312
+November 28, 2042December 28, 2042CLP1,869,820,156
+December 28, 2042January 28, 2043CLP1,828,294,706
+January 28, 2043February 28, 2043CLP1,786,835,600
+February 28, 2043March 28, 2043CLP1,745,230,121
+March 28, 2043April 28, 2043CLP1,702,881,458
+April 28, 2043May 28, 2043CLP1,660,979,572
+May 28, 2043June 28, 2043CLP1,618,740,582
+June 28, 2043July 28, 2043CLP1,576,541,634
+July 28, 2043August 28, 2043CLP1,534,014,146
+August 28, 2043September 28, 2043CLP1,491,516,065
+September 28, 2043October 28, 2043CLP1,448,867,943
+October 28, 2043November 28, 2043CLP1,405,904,237
+November 28, 2043December 28, 2043CLP1,362,953,856
+December 28, 2043January 28, 2044CLP1,319,696,613
+January 28, 2044February 28, 2044CLP1,276,441,873
+February 28, 2044March 28, 2044CLP1,233,034,421
+March 28, 2044April 28, 2044CLP1,189,192,855
+April 28, 2044May 28, 2044CLP1,145,477,365
+May 28, 2044June 28, 2044CLP1,101,477,077
+June 28, 2044July 28, 2044CLP1,057,451,902
+July 28, 2044August 28, 2044CLP1,013,150,859
+August 28, 2044September 28, 2044CLP968,813,844
+September 28, 2044October 28, 2044CLP924,320,293
+October 28, 2044November 28, 2044CLP879,564,382
+November 28, 2044December 28, 2044CLP834,755,729
+December 28, 2044January 28, 2045CLP789,693,808
+January 28, 2045February 28, 2045CLP744,567,862
+February 28, 2045March 28, 2045CLP699,282,598
+March 28, 2045April 28, 2045CLP653,598,523
+April 28, 2045May 28, 2045CLP607,992,086
+May 28, 2045June 28, 2045CLP562,155,390
+June 28, 2045July 28, 2045CLP516,226,108
+July 28, 2045August 28, 2045CLP470,075,877
+August 28, 2045September 28, 2045CLP423,821,503
+September 28, 2045October 28, 2045CLP377,403,825
+October 28, 2045November 28, 2045CLP330,779,285
+November 28, 2045December 28, 2045CLP284,033,119
+December 28, 2045January 28, 2046CLP237,089,562
+January 28, 2046February 28, 2046CLP190,012,620
+February 28, 2046March 28, 2046CLP142,769,468
+March 28, 2046April 28, 2046CLP95,310,736
+April 28, 2046May 28, 2046CLP47,733,233
+The above dates are subject to No Adjustment

@@ -28,6 +28,8 @@
       ],
       "terminationDateBusinessCentersClear": false
     },
+    "tradeId": "23615",
+    "tradeIdType": "INTERNAL",
     "party1": {
       "partyId": "ThisBank",
       "partyName": "Banco ABC"
@@ -35,10 +37,6 @@
     "party2": {
       "partyId": "OurCounterparty",
       "partyName": "Chilean Bank s"
-    },
-    "tradeId": {
-      "id": "23615",
-      "idType": "INTERNAL"
     }
   },
   "legs": [
@@ -83,9 +81,9 @@
         ],
         "paymentDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "paymentDatesBusinessDayConventionClear": true,
+        "paymentDatesBusinessDayConventionClear": false,
         "paymentFrequency": "6M",
-        "paymentFrequencyClear": true
+        "paymentFrequencyClear": false
       },
       "periodEndDates": {
         "businessCenters": [
@@ -93,19 +91,9 @@
         ],
         "periodEndDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "periodEndDatesBusinessDayConventionClear": true,
+        "periodEndDatesBusinessDayConventionClear": false,
         "calculationPeriodFrequency": "6M",
-        "calculationPeriodFrequencyClear": true
-      },
-      "fxFixing": {
-        "fxFixingReference": "UAH_GFI_UAH01",
-        "fxFixingOffset": 0,
-        "fxFixingDayType": "BUSINESS",
-        "dateRelativeTo": "PAYMENT_DATES",
-        "fxFixingDayConvention": "MODFOLLOWING",
-        "fxFixingBusinessCenters": [
-          "CLSA"
-        ]
+        "calculationPeriodFrequencyClear": false
       }
     },
     {
@@ -143,19 +131,29 @@
         ],
         "paymentDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "paymentDatesBusinessDayConventionClear": true,
+        "paymentDatesBusinessDayConventionClear": false,
         "paymentFrequency": "6M",
-        "paymentFrequencyClear": true
+        "paymentFrequencyClear": false
       },
       "periodEndDates": {
         "businessCenters": [
           "CLSA"
         ],
-        "periodEndDatesBusinessCentersClear": false,
+        "periodEndDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "periodEndDatesBusinessDayConventionClear": true,
+        "periodEndDatesBusinessDayConventionClear": false,
         "calculationPeriodFrequency": "6M",
-        "calculationPeriodFrequencyClear": true
+        "calculationPeriodFrequencyClear": false
+      },
+      "fxFixing": {
+        "fxFixingReference": "UAH_GFI_UAH01",
+        "fxFixingOffset": 0,
+        "fxFixingDayType": "BUSINESS",
+        "dateRelativeTo": "PAYMENT_DATES",
+        "fxFixingDayConvention": "MODFOLLOWING",
+        "fxFixingBusinessCenters": [
+          "CLSA"
+        ]
       }
     }
   ]

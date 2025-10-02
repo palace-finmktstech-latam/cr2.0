@@ -2,161 +2,186 @@
   "header": {
     "source": "contrato",
     "tradeDate": {
-      "date": "12/05/2020",
+      "date": "08/04/2022",
       "businessDayConvention": "MODFOLLOWING",
       "tradeDateBusinessDayConventionClear": false,
-      "businessCenters": [
-        "CLSA"
-      ],
+      "businessCenters": [],
       "tradeDateBusinessCentersClear": false
     },
     "effectiveDate": {
-      "date": "12/05/2020",
+      "date": "12/04/2022",
       "businessDayConvention": "MODFOLLOWING",
       "effectiveDateBusinessDayConventionClear": false,
       "businessCenters": [
+        "USNY",
         "CLSA"
       ],
       "effectiveDateBusinessCentersClear": false
     },
     "terminationDate": {
-      "date": "30/01/2024",
+      "date": "12/04/2023",
       "businessDayConvention": "MODFOLLOWING",
-      "terminationDateBusinessDayConventionClear": false,
+      "terminationDateBusinessDayConventionClear": true,
       "businessCenters": [
+        "USNY",
         "CLSA"
       ],
-      "terminationDateBusinessCentersClear": false
+      "terminationDateBusinessCentersClear": true
     },
     "party1": {
       "partyId": "ThisBank",
-      "partyName": "Banco ABC"
+      "partyName": "NOSOTROS"
     },
     "party2": {
       "partyId": "OurCounterparty",
-      "partyName": "Chilean Bank s"
+      "partyName": "US Bank C N.A., London Branch"
     },
-    "tradeId": {
-      "id": "23615",
-      "idType": "INTERNAL"
-    }
+    "tradeId": "CE3F24777187",
+    "tradeIdType": "INTERNAL"
   },
   "legs": [
     {
       "legId": "Pata-Activa",
       "payerPartyReference": "OurCounterparty",
       "receiverPartyReference": "ThisBank",
-      "notionalAmount": 14358260000.0,
+      "notionalAmount": 40000000000.0,
       "notionalCurrency": "CLP",
       "rateType": "FLOATING",
       "dayCountFraction": "ACT/360",
       "effectiveDate": {
-        "date": "12/05/2020",
+        "date": "12/04/2022",
         "businessDayConvention": "MODFOLLOWING",
         "effectiveDateBusinessDayConventionClear": false,
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
         "effectiveDateBusinessCentersClear": false
       },
       "terminationDate": {
-        "date": "30/01/2024",
+        "date": "12/04/2023",
         "businessDayConvention": "MODFOLLOWING",
-        "terminationDateBusinessDayConventionClear": false,
+        "terminationDateBusinessDayConventionClear": true,
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
-        "terminationDateBusinessCentersClear": false
+        "terminationDateBusinessCentersClear": true
       },
       "settlementType": "CASH",
-      "settlementCurrency": "CLP",
+      "settlementCurrency": "USD",
       "floatingRateIndex": "CLP-ICP",
       "spread": 0.0,
-      "resetFrequency": "6M",
+      "resetFrequency": "TERM",
       "resetDayConvention": "MODFOLLOWING",
       "resetBusinessCenters": [
+        "USNY",
         "CLSA"
       ],
+      "rateRoundingPrecision": 4,
+      "rateRoundingDirection": "NEAREST",
       "paymentDates": {
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
         "paymentDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "paymentDatesBusinessDayConventionClear": true,
-        "paymentFrequency": "6M",
+        "paymentDatesBusinessDayConventionClear": false,
+        "paymentFrequency": "TERM",
         "paymentFrequencyClear": true
       },
       "periodEndDates": {
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
         "periodEndDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "periodEndDatesBusinessDayConventionClear": true,
-        "calculationPeriodFrequency": "6M",
+        "periodEndDatesBusinessDayConventionClear": false,
+        "calculationPeriodFrequency": "TERM",
         "calculationPeriodFrequencyClear": true
       },
       "fxFixing": {
-        "fxFixingReference": "UAH_GFI_UAH01",
-        "fxFixingOffset": 0,
+        "fxFixingReference": "CLP_DOLAR_OBS_CLP10",
+        "fxFixingOffset": -2,
         "fxFixingDayType": "BUSINESS",
         "dateRelativeTo": "PAYMENT_DATES",
-        "fxFixingDayConvention": "MODFOLLOWING",
+        "fxFixingDayConvention": "FOLLOWING",
         "fxFixingBusinessCenters": [
+          "USNY",
           "CLSA"
         ]
-      }
+      },
+      "paymentDateOffset": 0,
+      "paymentDateOffsetClear": true
     },
     {
       "legId": "Pata-Pasiva",
       "payerPartyReference": "ThisBank",
       "receiverPartyReference": "OurCounterparty",
-      "notionalAmount": 500000.0,
-      "notionalCurrency": "CLF",
+      "notionalAmount": 40000000000.0,
+      "notionalCurrency": "CLP",
       "rateType": "FIXED",
       "dayCountFraction": "ACT/360",
       "effectiveDate": {
-        "date": "12/05/2020",
+        "date": "12/04/2022",
         "businessDayConvention": "MODFOLLOWING",
         "effectiveDateBusinessDayConventionClear": false,
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
         "effectiveDateBusinessCentersClear": false
       },
       "terminationDate": {
-        "date": "30/01/2024",
+        "date": "12/04/2023",
         "businessDayConvention": "MODFOLLOWING",
-        "terminationDateBusinessDayConventionClear": false,
+        "terminationDateBusinessDayConventionClear": true,
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
-        "terminationDateBusinessCentersClear": false
+        "terminationDateBusinessCentersClear": true
       },
       "settlementType": "CASH",
-      "settlementCurrency": "CLP",
-      "fixedRate": -0.0093,
+      "settlementCurrency": "USD",
+      "fixedRate": 0.0855,
       "paymentDates": {
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
         "paymentDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "paymentDatesBusinessDayConventionClear": true,
-        "paymentFrequency": "6M",
+        "paymentDatesBusinessDayConventionClear": false,
+        "paymentFrequency": "TERM",
         "paymentFrequencyClear": true
       },
       "periodEndDates": {
         "businessCenters": [
+          "USNY",
           "CLSA"
         ],
-        "periodEndDatesBusinessCentersClear": false,
+        "periodEndDatesBusinessCentersClear": true,
         "businessDayConvention": "MODFOLLOWING",
-        "periodEndDatesBusinessDayConventionClear": true,
-        "calculationPeriodFrequency": "6M",
+        "periodEndDatesBusinessDayConventionClear": false,
+        "calculationPeriodFrequency": "TERM",
         "calculationPeriodFrequencyClear": true
-      }
+      },
+      "fxFixing": {
+        "fxFixingReference": "CLP_DOLAR_OBS_CLP10",
+        "fxFixingOffset": -2,
+        "fxFixingDayType": "BUSINESS",
+        "dateRelativeTo": "PAYMENT_DATES",
+        "fxFixingDayConvention": "FOLLOWING",
+        "fxFixingBusinessCenters": [
+          "USNY",
+          "CLSA"
+        ]
+      },
+      "paymentDateOffset": 0,
+      "paymentDateOffsetClear": true
     }
   ]
 }
