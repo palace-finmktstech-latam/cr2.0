@@ -216,7 +216,7 @@ def extract_core_values() -> str:
 
                 # Retry with new cache
                 response = genai_client.models.generate_content(
-                    model="gemini-2.0-flash-exp",
+                    model="gemini-2.5-pro",
                     contents=[
                         Content(
                             role="user",
@@ -358,7 +358,7 @@ def extract_business_day_conventions() -> str:
 
                 # Retry with new cache
                 response = genai_client.models.generate_content(
-                    model="gemini-2.0-flash-exp",
+                    model="gemini-2.5-pro",
                     contents=[
                         Content(
                             role="user",
@@ -404,6 +404,334 @@ def extract_business_day_conventions() -> str:
         # Reset cache on error so next attempt will create fresh cache
         _contract_cache = None
         return f"ERROR during extraction: {str(e)}\n\nCache has been reset. Please try again."
+
+
+def extract_period_payment_data() -> str:
+    """
+    Extracts period end dates and payment dates business day conventions and frequencies.
+
+    Uses the promptPeriodEndAndPaymentBusinessDayConventions.txt extraction instructions
+    and reuses the same context cache for cost savings.
+
+    IMPORTANT: Must call read_contract_file() first to load contract into session.
+
+    Returns:
+        JSON string with period/payment conventions and frequencies, or error message
+    """
+    global _contract_cache, _session_contract_text
+
+    if _session_contract_text is None:
+        return "ERROR: No contract loaded in session. Please call read_contract_file() first."
+
+    contract_text = _session_contract_text
+
+    try:
+        prompt_path = BACKEND_DIR / "prompts" / "promptPeriodEndAndPaymentBusinessDayConventions.txt"
+
+        if not prompt_path.exists():
+            return f"ERROR: Period/Payment prompt not found at {prompt_path}"
+
+        with open(prompt_path, 'r', encoding='utf-8') as f:
+            prompt_template = f.read()
+
+        system_instruction = prompt_template.replace("{contract_text}", "").strip()
+
+        def create_cache():
+            contents = [
+                Content(
+                    role="user",
+                    parts=[Part.from_text(text=f"Contract to analyze:\n\n{contract_text}")]
+                )
+            ]
+            cache = genai_client.caches.create(
+                model="gemini-2.5-pro",
+                config=CreateCachedContentConfig(
+                    contents=contents,
+                    display_name="contract-extraction-cache",
+                    ttl="300s",
+                ),
+            )
+            print(f"Cache created: {cache.name}")
+            print(f"Cached tokens: {cache.usage_metadata.total_token_count}")
+            return cache
+
+        if _contract_cache is None:
+            print("Creating new context cache for contract...")
+            _contract_cache = create_cache()
+        else:
+            print(f"Attempting to reuse cache: {_contract_cache.name}")
+
+        try:
+            response = genai_client.models.generate_content(
+                model="gemini-2.5-pro",
+                contents=[
+                    Content(
+                        role="user",
+                        parts=[
+                            Part.from_text(text=system_instruction),
+                            Part.from_text(
+                                text="\n\nPlease extract the period end dates and payment dates conventions and frequencies "
+                                     "according to the instructions above. Return only the PRIMARY JSON."
+                            )
+                        ]
+                    )
+                ],
+                config={
+                    "cached_content": _contract_cache.name,
+                    "temperature": 0.1,
+                }
+            )
+        except Exception as cache_error:
+            error_msg = str(cache_error).lower()
+            if "expired" in error_msg or "not found" in error_msg or "invalid" in error_msg:
+                print(f"Cache expired/invalid, creating fresh cache...")
+                _contract_cache = create_cache()
+
+                response = genai_client.models.generate_content(
+                    model="gemini-2.5-pro",
+                    contents=[
+                        Content(
+                            role="user",
+                            parts=[
+                                Part.from_text(text=system_instruction),
+                                Part.from_text(
+                                    text="\n\nPlease extract the period end dates and payment dates conventions and frequencies "
+                                         "according to the instructions above. Return only the PRIMARY JSON."
+                                )
+                            ]
+                        )
+                    ],
+                    config={
+                        "cached_content": _contract_cache.name,
+                        "temperature": 0.1,
+                    }
+                )
+            else:
+                raise
+
+        extracted_text = response.text.strip()
+
+        try:
+            if extracted_text.startswith("```json"):
+                extracted_text = extracted_text.split("```json")[1].split("```")[0].strip()
+            elif extracted_text.startswith("```"):
+                extracted_text = extracted_text.split("```")[1].split("```")[0].strip()
+
+            parsed_json = json.loads(extracted_text)
+            return json.dumps(parsed_json, indent=2, ensure_ascii=False)
+
+        except json.JSONDecodeError as e:
+            return f"ERROR: AI returned invalid JSON - {str(e)}\n\nRaw response:\n{extracted_text}"
+
+    except Exception as e:
+        _contract_cache = None
+        return f"ERROR during extraction: {str(e)}\n\nCache has been reset. Please try again."
+
+
+def extract_fx_fixing() -> str:
+    """
+    Extracts FX fixing data for legs that settle in a different currency.
+
+    Uses the promptFXFixingData.txt extraction instructions and reuses
+    the same context cache for cost savings.
+
+    IMPORTANT: Must call read_contract_file() first to load contract into session.
+
+    Returns:
+        JSON string with FX fixing data, or error message if extraction fails
+    """
+    global _contract_cache, _session_contract_text
+
+    if _session_contract_text is None:
+        return "ERROR: No contract loaded in session. Please call read_contract_file() first."
+
+    contract_text = _session_contract_text
+
+    try:
+        prompt_path = BACKEND_DIR / "prompts" / "promptFXFixingData.txt"
+
+        if not prompt_path.exists():
+            return f"ERROR: FX Fixing prompt not found at {prompt_path}"
+
+        with open(prompt_path, 'r', encoding='utf-8') as f:
+            prompt_template = f.read()
+
+        system_instruction = prompt_template.replace("{contract_text}", "").strip()
+
+        def create_cache():
+            contents = [
+                Content(
+                    role="user",
+                    parts=[Part.from_text(text=f"Contract to analyze:\n\n{contract_text}")]
+                )
+            ]
+            cache = genai_client.caches.create(
+                model="gemini-2.5-pro",
+                config=CreateCachedContentConfig(
+                    contents=contents,
+                    display_name="contract-extraction-cache",
+                    ttl="300s",
+                ),
+            )
+            print(f"Cache created: {cache.name}")
+            print(f"Cached tokens: {cache.usage_metadata.total_token_count}")
+            return cache
+
+        if _contract_cache is None:
+            print("Creating new context cache for contract...")
+            _contract_cache = create_cache()
+        else:
+            print(f"Attempting to reuse cache: {_contract_cache.name}")
+
+        try:
+            response = genai_client.models.generate_content(
+                model="gemini-2.5-pro",
+                contents=[
+                    Content(
+                        role="user",
+                        parts=[
+                            Part.from_text(text=system_instruction),
+                            Part.from_text(
+                                text="\n\nPlease extract the FX fixing data "
+                                     "according to the instructions above. Return only the PRIMARY JSON."
+                            )
+                        ]
+                    )
+                ],
+                config={
+                    "cached_content": _contract_cache.name,
+                    "temperature": 0.1,
+                }
+            )
+        except Exception as cache_error:
+            error_msg = str(cache_error).lower()
+            if "expired" in error_msg or "not found" in error_msg or "invalid" in error_msg:
+                print(f"Cache expired/invalid, creating fresh cache...")
+                _contract_cache = create_cache()
+
+                response = genai_client.models.generate_content(
+                    model="gemini-2.5-pro",
+                    contents=[
+                        Content(
+                            role="user",
+                            parts=[
+                                Part.from_text(text=system_instruction),
+                                Part.from_text(
+                                    text="\n\nPlease extract the FX fixing data "
+                                         "according to the instructions above. Return only the PRIMARY JSON."
+                                )
+                            ]
+                        )
+                    ],
+                    config={
+                        "cached_content": _contract_cache.name,
+                        "temperature": 0.1,
+                    }
+                )
+            else:
+                raise
+
+        extracted_text = response.text.strip()
+
+        try:
+            if extracted_text.startswith("```json"):
+                extracted_text = extracted_text.split("```json")[1].split("```")[0].strip()
+            elif extracted_text.startswith("```"):
+                extracted_text = extracted_text.split("```")[1].split("```")[0].strip()
+
+            parsed_json = json.loads(extracted_text)
+            return json.dumps(parsed_json, indent=2, ensure_ascii=False)
+
+        except json.JSONDecodeError as e:
+            return f"ERROR: AI returned invalid JSON - {str(e)}\n\nRaw response:\n{extracted_text}"
+
+    except Exception as e:
+        _contract_cache = None
+        return f"ERROR during extraction: {str(e)}\n\nCache has been reset. Please try again."
+
+
+# ==================== JSON MERGER TOOL ====================
+
+def merge_json_extractions(json1_str: str, json2_str: str) -> str:
+    """
+    Deep merges two JSON extraction results into a single combined JSON.
+
+    Merges nested objects and arrays (legs) by index. Later values overwrite earlier
+    values for duplicate keys.
+
+    Args:
+        json1_str: First JSON string (typically core values)
+        json2_str: Second JSON string (typically business day conventions)
+
+    Returns:
+        Merged JSON string, or error message if merge fails
+    """
+    try:
+        # Parse both JSON strings
+        json1 = json.loads(json1_str)
+        json2 = json.loads(json2_str)
+
+        def deep_merge(base: dict, overlay: dict) -> dict:
+            """
+            Recursively merge overlay into base.
+            - For dicts: merge keys recursively
+            - For lists: merge by index (zip and merge each element)
+            - For other types: overlay wins
+            """
+            result = base.copy()
+
+            for key, overlay_value in overlay.items():
+                if key not in result:
+                    # New key, just add it
+                    result[key] = overlay_value
+                else:
+                    base_value = result[key]
+
+                    # Both are dicts - merge recursively
+                    if isinstance(base_value, dict) and isinstance(overlay_value, dict):
+                        result[key] = deep_merge(base_value, overlay_value)
+
+                    # Both are lists - merge by index
+                    elif isinstance(base_value, list) and isinstance(overlay_value, list):
+                        merged_list = []
+                        # Merge matching indices
+                        for i in range(max(len(base_value), len(overlay_value))):
+                            if i < len(base_value) and i < len(overlay_value):
+                                # Both have element at this index
+                                base_elem = base_value[i]
+                                overlay_elem = overlay_value[i]
+
+                                if isinstance(base_elem, dict) and isinstance(overlay_elem, dict):
+                                    # Merge dict elements
+                                    merged_list.append(deep_merge(base_elem, overlay_elem))
+                                else:
+                                    # Overlay wins
+                                    merged_list.append(overlay_elem)
+                            elif i < len(base_value):
+                                # Only base has this element
+                                merged_list.append(base_value[i])
+                            else:
+                                # Only overlay has this element
+                                merged_list.append(overlay_value[i])
+
+                        result[key] = merged_list
+
+                    # Different types or simple values - overlay wins
+                    else:
+                        result[key] = overlay_value
+
+            return result
+
+        # Perform the deep merge
+        merged = deep_merge(json1, json2)
+
+        # Return formatted JSON
+        return json.dumps(merged, indent=2, ensure_ascii=False)
+
+    except json.JSONDecodeError as e:
+        return f"ERROR: Invalid JSON format - {str(e)}"
+    except Exception as e:
+        return f"ERROR during merge: {str(e)}"
 
 
 # ==================== TEST TOOLS (from Hello World) ====================
@@ -457,9 +785,22 @@ root_agent = Agent(
         "\n"
         "- extract_business_day_conventions(): Extracts business day conventions and business centers\n"
         "  Returns JSON with: header dates (tradeDate, effectiveDate, terminationDate) + leg dates\n"
-        "  REUSES same cache created by extract_core_values() - demonstrating cost savings!\n"
+        "  REUSES same cache - 75% savings!\n"
+        "\n"
+        "- extract_period_payment_data(): Extracts period end and payment dates conventions/frequencies\n"
+        "  Returns JSON with: leg-level period end and payment date data\n"
+        "  REUSES same cache - 75% savings!\n"
+        "\n"
+        "- extract_fx_fixing(): Extracts FX fixing data for cross-currency legs\n"
+        "  Returns JSON with: FX fixing dates, sources, business centers\n"
+        "  REUSES same cache - 75% savings!\n"
         "\n"
         "**IMPORTANT:** Must call read_contract_file() first to load contract into session!\n"
+        "\n"
+        "**JSON Merger:**\n"
+        "- merge_json_extractions(json1, json2): Deep merges two JSON extraction results\n"
+        "  Combines nested objects and arrays (legs) by index\n"
+        "  Returns single unified JSON with all extracted data\n"
         "\n"
         "**Test Tools:**\n"
         "- greet_user(name): Test greeting\n"
@@ -481,6 +822,15 @@ root_agent = Agent(
         "3. write_output_json('core_values.json', <json>) → Saves first\n"
         "4. extract_business_day_conventions() → Returns JSON, REUSES cache (75% cheaper!)\n"
         "5. write_output_json('business_day.json', <json>) → Saves second\n"
+        "\n"
+        "**Merge workflow:**\n"
+        "User: 'Extract and merge core values + business day conventions'\n"
+        "Steps:\n"
+        "1. read_contract_file('prompts/contract.txt') → Loads into session\n"
+        "2. extract_core_values() → Returns JSON1, creates cache\n"
+        "3. extract_business_day_conventions() → Returns JSON2, reuses cache\n"
+        "4. merge_json_extractions(JSON1, JSON2) → Returns merged JSON\n"
+        "5. write_output_json('merged_contract.json', <merged>) → Saves unified result\n"
         "\n\n"
         "# Important Notes:\n"
         "- The session-based approach avoids passing large contract text between tools\n"
@@ -494,6 +844,9 @@ root_agent = Agent(
         write_output_json,
         extract_core_values,
         extract_business_day_conventions,
+        extract_period_payment_data,
+        extract_fx_fixing,
+        merge_json_extractions,
         greet_user,
         calculate_sum
     ]
