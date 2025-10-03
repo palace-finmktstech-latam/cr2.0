@@ -5,5 +5,11 @@
     "trade.product.economicTerms.payout[1].interestRatePayout.calculationPeriodDates.calculationPeriodDatesAdjustments.businessDayConvention": "Pata Pasiva Coupon Business Day Convention",
     "trade.product.economicTerms.payout[0].interestRatePayout.paymentDates.paymentDatesAdjustments.businessDayConvention": "Pata Activa Settlement Lag Behaviour",
     "trade.product.economicTerms.payout[1].interestRatePayout.paymentDates.paymentDatesAdjustments.businessDayConvention": "Pata Pasiva Settlement Lag Behaviour",
+    "trade.product.economicTerms.payout[0].interestRatePayout.resetDates.resetDatesAdjustments.businessDayConvention": "Pata Activa Fixing Adjustment Rule",
+    "trade.product.economicTerms.payout[1].interestRatePayout.resetDates.resetDatesAdjustments.businessDayConvention": "Pata Pasiva Fixing Adjustment Rule",
+    "trade.counterparty[0].partyReference.value.name.value": "Nombre de nuestra entidad",
+    "trade.counterparty[1].partyReference.value.name.value": "Nombre de contraparte",
+    "trade.party[0].name.value": "Nombre de nuestra entidad",
+    "trade.party[1].name.value": "Nombre de contraparte",
     "trade.tradeIdentifier[0].assignedIdentifier[0].identifier.value": "Numero de Operacion"
   }

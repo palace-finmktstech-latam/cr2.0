@@ -1,0 +1,153 @@
+{
+  "trades": [
+    {
+      "header": {
+        "source": "contrato",
+        "tradeDate": {
+          "date": "25/09/2025",
+          "businessDayConvention": "MODFOLLOWING",
+          "tradeDateBusinessDayConventionClear": false,
+          "businessCenters": [
+            "CLSA"
+          ],
+          "tradeDateBusinessCentersClear": false
+        },
+        "effectiveDate": {
+          "date": "29/09/2025",
+          "businessDayConvention": "MODFOLLOWING",
+          "effectiveDateBusinessDayConventionClear": false,
+          "businessCenters": [
+            "CLSA"
+          ],
+          "effectiveDateBusinessCentersClear": false
+        },
+        "terminationDate": {
+          "date": "29/09/2027",
+          "businessDayConvention": "MODFOLLOWING",
+          "terminationDateBusinessDayConventionClear": false,
+          "businessCenters": [
+            "CLSA"
+          ],
+          "terminationDateBusinessCentersClear": false
+        },
+        "party1": {
+          "partyId": "ThisBank",
+          "partyName": "Banco ABC"
+        },
+        "party2": {
+          "partyId": "OurCounterparty",
+          "partyName": "Chilean Bank s"
+        },
+        "tradeId": "61863",
+        "tradeIdType": "INTERNAL",
+        "contractName": "7559-61863_anon"
+      },
+      "legs": [
+        {
+          "legId": "Pata-Activa",
+          "payerPartyReference": "OurCounterparty",
+          "receiverPartyReference": "ThisBank",
+          "notionalAmount": 10000000000.0,
+          "notionalCurrency": "CLP",
+          "rateType": "FLOATING",
+          "dayCountFraction": "ACT/360",
+          "effectiveDate": {
+            "date": "29/09/2025",
+            "businessDayConvention": "MODFOLLOWING",
+            "effectiveDateBusinessDayConventionClear": false,
+            "businessCenters": [
+              "CLSA"
+            ],
+            "effectiveDateBusinessCentersClear": false
+          },
+          "terminationDate": {
+            "date": "29/09/2027",
+            "businessDayConvention": "MODFOLLOWING",
+            "terminationDateBusinessDayConventionClear": false,
+            "businessCenters": [
+              "CLSA"
+            ],
+            "terminationDateBusinessCentersClear": false
+          },
+          "settlementType": "CASH",
+          "settlementCurrency": "CLP",
+          "floatingRateIndex": "CLP-ICP",
+          "spread": 0.0,
+          "resetFrequency": "6M",
+          "resetDayConvention": "MODFOLLOWING",
+          "resetBusinessCenters": [
+            "CLSA"
+          ],
+          "rateRoundingPrecision": 4,
+          "rateRoundingDirection": "NEAREST",
+          "paymentBusinessCenters": [
+            "CLSA"
+          ],
+          "paymentDayConvention": "MODFOLLOWING",
+          "paymentDayConventionClear": false,
+          "paymentFrequency": "6M",
+          "paymentFrequencyClear": true,
+          "calculationDayConvention": {
+            "businessCenters": [
+              "CLSA"
+            ],
+            "businessDayConvention": "MODFOLLOWING",
+            "calculationDayConventionClear": false
+          },
+          "calculationPeriodFrequency": "6M",
+          "calculationPeriodFrequencyClear": true,
+          "paymentDateOffset": 1,
+          "paymentDateOffsetClear": true
+        },
+        {
+          "legId": "Pata-Pasiva",
+          "payerPartyReference": "ThisBank",
+          "receiverPartyReference": "OurCounterparty",
+          "notionalAmount": 10000000000.0,
+          "notionalCurrency": "CLP",
+          "rateType": "FIXED",
+          "dayCountFraction": "ACT/360",
+          "effectiveDate": {
+            "date": "29/09/2025",
+            "businessDayConvention": "MODFOLLOWING",
+            "effectiveDateBusinessDayConventionClear": false,
+            "businessCenters": [
+              "CLSA"
+            ],
+            "effectiveDateBusinessCentersClear": false
+          },
+          "terminationDate": {
+            "date": "29/09/2027",
+            "businessDayConvention": "MODFOLLOWING",
+            "terminationDateBusinessDayConventionClear": false,
+            "businessCenters": [
+              "CLSA"
+            ],
+            "terminationDateBusinessCentersClear": false
+          },
+          "settlementType": "CASH",
+          "settlementCurrency": "CLP",
+          "fixedRate": 0.04545,
+          "paymentBusinessCenters": [
+            "CLSA"
+          ],
+          "paymentDayConvention": "MODFOLLOWING",
+          "paymentDayConventionClear": false,
+          "paymentFrequency": "6M",
+          "paymentFrequencyClear": true,
+          "calculationDayConvention": {
+            "businessCenters": [
+              "CLSA"
+            ],
+            "businessDayConvention": "MODFOLLOWING",
+            "calculationDayConventionClear": false
+          },
+          "calculationPeriodFrequency": "6M",
+          "calculationPeriodFrequencyClear": true,
+          "paymentDateOffset": 1,
+          "paymentDateOffsetClear": true
+        }
+      ]
+    }
+  ]
+}

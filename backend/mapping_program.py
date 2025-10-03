@@ -636,33 +636,26 @@ class TradeDataMapper:
 def main():
     """Main CLI function."""
     parser = argparse.ArgumentParser(
-        description="Transform bank-specific CSV trade data to standardized JSON format"
+        description="Transform bank-specific CSV trade data to standardized JSON format",
+        epilog="Example: python mapping_program.py 25/09/2025 BancoInternacionalCL"
     )
     parser.add_argument(
-        "--input", "-i",
-        required=True,
-        help="Input CSV file path"
+        "date",
+        help="Processing date in dd/mm/yyyy format (e.g., 25/09/2025)"
     )
     parser.add_argument(
-        "--config", "-c",
-        required=True,
-        help="Configuration YAML file path"
-    )
-    parser.add_argument(
-        "--output", "-o",
-        required=True,
-        help="Output JSON file path"
-    )
-    parser.add_argument(
-        "--source", "-s",
-        required=True,
-        choices=["banco", "contrato"],
-        help="Source type: banco or contrato"
+        "bank_name",
+        help="Bank name with two-letter country code (e.g., BancoInternacionalCL)"
     )
     parser.add_argument(
         "--verbose", "-v",
         action="store_true",
         help="Enable verbose logging"
+    )
+    parser.add_argument(
+        "--base-path",
+        default=r"C:\Users\bencl\OneDrive - palace.cl\Documents\Palace\Ideas\Contract Extraction\v2.0\Servicio",
+        help="Base path to bank folders (for future GCP migration)"
     )
 
     args = parser.parse_args()
@@ -672,17 +665,73 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
 
     try:
-        # Initialize mapper
-        mapper = TradeDataMapper(args.config, args.source)
+        # Parse date from dd/mm/yyyy to ddmmyyyy
+        try:
+            date_obj = datetime.strptime(args.date, "%d/%m/%Y")
+            date_folder_name = date_obj.strftime("%d%m%Y")
+        except ValueError:
+            print(f"Error: Invalid date format '{args.date}'. Expected dd/mm/yyyy (e.g., 25/09/2025)")
+            return 1
+
+        # Build paths
+        base_path = Path(args.base_path)
+        bank_folder = base_path / args.bank_name
+        date_folder = bank_folder / date_folder_name
+        config_file = bank_folder / "contract_reader_config.yaml"
+
+        # Verify folders exist
+        if not bank_folder.exists():
+            print(f"Error: Bank folder not found: {bank_folder}")
+            return 1
+
+        if not date_folder.exists():
+            print(f"Error: Date folder not found: {date_folder}")
+            return 1
+
+        if not config_file.exists():
+            print(f"Error: Config file not found: {config_file}")
+            return 1
+
+        # Find the _anon.csv file
+        csv_files = list(date_folder.glob("*_anon.csv"))
+
+        if len(csv_files) == 0:
+            print(f"Error: No *_anon.csv file found in {date_folder}")
+            return 1
+        elif len(csv_files) > 1:
+            print(f"Error: Multiple *_anon.csv files found in {date_folder}:")
+            for f in csv_files:
+                print(f"  - {f.name}")
+            print("Please ensure only one CSV file exists in the date folder.")
+            return 1
+
+        input_csv = csv_files[0]
+
+        # Build output path: ddmmyyyy_bancoabc_trades.json
+        output_file = date_folder / f"{date_folder_name}_bancoabc_trades.json"
+
+        print(f"Processing configuration:")
+        print(f"  Bank: {args.bank_name}")
+        print(f"  Date: {args.date} ({date_folder_name})")
+        print(f"  Config: {config_file}")
+        print(f"  Input CSV: {input_csv}")
+        print(f"  Output JSON: {output_file}")
+        print()
+
+        # Initialize mapper (source is always "banco" for CSV files)
+        mapper = TradeDataMapper(str(config_file), source="banco")
 
         # Perform transformation
-        mapper.transform_csv_to_json(args.input, args.output)
+        mapper.transform_csv_to_json(str(input_csv), str(output_file))
 
-        print(f"Transformation completed successfully!")
-        print(f"Output written to: {args.output}")
+        print(f"✓ Transformation completed successfully!")
+        print(f"✓ Output written to: {output_file}")
 
     except Exception as e:
         print(f"Error during transformation: {e}")
+        import traceback
+        if args.verbose:
+            traceback.print_exc()
         return 1
 
     return 0

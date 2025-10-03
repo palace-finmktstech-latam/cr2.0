@@ -1,6 +1,18 @@
 # Period End Dates and Payment Dates Business Day Convention and Frequency Extraction
 
-You are an expert in extracting business day conventions and payment frequencies for period end dates and payment dates from derivatives contracts. Your task is to identify how these specific date types should be adjusted when they fall on non-business days and determine their payment frequencies.
+**Business Center Pattern Mapping:**
+- "NYC" / "NY" / "New York" → USNY
+- "SAN" / "SCL" / "Santiago" / "Santiago de Chile" → CLSA
+- "NYC_BOND" / "BMA" / "Día Hábil para U.S. Government Securities" / "US GVT BOND MARKET" → USGS
+- "Londres" / "London" / "LON" → GBLO
+- "TKY" / "Tokyo" → JPTO
+- "EUR" / "Frankfurt" / "ECB" → EUTA
+- "TOR" / "Toronto" → CATO
+- "SYD" / "Sydney" → AUSY
+- "HKG" / "Hong Kong" → HKHK
+- "ZUR" / "Zurich" → CHZU
+
+You are an expert in extracting business day conventions, business centers, and payment frequencies for period end dates and payment dates from derivatives contracts. Your task is to identify how these specific date types should be adjusted when they fall on non-business days, which business center calendars apply, and determine their payment frequencies.
 
 ## Task Overview
 
@@ -93,30 +105,34 @@ First, look for a general "Business Day Convention" field, typically found in:
 
 **CRITICAL**: Check if the general convention specifies different rules for different date types:
 - Look for differentiated specifications like "Fecha Pago: [Convention] / Fecha de Término: [Convention]"
-- "Fecha Pago" / "Payment Date" conventions apply to paymentDayConvention
-- "Fecha de Término" / "Termination Date" conventions apply to calculationDayConvention
+- "Fecha Pago" / "Payment Date" conventions apply to paymentDayConvention (flat field in each leg)
+- "Fecha de Término" / "Termination Date" conventions apply to calculationDayConvention.businessDayConvention (nested field)
 - If differentiated, use the specific convention for each date type
 - If not differentiated, use as fallback for all specific date fields if no specific convention is found
 
 ### Step 2: Extract Specific Date Conventions - FOLLOW SEQUENCE STRICTLY
 
-**For paymentDayConvention and paymentFrequency (for each leg):**
-1. Check Payment Dates field for the specific leg for explicit business day convention AND payment frequency → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
+**For paymentDayConvention, paymentFrequency, and paymentBusinessCenters (for each leg):**
+1. Check Payment Dates field for the specific leg for explicit business day convention, payment frequency, AND business centers → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
    - **CRITICAL**: Focus only on text referring to Payment Dates themselves
    - **IGNORE**: References to Period End Dates within the Payment Dates section
    - **IGNORE**: Text that clearly applies to calculation or period determination
    - **Spanish contracts**: Look for "Calendario de Pago" sections and Spanish adjustment phrases
    - **Frequency extraction**: Look for explicit frequency terms or infer from date patterns
+   - **Business centers**: Extract and map to correct enums (Santiago → CLSA, New York → USNY, etc.)
+   - **IMPORTANT**: paymentBusinessCenters is a FLAT ARRAY of strings, not nested object
 2. **DIFFERENTIATED GENERAL CONVENTION**: If and only if Step 1 yielded nothing: Check if general "Convención de Días Hábiles" specifies payment date convention (e.g., "Fecha Pago: Modified Following") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 3.**
 3. **ZERO-COUPON SPECIAL CASE**: If and only if Steps 1-2 yielded nothing AND Payment Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field and set frequency to "TERM" → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 4.**
 4. **CHILEAN BANKING SPECIAL CASE**: If and only if Steps 1-3 yielded nothing AND "Calendario de Pago" contains "según fechas de pago" or similar reference to payment schedule: Use the business day convention from "Calendario de Cálculo" (Period End Dates) → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 5.**
 5. If and only if Steps 1-4 yielded nothing: Use general Business Day Convention from Step 1 (including undifferentiated "Convención de Días Hábiles")
 6. If and only if Steps 1-5 yielded nothing: Leave blank or set to "N/A"
 
-**For calculationDayConvention and calculationPeriodFrequency (for each leg):**
+**For calculationDayConvention.businessDayConvention and calculationPeriodFrequency (for each leg):**
 1. Check Period End Dates field for the specific leg for explicit business day convention AND calculation frequency → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
    - **Spanish contracts**: Look for "Calendario de Cálculo" sections and Spanish adjustment phrases
    - **Frequency extraction**: Look for explicit frequency terms or infer from date patterns
+   - Business day convention goes in calculationDayConvention.businessDayConvention (nested)
+   - Business centers go in calculationDayConvention.businessCenters (nested array)
 2. **DIFFERENTIATED GENERAL CONVENTION**: If and only if Step 1 yielded nothing: Check if general "Convención de Días Hábiles" specifies termination/calculation date convention (e.g., "Fecha de Término: Unadjusted") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 3.**
 3. If and only if Steps 1-2 yielded nothing: Check Payment Dates field for explicit references to Period End Dates business day convention (e.g., "with No Adjustment to Period End Dates") → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 4.**
    - **CRITICAL**: If Period End Dates field does not exist, use Payment Dates frequency for BOTH calculationPeriodFrequency AND paymentFrequency
@@ -131,8 +147,8 @@ First, look for a general "Business Day Convention" field, typically found in:
 - Calculation methodology sections (unless specifically about Period End Dates)
 - Notice periods or communication procedures
 - Sections clearly referring to different date types than what you're extracting
-- **CRITICAL**: When extracting paymentDayConvention, ignore Period End Dates references within Payment Dates sections
-- **CRITICAL**: When extracting calculationDayConvention, ignore Payment Dates references within Period End Dates sections
+- **CRITICAL**: When extracting paymentDayConvention (flat field), ignore Period End Dates references within Payment Dates sections
+- **CRITICAL**: When extracting calculationDayConvention.businessDayConvention (nested field), ignore Payment Dates references within Period End Dates sections
 
 **Confidence Assessment:**
 - Set "Clear" boolean to `true` if the convention is explicitly stated in the primary field (Step 1 for any field)
@@ -154,36 +170,36 @@ First, look for a general "Business Day Convention" field, typically found in:
 ```json
 {
     "header": {
-        
+
     },
     "legs": [
         {
-            "paymentDates": {
+            "paymentBusinessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+            "paymentDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
+            "paymentDayConventionClear": "[true|false]",
+            "paymentFrequency": "[1M|3M|6M|1Y|TERM]",
+            "paymentFrequencyClear": "[true|false]",
+            "calculationDayConvention": {
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
                 "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "paymentDatesBusinessDayConventionClear": "[true|false]",
-                "paymentFrequency": "[1M|3M|6M|1Y|TERM]",
-                "paymentFrequencyClear": "[true|false]"
+                "calculationDayConventionClear": "[true|false]"
             },
-            "periodEndDates": {
-                "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "periodEndDatesBusinessDayConventionClear": "[true|false]",
-                "calculationPeriodFrequency": "[1M|3M|6M|1Y|TERM]",
-                "calculationPeriodFrequencyClear": "[true|false]"
-            }
+            "calculationPeriodFrequency": "[1M|3M|6M|1Y|TERM]",
+            "calculationPeriodFrequencyClear": "[true|false]"
         },
         {
-            "paymentDates": {
+            "paymentBusinessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
+            "paymentDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
+            "paymentDayConventionClear": "[true|false]",
+            "paymentFrequency": "[1M|3M|6M|1Y|TERM]",
+            "paymentFrequencyClear": "[true|false]",
+            "calculationDayConvention": {
+                "businessCenters": ["[USNY|CLSA|USGS|GBLO|JPTO|EUTA|CATO|AUSY|HKHK|CHZU]"],
                 "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "paymentDatesBusinessDayConventionClear": "[true|false]",
-                "paymentFrequency": "[1M|3M|6M|1Y|TERM]",
-                "paymentFrequencyClear": "[true|false]"
+                "calculationDayConventionClear": "[true|false]"
             },
-            "periodEndDates": {
-                "businessDayConvention": "[MODFOLLOWING|FOLLOWING|PRECEDING|NONE]",
-                "periodEndDatesBusinessDayConventionClear": "[true|false]",
-                "calculationPeriodFrequency": "[1M|3M|6M|1Y|TERM]",
-                "calculationPeriodFrequencyClear": "[true|false]"
-            }
+            "calculationPeriodFrequency": "[1M|3M|6M|1Y|TERM]",
+            "calculationPeriodFrequencyClear": "[true|false]"
         }
     ]
 }

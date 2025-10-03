@@ -1,0 +1,242 @@
+
+
+Operación: 61863 
+Página: 1 
+ 
+ 
+ 
+ 
+CONTRATO SWAP DE TASA DE INTERÉS 
+PROMEDIO CÁMARA 
+ 
+En  Santiago  de  Chile,  a  25  de  septiembre  de  2025,  entre,  por  una  parte,  Chilean Bank s,  empresa 
+bancaria,  con  Rol  Único  Tributario  N°  97.018.000-1 representado  por  Don/Doña  Beatriz  Beltrán  Sánchez, 
+Cédula  de  Identidad  N°  16.239.254-9,  y  Don/Doña  Cristian  Castillo  Conejeros,  Cédula  de  Identidad  N° 
+12.585.913-5,  domiciliados  en  esta  ciudad,  AVDA.  COSTANERA  SUR  2710,  TORRE  A,  en  adelante  el 
+“BANCO”, y por la otra, Banco ABC, Rol único Tributario N° 97.011.000-3 representado por 
+la(s) persona(s) que se individualiza(n) al final del presente instrumento, domiciliados en esta ciudad, calle 
+MONEDA 818 , en adelante el "CLIENTE", se ha convenido el Contrato Swap que más adelante se indica, el 
+cual se regirá por las Condiciones Generales de Contratos de Derivados en el Mercado Local suscrito entre 
+ambas partes con fecha 14 de octubre de 2014, documento que, para todos los efectos, se entiende formar 
+parte integrante del presente instrumento: 
+ 
+I. Definiciones: 
+ 
+i) Fecha de Inicio Es la primera fecha de Fijación, esto es, la fecha en que comienzan a devengarse los 
+respectivos intereses sobre los montos de capital establecidos por las partes en el presente Contrato. 
+ii) Fecha de Fijación significa el primer día de cada Período de Intereses. 
+iii) Fecha de Pago significa las fechas pactadas por las partes en las cuales deben cumplir las obligaciones 
+de pago contraídas en este Contrato. 
+iv) Fecha de Vencimiento significa la última Fecha de Pago estipulada en el presente Contrato. 
+v) Monto  Contratado significa  las  cantidades  de  Moneda  Extranjera,  Unidades  de  Fomento,  IVP  y/o 
+Moneda Nacional que cada una de las partes han acordado entregar o recibir virtud de este Contrato, 
+y que se encuentren vigentes en cada Fecha de Pago, cantidad sobre la cual y por el o los Periodos 
+de Intereses pactados, se aplican las Tasas de Interés convenidas en la sección II de este Contrato. 
+vi) Monto  de  Amortización significa  el  o  los  montos  de  capital  que  las  partes  han  acordado  pagar  en 
+cada Fecha de Pago. 
+vii) Periodos de Intereses significa (i) para el primer Período de Intereses, el período que comienza en la 
+primera Fecha de Fijación y termina el día que fijen las partes en este Contrato como primera Fecha de 
+Pago, (ii) y respecto de los siguientes Períodos de Intereses, cada uno de los periodos que comienzan 
+en la Fecha de Pago inmediatamente precedente y que termina en la siguiente Fecha de Pago, y así 
+sucesivamente. 
+viii) Tasa Promedio Cámara Es la que se obtiene, de acuerdo con los procedimientos y fórmulas que se 
+estipulan a continuación, utilizando el Índice Cámara Promedio calculado por la Asociación de Bancos 
+e Instituciones Financieras de Chile A.G., en adelante ICP, cuyo Reglamento fuera aprobado en sesión 
+de Directorio de dicha Asociación de fecha 10 de Octubre de 2002, y publicado en el Diario Oficial el 
+día 16 de noviembre de 2002. 
+ANEXO No. 8 
+
+Operación: 61863 
+Página: 2 
+ 
+ 
+A. FORMA DE CÁLCULO PARA OPERACIONES REAJUSTABLES 
+ 
+Se calculará la Tasa Nominal Anual, la cual se obtendrá de la siguiente fórmula: 
+TNA = Redondear ( ( ( ICP 1 / ICP 0) –1 ) * 36000 / ( T1 – T0 ) ; 2 ) 
+ 
+ 
+ 
+** Redondear a 4 decimales 
+Donde: 
+ICP Índice Cámara Promedio publicado por la Asociación de Bancos a través de SINACOFI 
+ICP 1 Valor del índice cámara promedio al vencimiento del periodo de compensación involucrado 
+ICP 0 Valor del índice cámara promedio al inicio del periodo de compensación involucrado 
+TNA Tasa nominal anual promedio, durante el periodo de compensación involucrado 
+TRA Tasa real anual promedio, durante el periodo de compensación involucrado 
+UF 1 Valor de la UF al vencimiento de cada periodo de compensación 
+UF 0 Valor de la UF al inicio de cada periodo de compensación 
+T 1 Fecha al vencimiento de cada periodo de compensación involucrado 
+T 0 Fecha al inicio de cada periodo de compensación involucrado 
+(T1 - T0) Periodo pago de intereses 
+B. FORMA DE CÁLCULO PARA OPERACIONES NOMINALES 
+ 
+TNA = Redondear ( ( ( ICP 1 / ICP 0) –1 ) * 36000 / ( T1 – T0 ) ; 2 ) 
+Donde: 
+ICP Índice Cámara Promedio publicado por la Asociación de Bancos a través de SINACOFI 
+ICP 1 Valor del índice cámara promedio al vencimiento del periodo de compensación involucrado 
+ICP 0 Valor del índice cámara promedio al inicio del periodo de compensación involucrado 
+TNA Tasa nominal anual promedio, durante el periodo de compensación involucrado 
+T 1 Fecha al vencimiento de cada periodo de compensación involucrado 
+T 0 Fecha al inicio de cada periodo de compensación involucrado 
+(T1 - T0) Periodo pago de intereses 
+
+Operación: 61863 
+Página: 3 
+ 
+ 
+II. Condiciones Financieras: 
+ 
+01. Monto Contratado por Cliente: CLP 10.000.000.000 
+02. Monto Contratado por Banco: CLP 10.000.000.000 
+03. Fecha de Inicio: 29/09/2025 
+04. Fecha de Vencimiento: 29/09/2027 
+05. Tasa de Interés Pactada por Cliente: 4.545 TASA FIJA 
+Spread: N/A 
+Base de Cálculo: ACT/360 
+Calendario Pago: SAN 
+Calendario Fijación Tasa: N/A 
+Calendario Paridad / Tipo de Cambio: N/A 
+06. Tasa de Interés Pactada por Banco: ÍNDICE CÁMARA PROMEDIO 
+Spread: 0% 
+Base de Cálculo: ACT/360 
+Calendario Pago: SAN 
+Calendario Fijación Tasa: SAN 
+Calendario Paridad / Tipo de Cambio: N/A 
+07. Tipo de Cambio Referencial: N/A 
+08. Paridad Referencial: N/A 
+09. Lugar de Cumplimiento: Santiago de Chile 
+10. Banco de Referencia: Banco BANCO_C, BANCO_B y Banco Estado 
+11. Modalidad de Cumplimiento Compensación en CLP 
+12. Forma de Pago: LBTR 
+13. Intercambio de Principales: FINAL 
+14. Valuta de Pago: T + 1 
+15. Convención de Días Hábiles: Modified Following 
+16. Break Clause: No 
+17. Broker: DIRECTO 
+18. Observaciones: Sin Observaciones 
+ 
+III. Obligaciones de las Partes; Swap 
+
+Operación: 61863 
+Página: 4 
+ 
+ 
+ 
+(i) Por el presente instrumento, Banco ABC se obliga a pagar a Chilean Bank s en 
+cada una de las Fechas de Pago, las cantidades que se indican a continuación: 
+a. El “Monto de Intereses” determinado para cada una de dichas fechas, y que resulte de aplicar la 
+tasa indicada en la columna “Tasa” sobre el monto indicado en la columna “Capital Vigente”, por el 
+número de días que incluya cada Período de Intereses, según se indica en la columna “Días”, y 
+b. El monto determinado para cada una de dichas fechas en la columna “Amortización”. 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fecha 
+Pago 
+Plazo Saldo Capital Amortiza Interés Tasa Tipo Tasa Spread Moneda 
+29/09/2025 30/03/2026 31/03/2026 182 10.000.000.000 0 229.775.000 4,545% TASA FIJA 0% CLP 
+30/03/2026 29/09/2026 30/09/2026 183 10.000.000.000 0 231.037.500 4,545% TASA FIJA 0% CLP 
+29/09/2026 29/03/2027 30/03/2027 181 10.000.000.000 0 228.512.500 4,545% TASA FIJA 0% CLP 
+29/03/2027 29/09/2027 30/09/2027 184 10.000.000.000 10.000.000.000 232.300.000 4,545% TASA FIJA 0% CLP 
+ 
+Para todos los cálculos a efectuar en cada una de las Fechas de Pago señaladas en la columna respectiva, 
+se utilizará el valor del Dólar Observado o de la UF, según corresponda, publicado en la respectiva Fecha 
+de Pago. 
+(ii) Por el presente instrumento, Chilean Bank s se obliga a pagar a Banco ABC en 
+cada una de las Fechas de Pago, las cantidades que se indican a continuación: 
+a. El “Monto de Intereses” determinado para cada una de dichas fechas, y que resulte de aplicar la 
+tasa indicada en la columna “Tasa” sobre el monto indicado en la columna “Capital Vigente”, por 
+el número de días que incluya cada Período de Intereses, según se indica en la columna “Días”, y 
+b. El monto determinado para cada una de dichas fechas en la columna “Amortización”. 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fijación 
+Tasa 
+Fecha 
+Pago 
+Plazo Saldo Capital Amortiza Interés Tasa Tipo Tasa Spread Moneda 
+29/09/2025 30/03/2026 30/03/2026 31/03/2026 182 10.000.000.000 0 Por Determinar 
+Por 
+Determinar 
+ICP 0 % CLP 
+30/03/2026 29/09/2026 29/09/2026 30/09/2026 183 10.000.000.000 0 Por Determinar 
+Por 
+Determinar 
+ICP 0 % CLP 
+29/09/2026 29/03/2027 29/03/2027 30/03/2027 181 10.000.000.000 0 Por Determinar 
+Por 
+Determinar 
+ICP 0 % CLP 
+29/03/2027 29/09/2027 29/09/2027 30/09/2027 184 10.000.000.000 10.000.000.000 Por Determinar 
+Por 
+Determinar 
+ICP 0 % CLP 
+ 
+Para todos los cálculos a efectuar en cada una de las Fechas de Pago señaladas en la columna respectiva, 
+se utilizará el valor del Dólar Observado o de la UF, según corresponda, publicado en la respectiva Fecha 
+de Pago. 
+(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. 
+ 
+IV. Cumplimiento 
+ 
+Las Partes acuerdan que las obligaciones derivadas del presente Contrato, según se establecen en la Sección 
+III anterior, se cumplirán bajo la modalidad de Compensación en conformidad con el siguiente procedimiento. 
+En  cada  una  de  las  Fechas  de  Pago  se  establecerá  la  cuantía  en  Moneda  Nacional  de  las  obligaciones 
+contraídas por ambas Partes en el presente Contrato, de acuerdo al mecanismo establecido en la sección 
+4.3 de las Condiciones Generales.Una vez establecida su cuantía en Moneda Nacional, las respectivas 
+
+Operación: 61863 
+Página: 5 
+ 
+ 
+obligaciones se extinguirán recíprocamente por compensación, hasta la concurrencia de sus valores. Si una 
+vez operada esta compensación, el monto adeudado por una parte excediere el monto que la otra parte le 
+adeuda a su vez; la primera deberá pagar a la segunda, en la Fecha de Pago correspondiente, la diferencia 
+de la que esta última resulte acreedora. 
+ 
+Asimismo, si una cualquiera de las Partes no da cumplimiento a sus obligaciones en la respectiva Fecha de 
+Pago, el Contrato se cumplirá siempre bajo la modalidad de compensación, salvo que la parte incumplidora 
+ya hubiere recibido la contraprestación de la otra parte, en cuyo caso, la parte incumplidora estará obligada 
+a pagar íntegramente los montos pactados que adeude, ello sin perjuicio de su obligación de indemnizar, de 
+acuerdo a derecho, todo daño, menoscabo o perjuicio que hubiere ocasionado. 
+ 
+V. Definiciones: Ejemplares 
+ 
+A menos que se exprese lo contrario en este instrumento, los términos en mayúsculas tendrán el significado 
+que para ellos se señala en las Condiciones Generales. El presente contrato se firma en dos ejemplares de 
+idéntico tenor y fecha, quedando uno en poder de cada parte. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+pp. Chilean Bank s 
+RUT: 97.018.000-1 
+Domicilio: Avda Costanera Sur 2710 Torre A 
+Teléfono: 226926000 
+Rep. Legal: Beatriz Beltrán Sánchez 
+RUT: 16.239.254-9 
+Rep. Legal: Cristian Castillo Conejeros 
+RUT: 12.585.913-5 
+pp. Banco ABC 
+RUT: 97.011.000-3 
+Domicilio: MONEDA 818 
+Teléfono: 3697336 
+Rep. Legal: 
+RUT: 
+Rep. Legal: 
+RUT: 
+ 

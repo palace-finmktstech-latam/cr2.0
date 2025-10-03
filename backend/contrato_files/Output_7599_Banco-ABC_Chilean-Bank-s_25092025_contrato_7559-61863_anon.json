@@ -7,7 +7,7 @@
         "effectiveDate" : {
           "adjustableDate" : {
             "unadjustedDate" : {
-              "day" : 25,
+              "day" : 29,
               "month" : 9,
               "year" : 2025
             },
@@ -15,11 +15,6 @@
               "businessDayConvention" : "MODFOLLOWING",
               "businessCenters" : {
                 "businessCenter" : [ {
-                  "value" : "USNY",
-                  "meta" : null,
-                  "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                  "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                }, {
                   "value" : "CLSA",
                   "meta" : null,
                   "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
@@ -45,7 +40,7 @@
         "terminationDate" : {
           "adjustableDate" : {
             "unadjustedDate" : {
-              "day" : 27,
+              "day" : 29,
               "month" : 9,
               "year" : 2027
             },
@@ -53,11 +48,6 @@
               "businessDayConvention" : "MODFOLLOWING",
               "businessCenters" : {
                 "businessCenter" : [ {
-                  "value" : "USNY",
-                  "meta" : null,
-                  "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                  "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                }, {
                   "value" : "CLSA",
                   "meta" : null,
                   "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
@@ -133,7 +123,7 @@
               "settlementType" : "CASH",
               "transferSettlementType" : null,
               "settlementCurrency" : {
-                "value" : "USD",
+                "value" : "CLP",
                 "meta" : null,
                 "type" : "com.rosetta.model.metafields.FieldWithMetaString",
                 "valueType" : "java.lang.String"
@@ -143,346 +133,7 @@
               "settlementProvision" : null,
               "standardSettlementStyle" : null,
               "meta" : null,
-              "cashSettlementTerms" : [ {
-                "cashSettlementMethod" : null,
-                "valuationMethod" : null,
-                "valuationDate" : null,
-                "valuationTime" : null,
-                "cashSettlementAmount" : {
-                  "value" : 0,
-                  "unit" : {
-                    "capacityUnit" : null,
-                    "weatherUnit" : null,
-                    "financialUnit" : null,
-                    "currency" : {
-                      "value" : "FX Fixing: Reference=CLP_DOLAR_OBS_CLP10, Offset=-2 BUSINESS days, Convention=PRECEDING, RelativeTo=PAYMENT_DATES, Centers=USNY,CLSA",
-                      "meta" : null,
-                      "type" : "com.rosetta.model.metafields.FieldWithMetaString",
-                      "valueType" : "java.lang.String"
-                    },
-                    "type" : "cdm.base.math.UnitType"
-                  },
-                  "datedValue" : null,
-                  "multiplier" : null,
-                  "frequency" : null,
-                  "meta" : null,
-                  "type" : "cdm.observable.asset.Money"
-                },
-                "recoveryFactor" : null,
-                "fixedSettlement" : null,
-                "accruedInterest" : null,
-                "meta" : null,
-                "type" : "cdm.product.common.settlement.CashSettlementTerms"
-              } ],
-              "physicalSettlementTerms" : null,
-              "type" : "cdm.product.common.settlement.SettlementTerms"
-            },
-            "rateSpecification" : {
-              "fixedRateSpecification" : {
-                "rateSchedule" : {
-                  "price" : {
-                    "value" : {
-                      "value" : 0.0453,
-                      "unit" : null,
-                      "datedValue" : null,
-                      "perUnitOf" : null,
-                      "priceType" : null,
-                      "priceExpression" : null,
-                      "composite" : null,
-                      "arithmeticOperator" : null,
-                      "cashPrice" : null,
-                      "type" : "cdm.observable.asset.PriceSchedule"
-                    },
-                    "globalReference" : null,
-                    "externalReference" : null,
-                    "reference" : null,
-                    "type" : "cdm.observable.asset.metafields.ReferenceWithMetaPriceSchedule",
-                    "valueType" : "cdm.observable.asset.PriceSchedule"
-                  },
-                  "type" : "cdm.product.common.schedule.RateSchedule"
-                },
-                "meta" : null,
-                "type" : "cdm.product.asset.FixedRateSpecification"
-              },
-              "floatingRateSpecification" : null,
-              "inflationRateSpecification" : null,
-              "type" : "cdm.product.asset.RateSpecification"
-            },
-            "dayCountFraction" : {
-              "value" : "ACT_360",
-              "meta" : null,
-              "type" : "cdm.base.datetime.daycount.metafields.FieldWithMetaDayCountFractionEnum",
-              "valueType" : "cdm.base.datetime.daycount.DayCountFractionEnum"
-            },
-            "calculationPeriodDates" : {
-              "effectiveDate" : {
-                "adjustableDate" : {
-                  "unadjustedDate" : {
-                    "day" : 25,
-                    "month" : 9,
-                    "year" : 2025
-                  },
-                  "dateAdjustments" : {
-                    "businessDayConvention" : "MODFOLLOWING",
-                    "businessCenters" : {
-                      "businessCenter" : [ {
-                        "value" : "USNY",
-                        "meta" : null,
-                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                      }, {
-                        "value" : "CLSA",
-                        "meta" : null,
-                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                      } ],
-                      "commodityBusinessCalendar" : null,
-                      "businessCentersReference" : null,
-                      "meta" : null,
-                      "type" : "cdm.base.datetime.BusinessCenters"
-                    },
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.BusinessDayAdjustments"
-                  },
-                  "dateAdjustmentsReference" : null,
-                  "adjustedDate" : null,
-                  "meta" : null,
-                  "type" : "cdm.base.datetime.AdjustableDate"
-                },
-                "relativeDate" : null,
-                "meta" : null,
-                "type" : "cdm.base.datetime.AdjustableOrRelativeDate"
-              },
-              "terminationDate" : {
-                "adjustableDate" : {
-                  "unadjustedDate" : {
-                    "day" : 27,
-                    "month" : 9,
-                    "year" : 2027
-                  },
-                  "dateAdjustments" : {
-                    "businessDayConvention" : "MODFOLLOWING",
-                    "businessCenters" : {
-                      "businessCenter" : [ {
-                        "value" : "USNY",
-                        "meta" : null,
-                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                      }, {
-                        "value" : "CLSA",
-                        "meta" : null,
-                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                      } ],
-                      "commodityBusinessCalendar" : null,
-                      "businessCentersReference" : null,
-                      "meta" : null,
-                      "type" : "cdm.base.datetime.BusinessCenters"
-                    },
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.BusinessDayAdjustments"
-                  },
-                  "dateAdjustmentsReference" : null,
-                  "adjustedDate" : null,
-                  "meta" : null,
-                  "type" : "cdm.base.datetime.AdjustableDate"
-                },
-                "relativeDate" : null,
-                "meta" : null,
-                "type" : "cdm.base.datetime.AdjustableOrRelativeDate"
-              },
-              "calculationPeriodDatesAdjustments" : {
-                "businessDayConvention" : "MODFOLLOWING",
-                "businessCenters" : {
-                  "businessCenter" : [ {
-                    "value" : "USNY",
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                  }, {
-                    "value" : "CLSA",
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                  } ],
-                  "commodityBusinessCalendar" : null,
-                  "businessCentersReference" : null,
-                  "meta" : null,
-                  "type" : "cdm.base.datetime.BusinessCenters"
-                },
-                "meta" : null,
-                "type" : "cdm.base.datetime.BusinessDayAdjustments"
-              },
-              "firstPeriodStartDate" : null,
-              "firstRegularPeriodStartDate" : null,
-              "firstCompoundingPeriodEndDate" : null,
-              "lastRegularPeriodEndDate" : null,
-              "stubPeriodType" : null,
-              "calculationPeriodFrequency" : {
-                "periodMultiplier" : 6,
-                "period" : "M",
-                "meta" : null,
-                "rollConvention" : null,
-                "balanceOfFirstPeriod" : null,
-                "type" : "cdm.base.datetime.CalculationPeriodFrequency"
-              },
-              "meta" : null,
-              "type" : "cdm.product.common.schedule.CalculationPeriodDates"
-            },
-            "paymentDates" : {
-              "paymentFrequency" : {
-                "periodMultiplier" : 6,
-                "period" : "M",
-                "meta" : null,
-                "type" : "cdm.base.datetime.Frequency"
-              },
-              "firstPaymentDate" : null,
-              "lastRegularPaymentDate" : null,
-              "paymentDateSchedule" : null,
-              "payRelativeTo" : null,
-              "paymentDaysOffset" : {
-                "periodMultiplier" : 0,
-                "period" : "D",
-                "meta" : null,
-                "dayType" : "BUSINESS",
-                "type" : "cdm.base.datetime.Offset"
-              },
-              "paymentDatesAdjustments" : {
-                "businessDayConvention" : "NONE",
-                "businessCenters" : {
-                  "businessCenter" : [ {
-                    "value" : "USNY",
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                  }, {
-                    "value" : "CLSA",
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                  } ],
-                  "commodityBusinessCalendar" : null,
-                  "businessCentersReference" : null,
-                  "meta" : null,
-                  "type" : "cdm.base.datetime.BusinessCenters"
-                },
-                "meta" : null,
-                "type" : "cdm.base.datetime.BusinessDayAdjustments"
-              },
-              "meta" : null,
-              "type" : "cdm.product.common.schedule.PaymentDates"
-            },
-            "paymentDate" : null,
-            "paymentDelay" : null,
-            "resetDates" : null,
-            "discountingMethod" : null,
-            "compoundingMethod" : null,
-            "cashflowRepresentation" : null,
-            "stubPeriod" : null,
-            "bondReference" : null,
-            "fixedAmount" : null,
-            "floatingAmount" : null,
-            "spreadCalculationMethod" : null,
-            "type" : "cdm.product.asset.InterestRatePayout"
-          },
-          "optionPayout" : null,
-          "performancePayout" : null,
-          "settlementPayout" : null,
-          "meta" : null,
-          "type" : "cdm.product.template.Payout"
-        }, {
-          "assetPayout" : null,
-          "commodityPayout" : null,
-          "creditDefaultPayout" : null,
-          "fixedPricePayout" : null,
-          "interestRatePayout" : {
-            "payerReceiver" : {
-              "payer" : "PARTY_1",
-              "receiver" : "PARTY_2",
-              "type" : "cdm.base.staticdata.party.PayerReceiver"
-            },
-            "priceQuantity" : {
-              "resolvedQuantity" : null,
-              "quantitySchedule" : {
-                "value" : {
-                  "value" : 10000000000.0,
-                  "unit" : {
-                    "capacityUnit" : null,
-                    "weatherUnit" : null,
-                    "financialUnit" : null,
-                    "currency" : {
-                      "value" : "CLP",
-                      "meta" : null,
-                      "type" : "com.rosetta.model.metafields.FieldWithMetaString",
-                      "valueType" : "java.lang.String"
-                    },
-                    "type" : "cdm.base.math.UnitType"
-                  },
-                  "datedValue" : null,
-                  "multiplier" : null,
-                  "frequency" : null,
-                  "type" : "cdm.base.math.NonNegativeQuantitySchedule"
-                },
-                "globalReference" : null,
-                "externalReference" : null,
-                "reference" : null,
-                "type" : "cdm.base.math.metafields.ReferenceWithMetaNonNegativeQuantitySchedule",
-                "valueType" : "cdm.base.math.NonNegativeQuantitySchedule"
-              },
-              "quantityReference" : null,
-              "quantityMultiplier" : null,
-              "reset" : null,
-              "futureValueNotional" : null,
-              "priceSchedule" : null,
-              "meta" : null,
-              "type" : "cdm.product.common.settlement.ResolvablePriceQuantity"
-            },
-            "principalPayment" : null,
-            "settlementTerms" : {
-              "settlementType" : "CASH",
-              "transferSettlementType" : null,
-              "settlementCurrency" : {
-                "value" : "USD",
-                "meta" : null,
-                "type" : "com.rosetta.model.metafields.FieldWithMetaString",
-                "valueType" : "java.lang.String"
-              },
-              "settlementDate" : null,
-              "settlementCentre" : null,
-              "settlementProvision" : null,
-              "standardSettlementStyle" : null,
-              "meta" : null,
-              "cashSettlementTerms" : [ {
-                "cashSettlementMethod" : null,
-                "valuationMethod" : null,
-                "valuationDate" : null,
-                "valuationTime" : null,
-                "cashSettlementAmount" : {
-                  "value" : 0,
-                  "unit" : {
-                    "capacityUnit" : null,
-                    "weatherUnit" : null,
-                    "financialUnit" : null,
-                    "currency" : {
-                      "value" : "FX Fixing: Reference=CLP_DOLAR_OBS_CLP10, Offset=-2 BUSINESS days, Convention=PRECEDING, RelativeTo=PAYMENT_DATES, Centers=USNY,CLSA",
-                      "meta" : null,
-                      "type" : "com.rosetta.model.metafields.FieldWithMetaString",
-                      "valueType" : "java.lang.String"
-                    },
-                    "type" : "cdm.base.math.UnitType"
-                  },
-                  "datedValue" : null,
-                  "multiplier" : null,
-                  "frequency" : null,
-                  "meta" : null,
-                  "type" : "cdm.observable.asset.Money"
-                },
-                "recoveryFactor" : null,
-                "fixedSettlement" : null,
-                "accruedInterest" : null,
-                "meta" : null,
-                "type" : "cdm.product.common.settlement.CashSettlementTerms"
-              } ],
+              "cashSettlementTerms" : null,
               "physicalSettlementTerms" : null,
               "type" : "cdm.product.common.settlement.SettlementTerms"
             },
@@ -551,7 +202,7 @@
                 "initialRate" : null,
                 "finalRateRounding" : {
                   "roundingDirection" : "NEAREST",
-                  "precision" : 6,
+                  "precision" : 4,
                   "type" : "cdm.base.math.Rounding"
                 },
                 "averagingMethod" : null,
@@ -571,7 +222,7 @@
               "effectiveDate" : {
                 "adjustableDate" : {
                   "unadjustedDate" : {
-                    "day" : 25,
+                    "day" : 29,
                     "month" : 9,
                     "year" : 2025
                   },
@@ -579,11 +230,6 @@
                     "businessDayConvention" : "MODFOLLOWING",
                     "businessCenters" : {
                       "businessCenter" : [ {
-                        "value" : "USNY",
-                        "meta" : null,
-                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                      }, {
                         "value" : "CLSA",
                         "meta" : null,
                         "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
@@ -609,7 +255,7 @@
               "terminationDate" : {
                 "adjustableDate" : {
                   "unadjustedDate" : {
-                    "day" : 27,
+                    "day" : 29,
                     "month" : 9,
                     "year" : 2027
                   },
@@ -617,11 +263,6 @@
                     "businessDayConvention" : "MODFOLLOWING",
                     "businessCenters" : {
                       "businessCenter" : [ {
-                        "value" : "USNY",
-                        "meta" : null,
-                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                      }, {
                         "value" : "CLSA",
                         "meta" : null,
                         "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
@@ -648,11 +289,6 @@
                 "businessDayConvention" : "MODFOLLOWING",
                 "businessCenters" : {
                   "businessCenter" : [ {
-                    "value" : "USNY",
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                  }, {
                     "value" : "CLSA",
                     "meta" : null,
                     "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
@@ -694,21 +330,16 @@
               "paymentDateSchedule" : null,
               "payRelativeTo" : null,
               "paymentDaysOffset" : {
-                "periodMultiplier" : 0,
+                "periodMultiplier" : 1,
                 "period" : "D",
                 "meta" : null,
                 "dayType" : "BUSINESS",
                 "type" : "cdm.base.datetime.Offset"
               },
               "paymentDatesAdjustments" : {
-                "businessDayConvention" : "NONE",
+                "businessDayConvention" : "MODFOLLOWING",
                 "businessCenters" : {
                   "businessCenter" : [ {
-                    "value" : "USNY",
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                  }, {
                     "value" : "CLSA",
                     "meta" : null,
                     "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
@@ -742,14 +373,9 @@
                 "type" : "cdm.product.common.schedule.ResetFrequency"
               },
               "resetDatesAdjustments" : {
-                "businessDayConvention" : "FOLLOWING",
+                "businessDayConvention" : "MODFOLLOWING",
                 "businessCenters" : {
                   "businessCenter" : [ {
-                    "value" : "USNY",
-                    "meta" : null,
-                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
-                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
-                  }, {
                     "value" : "CLSA",
                     "meta" : null,
                     "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
@@ -766,6 +392,265 @@
               "meta" : null,
               "type" : "cdm.product.common.schedule.ResetDates"
             },
+            "discountingMethod" : null,
+            "compoundingMethod" : null,
+            "cashflowRepresentation" : null,
+            "stubPeriod" : null,
+            "bondReference" : null,
+            "fixedAmount" : null,
+            "floatingAmount" : null,
+            "spreadCalculationMethod" : null,
+            "type" : "cdm.product.asset.InterestRatePayout"
+          },
+          "optionPayout" : null,
+          "performancePayout" : null,
+          "settlementPayout" : null,
+          "meta" : null,
+          "type" : "cdm.product.template.Payout"
+        }, {
+          "assetPayout" : null,
+          "commodityPayout" : null,
+          "creditDefaultPayout" : null,
+          "fixedPricePayout" : null,
+          "interestRatePayout" : {
+            "payerReceiver" : {
+              "payer" : "PARTY_1",
+              "receiver" : "PARTY_2",
+              "type" : "cdm.base.staticdata.party.PayerReceiver"
+            },
+            "priceQuantity" : {
+              "resolvedQuantity" : null,
+              "quantitySchedule" : {
+                "value" : {
+                  "value" : 10000000000.0,
+                  "unit" : {
+                    "capacityUnit" : null,
+                    "weatherUnit" : null,
+                    "financialUnit" : null,
+                    "currency" : {
+                      "value" : "CLP",
+                      "meta" : null,
+                      "type" : "com.rosetta.model.metafields.FieldWithMetaString",
+                      "valueType" : "java.lang.String"
+                    },
+                    "type" : "cdm.base.math.UnitType"
+                  },
+                  "datedValue" : null,
+                  "multiplier" : null,
+                  "frequency" : null,
+                  "type" : "cdm.base.math.NonNegativeQuantitySchedule"
+                },
+                "globalReference" : null,
+                "externalReference" : null,
+                "reference" : null,
+                "type" : "cdm.base.math.metafields.ReferenceWithMetaNonNegativeQuantitySchedule",
+                "valueType" : "cdm.base.math.NonNegativeQuantitySchedule"
+              },
+              "quantityReference" : null,
+              "quantityMultiplier" : null,
+              "reset" : null,
+              "futureValueNotional" : null,
+              "priceSchedule" : null,
+              "meta" : null,
+              "type" : "cdm.product.common.settlement.ResolvablePriceQuantity"
+            },
+            "principalPayment" : null,
+            "settlementTerms" : {
+              "settlementType" : "CASH",
+              "transferSettlementType" : null,
+              "settlementCurrency" : {
+                "value" : "CLP",
+                "meta" : null,
+                "type" : "com.rosetta.model.metafields.FieldWithMetaString",
+                "valueType" : "java.lang.String"
+              },
+              "settlementDate" : null,
+              "settlementCentre" : null,
+              "settlementProvision" : null,
+              "standardSettlementStyle" : null,
+              "meta" : null,
+              "cashSettlementTerms" : null,
+              "physicalSettlementTerms" : null,
+              "type" : "cdm.product.common.settlement.SettlementTerms"
+            },
+            "rateSpecification" : {
+              "fixedRateSpecification" : {
+                "rateSchedule" : {
+                  "price" : {
+                    "value" : {
+                      "value" : 0.04545,
+                      "unit" : null,
+                      "datedValue" : null,
+                      "perUnitOf" : null,
+                      "priceType" : null,
+                      "priceExpression" : null,
+                      "composite" : null,
+                      "arithmeticOperator" : null,
+                      "cashPrice" : null,
+                      "type" : "cdm.observable.asset.PriceSchedule"
+                    },
+                    "globalReference" : null,
+                    "externalReference" : null,
+                    "reference" : null,
+                    "type" : "cdm.observable.asset.metafields.ReferenceWithMetaPriceSchedule",
+                    "valueType" : "cdm.observable.asset.PriceSchedule"
+                  },
+                  "type" : "cdm.product.common.schedule.RateSchedule"
+                },
+                "meta" : null,
+                "type" : "cdm.product.asset.FixedRateSpecification"
+              },
+              "floatingRateSpecification" : null,
+              "inflationRateSpecification" : null,
+              "type" : "cdm.product.asset.RateSpecification"
+            },
+            "dayCountFraction" : {
+              "value" : "ACT_360",
+              "meta" : null,
+              "type" : "cdm.base.datetime.daycount.metafields.FieldWithMetaDayCountFractionEnum",
+              "valueType" : "cdm.base.datetime.daycount.DayCountFractionEnum"
+            },
+            "calculationPeriodDates" : {
+              "effectiveDate" : {
+                "adjustableDate" : {
+                  "unadjustedDate" : {
+                    "day" : 29,
+                    "month" : 9,
+                    "year" : 2025
+                  },
+                  "dateAdjustments" : {
+                    "businessDayConvention" : "MODFOLLOWING",
+                    "businessCenters" : {
+                      "businessCenter" : [ {
+                        "value" : "CLSA",
+                        "meta" : null,
+                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
+                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
+                      } ],
+                      "commodityBusinessCalendar" : null,
+                      "businessCentersReference" : null,
+                      "meta" : null,
+                      "type" : "cdm.base.datetime.BusinessCenters"
+                    },
+                    "meta" : null,
+                    "type" : "cdm.base.datetime.BusinessDayAdjustments"
+                  },
+                  "dateAdjustmentsReference" : null,
+                  "adjustedDate" : null,
+                  "meta" : null,
+                  "type" : "cdm.base.datetime.AdjustableDate"
+                },
+                "relativeDate" : null,
+                "meta" : null,
+                "type" : "cdm.base.datetime.AdjustableOrRelativeDate"
+              },
+              "terminationDate" : {
+                "adjustableDate" : {
+                  "unadjustedDate" : {
+                    "day" : 29,
+                    "month" : 9,
+                    "year" : 2027
+                  },
+                  "dateAdjustments" : {
+                    "businessDayConvention" : "MODFOLLOWING",
+                    "businessCenters" : {
+                      "businessCenter" : [ {
+                        "value" : "CLSA",
+                        "meta" : null,
+                        "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
+                        "valueType" : "cdm.base.datetime.BusinessCenterEnum"
+                      } ],
+                      "commodityBusinessCalendar" : null,
+                      "businessCentersReference" : null,
+                      "meta" : null,
+                      "type" : "cdm.base.datetime.BusinessCenters"
+                    },
+                    "meta" : null,
+                    "type" : "cdm.base.datetime.BusinessDayAdjustments"
+                  },
+                  "dateAdjustmentsReference" : null,
+                  "adjustedDate" : null,
+                  "meta" : null,
+                  "type" : "cdm.base.datetime.AdjustableDate"
+                },
+                "relativeDate" : null,
+                "meta" : null,
+                "type" : "cdm.base.datetime.AdjustableOrRelativeDate"
+              },
+              "calculationPeriodDatesAdjustments" : {
+                "businessDayConvention" : "MODFOLLOWING",
+                "businessCenters" : {
+                  "businessCenter" : [ {
+                    "value" : "CLSA",
+                    "meta" : null,
+                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
+                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
+                  } ],
+                  "commodityBusinessCalendar" : null,
+                  "businessCentersReference" : null,
+                  "meta" : null,
+                  "type" : "cdm.base.datetime.BusinessCenters"
+                },
+                "meta" : null,
+                "type" : "cdm.base.datetime.BusinessDayAdjustments"
+              },
+              "firstPeriodStartDate" : null,
+              "firstRegularPeriodStartDate" : null,
+              "firstCompoundingPeriodEndDate" : null,
+              "lastRegularPeriodEndDate" : null,
+              "stubPeriodType" : null,
+              "calculationPeriodFrequency" : {
+                "periodMultiplier" : 6,
+                "period" : "M",
+                "meta" : null,
+                "rollConvention" : null,
+                "balanceOfFirstPeriod" : null,
+                "type" : "cdm.base.datetime.CalculationPeriodFrequency"
+              },
+              "meta" : null,
+              "type" : "cdm.product.common.schedule.CalculationPeriodDates"
+            },
+            "paymentDates" : {
+              "paymentFrequency" : {
+                "periodMultiplier" : 6,
+                "period" : "M",
+                "meta" : null,
+                "type" : "cdm.base.datetime.Frequency"
+              },
+              "firstPaymentDate" : null,
+              "lastRegularPaymentDate" : null,
+              "paymentDateSchedule" : null,
+              "payRelativeTo" : null,
+              "paymentDaysOffset" : {
+                "periodMultiplier" : 1,
+                "period" : "D",
+                "meta" : null,
+                "dayType" : "BUSINESS",
+                "type" : "cdm.base.datetime.Offset"
+              },
+              "paymentDatesAdjustments" : {
+                "businessDayConvention" : "MODFOLLOWING",
+                "businessCenters" : {
+                  "businessCenter" : [ {
+                    "value" : "CLSA",
+                    "meta" : null,
+                    "type" : "cdm.base.datetime.metafields.FieldWithMetaBusinessCenterEnum",
+                    "valueType" : "cdm.base.datetime.BusinessCenterEnum"
+                  } ],
+                  "commodityBusinessCalendar" : null,
+                  "businessCentersReference" : null,
+                  "meta" : null,
+                  "type" : "cdm.base.datetime.BusinessCenters"
+                },
+                "meta" : null,
+                "type" : "cdm.base.datetime.BusinessDayAdjustments"
+              },
+              "meta" : null,
+              "type" : "cdm.product.common.schedule.PaymentDates"
+            },
+            "paymentDate" : null,
+            "paymentDelay" : null,
+            "resetDates" : null,
             "discountingMethod" : null,
             "compoundingMethod" : null,
             "cashflowRepresentation" : null,
@@ -798,7 +683,7 @@
         "value" : {
           "partyId" : null,
           "name" : {
-            "value" : "Banco Internacional",
+            "value" : "Banco ABC",
             "meta" : null,
             "type" : "com.rosetta.model.metafields.FieldWithMetaString",
             "valueType" : "java.lang.String"
@@ -824,7 +709,7 @@
         "value" : {
           "partyId" : null,
           "name" : {
-            "value" : "BANCO BILBAO VIZCAYA ARGENTARIA",
+            "value" : "Chilean Bank s",
             "meta" : null,
             "type" : "com.rosetta.model.metafields.FieldWithMetaString",
             "valueType" : "java.lang.String"
@@ -852,7 +737,7 @@
       "issuer" : null,
       "assignedIdentifier" : [ {
         "identifier" : {
-          "value" : "7558",
+          "value" : "61863",
           "meta" : null,
           "type" : "com.rosetta.model.metafields.FieldWithMetaString",
           "valueType" : "java.lang.String"
@@ -866,7 +751,7 @@
     } ],
     "tradeDate" : {
       "value" : {
-        "day" : 23,
+        "day" : 25,
         "month" : 9,
         "year" : 2025
       },
@@ -878,7 +763,7 @@
     "party" : [ {
       "partyId" : null,
       "name" : {
-        "value" : "Banco Internacional",
+        "value" : "Banco ABC",
         "meta" : null,
         "type" : "com.rosetta.model.metafields.FieldWithMetaString",
         "valueType" : "java.lang.String"
@@ -893,7 +778,7 @@
     }, {
       "partyId" : null,
       "name" : {
-        "value" : "BANCO BILBAO VIZCAYA ARGENTARIA",
+        "value" : "Chilean Bank s",
         "meta" : null,
         "type" : "com.rosetta.model.metafields.FieldWithMetaString",
         "valueType" : "java.lang.String"

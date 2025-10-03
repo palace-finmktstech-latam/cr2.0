@@ -16,7 +16,7 @@ The system uses **5 specialized extraction prompts** combined with:
 
 ### Extraction Pipeline
 
-The system performs **5 sequential extractions**, each auto-merging into a single JSON:
+The system performs **5 sequential extractions** with **validation**, each auto-merging into a single JSON:
 
 ```
 1. clear_session()                     ← Clears cache before new contract
@@ -26,7 +26,8 @@ The system performs **5 sequential extractions**, each auto-merging into a singl
 5. extract_period_payment_data()       ← Reuses cache (75% savings)
 6. extract_fx_fixing()                 ← Reuses cache (75% savings)
 7. extract_payment_date_offset()       ← Reuses cache (75% savings)
-8. write_output_json(filename)         ← Writes final merged JSON
+8. validate_extraction()               ← Validates quality & completeness
+9. write_output_json(filename)         ← Writes final merged JSON
 ```
 
 ### Key Features
@@ -37,6 +38,7 @@ The system performs **5 sequential extractions**, each auto-merging into a singl
 ✅ **Leg Ordering** - Intelligent leg identification prevents data corruption
 ✅ **Query Tool** - Ask questions about contract or extracted data
 ✅ **Temperature: 0** - Maximum precision and consistency for extractions
+✅ **Validation Layer** - Comprehensive quality checks for structural integrity, completeness, and data quality
 
 ---
 
@@ -318,6 +320,8 @@ Subsequent extractions (2-5):
 | `get_session_status()` | Show session state | None |
 | `write_output_json(filename)` | Write merged JSON to file | `filename` |
 | `query_contract_data(question)` | Ask questions about contract/data | `question` |
+| `validate_extraction()` | Validate data quality & completeness | None |
+| `process_contract_folder(folder_path)` | Batch process all .txt contracts in folder | `folder_path` (default: "prompts") |
 
 ### Extraction Tools
 
@@ -366,7 +370,14 @@ Agent calls sequentially:
 7. extract_payment_date_offset()
    → "SUCCESS: Payment date offset extracted and merged"
 
-8. write_output_json("mycontract.json")
+8. validate_extraction()
+   → "=== EXTRACTION QUALITY REPORT ===
+      Quality: EXCELLENT (95% complete, 0 critical issues)
+      ✓ Structure: 2-leg FIXED vs FLOATING swap
+      ✓ Completeness: 19/20 fields populated
+      ..."
+
+9. write_output_json("mycontract.json")
    → "SUCCESS: JSON written to backend/output/mycontract.json"
 ```
 
@@ -398,6 +409,49 @@ Response: "FX fixing data is present on Leg 2 (Pata-Pasiva):
 Leg 1 (Pata-Activa) does not have FX fixing because the notional
 and settlement currencies are both CLP."
 ```
+
+### Batch Processing Multiple Contracts
+
+```
+User: "Process all contracts in the prompts folder"
+
+Agent: process_contract_folder('prompts')
+
+Response:
+BATCH PROCESSING: Found 4 contract(s)
+
+============================================================
+
+📄 Processing: gscontract.txt
+------------------------------------------------------------
+✅ SUCCESS: gscontract.json
+   Validation: EXCELLENT (95% complete, 0 critical issues)
+
+📄 Processing: bxcontract.txt
+------------------------------------------------------------
+✅ SUCCESS: bxcontract.json
+   Validation: GOOD (82% complete, 0 critical issues)
+
+📄 Processing: citicontract.txt
+------------------------------------------------------------
+✅ SUCCESS: citicontract.json
+   Validation: EXCELLENT (96% complete, 0 critical issues)
+
+📄 Processing: contract.txt
+------------------------------------------------------------
+✅ SUCCESS: contract.json
+   Validation: EXCELLENT (95% complete, 0 critical issues)
+
+============================================================
+BATCH PROCESSING COMPLETE
+```
+
+**How batch processing works:**
+- Finds all `.txt` files in specified folder (excludes prompt*.txt files)
+- For each contract: clears session → reads file → runs all 5 extractions → validates → writes JSON
+- Output files use same name as input: `gscontract.txt` → `gscontract.json` in output/ folder
+- Returns summary report with validation quality for each contract
+- Processes contracts sequentially to maintain cache efficiency
 
 ---
 
@@ -471,14 +525,108 @@ backend/
 
 ---
 
+---
+
+## Validation Layer
+
+### Overview
+
+The validation layer performs comprehensive quality checks on extracted contract data **before** writing the output JSON. It detects unusual structures, missing data, and potential extraction issues.
+
+### Validation Types
+
+**1. Structural Validation**
+- **Leg Count Check**: Flags 1-leg or 3+ leg swaps (expected: 2 legs)
+- **Leg Combinations**: Validates FIXED vs FLOATING, FLOATING vs FLOATING (flags FIXED vs FIXED as unusual)
+- **Payer/Receiver Logic**: Detects invalid structures where both legs have same payer
+- **Unusual Structures**: Reports contracts significantly different from expected Interest Rate Swaps
+
+**2. Completeness Validation**
+- Checks critical fields are populated (dates, parties, notionals, rates)
+- Calculates completeness percentage
+- Identifies missing required fields per leg type (FIXED needs `fixedRate`, FLOATING needs `floatingRateIndex`)
+
+**3. Clarity Validation**
+- Counts fields marked with `*Clear: false`
+- Reports which extractions had ambiguous source data
+- Helps identify contracts needing manual review
+
+**4. Data Quality Validation**
+- Negative notionals (suspicious)
+- Missing rate types
+- Invalid date formats
+- Out-of-range values
+
+**5. Consistency Validation**
+- **FX Fixing Logic**: Verifies FX fixing only present when `notionalCurrency ≠ settlementCurrency`
+- Reports legs missing FX fixing when currencies differ
+- Reports legs with unnecessary FX fixing when currencies match
+
+### Quality Scoring
+
+| Score | Criteria | Meaning |
+|-------|----------|---------|
+| **EXCELLENT** | ≥90% complete, 0 critical issues, ≤3 warnings | High-quality extraction ready for production |
+| **GOOD** | ≥75% complete, 0 critical issues, ≤3 warnings | Acceptable quality, minor gaps |
+| **FAIR** | ≥60% complete, 0 critical issues | Usable but significant data missing |
+| **POOR** | <60% complete OR critical issues OR structural issues | Requires manual review/re-extraction |
+
+### Example Report
+
+```
+=== EXTRACTION QUALITY REPORT ===
+
+Quality: EXCELLENT (95% complete, 0 critical issues)
+
+## Structural Validation:
+✓ Structure: 2-leg swap
+✓ Leg combination: FIXED vs FLOATING (expected)
+✓ Payer/receiver relationships valid
+
+## Completeness: 95% (19/20 critical fields)
+✓ Header: All critical fields present
+✓ Leg 1 (Pata-Activa): 9/10 fields (missing: resetRelativeTo)
+✓ Leg 2 (Pata-Pasiva): 10/10 fields
+
+## Clarity: 3 fields marked unclear
+⚠ tradeDate businessDayConvention unclear
+⚠ effectiveDate businessCenters unclear
+⚠ Leg 2 periodEndDates businessCenters unclear
+
+## Data Quality:
+✓ All notionals positive
+✓ All rate types present
+✓ No suspicious values detected
+
+## Consistency Checks:
+✓ FX Fixing Logic: Correct
+  - Leg 1: No FX fixing (CLP→CLP, same currency) ✓
+  - Leg 2: Has FX fixing (CLF→CLP, different currencies) ✓
+
+=====================================
+```
+
+### Usage in Workflow
+
+The validation step is **automatic** in the standard extraction workflow:
+
+```
+7. extract_payment_date_offset()
+8. validate_extraction()          ← Automatic quality check
+9. write_output_json()             ← Proceed if quality acceptable
+```
+
+If validation reports **POOR** quality or critical issues, review the report before using the output JSON.
+
+---
+
 ## Future Enhancements (Not Yet Implemented)
 
 - [ ] Parallel execution of extractions 2-5 (all depend on Core Values only)
 - [ ] Language detection (EN vs ES) with language-specific prompts
-- [ ] Batch processing multiple contracts
-- [ ] Validation layer with quality scores
 - [ ] Human-readable summary generation
 - [ ] Instance-based architecture for true parallel processing (multiple contracts simultaneously)
+- [ ] Async batch processing with progress tracking
 
 ---
 
@@ -509,7 +657,9 @@ backend/
 - **v2.1** - Added leg ordering system, FX fixing conditional logic
 - **v2.2** - Added payment date offset extraction
 - **v2.3** - Added query tool, clear_session, sequential execution enforcement
-- **v2.4** (Current) - Temperature: 0, comprehensive documentation
+- **v2.4** - Temperature: 0, comprehensive documentation
+- **v2.5** - Added validation layer with quality scoring and structural checks
+- **v2.6** (Current) - Added batch processing for multiple contracts with automatic naming
 
 ---
 
