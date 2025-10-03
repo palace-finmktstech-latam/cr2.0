@@ -467,38 +467,93 @@ def find_matching_files(banco_dir: str, contrato_dir: str) -> List[Tuple[str, st
     return matches
 
 def main():
-    parser = argparse.ArgumentParser(description='Generate PDF reports comparing JSON files')
-    parser.add_argument('banco_dir', help='Directory containing Banco JSON files')
-    parser.add_argument('contrato_dir', help='Directory containing Contrato JSON files')
-    parser.add_argument('--output-dir', '-o', default='.', help='Output directory for PDF report')
-    parser.add_argument('--translations', '-t', help='Path to JSON file with path translations')
-    parser.add_argument('--logo', '-l', help='Path to logo image file')
-    parser.add_argument('--report-name', '-r', default='reporte_comparativo', help='Base name for PDF report')
-    
+    parser = argparse.ArgumentParser(
+        description='Generate PDF reports comparing Banco and Contract JSON files',
+        epilog='Example: python json_pdf_report.py 25/09/2025 BancoInternacionalCL'
+    )
+    parser.add_argument(
+        'date',
+        help='Processing date in dd/mm/yyyy format (e.g., 25/09/2025)'
+    )
+    parser.add_argument(
+        'bank_name',
+        help='Bank name with country code (e.g., BancoInternacionalCL)'
+    )
+    parser.add_argument(
+        '--base-path',
+        default=r'C:\Users\bencl\OneDrive - palace.cl\Documents\Palace\Ideas\Contract Extraction\v2.0\Servicio',
+        help='Base path to bank folders (for future GCP migration)'
+    )
+
     args = parser.parse_args()
-    
+
+    # Parse date
+    try:
+        date_obj = datetime.strptime(args.date, "%d/%m/%Y")
+        date_folder_name = date_obj.strftime("%d%m%Y")
+    except ValueError:
+        print(f"Error: Invalid date format '{args.date}'. Expected dd/mm/yyyy (e.g., 25/09/2025)")
+        return 1
+
+    # Build paths
+    base_path = Path(args.base_path)
+    bank_folder = base_path / args.bank_name
+    date_folder = bank_folder / date_folder_name
+
+    # Auto-discover paths
+    banco_dir = date_folder / "cdm_outputs" / "banks"
+    contrato_dir = date_folder / "cdm_outputs" / "contracts"
+    output_dir = date_folder / "reports"
+    translations_file = bank_folder / "translations.json"
+    logo_file = Path(__file__).parent / "palace_logo.png"
+
+    # Generate report name with timestamp
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    report_name = f"reporte_operaciones_{date_folder_name}_{timestamp}"
+
     # Validate directories
-    if not os.path.isdir(args.banco_dir):
-        print(f"Error: Banco directory not found: {args.banco_dir}")
+    if not bank_folder.exists():
+        print(f"Error: Bank folder not found: {bank_folder}")
         return 1
-    
-    if not os.path.isdir(args.contrato_dir):
-        print(f"Error: Contrato directory not found: {args.contrato_dir}")
+
+    if not date_folder.exists():
+        print(f"Error: Date folder not found: {date_folder}")
         return 1
+
+    if not banco_dir.is_dir():
+        print(f"Error: Banco CDM directory not found: {banco_dir}")
+        return 1
+
+    if not contrato_dir.is_dir():
+        print(f"Error: Contrato CDM directory not found: {contrato_dir}")
+        return 1
+
+    # Create reports directory
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"Processing configuration:")
+    print(f"  Bank: {args.bank_name}")
+    print(f"  Date: {args.date} ({date_folder_name})")
+    print(f"  Banco JSON dir: {banco_dir}")
+    print(f"  Contrato JSON dir: {contrato_dir}")
+    print(f"  Output dir: {output_dir}")
+    print(f"  Translations: {translations_file if translations_file.exists() else 'Not found'}")
+    print(f"  Logo: {logo_file if logo_file.exists() else 'Not found'}")
+    print()
     
     # Find matching file pairs
     print("Searching for matching file pairs...")
-    file_pairs = find_matching_files(args.banco_dir, args.contrato_dir)
-    
+    file_pairs = find_matching_files(str(banco_dir), str(contrato_dir))
+
     if not file_pairs:
         print("No matching file pairs found!")
         return 1
-    
+
     print(f"Found {len(file_pairs)} matching file pairs")
-    
+
     # Initialize comparator and PDF generator
-    comparator = JSONComparator(args.translations)
-    pdf_generator = PDFReportGenerator(args.logo)
+    comparator = JSONComparator(str(translations_file) if translations_file.exists() else None)
+    pdf_generator = PDFReportGenerator(str(logo_file) if logo_file.exists() else None)
     
     trade_results = []
     
@@ -517,12 +572,13 @@ def main():
             
             differences = comparator.compare_jsons(json1, json2)
             
-            # Collect results
+            # Collect results (remove _anon suffix from contract name)
+            contract_name = contrato_parsed.contract_filename.replace('_anon', '')
             trade_results.append({
                 'processing_date': banco_parsed.get_formatted_date(),
                 'trade_id': banco_parsed.counterparty_trade_id,
                 'counterparty': banco_parsed.counterparty_name,
-                'contract_name': contrato_parsed.contract_filename,
+                'contract_name': contract_name,
                 'num_differences': len(differences),
                 'differences': differences
             })
@@ -535,17 +591,16 @@ def main():
     
     if trade_results:
         # Generate PDF report
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        pdf_output = os.path.join(args.output_dir, f"{args.report_name}_{timestamp}.pdf")
-        
-        pdf_generator.generate_pdf_report(trade_results, pdf_output)
+        pdf_output = output_dir / f"{report_name}.pdf"
+
+        pdf_generator.generate_pdf_report(trade_results, str(pdf_output))
         
         # Summary
         total_differences = sum(result['num_differences'] for result in trade_results)
-        print(f"\n📊 Report Summary:")
-        print(f"📁 Trades processed: {len(trade_results)}")
-        print(f"🔍 Total differences found: {total_differences}")
-        print(f"📄 PDF report generated: {pdf_output}")
+        print(f"\nREPORT SUMMARY:")
+        print(f"Trades processed: {len(trade_results)}")
+        print(f"Total differences found: {total_differences}")
+        print(f"PDF report generated: {pdf_output}")
     
     else:
         print("No successful comparisons completed.")

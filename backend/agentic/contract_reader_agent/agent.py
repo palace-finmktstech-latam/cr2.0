@@ -225,6 +225,81 @@ def run_cdm_generator() -> str:
         return f"ERROR running CDM generator: {str(e)}"
 
 
+def run_pdf_report() -> str:
+    """
+    Generates PDF comparison report between Banco and Contract CDM outputs.
+
+    Must be called AFTER run_cdm_generator() which creates the CDM files.
+
+    Reads from:
+    - {date_folder}/cdm_outputs/banks/ (Banco CDM files)
+    - {date_folder}/cdm_outputs/contracts/ (Contract CDM files)
+    - {bank_folder}/translations.json (field translations)
+    - backend/palace_logo.png (logo)
+
+    Writes to: {date_folder}/reports/reporte_operaciones_ddmmyyyy_<timestamp>.pdf
+
+    Returns:
+        Success message with report path and summary, or error message
+    """
+    global _session_date_folder, _session_bank_name
+    import subprocess
+    from pathlib import Path
+    from datetime import datetime
+
+    if _session_date_folder is None or _session_bank_name is None:
+        return "ERROR: No date folder or bank name set in session. Call run_mapping_program() first to initialize."
+
+    try:
+        # Define paths
+        pdf_script_path = Path(__file__).parent.parent.parent / "json_pdf_report.py"
+
+        # Validate script exists
+        if not pdf_script_path.exists():
+            return f"ERROR: PDF report script not found at: {pdf_script_path}"
+
+        # Extract date string from folder name
+        date_folder_name = _session_date_folder.name  # e.g., "25092025"
+        # Convert back to dd/mm/yyyy
+        date_obj = datetime.strptime(date_folder_name, "%d%m%Y")
+        date_str = date_obj.strftime("%d/%m/%Y")
+
+        # Run PDF report script
+        result = subprocess.run(
+            [
+                "python", str(pdf_script_path),
+                date_str,
+                _session_bank_name
+            ],
+            capture_output=True,
+            text=True,
+            timeout=300  # 5 minute timeout
+        )
+
+        # Check return code
+        if result.returncode != 0:
+            error_msg = f"ERROR: PDF report generation failed with return code {result.returncode}\n\n"
+            if result.stderr:
+                error_msg += f"Error output:\n{result.stderr}\n"
+            if result.stdout:
+                error_msg += f"Standard output:\n{result.stdout}"
+            return error_msg
+
+        # Parse output to find PDF filename
+        output_lines = result.stdout
+
+        # Success!
+        msg = f"SUCCESS: PDF report generated!\n\n"
+        msg += f"Report output:\n{output_lines}"
+
+        return msg
+
+    except subprocess.TimeoutExpired:
+        return "ERROR: PDF report generation timed out after 5 minutes"
+    except Exception as e:
+        return f"ERROR running PDF report generator: {str(e)}"
+
+
 def read_contract_file(filename: str) -> str:
     """
     Reads a contract text file from the session date folder and stores it in session.
@@ -2053,6 +2128,7 @@ root_agent = Agent(
         "  Date format: dd/mm/yyyy (e.g., '25/09/2025')\n"
         "  Bank name format: BankNameCL (e.g., 'BancoInternacionalCL')\n"
         "- run_cdm_generator(): Converts JSON to CDM format (call after write_consolidated_output)\n"
+        "- run_pdf_report(): Generates PDF comparison report (call after run_cdm_generator)\n"
         "\n"
         "**Session Management:**\n"
         "- list_contract_files(): Lists all *_anon.txt files in date folder\n"
@@ -2135,6 +2211,10 @@ root_agent = Agent(
         "   Converts JSON files to CDM format using Java JAR\n"
         "   Reads from cdm_inputs folder, writes to cdm_outputs folder\n"
         "\n"
+        "7. run_pdf_report()\n"
+        "   Generates PDF comparison report between Banco and Contract CDM outputs\n"
+        "   Writes to reports folder\n"
+        "\n"
         "CRITICAL: Call tools ONE at a time. Wait for response before next tool.\n"
         "\n"
         "Each extraction auto-merges into session.\n"
@@ -2147,6 +2227,7 @@ root_agent = Agent(
     tools=[
         run_mapping_program,
         run_cdm_generator,
+        run_pdf_report,
         list_contract_files,
         load_mapped_trades,
         clear_session,
