@@ -135,6 +135,96 @@ def run_mapping_program(date_str: str, bank_name: str) -> str:
     except Exception as e:
         return f"ERROR running mapping program: {str(e)}"
 
+
+def run_cdm_generator() -> str:
+    """
+    Runs the CDM generator JAR to convert JSON files to CDM format.
+
+    Must be called AFTER write_consolidated_output() which creates the input files.
+
+    Reads from: {date_folder}/cdm_inputs/
+    - ddmmyyyy_bancoabc_trades.json (from mapping)
+    - ddmmyyyy_bancoabc_contracts.json (from extraction)
+
+    Writes to: {date_folder}/cdm_outputs/
+    - CDM-formatted JSON files
+
+    Returns:
+        Success message with output file count, or error message
+    """
+    global _session_date_folder
+    import subprocess
+    from pathlib import Path
+
+    if _session_date_folder is None:
+        return "ERROR: No date folder set in session. Call run_mapping_program() first to initialize."
+
+    try:
+        # Define paths
+        cdm_jar_path = Path(r"c:\Users\bencl\Proyectos\cr2.0\backend\cdm\cdm-generator.jar")
+        input_dir = _session_date_folder / "cdm_inputs"
+        output_dir = _session_date_folder / "cdm_outputs"
+
+        # Validate JAR exists
+        if not cdm_jar_path.exists():
+            return f"ERROR: CDM generator JAR not found at: {cdm_jar_path}"
+
+        # Validate input directory exists and has files
+        if not input_dir.exists():
+            return f"ERROR: Input directory not found: {input_dir}\nMake sure run_mapping_program() and write_consolidated_output() completed successfully."
+
+        input_files = list(input_dir.glob("*.json"))
+        if not input_files:
+            return f"ERROR: No JSON files found in {input_dir}"
+
+        # Create output directory
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Run CDM generator JAR
+        result = subprocess.run(
+            [
+                "java", "-jar", str(cdm_jar_path),
+                "--inputDir", str(input_dir),
+                "--outputDir", str(output_dir)
+            ],
+            capture_output=True,
+            text=True,
+            timeout=300  # 5 minute timeout
+        )
+
+        # Check return code
+        if result.returncode != 0:
+            error_msg = f"ERROR: CDM generator failed with return code {result.returncode}\n\n"
+            if result.stderr:
+                error_msg += f"Error output:\n{result.stderr}\n"
+            if result.stdout:
+                error_msg += f"Standard output:\n{result.stdout}"
+            return error_msg
+
+        # Validate output files were created
+        output_files = list(output_dir.glob("*.json"))
+        if not output_files:
+            return f"WARNING: CDM generator completed but no output files found in {output_dir}\n\nOutput:\n{result.stdout}"
+
+        # Success!
+        file_list = "\n".join([f"  - {f.name}" for f in output_files])
+        msg = f"SUCCESS: CDM generation completed!\n"
+        msg += f"Input files: {len(input_files)}\n"
+        msg += f"Output files: {len(output_files)}\n"
+        msg += f"Output directory: {output_dir}\n\n"
+        msg += f"Generated CDM files:\n{file_list}"
+
+        if result.stdout:
+            msg += f"\n\nCDM Generator output:\n{result.stdout}"
+
+        return msg
+
+    except subprocess.TimeoutExpired:
+        return "ERROR: CDM generator timed out after 5 minutes"
+    except Exception as e:
+        return f"ERROR running CDM generator: {str(e)}"
+
+
 def read_contract_file(filename: str) -> str:
     """
     Reads a contract text file from the session date folder and stores it in session.
@@ -1962,6 +2052,7 @@ root_agent = Agent(
         "- run_mapping_program(date, bank_name): Runs CSV to JSON mapping - ALWAYS RUN THIS FIRST!\n"
         "  Date format: dd/mm/yyyy (e.g., '25/09/2025')\n"
         "  Bank name format: BankNameCL (e.g., 'BancoInternacionalCL')\n"
+        "- run_cdm_generator(): Converts JSON to CDM format (call after write_consolidated_output)\n"
         "\n"
         "**Session Management:**\n"
         "- list_contract_files(): Lists all *_anon.txt files in date folder\n"
@@ -2040,6 +2131,10 @@ root_agent = Agent(
         "   Writes ddmmyyyy_bancoabc_contracts.json to cdm_inputs folder (CDM ready)\n"
         "   Also writes debug version to extraction_metadata folder\n"
         "\n"
+        "6. run_cdm_generator()\n"
+        "   Converts JSON files to CDM format using Java JAR\n"
+        "   Reads from cdm_inputs folder, writes to cdm_outputs folder\n"
+        "\n"
         "CRITICAL: Call tools ONE at a time. Wait for response before next tool.\n"
         "\n"
         "Each extraction auto-merges into session.\n"
@@ -2051,6 +2146,7 @@ root_agent = Agent(
     ),
     tools=[
         run_mapping_program,
+        run_cdm_generator,
         list_contract_files,
         load_mapped_trades,
         clear_session,
