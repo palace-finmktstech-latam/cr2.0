@@ -12,33 +12,46 @@ The system uses **5 specialized extraction prompts** combined with:
 
 ---
 
-## Current Architecture (MVP Complete)
+## Current Architecture (Production Ready)
 
-### Extraction Pipeline
+### Integrated Processing Pipeline
 
-The system performs **5 sequential extractions** with **validation**, each auto-merging into a single JSON:
+The system now provides **end-to-end processing** combining CSV mapping and contract extraction:
 
+**Complete Bank Processing Workflow:**
 ```
-1. clear_session()                     ← Clears cache before new contract
-2. read_contract_file(path)            ← Loads contract into session
-3. extract_core_values()               ← Extracts basic data, creates cache
-4. extract_business_day_conventions()  ← Reuses cache (75% savings)
-5. extract_period_payment_data()       ← Reuses cache (75% savings)
-6. extract_fx_fixing()                 ← Reuses cache (75% savings)
-7. extract_payment_date_offset()       ← Reuses cache (75% savings)
-8. validate_extraction()               ← Validates quality & completeness
-9. write_output_json(filename)         ← Writes final merged JSON
+1. run_mapping_program(date, bank_name)  ← Processes CSV → banco JSON (trades)
+2. list_contract_files()                 ← Discovers all *_anon.txt contracts
+3. For each contract:
+   - clear_session()                     ← Clears cache before new contract
+   - read_contract_file(filename)        ← Loads contract into session
+   - extract_core_values()               ← Extracts basic data, creates cache
+   - extract_business_day_conventions()  ← Reuses cache (75% savings)
+   - extract_period_payment_data()       ← Reuses cache (75% savings)
+   - extract_fx_fixing()                 ← Reuses cache (75% savings)
+   - extract_payment_date_offset()       ← Reuses cache (75% savings)
+   - validate_extraction()               ← Validates quality & completeness
+   - save_contract_to_batch()            ← Adds to consolidated output
+4. write_consolidated_output()           ← Writes all contracts to JSON
 ```
+
+**Output Files (all in date folder):**
+- `ddmmyyyy_bancoabc_trades.json` - From CSV mapping (banco data)
+- `ddmmyyyy_bancoabc_contracts.json` - From contract extraction (clean, no *Clear fields)
+- `extraction_metadata/ddmmyyyy_bancoabc_contracts.json` - Debug version with *Clear fields
 
 ### Key Features
 
+✅ **Integrated Pipeline** - Single command processes both CSV mapping and contract extraction
+✅ **Bank Folder Structure** - Organized by bank and date for easy management
 ✅ **Prompt Caching** - Contract text cached once, reused 4x (75% cost reduction)
 ✅ **Session Storage** - All data stored in session variables to avoid JSON escaping issues
 ✅ **Auto-Merging** - Each extraction automatically merges into accumulating JSON
 ✅ **Leg Ordering** - Intelligent leg identification prevents data corruption
-✅ **Query Tool** - Ask questions about contract or extracted data
-✅ **Temperature: 0** - Maximum precision and consistency for extractions
 ✅ **Validation Layer** - Comprehensive quality checks for structural integrity, completeness, and data quality
+✅ **Clean + Debug Output** - Production-ready JSON + metadata version for quality analysis
+✅ **Temperature: 0** - Maximum precision and consistency for extractions
+✅ **Batch Processing** - Handles multiple contracts in one session
 
 ---
 
@@ -101,9 +114,11 @@ This leg identification data is stored in session and **injected into all subseq
 
 ### 2. Business Day Conventions (`promptHeaderBusinessDayConventions.txt`)
 
-**Purpose:** Extracts business day conventions and business centers for dates
+**Purpose:** Extracts business day conventions and business centers for header dates only
 
 **Leg Ordering:** Uses injected leg context to assign data to correct legs
+
+**Note:** This prompt no longer extracts leg-level payment/period data (moved to prompt 3)
 
 **Output Schema:**
 ```json
@@ -121,15 +136,7 @@ This leg identification data is stored in session and **injected into all subseq
   "legs": [
     {
       "effectiveDate": { /* same structure */ },
-      "terminationDate": { /* same structure */ },
-      "paymentDates": {
-        "businessCenters": ["CLSA"],
-        "paymentDatesBusinessCentersClear": true
-      },
-      "periodEndDates": {
-        "businessCenters": ["CLSA"],
-        "periodEndDatesBusinessCentersClear": true
-      }
+      "terminationDate": { /* same structure */ }
     }
   ]
 }
@@ -139,28 +146,30 @@ This leg identification data is stored in session and **injected into all subseq
 
 **Purpose:** Extracts payment and period end frequencies and conventions
 
-**Output Schema:**
+**Output Schema (Flattened):**
 ```json
 {
   "header": {},
   "legs": [
     {
-      "paymentDates": {
+      "paymentBusinessCenters": ["CLSA"],
+      "paymentDayConvention": "MODFOLLOWING",
+      "paymentDayConventionClear": true,
+      "paymentFrequency": "6M",
+      "paymentFrequencyClear": true,
+      "calculationDayConvention": {
+        "businessCenters": ["CLSA"],
         "businessDayConvention": "MODFOLLOWING",
-        "paymentDatesBusinessDayConventionClear": true,
-        "paymentFrequency": "6M",
-        "paymentFrequencyClear": true
+        "calculationDayConventionClear": true
       },
-      "periodEndDates": {
-        "businessDayConvention": "MODFOLLOWING",
-        "periodEndDatesBusinessDayConventionClear": true,
-        "calculationPeriodFrequency": "6M",
-        "calculationPeriodFrequencyClear": true
-      }
+      "calculationPeriodFrequency": "6M",
+      "calculationPeriodFrequencyClear": true
     }
   ]
 }
 ```
+
+**Note:** paymentBusinessCenters is a flat array, not a nested object.
 
 ### 4. FX Fixing Data (`promptFXFixingData.txt`)
 
@@ -311,17 +320,25 @@ Subsequent extractions (2-5):
 
 ## Tools Available
 
+### Bank Processing
+
+| Tool | Purpose | Parameters |
+|------|---------|------------|
+| `run_mapping_program(date, bank_name)` | Run CSV→JSON mapping (ALWAYS RUN FIRST) | `date`: dd/mm/yyyy<br>`bank_name`: BankNameCL |
+| `list_contract_files()` | List all *_anon.txt in date folder | None (uses session folder) |
+
 ### Session Management
 
 | Tool | Purpose | Parameters |
 |------|---------|------------|
 | `clear_session()` | Clear all session data | None |
-| `read_contract_file(path)` | Load contract into session | `contract_path` (relative to backend/) |
+| `read_contract_file(filename)` | Load contract from date folder | `filename` only (not full path) |
 | `get_session_status()` | Show session state | None |
-| `write_output_json(filename)` | Write merged JSON to file | `filename` |
+| `save_contract_to_batch()` | Save current contract to batch | None |
+| `write_consolidated_output()` | Write all contracts to date folder | None (uses session) |
+| `write_output_json(filename)` | Write individual contract (legacy) | `filename` |
 | `query_contract_data(question)` | Ask questions about contract/data | `question` |
 | `validate_extraction()` | Validate data quality & completeness | None |
-| `process_contract_folder(folder_path)` | Batch process all .txt contracts in folder | `folder_path` (default: "prompts") |
 
 ### Extraction Tools
 
@@ -343,42 +360,76 @@ All extraction tools:
 
 ## Usage Examples
 
-### Complete Extraction Workflow
+### Complete Bank Processing (Recommended Workflow)
+
+```
+User: "Process 25/09/2025 for BancoInternacionalCL"
+
+Agent calls sequentially:
+
+1. run_mapping_program("25/09/2025", "BancoInternacionalCL")
+   → "SUCCESS: Mapping completed. CSV transformed to JSON.
+      Output file created: 25092025_bancoabc_trades.json
+      Ready to process contract files."
+
+2. list_contract_files()
+   → "Found 3 contract file(s) in date folder:
+      1. contract_7559-61863_anon.txt
+      2. contract_7559-61864_anon.txt
+      3. contract_7559-61865_anon.txt"
+
+3. For each contract:
+   a. clear_session()
+      → "SUCCESS: Session cleared"
+
+   b. read_contract_file("contract_7559-61863_anon.txt")
+      → "SUCCESS: Loaded contract 'contract_7559-61863_anon' with 45000 characters"
+
+   c. extract_core_values()
+      → "SUCCESS: Core values extracted and stored in session"
+
+   d. extract_business_day_conventions()
+      → "SUCCESS: Business day conventions extracted and merged"
+
+   e. extract_period_payment_data()
+      → "SUCCESS: Period/payment data extracted and merged"
+
+   f. extract_fx_fixing()
+      → "SUCCESS: FX fixing data extracted and merged"
+
+   g. extract_payment_date_offset()
+      → "SUCCESS: Payment date offset extracted and merged"
+
+   h. validate_extraction()
+      → "=== EXTRACTION QUALITY REPORT ===
+         Quality: EXCELLENT (95% complete, 0 critical issues)
+         ..."
+
+   i. save_contract_to_batch()
+      → "SUCCESS: Contract saved to batch (1 contracts total)"
+
+4. write_consolidated_output()
+   → "SUCCESS: Consolidated output written:
+      - Clean version: C:\...\25092025\25092025_bancoabc_contracts.json
+      - Debug version: C:\...\25092025\extraction_metadata\25092025_bancoabc_contracts.json
+      - Total contracts: 3"
+```
+
+### Legacy Single Contract Extraction
 
 ```
 User: "Extract all data from prompts/mycontract.txt"
 
 Agent calls sequentially:
 1. clear_session()
-   → "SUCCESS: Session cleared"
-
 2. read_contract_file("prompts/mycontract.txt")
-   → "SUCCESS: Loaded contract with 45000 characters"
-
 3. extract_core_values()
-   → "SUCCESS: Core values extracted and stored in session"
-
 4. extract_business_day_conventions()
-   → "SUCCESS: Business day conventions extracted and merged"
-
 5. extract_period_payment_data()
-   → "SUCCESS: Period/payment data extracted and merged"
-
 6. extract_fx_fixing()
-   → "SUCCESS: FX fixing data extracted and merged"
-
 7. extract_payment_date_offset()
-   → "SUCCESS: Payment date offset extracted and merged"
-
 8. validate_extraction()
-   → "=== EXTRACTION QUALITY REPORT ===
-      Quality: EXCELLENT (95% complete, 0 critical issues)
-      ✓ Structure: 2-leg FIXED vs FLOATING swap
-      ✓ Completeness: 19/20 fields populated
-      ..."
-
 9. write_output_json("mycontract.json")
-   → "SUCCESS: JSON written to backend/output/mycontract.json"
 ```
 
 ### Querying Extracted Data
@@ -410,48 +461,35 @@ Leg 1 (Pata-Activa) does not have FX fixing because the notional
 and settlement currencies are both CLP."
 ```
 
-### Batch Processing Multiple Contracts
+### Bank Folder Structure
+
+The system uses an organized folder hierarchy:
 
 ```
-User: "Process all contracts in the prompts folder"
-
-Agent: process_contract_folder('prompts')
-
-Response:
-BATCH PROCESSING: Found 4 contract(s)
-
-============================================================
-
-📄 Processing: gscontract.txt
-------------------------------------------------------------
-✅ SUCCESS: gscontract.json
-   Validation: EXCELLENT (95% complete, 0 critical issues)
-
-📄 Processing: bxcontract.txt
-------------------------------------------------------------
-✅ SUCCESS: bxcontract.json
-   Validation: GOOD (82% complete, 0 critical issues)
-
-📄 Processing: citicontract.txt
-------------------------------------------------------------
-✅ SUCCESS: citicontract.json
-   Validation: EXCELLENT (96% complete, 0 critical issues)
-
-📄 Processing: contract.txt
-------------------------------------------------------------
-✅ SUCCESS: contract.json
-   Validation: EXCELLENT (95% complete, 0 critical issues)
-
-============================================================
-BATCH PROCESSING COMPLETE
+C:\Users\bencl\OneDrive - palace.cl\Documents\Palace\Ideas\Contract Extraction\v2.0\Servicio\
+├── BancoInternacionalCL\
+│   ├── 25092025\                                    # Date folder (ddmmyyyy)
+│   │   ├── contract_7559-61863_anon.txt            # Input contracts
+│   │   ├── contract_7559-61864_anon.txt
+│   │   ├── bank_trades_25092025_anon.csv           # Input CSV
+│   │   ├── 25092025_bancoabc_trades.json           # Output: CSV mapping
+│   │   ├── 25092025_bancoabc_contracts.json        # Output: Contract extraction (clean)
+│   │   └── extraction_metadata\
+│   │       └── 25092025_bancoabc_contracts.json    # Output: With *Clear fields (debug)
+│   └── 26092025\
+│       └── ...
+└── BancoSantanderCL\
+    └── ...
 ```
 
-**How batch processing works:**
-- Finds all `.txt` files in specified folder (excludes prompt*.txt files)
-- For each contract: clears session → reads file → runs all 5 extractions → validates → writes JSON
-- Output files use same name as input: `gscontract.txt` → `gscontract.json` in output/ folder
-- Returns summary report with validation quality for each contract
-- Processes contracts sequentially to maintain cache efficiency
+**Key Points:**
+- Bank name must include two-letter country code (e.g., `BancoInternacionalCL`)
+- Date folders use ddmmyyyy format (e.g., `25092025`)
+- Input contracts must end with `*_anon.txt`
+- Input CSV must end with `*_anon.csv`
+- All output files use hardcoded `bancoabc` for anonymization
+- Clean output (no *Clear fields) goes to date folder
+- Debug output (with *Clear fields) goes to `extraction_metadata/` subfolder
 
 ---
 
@@ -487,11 +525,9 @@ This prevents the orchestrator from batching all tools in parallel.
 
 ```
 backend/
-├── contracts/              # Input contracts
-│   └── contract.txt
-├── output/                 # Extracted JSONs
-│   └── complete_contract.json
-├── prompts/                # Extraction prompts
+├── mapping_program.py                             # CSV to JSON mapping (legacy, now tool)
+├── contract_reader_config.yaml                    # Config for CSV mapping
+├── prompts/                                       # Extraction prompts
 │   ├── promptCoreValues.txt
 │   ├── promptHeaderBusinessDayConventions.txt
 │   ├── promptPeriodEndAndPaymentBusinessDayConventions.txt
@@ -499,9 +535,21 @@ backend/
 │   └── promptPaymentDateOffset.txt
 ├── agentic/
 │   └── contract_reader_agent/
-│       └── agent.py        # Main agent implementation (1200+ lines)
-├── agentic-contract-reader.md     # This file
-└── agentic-implementation-log.md  # Implementation history
+│       └── agent.py                               # Main agent (1900+ lines)
+├── agentic-contract-reader.md                     # This file
+└── agentic-implementation-log.md                  # Implementation history
+
+# External folder structure (outside repo):
+C:\Users\bencl\OneDrive - palace.cl\Documents\Palace\Ideas\Contract Extraction\v2.0\Servicio\
+├── BancoInternacionalCL\
+│   └── 25092025\
+│       ├── *_anon.txt                            # Input contracts
+│       ├── *_anon.csv                            # Input CSV
+│       ├── 25092025_bancoabc_trades.json         # Output: Mapping
+│       ├── 25092025_bancoabc_contracts.json      # Output: Extraction (clean)
+│       └── extraction_metadata\
+│           └── 25092025_bancoabc_contracts.json  # Output: Debug
+└── contract_reader_config.yaml                    # Bank-specific config
 ```
 
 ---
@@ -627,6 +675,9 @@ If validation reports **POOR** quality or critical issues, review the report bef
 - [ ] Human-readable summary generation
 - [ ] Instance-based architecture for true parallel processing (multiple contracts simultaneously)
 - [ ] Async batch processing with progress tracking
+- [ ] GCP bucket integration (replace local file paths with cloud storage URLs)
+- [ ] Automated matching/merging of CSV trades with contract extractions
+- [ ] CDM format conversion integration
 
 ---
 
@@ -648,6 +699,18 @@ If validation reports **POOR** quality or critical issues, review the report bef
 **Cause:** Forgot to call `read_contract_file()` or `clear_session()` cleared it
 **Fix:** Always start new contract with: clear_session() → read_contract_file()
 
+### Mapping Program Reports Error But File Created
+**Cause:** Python logging output to stderr interpreted as failure
+**Fix:** Check both stdout/stderr for success indicators + verify output file exists
+
+### Business Centers Wrong Enum (e.g., "Santiago" instead of "CLSA")
+**Cause:** Prompt didn't include enum mapping for business centers
+**Fix:** Added business center pattern mapping at top of period/payment prompt
+
+### Nested paymentBusinessCenters Object
+**Cause:** Prompt schema showed nested structure, downstream expects flat array
+**Fix:** Updated prompt schema to show flat array: `"paymentBusinessCenters": ["CLSA"]`
+
 ---
 
 ## Version History
@@ -659,7 +722,17 @@ If validation reports **POOR** quality or critical issues, review the report bef
 - **v2.3** - Added query tool, clear_session, sequential execution enforcement
 - **v2.4** - Temperature: 0, comprehensive documentation
 - **v2.5** - Added validation layer with quality scoring and structural checks
-- **v2.6** (Current) - Added batch processing for multiple contracts with automatic naming
+- **v2.6** - Added batch processing for multiple contracts with automatic naming
+- **v3.0** (Current) - **Integrated Pipeline**
+  - CSV mapping integrated as agent tool (`run_mapping_program`)
+  - Bank folder structure for organized processing
+  - Session-based folder management
+  - Clean + debug output files (with/without *Clear fields)
+  - Consolidated output format (all contracts in single JSON)
+  - Simplified CLI (date + bank name only)
+  - Hardcoded anonymization (always outputs "bancoabc")
+  - Flattened JSON structure for downstream compatibility
+  - Enhanced error handling for subprocess outputs
 
 ---
 

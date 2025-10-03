@@ -64,6 +64,7 @@ _session_all_contracts = []  # List of all extracted contract JSONs
 # Session variables for bank folder structure
 _session_date_folder = None  # Path to current date folder being processed
 _session_bank_name = None  # Bank name for current processing session
+_session_mapped_trades = None  # Cached mapped trades JSON data from mapping_program output
 
 
 # ==================== FILE I/O TOOLS ====================
@@ -308,8 +309,8 @@ def write_consolidated_output() -> str:
 
     Must be called AFTER run_mapping_program() which sets up the session folder paths.
 
-    Creates TWO files in the date folder:
-    1. Clean version: {date}_bancoabc_contracts.json - No *Clear fields (ready for downstream)
+    Creates TWO files:
+    1. Clean version: cdm_inputs/{date}_bancoabc_contracts.json - No *Clear fields (CDM ready)
     2. Debug version: extraction_metadata/{date}_bancoabc_contracts.json - With *Clear fields
 
     Output filename always uses "bancoabc" (hardcoded for anonymization).
@@ -350,8 +351,10 @@ def write_consolidated_output() -> str:
         with open(debug_path, 'w', encoding='utf-8') as f:
             json.dump(consolidated_debug, f, indent=2, ensure_ascii=False)
 
-        # Write clean version (without Clear fields) to date folder
-        output_path = _session_date_folder / filename
+        # Write clean version (without Clear fields) to cdm_inputs subfolder
+        cdm_inputs_dir = _session_date_folder / "cdm_inputs"
+        cdm_inputs_dir.mkdir(parents=True, exist_ok=True)
+        output_path = cdm_inputs_dir / filename
 
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(consolidated_clean, f, indent=2, ensure_ascii=False)
@@ -1328,6 +1331,46 @@ def list_contract_files() -> str:
     return result
 
 
+def load_mapped_trades() -> str:
+    """
+    Loads the mapped trades JSON file into session for matching with contract extractions.
+
+    Must be called AFTER run_mapping_program() which creates the mapping output file.
+    This should be called once after mapping completes, then the data is cached for all
+    contract matching operations.
+
+    Returns:
+        Success message with number of trades loaded, or error message
+    """
+    global _session_date_folder, _session_mapped_trades
+
+    if _session_date_folder is None:
+        return "ERROR: No date folder set in session. Call run_mapping_program() first to initialize."
+
+    # Construct mapping output filename in cdm_inputs folder
+    date_folder_name = _session_date_folder.name  # e.g., "25092025"
+    mapping_file = _session_date_folder / "cdm_inputs" / f"{date_folder_name}_bancoabc_trades.json"
+
+    # Check if file exists
+    if not mapping_file.exists():
+        return f"ERROR: Mapping output file not found: {mapping_file}\nMake sure run_mapping_program() completed successfully."
+
+    # Read and parse JSON
+    try:
+        with open(mapping_file, 'r', encoding='utf-8') as f:
+            _session_mapped_trades = json.load(f)
+
+        # Count trades
+        num_trades = len(_session_mapped_trades.get("trades", []))
+
+        return f"SUCCESS: Loaded {num_trades} mapped trade(s) from {mapping_file.name} into session cache.\nReady for contract matching."
+
+    except json.JSONDecodeError as e:
+        return f"ERROR: Failed to parse mapping JSON: {e}"
+    except Exception as e:
+        return f"ERROR: Failed to load mapping file: {e}"
+
+
 def get_session_status() -> str:
     """
     Returns the current status of the session including what's loaded and extracted.
@@ -1750,6 +1793,133 @@ def validate_extraction() -> str:
         return f"ERROR during validation: {str(e)}"
 
 
+def match_with_mapped_trade() -> str:
+    """
+    Matches the current extracted contract with mapped trades from the CSV mapping output.
+
+    Matching criteria (all must match exactly):
+    - Counterparty name (party2.partyName)
+    - Trade date
+    - Termination date
+    - For BOTH legs:
+      - Notional amount
+      - Notional currency
+      - Payer party reference
+      - Receiver party reference
+      - Rate type (FIXED/FLOATING)
+
+    If a unique match is found, adds "matchingTradeId" field to header with the tradeId from mapping.
+    If no match found, sets "matchingTradeId": "No Match"
+    If multiple matches found, sets "matchingTradeId": "Multiple Matches"
+
+    Must be called AFTER:
+    - load_mapped_trades() (to cache mapping data)
+    - All extraction steps (to have complete contract data)
+
+    Returns:
+        Success message with match result
+    """
+    global _session_merged_contract, _session_mapped_trades
+
+    # Validate session state
+    if _session_merged_contract is None:
+        return "ERROR: No contract data in session. Run extraction steps first."
+
+    if _session_mapped_trades is None:
+        return "ERROR: Mapped trades not loaded. Call load_mapped_trades() first."
+
+    try:
+        # Get contract data
+        contract = _session_merged_contract
+        contract_header = contract.get("header", {})
+        contract_legs = contract.get("legs", [])
+
+        if len(contract_legs) != 2:
+            # Only match 2-leg swaps for now
+            if "header" not in contract:
+                contract["header"] = {}
+            contract["header"]["matchingTradeId"] = "No Match"
+            return "INFO: Contract does not have exactly 2 legs. Set matchingTradeId to 'No Match'."
+
+        # Extract contract matching fields
+        contract_party2 = contract_header.get("party2", {}).get("partyName", "")
+        contract_trade_date = contract_header.get("tradeDate", {}).get("date", "")
+        contract_term_date = contract_header.get("terminationDate", {}).get("date", "")
+
+        # Prepare leg matching data
+        contract_leg_data = []
+        for leg in contract_legs:
+            contract_leg_data.append({
+                "notionalAmount": leg.get("notionalAmount"),
+                "notionalCurrency": leg.get("notionalCurrency", ""),
+                "payerPartyReference": leg.get("payerPartyReference", ""),
+                "receiverPartyReference": leg.get("receiverPartyReference", ""),
+                "rateType": leg.get("rateType", "")
+            })
+
+        # Search mapped trades for matches
+        mapped_trades_list = _session_mapped_trades.get("trades", [])
+        matches = []
+
+        for mapped_trade in mapped_trades_list:
+            mapped_header = mapped_trade.get("header", {})
+            mapped_legs = mapped_trade.get("legs", [])
+
+            # Check if this trade has 2 legs
+            if len(mapped_legs) != 2:
+                continue
+
+            # Match header fields
+            mapped_party2 = mapped_header.get("party2", {}).get("partyName", "")
+            mapped_trade_date = mapped_header.get("tradeDate", {}).get("date", "")
+            mapped_term_date = mapped_header.get("terminationDate", {}).get("date", "")
+
+            if (contract_party2 != mapped_party2 or
+                contract_trade_date != mapped_trade_date or
+                contract_term_date != mapped_term_date):
+                continue
+
+            # Match legs (both legs must match in order)
+            legs_match = True
+            for i in range(2):
+                contract_leg = contract_leg_data[i]
+                mapped_leg = mapped_legs[i]
+
+                if (contract_leg["notionalAmount"] != mapped_leg.get("notionalAmount") or
+                    contract_leg["notionalCurrency"] != mapped_leg.get("notionalCurrency", "") or
+                    contract_leg["payerPartyReference"] != mapped_leg.get("payerPartyReference", "") or
+                    contract_leg["receiverPartyReference"] != mapped_leg.get("receiverPartyReference", "") or
+                    contract_leg["rateType"] != mapped_leg.get("rateType", "")):
+                    legs_match = False
+                    break
+
+            if legs_match:
+                # Found a match!
+                trade_id = mapped_header.get("tradeId", {})
+                if isinstance(trade_id, dict):
+                    trade_id_value = trade_id.get("id", "Unknown")
+                else:
+                    trade_id_value = str(trade_id)
+                matches.append(trade_id_value)
+
+        # Update contract with matching result
+        if "header" not in contract:
+            contract["header"] = {}
+
+        if len(matches) == 0:
+            contract["header"]["matchingTradeId"] = "No Match"
+            return "INFO: No matching trade found in mapped data. Set matchingTradeId to 'No Match'."
+        elif len(matches) == 1:
+            contract["header"]["matchingTradeId"] = matches[0]
+            return f"SUCCESS: Found unique match! Set matchingTradeId to '{matches[0]}'."
+        else:
+            contract["header"]["matchingTradeId"] = "Multiple Matches"
+            return f"WARNING: Found {len(matches)} matching trades. Set matchingTradeId to 'Multiple Matches'."
+
+    except Exception as e:
+        return f"ERROR during matching: {str(e)}"
+
+
 # ==================== TEST TOOLS (from Hello World) ====================
 
 def greet_user(name: str) -> str:
@@ -1795,9 +1965,11 @@ root_agent = Agent(
         "\n"
         "**Session Management:**\n"
         "- list_contract_files(): Lists all *_anon.txt files in date folder\n"
+        "- load_mapped_trades(): Loads mapped trades JSON into session (call after run_mapping_program)\n"
         "- clear_session(): Clears all session data - USE THIS BEFORE NEW CONTRACT!\n"
         "- read_contract_file(filename): Loads contract from date folder (just filename, not full path)\n"
         "- get_session_status(): Shows what's currently loaded in session\n"
+        "- match_with_mapped_trade(): Matches contract with mapped trade, adds matchingTradeId to header\n"
         "- save_contract_to_batch(): Saves current contract to batch (for consolidated output)\n"
         "- write_consolidated_output(): Writes all contracts to date folder\n"
         "- write_output_json(filename): Writes individual contract file (single contract mode)\n"
@@ -1846,10 +2018,13 @@ root_agent = Agent(
         "   Example: run_mapping_program('25/09/2025', 'BancoInternacionalCL')\n"
         "   This sets up session folders and processes CSV → banco JSON\n"
         "\n"
-        "2. list_contract_files()\n"
+        "2. load_mapped_trades()\n"
+        "   Loads the mapping output JSON into session for contract matching\n"
+        "\n"
+        "3. list_contract_files()\n"
         "   Shows all *_anon.txt files in the date folder\n"
         "\n"
-        "3. For EACH contract file:\n"
+        "4. For EACH contract file:\n"
         "   a. clear_session()\n"
         "   b. read_contract_file('filename_anon.txt')\n"
         "   c. extract_core_values()\n"
@@ -1858,10 +2033,12 @@ root_agent = Agent(
         "   f. extract_fx_fixing()\n"
         "   g. extract_payment_date_offset()\n"
         "   h. validate_extraction() → show validation report\n"
-        "   i. save_contract_to_batch()\n"
+        "   i. match_with_mapped_trade() → adds matchingTradeId to header\n"
+        "   j. save_contract_to_batch()\n"
         "\n"
-        "4. write_consolidated_output()\n"
-        "   Writes ddmmyyyy_bancoabc_contracts.json to date folder\n"
+        "5. write_consolidated_output()\n"
+        "   Writes ddmmyyyy_bancoabc_contracts.json to cdm_inputs folder (CDM ready)\n"
+        "   Also writes debug version to extraction_metadata folder\n"
         "\n"
         "CRITICAL: Call tools ONE at a time. Wait for response before next tool.\n"
         "\n"
@@ -1875,9 +2052,11 @@ root_agent = Agent(
     tools=[
         run_mapping_program,
         list_contract_files,
+        load_mapped_trades,
         clear_session,
         read_contract_file,
         get_session_status,
+        match_with_mapped_trade,
         save_contract_to_batch,
         write_consolidated_output,
         write_output_json,

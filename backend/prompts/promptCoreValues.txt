@@ -247,7 +247,9 @@ If payer identification fails completely:
         "party2": {
             "partyId": "OurCounterparty",
             "partyName": "[EXTRACTED_COUNTERPARTY_NAME]"
-        }
+        },
+        "tradeId": "[EXTRACTED_TRADE_ID]",
+        "tradeIdType": "INTERNAL"
     },
     "legs": [
         {

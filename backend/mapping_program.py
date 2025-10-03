@@ -707,8 +707,12 @@ def main():
 
         input_csv = csv_files[0]
 
-        # Build output path: ddmmyyyy_bancoabc_trades.json
-        output_file = date_folder / f"{date_folder_name}_bancoabc_trades.json"
+        # Create cdm_inputs subdirectory
+        cdm_inputs_folder = date_folder / "cdm_inputs"
+        cdm_inputs_folder.mkdir(parents=True, exist_ok=True)
+
+        # Build output path: cdm_inputs/ddmmyyyy_bancoabc_trades.json
+        output_file = cdm_inputs_folder / f"{date_folder_name}_bancoabc_trades.json"
 
         print(f"Processing configuration:")
         print(f"  Bank: {args.bank_name}")
@@ -724,8 +728,8 @@ def main():
         # Perform transformation
         mapper.transform_csv_to_json(str(input_csv), str(output_file))
 
-        print(f"✓ Transformation completed successfully!")
-        print(f"✓ Output written to: {output_file}")
+        print(f"SUCCESS: Transformation completed successfully!")
+        print(f"SUCCESS: Output written to: {output_file}")
 
     except Exception as e:
         print(f"Error during transformation: {e}")
