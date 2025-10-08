@@ -1,0 +1,322 @@
+
+
+1/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+Date: 
+To: 
+Attn: 
+Phone: 
+Fax: 
+Email:
+From: 
+Phone:
+Fax:
+Email confirms:
+Email queries:
+Our ref:
+July 25, 2023
+Banco ABC  
+LEI: XXX
+Confirmation Unit
+backoffice_mesa@Banco ABC.cl
+US Bank C N.A., London Branch  
+US Bank C Centre 
+Canada Square 
+Canary Wharf, London E14 5LB 
+Authorized by the Prudential Regulation Authority and subject to 
+regulation by the Financial Conduct Authority and limited 
+regulation by the Prudential Regulation Authority. Registered 
+Number BR001018 
+LEI: US Bank C
+212-816-0400
+646-861-6419
+646-861-6418
+nyfiderivconfirms@US Bank C
+ficonfirms@US Bank C
+      CE3F29801276 
+Your ref:
+
+2/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+UTI: E57ODZWZ7FF32TWEFA76TPSPROD10472401
+TRANSACTION
+The purpose of this letter (this "Confirmation") is to confirm the terms and conditions of the Swap 
+Transaction entered into between Banco ABC   ('Counterparty')  and US Bank C N.A., London Branch  
+('US Bank C') on the Trade Date specified below. This confirmation constitutes a 
+"Confirmation" as referred to in the "Agreement" as specified below. 
+Your counterparty to the Transaction is US Bank C, N.A., London branch, which is authorized by the 
+Prudential Regulation Authority (the " PRA  ") and subject to regulation by the Financial Conduct 
+Authority (the " FCA  ") and limited regulation by the PRA. In the event that you have dealt with 
+employees of an affiliate of US Bank C, N.A., London branch in placing the order for or otherwise 
+arranging the Transaction (which is likely if you are not a UK person), then the Transaction has been 
+introduced to you, and arranged, by such affiliate. Such affiliate does not act as agent for US Bank C, 
+N.A., London branch, which is the principal to the Transaction with you. In the European Union, such
+affiliate may be US Bank C Global Markets Limited (which is  authorized by the PRA and regulated by
+the FCA and the PRA) or US Bank C Europe PLC-UK Branch (authorised by the Central Bank of Ireland
+and by the Prudential Regulation Authority and subject to regulation by the Central Bank of Ireland
+and limited regulation by the Financial Conduct Authority and the Prudential Regulation Authority).
+US Bank C N.A., London Branch is authorized by the Prudential Regulation Authority and subject to 
+regulation by the Financial Conduct Authority and limited regulation by the Prudential Regulation 
+Authority. US Bank C N.A., London Branch is entering into this Transaction as principal and not as an 
+agent for any other party. 
+Unless specified herein, information about the time of dealing and the amount or basis of any 
+charges shared with any third party in connection with this Transaction will be made available on 
+request. 
+1. The definitions and provisions contained in the  2006 ISDA Definitions as supplemented by the
+Annex in effect on the Trade Date (the " 2006 Definitions "), and the 1998 FX and Currency Option
+Definitions (the "FX Definitions") as published by the International Swaps and Derivatives
+Association, Inc. ("ISDA"), the EMTA and the Foreign Exchange Committee (together, the
+"Definitions") are incorporated into this Confirmation. In the event of any inconsistency between the
+Definitions and this Confirmation, this Confirmation will prevail. In the event of any inconsistency
+between FX Definitions and the 2006 Definitions, the 2006 Definitions shall govern except that the
+
+3/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+FX Definitions will prevail for the purposes of the Settlement Provisions set out below and the 
+definition of Valuation Date. References herein to a   "Transaction" shall be deemed to be references 
+to a "Swap Transaction" for purposes of the 2006 Definitions. 
+This Confirmation constitutes a   "Confirmation" as referred to in, and supplements, forms part of 
+and is    subject to, the ISDA Master Agreement  dated as of November 6, 2020 ,  as amended and 
+supplemented from time to time (the "Agreement"), between Counterparty and US Bank C. All 
+provisions contained in the Agreement govern this Confirmation except as expressly modified 
+below. 
+2. The terms of the particular  Swap Transaction to which this Confirmation relates are as follows: 
+Trade Date: July 25, 2023
+Effective Date: July 27, 2023 
+Termination Date: July 27, 2024 
+Fixed Amounts 
+Fixed  Rate  Payer: US Bank C
+Fixed  Rate  Payer Notional 
+Amount: 
+CLP 13,200,000,000.00
+Fixed  Rate  Payer 
+Period End Dates: July 27, 2024 , with No Adjustment 
+Fixed  Rate  Payer 
+Payment Dates: 
+ 
+The Termination Date 
+
+4/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+ 
+Fixed Rate: 
+ 
+7.7200000 percent 
+Fixed  Rate 
+Day Count Fraction: 
+Actual/360
+Business Day Convention:  Modified Following 
+Floating Amounts 
+Floating  Rate  Payer: Counterparty 
+ Notional Amount: CLP 13,200,000,000.00
+Floating  Rate  Payer 
+Period End Dates: 
+July 27, 2024, with No Adjustment 
+Floating  Rate  Payer 
+Payment Dates: 
+The Termination Date 
+Floating Rate Option: TNA (as defined below) 
+ 
+Spread: 
+ 
+None
+
+5/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+Floating  Rate  
+Day Count Fraction: 
+ Actual/360
+ 
+Reset Dates: The last New York,  Santiago  Business Day of the Floating   Rate  
+Payer  Calculation  Period. 
+Business Day Convention: Modified Following 
+SETTLEMENT PROVISIONS: 
+Settlement: 
+Non-Deliverable, with the effect that any amounts denominated in the Reference Currency 
+payable hereunder on any Payment or Exchange Date shall be converted into the Settlement 
+Currency by reference to the Settlement Rate Option on the applicable Valuation Date and 
+payable on the related Settlement Date. All payments (including exchanges) hereunder shall 
+be made in the Settlement Currency. 
+Settlement Rate Option: CLP Dollar OBS (as defined below) 
+Reference Currency: CLP 
+Settlement Currency: USD 
+Settlement Date: Each Payment Date or Exchange Date, provided however, that if   Valuation 
+Postponement applies the Settlement Date shall be as soon as practical, but in no event 
+later than, two Business Days after the date on which the Settlement Rate is    determined. 
+Further, if   payments are scheduled to be made by both parties on a   Settlement Date, and 
+such date is    adjusted due to the occurrence of an Unscheduled Holiday, then such 
+Settlement Date shall be adjusted in respect of both parties' payments. 
+Two Business Days preceding each Settlement Date, (each, a "Scheduled Valuation Date"), 
+subject to adjustment in accordance with the Preceding Business Day Convention; provided 
+however, that, in the event of an Unscheduled Holiday, subject to adjustment in accordance 
+
+6/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+with the Following Business Day Convention. 
+In the event the Scheduled Valuation Date becomes subject to the Following Business Day 
+Convention after the occurrence of an Unscheduled Holiday, and if   the Valuation Date has 
+not occurred on or before the 14
+th
+ consecutive day after the Scheduled Valuation Date (any 
+such period being a   "Deferral Period"), then the next day after the Deferral Period that 
+would have been a   Business Day but for the Unscheduled Holiday, shall be deemed to be the 
+Valuation Date.
+ 
+DISRUPTION EVENT AND FALLBACK: 
+Event Currency: Reference Currency 
+Applicable Disruption Events: Price Source Disruption 
+FALLBACKS: 
+(1) Valuation Postponement 
+(2) Calculation Agent Determination of Settlement Rate 
+Adjustment to Termination Date, Payment Dates and Exchange Dates: If the Valuation Date 
+in respect of a Payment Date, an Exchange Date or the Termination Date is    not the 
+Scheduled Valuation Date in respect of such Payment Date, Exchange Date or Termination 
+Date or if   Valuation Postponement applies, then such Payment Date, Exchange Date or 
+Termination Date (as applicable) shall be as soon as practicable after the relevant Spot Rate 
+is determined, but in no event later than the day which is    two Business Days after the 
+relevant Spot Rate is    determined. Further, if   payments are scheduled to be made by both 
+parties on a   Payment Date, Exchange Date or Termination Date, and such date is    adjusted 
+due to the occurrence of an Unscheduled Holiday or Valuation Postponement in accordance 
+with the previous sentence, then such Payment Date, Exchange Date or Termination Date 
+shall be adjusted in respect of both parties' payments. For the avoidance of doubt, such 
+adjustments shall not apply in respect of Period End Dates (including the Termination Date) 
+for the purpose of determining the Calculation Periods. 
+Additional Definitions: 
+"CLP" means the lawful currency of the Republic of Chile. CLP will be deemed to 
+include any lawful successor currency (the "Successor Currency") of the Republic of 
+Chile. If, after the Trade Date and on or before the Termination Date, the Republic of 
+
+7/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+Chile has lawfully eliminated, converted, redenominated or exchanged its currency in 
+effect on such Trade Date or any Successor Currency, as the case may be (the 
+"Original Currency"), for a   Successor Currency, then for purposes of calculating any 
+amounts of such currency pursuant to this Transaction, and for purposes of effecting 
+settlement hereof, any Original Currency amounts will be converted to the Successor 
+Currency by multiplying the amount of Original Currency by a   ratio of Successor 
+Currency to Original Currency, which ratio will be calculated on the basis of the 
+exchange rate set forth by the Republic of Chile for converting the Original Currency 
+into the Successor Currency on the date on which the elimination, conversion, 
+redenomination or exchange took place. If   there is    more than one such date, the 
+date closest to the relevant Payment Date will be selected. 
+"CLP Dollar OBS Rate" in respect of any Valuation Date shall mean Chilean Peso/U.S. 
+Dollar "observado" rate, expressed as the amount of Chilean Pesos per one U.S. 
+Dollar, for settlement in one Business Day reported by the Banco Central de Chile 
+(www.bcentral.cl) as the "Dólar Observado" (Dollar Observado) rate by not later than 
+10:30 a.m., Santiago time, on the first Business Day following that Valuation Date. 
+ "CL-ICP-CBF" means that the rate for a   Reset Date will be the Indice Cámara 
+Promedio ("ICP") rate for Chilean Pesos which is    determined and published by the 
+Chilean Benchmark Facility SpA ("CBF") in accordance with the "Reglamento Indice 
+de Cámara Promedio" of the CBF as published in the Diario Oficial de la Republica de 
+Chile (the "ICP Rules") and which is    reported on the CBF website by not later than 
+8:00 p.m.,Santiago time, on that Reset Date. If, in respect of any Reset Date, the rate 
+fails to appear by 8:00 p.m., Santiago time, then the rate for that Reset Date will be 
+determined by the Calculation Agent substantially in accordance with the ICP Rules. 
+"Maximum Days of Postponement" means Fourteen (14) calendar days. 
+'TNA' in respect of any Calculation Period means the 'Tasa Nominal Annual' calculated by the 
+Calculation Agent in respect to each Calculation Period as follows: 
+TNA =   ((CL-ICP-CBF
+1
+ /   CL-ICP-CBF
+0
+)-1) * 36000/N 
+Where: 
+'CL-ICP-CBF
+0
+' means, with respect to such Calculation Period, CL-ICP-CBF determined as if the 
+first day of such Calculation Period (or the Effective Date in respect of the initial Calculation 
+Period) were the Reset Date. 
+'CL-ICP-CBF
+1
+' means, with respect to such Calculation Period, CL-ICP-CBF determined on the 
+
+8/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+Period End Date of such Calculation Period (or the Termination Date in respect of the final 
+Calculation Period) were the Reset Date. 
+'N' means, with respect to such Calculation Period, the number of calendar days in such 
+Calculation Period. 
+The TNA for a Calculation Period shall be determined on the Period End Date of such 
+Calculation Period and shall be (a) expressed as a   percentage, (b) calculated to four decimal 
+points, and (c) rounded to the nearest ten thousandth of a   percent. 
+"Unscheduled Holiday" shall mean, for the purpose of this Transaction, that a day is    not a 
+Business Day and the market was not aware of such fact (by means of public announcement 
+or by reference to other publicly available information) until a   time later than 9:00 a.m. local 
+time in Santiago, two Business Days prior to the Valuation Date. 
+"Valuation Postponement" means, for purposes of obtaining a   Settlement Rate, that the 
+Spot Rate will be determined on the Business Day first succeeding the day on which the Price 
+Source Disruption ceases to exist, unless the Price Source Disruption continues to exist 
+(measured from the date, that, but for the occurrence of the Price Source Disruption, would 
+have been the Valuation Date) for a consecutive number of calendar days equal to the 
+Maximum Days of Postponement. In such event, the Spot Rate will be determined on the 
+next Business Day after the Maximum Days of Postponement in accordance with the next 
+applicable Disruption Fallback. 
+Notwithstanding anything herein to the contrary, in no event shall the total number of 
+consecutive calendar days during which either (i) valuation is    deferred due to an 
+Unscheduled Holiday, or (ii) a   Valuation Postponement shall occur (or any combination of (i) 
+and (ii)), exceed 14 consecutive calendar days in the aggregate. Accordingly, (x) if, upon the 
+lapse of any such 14 day period, an Unscheduled Holiday shall have occurred or be 
+continuing on the day following such period, then such day shall be deemed to be a 
+Valuation Date, and (y) if, upon the lapse of any such 14 day period, a   Price Source 
+Disruption shall have occurred or be continuing on the day following such period, then 
+Valuation Postponement shall not apply and the Settlement Rate shall be determined in 
+accordance with the next Disruption Fallback. 
+Relevant Cities for Business Day(s) 
+for Valuation Date(s):  New York, Santiago
+Relevant Cities for Business Day(s) 
+for Settlement/Payment Date(s): New York, Santiago; provided however, that in 
+
+9/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+the event of an Unscheduled Holiday following the 
+Trade Date, then New York only. 
+Calculation Agent: US Bank C, unless otherwise stated in the Master Agreement.
+  
+ 7. Representations: 
+Each party represents to the other party that: 
+ (a) Non-Reliance. It    is    acting for its own account, and it   has made its own independent decisions to 
+enter into this Transaction and as to whether this Transaction is    appropriate or proper for it based 
+upon its own judgment and upon advice from such advisors as it   has deemed necessary. It    is    not 
+relying on any communication (written or oral) of the other party as investment advice or as a 
+recommendation to enter into this Transaction; it   being understood that information and 
+explanations related to the terms and conditions of this Transaction shall not be considered 
+investment advice or a   recommendation to enter into this Transaction. It    has not received from the 
+other party any assurance or guarantee as to the expected results of this Transaction. 
+ (b) Evaluation and Understanding. It is    capable of evaluating and understanding (on its own behalf 
+or through independent professional advice), and understands and accepts, the terms, conditions 
+and risks of this Transaction. It is    also capable of assuming, and assumes, the financial and other risks 
+of this Transaction. 
+ (c) Status of Parties. The other party is    not acting as a   fiduciary or an advisor for it in respect of this 
+Transaction. 
+ (d) Risk Management. It    has entered into this Transaction for the purpose of (i) managing its 
+borrowings or investments, (ii) hedging its underlying assets or liabilities or (iii) in connection with its 
+line of business. 
+  
+ 8. Account Details 
+Payments to US Bank C: As separately advised
+
+10/10Deal No: 93884547, Deal Alias: 
+CE3F29801276, ID: 
+1009544442(1-1)
+Payments to Counterparty: As separately advised
+If you have any questions regarding this letter agreement, please contact the Swap Operations 
+Department at the telephone numbers or the facsimile numbers indicated on this Confirmation. 
+Please  confirm that  the foregoing  correctly  sets  forth  the  terms  of  our  agreement  by  executing  the 
+copy of this Confirmation enclosed for that purpose and returning it to us. 
+Very truly yours, 
+US Bank C N.A., London Branch 
+By:______________________ 
+Accepted and confirmed as 
+of the Trade Date: 
+Banco ABC 
+By: ________________________________________ 
+Authorized Signatory 

@@ -1,0 +1,1449 @@
+
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+1 of 30
+BANCO_A | PSEUDONYMISED ADDRESS | New York, New York 10282-2198 | Tel: 212-902-1000
+Date:
+To:
+From:
+Subject:
+Our Reference Number:
+CFTC/SEC UTI:
+CONFIRMATION
+May 11, 2023
+Banco ABC
+BANCO_A
+Non-Deliverable Swap Transaction 
+SDBB7MM3334CM7X6XJ.0.0.0.1-0
+KD3XUN7C6T14HNAYLU02 
+SDBB7MM3334CM7X6XJ00000010000000
+In  accordance  with  CFTC  Regulation  Part  45,  we  hereby  notify  you  that  this  trade  is  being  reported  to  the 
+following swap data repository: DTCC Data Repository (U.S.) LLC.
+Please see the following link for disclosures relating to material economic terms, risks and conflicts relating 
+to swaps transactions, for institutional clients:https://360BANCO_Acom/go/doddfrank-disclosure, for Private Wealth 
+Management clients:https://BANCO_ABANCO_Ap/markets/doddfrank
+The purpose of this communication (this "Confirmation") is to set forth the terms and conditions of the above 
+referenced  transaction  entered  into  on  the  Trade  Date  specified  below  (the  "Transaction")  between  BANCO_A  ("BANCO_A")  and  Banco ABC  ("Counterparty").  This  communication constitutes  a 
+"Confirmation" as referred to in the Swap Agreement specified below.
+1.
+ The definitions and provisions contained in the 2021 ISDA Interest Rate Derivatives Definitions (the “2021 
+Definitions”), as published by the International Swaps and Derivatives Association, Inc. and the 1998 FX and 
+Currency Option Definitions (the “FX Definitions”) as published by the International Swaps and Derivatives 
+Association Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee (together 
+the “Definitions”) are incorporated into this Confirmation. In the event of any inconsistency between the 2021 
+Definitions  and  the  FX  Definitions,  the  2021  Definitions  shall  govern  except  that  the  FX  Definitions  shall 
+govern for the purposes of the Settlement Provisions set out below. In the event of any inconsistency between 
+the Definitions and this Confirmation, this Confirmation will govern. References herein to a "Transaction" shall 
+be deemed to be references to a "Swap Transaction" for the purposes of the 2021 Definitions.
+This Confirmation supplements, forms a part of and is subject to the 2002 ISDA Master Agreement dated as of 
+August 16, 2019 as amended and supplemented from time to time (the “Swap Agreement”) between BANCO_A and Counterparty. All provisions contained in, or incorporated by reference to, the Swap Agreement shall 
+govern this Confirmation except as expressly modified below. In the event of any inconsistency between this 
+Confirmation, the Definitions, or the Swap Agreement, as the case may be, this Confirmation will control for 
+purposes of the Transaction to which this Confirmation relates
+2.
+ The terms of the Transaction to which this Confirmation relates are as follows:
+Trade Date:May 11, 2023
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+2 of 30
+Effective Date:May 15, 2023
+Termination Date:May 05, 2043.
+Floating Amounts:
+Floating Amount Payer:BANCO_A
+Floating Amount Payer Currency
+Amount:
+CLP  6,835,671,800.00,  subject  to  the  Schedule  as  set  forth  in
+Appendix I attached hereto.
+Floating Amount Payer Period End
+Dates:
+As set forth in the Schedule under Appendix I attached hereto
+Floating Amount Payer Payment
+Dates:
+As set forth in the Schedule under Appendix I attached hereto
+Floating Rate Option:CLP-ICP
+For the purpose of this Transaction only, the Applicable Business
+Day  (as  mentioned  in  the  2021  ISDA  Interest  Rate  Derivatives
+Definitions Floating Rate Matrix) shall be New York, Santiago
+Floating Rate Spread:None
+Floating Rate Day Count Fraction:Actual/360
+Floating Amount:Notwithstanding anything to the contrary in the 2021 Definitions,
+the Floating Amount shall be an amount in USD determined in
+accordance with the Settlement Provisions below.
+Fixed Amounts:
+Fixed Amount Payer:Counterparty
+Fixed Amount Payer Currency
+Amount:
+CLF 190,000.00, subject to the Schedule as set forth in Appendix
+II attached hereto.
+Fixed Amount Payer Period End
+Dates:
+As set forth in the Schedule under Appendix II attached hereto
+Fixed Amount Payer Payment
+Dates:
+As set forth in the Schedule under Appendix II attached hereto
+Fixed Rate:1.77%
+Fixed Rate Day Count Fraction:Actual/360
+Fixed Amount:Notwithstanding anything to the contrary in the 2021 Definitions,
+the  Fixed  Amount  shall  be  an  amount  in  USD  determined  in
+accordance  with  the  Settlement  Provisions  below  based  on  the
+following formula:
+An  amount  in  CLP  =  Fixed  Amount  *  CLF  on  the  CLF
+Observation Date for the relevant Fixed Amount Payer Payment
+Date/ Settlement Rate Option for the relevant Fixed Rate Payer
+Payment Date
+Initial Exchange:None
+Interim Exchanges:
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+3 of 30
+Interim Exchange Date:As specified in Appendix III
+BANCO_A Interim Exchange
+Amount:
+As specified in Appendix III
+Counterparty Interim Exchange
+Amount:
+As specified in Appendix III
+Final Exchanges:
+Final Exchange Date:The Termination Date,subject to adjustment in accordance with
+the Modified Following Business Day Convention
+BANCO_A Final Exchange
+Amount:
+CLP  39,133,502.00  /  Settlement  Rate  Option  for  the  Final
+Exchange Date
+Counterparty Final Exchange
+Amount:
+CLF 1,087.73 * CLF on the CLF Observation Date for the Final
+Exchange  Date/Settlement  Rate  Option  for  the  Final  Exchange
+Date
+SETTLEMENT PROVISIONS
+Settlement:Non-Deliverable,  with  the  effect  that  all  payments  in  CLP  or
+CLF, payable hereunder on a Payment Date ("Reference Currency
+Payment   Date")   or   the   Final   Exchange   Date   ("Reference
+Currency Exchange Date") as determined above, unless otherwise
+specified  herein,  will  be  converted  into  Settlement  Currency
+amounts  by  reference  to  the  Settlement  Rate  Option  on  the
+applicable  Valuation  Date.  All  payments  (including  exchanges)
+hereunder  shall  be  made  in  the  Settlement  Currency,  and  each
+Payment Date will be deemed a “Settlement Date”.
+Settlement Rate Option:CLP DOLAR OBS or CLP10
+Reference Currency:CLP
+Settlement Currency:USD
+Valuation Date:"Valuation Date" means, with respect to each Calculation Period,
+the   day   that   is   two   Business   Days   immediately   preceding
+the   Payment   Date;   provided,   however,   that   solely   for   the
+purposes of determining each such Valuation Date, all respective
+Payment  Dates  shall  be  deemed  subject  to  "No  Adjustment"
+in  accordance  with  any  Business  Day  Convention  (each  such
+Valuation  Date  hereinafter  deemed  a  "Scheduled  Valuation
+Date"). All Scheduled Valuation Dates are subject to adjustment
+in accordance with the Business Day Convention provided below.
+3. Disruption Event and Fallbacks
+Event Currency:Reference Currency
+Price Source Disruption :Applicable
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+4 of 30
+4. Disruption Events and Fallbacks applicable to the particular Transaction to which this Confirmation relates
+are as follows:
+Valuation Postponement
+Calculation Agent Determination of Settlement Rate
+5. Definitions:
+Unscheduled Holiday:"Unscheduled  Holiday"  shall  mean,  for  the  purpose  of  this
+Transaction, that a day is not a Business Day and the market was
+not aware of such fact (by means of a public announcement or by
+reference to other publicly available information) until a time later
+than 9:00 am local time in the Principal Financial Center(s) of the
+Reference  Currency  two  Business  Days  prior  to  the  Scheduled
+Valuation Date; where the definition of Business Day in Article
+1.1(b)  of  the  1998  FX  Definitions  is  expanded  to  include  the
+definition of UF Observation Date.
+Deferral Period for Unscheduled
+Holiday:
+In  the  event  the  Scheduled  Valuation  Date  becomes  subject  to
+the  Following  Business  Day  Convention  after  the  occurrence
+of  an  Unscheduled  Holiday,  and  if  the  Valuation  Date  has
+not  occurred  on  or  before  the  14th  consecutive  day  after  the
+Scheduled  Valuation  Date  (any  such  period  being  a  "Deferral
+Period"), then the next day after the Deferral Period that would
+have been a Business Day but for the Unscheduled Holiday, shall
+be deemed to be the Valuation Date.
+Valuation Postponement for Price
+Source Disruption:
+"Valuation  Postponement"  means,  for  purposes  of  obtaining  a
+Settlement  Rate,  that  the  Spot  Rate  will  be  determined  on  the
+Business Day first succeeding the day on which the Price Source
+Disruption  ceases  to  exist,  unless  the  Price  Source  Disruption
+continues  to  exist  (measured  from  the  date  that,  but  for  the
+occurrence  of  the  Price  Source  Disruption,  would  have  been
+the  Valuation  Date)  for  a  consecutive  number  of  calendar  days
+equal to the Maximum Days of Postponement. In such event, the
+Spot Rate will be determined on the next Business Day after the
+Maximum  Days  of  Postponement  in  accordance  with  the  next
+applicable Disruption Fallback.
+Cumulative Events:Notwithstanding anything contained herein to the contrary, in no
+event shall the total number of consecutive calendar days during
+which  either  (i)  the  valuation  is  deferred  due  to  the  occurrence
+of  an  Unscheduled  Holiday,  or  (ii)  a  Valuation  Postponement
+shall occur, or any combination of (i) or (ii) above has occurred,
+shall  exceed  14  (fourteen)  consecutive  calendar  days  in  total.
+Accordingly,  if  upon  the  lapse  of  any  such  14  (fourteen)  day
+period,  an  Unscheduled  Holiday  shall  have  occurred  or  be
+continuing  on  that  day  that  follows  such  period,  then  such  day
+shall be deemed to be a Valuation Date and, if upon the lapse of
+any such 14 (fourteen) day period, a Price Source Disruption has
+occurred or is continuing on the day that follows such period, then
+the  Valuation  Postponement  shall  not  apply  and  the  Spot  Rate
+shall  thereby  be  determined  in  accordance  with  the  Disruption
+Fallback that is next deemed applicable to this Transaction.
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+5 of 30
+Maximum Days of Postponement:"Maximum Days of Postponement" shall mean, for purposes of
+this Transaction, fourteen (14) calendar days
+Business Day Convention:
+Applicable to the Scheduled
+Valuation Date:
+Preceding; provided, however, that the adjustment shall be made
+in  accordance  with  the  Following  Business  Day  Convention  in
+the event of an Unscheduled Holiday.
+Applicable to the CLF Observation
+Date:
+That  which  is  applicable  to  all  Fixed  Amount  Payer  Payment
+Dates; provided however, that no adjustment shall be made in the
+event of an Unscheduled Holiday.
+Adjustment to Payment Dates, Final
+Exchange Date and Termination
+Date:
+If  the  Valuation  Date  in  respect  of  a  Reference  Currency
+Payment  Date,  a  Reference  Currency  Exchange  Date  or  the
+Termination Date is not the Scheduled Valuation Date in respect
+of such Reference Currency Payment Date, Reference Currency
+Exchange   Date   or   Termination   Date,   then   such   Reference
+Currency Payment Date, Reference Currency Exchange Date or
+Termination Date (as applicable) shall be as soon as practicable
+after  the  relevant  Valuation  Date,  but  in  no  event  later  than  the
+day which is two Business Days after the relevant Valuation Date.
+Further, if payments are scheduled to be made by both parties on a
+Payment Date, Exchange Date or Termination Date, and such date
+is adjusted due to the occurrence of an Unscheduled Holiday in
+accordance with the previous sentence, then such Payment Date,
+Exchange Date or Termination Date shall be adjusted in respect
+of both parties’ payments.
+For the avoidance of doubt, such adjustments shall not apply in
+respect of Period End Dates (including the Termination Date) for
+the purposes of determining the Calculation Periods.
+Business Day (as defined in the
+1998 FX Definitions) for Valuation
+Date(s):
+New York and Santiago
+Business Day (as defined in the
+2021 Definitions) for all other
+purposes:
+New York and Santiago
+6. Additional Provisions:
+"CLF" means the ISO monetary unit for UF.
+"UF" (Unidad de Fomento) means, with respect to each CLF Observation Date for each Payment Date or the
+Final  Exchange  Date,  as  relevant,  the  inflation  unit  of  adjustment  to  the  CLP,  expressed  as  the  amount  of
+CLP per unit of UF, that is published by Banco Central de Chile (the "Central Bank") on its website: http://
+www.bcentral.cl/eng/. If an Index Event has occurred or is continuing on a Payment Date or the Final Exchange
+Date, as relevant, the UF for such affected date shall be determined by the Calculation Agent in good faith
+and in a commercially reasonable manner.
+"Index Event" means the occurrence of one or more of the following events: (a) UF is not calculated and/or
+timely published by the Central Bank; or (b) the Central Bank ceases to publish UF or publishes a successor
+unit of value; or (c) the Central Bank makes a material change in the method of calculating UF; or (d) the
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+6 of 30
+Central Bank in any way materially modifies or restates previously published rates of UF; or (e) the Republic
+of Chile ("Chile"), or any of its agencies, instrumentalities or entities (including, without limitation, the Central
+Bank) by means of any law, regulation, ruling, directive or interpretation, whether or not having the force of
+law, takes any action which legally or de facto prevents or has the effect of restricting or limiting the calculation
+or publication of UF or any of the values used to determine UF;
+"CLF  Observation  Date"  means,  each  Payment  Date  or  the  Final  Exchange  Date,  as  applicable;  provided,
+however, that such date shall not be adjusted on account of an Unscheduled Holiday.
+Calculation Agent:BANCO_A
+7. Additional Provisions:None
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+7 of 30
+8.Counterparty hereby agrees (a) to check this Confirmation (Reference No.:
+SDBB7MM3334CM7X6XJ.0.0.0.1-0) carefully and promptly upon receipt so that errors or discrepancies can
+be promptly identified and rectified and (b) to confirm that the foregoing correctly sets forth the terms of the
+agreement between BANCO_A and Counterparty with respect to the particular Transaction to which this
+Confirmation relates, by manually signing this Confirmation and providing the other information requested
+herein and promptly returning an executed copy via Email.
+Very truly yours,
+BANCO_A
+Agreed and Accepted by: 
+Banco ABC
+DOCUSIGN_SIGNER1
+By:________________________
+Name:
+Title:
+Counterparty Reference Number: 
+ DOCUSIGN_ALTERNATIVE_ID
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+8 of 30
+Appendix I
+Schedule
+For the Floating Payer Calculation Period
+from and including*:
+To but excluding*:The applicable Floating Payer Payment Date
+shall be**:
+The applicable Floating Payer Currency
+Amount shall be**:
+May 15, 2023June 05, 2023June 05, 2023CLP 6,835,671,800.00
+June 05, 2023July 05, 2023July 05, 2023CLP 6,835,671,800.00
+July 05, 2023August 05, 2023August 07, 2023CLP 6,835,671,800.00
+August 05, 2023September 05, 2023September 05, 2023CLP 6,835,671,800.00
+September 05, 2023October 05, 2023October 05, 2023CLP 6,835,671,800.00
+October 05, 2023November 05, 2023November 06, 2023CLP 6,835,671,800.00
+November 05, 2023December 05, 2023December 05, 2023CLP 6,835,671,800.00
+December 05, 2023January 05, 2024January 05, 2024CLP 6,835,671,800.00
+January 05, 2024February 05, 2024February 05, 2024CLP 6,835,671,800.00
+February 05, 2024March 05, 2024March 05, 2024CLP 6,835,671,800.00
+March 05, 2024April 05, 2024April 05, 2024CLP 6,831,026,061.5814
+April 05, 2024May 05, 2024May 06, 2024CLP 6,816,127,535.0072
+May 05, 2024June 05, 2024June 05, 2024CLP 6,799,991,392.065001
+June 05, 2024July 05, 2024July 05, 2024CLP 6,784,929,169.1398
+July 05, 2024August 05, 2024August 05, 2024CLP 6,768,634,366.657401
+August 05, 2024September 05, 2024September 05, 2024CLP 6,753,406,648.520201
+September 05, 2024October 05, 2024October 07, 2024CLP 6,738,099,060.9546
+October 05, 2024November 05, 2024November 05, 2024CLP 6,721,565,369.7314005
+November 05, 2024December 05, 2024December 05, 2024CLP 6,706,089,768.5484
+December 05, 2024January 05, 2025January 06, 2025CLP 6,689,392,740.7464
+January 05, 2025February 05, 2025February 05, 2025CLP 6,673,747,686.857201
+February 05, 2025March 05, 2025March 05, 2025CLP 6,658,020,245.1342
+March 05, 2025April 05, 2025April 07, 2025CLP 6,638,814,166.009399
+April 05, 2025May 05, 2025May 05, 2025CLP 6,622,902,520.92
+May 05, 2025June 05, 2025June 05, 2025CLP 6,605,780,961.922001
+June 05, 2025July 05, 2025July 07, 2025CLP 6,589,695,546.860001
+July 05, 2025August 05, 2025August 05, 2025CLP 6,572,404,894.928
+August 05, 2025September 05, 2025September 05, 2025CLP 6,556,143,191.488
+September 05, 2025October 05, 2025October 06, 2025CLP 6,539,795,862.2644
+October 05, 2025November 05, 2025November 05, 2025CLP 6,522,250,491.6148
+November 05, 2025December 05, 2025December 05, 2025CLP 6,505,724,715.38
+December 05, 2025January 05, 2026January 05, 2026CLP 6,488,005,934.530001
+January 05, 2026February 05, 2026February 05, 2026CLP 6,471,299,552.650801
+February 05, 2026March 05, 2026March 05, 2026CLP 6,454,505,026.5826
+March 05, 2026April 05, 2026April 06, 2026CLP 6,434,330,440.6954
+April 05, 2026May 05, 2026May 05, 2026CLP 6,417,340,918.0948
+May 05, 2026June 05, 2026June 05, 2026CLP 6,399,171,342.6782
+June 05, 2026July 05, 2026July 06, 2026CLP 6,381,996,897.1668005
+July 05, 2026August 05, 2026August 05, 2026CLP 6,363,646,716.105801
+August 05, 2026September 05, 2026September 08, 2026CLP 6,346,285,189.050401
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+9 of 30
+For the Floating Payer Calculation Period
+from and including*:
+To but excluding*:The applicable Floating Payer Payment Date
+shall be**:
+The applicable Floating Payer Currency
+Amount shall be**:
+September 05, 2026October 05, 2026October 05, 2026CLP 6,328,831,920.084001
+October 05, 2026November 05, 2026November 05, 2026CLP 6,310,210,830.5564
+November 05, 2026December 05, 2026December 07, 2026CLP 6,292,567,242.0962
+December 05, 2026January 05, 2027January 05, 2027CLP 6,273,761,229.6578
+January 05, 2027February 05, 2027February 05, 2027CLP 6,255,925,882.615
+February 05, 2027March 05, 2027March 05, 2027CLP 6,237,996,275.2558
+March 05, 2027April 05, 2027April 05, 2027CLP 6,216,791,301.7878
+April 05, 2027May 05, 2027May 05, 2027CLP 6,198,655,544.958
+May 05, 2027June 05, 2027June 07, 2027CLP 6,179,370,315.9492
+June 05, 2027July 05, 2027July 06, 2027CLP 6,161,037,403.9538
+July 05, 2027August 05, 2027August 05, 2027CLP 6,141,560,776.1346
+August 05, 2027September 05, 2027September 07, 2027CLP 6,Banco ABC,028,550.340401
+September 05, 2027October 05, 2027October 05, 2027CLP 6,104,398,826.28
+October 05, 2027November 05, 2027November 05, 2027CLP 6,084,632,941.612
+November 05, 2027December 05, 2027December 06, 2027CLP 6,065,801,025.5752
+December 05, 2027January 05, 2028January 05, 2028CLP 6,045,838,345.513801
+January 05, 2028February 05, 2028February 07, 2028CLP 6,026,801,719.095201
+February 05, 2028March 05, 2028March 06, 2028CLP 6,007,664,716.2328
+March 05, 2028April 05, 2028April 05, 2028CLP 5,986,384,550.375
+April 05, 2028May 05, 2028May 05, 2028CLP 5,967,034,562.3702
+May 05, 2028June 05, 2028June 05, 2028CLP 5,946,568,201.228801
+June 05, 2028July 05, 2028July 05, 2028CLP 5,927,008,466.0314
+July 05, 2028August 05, 2028August 07, 2028CLP 5,906,338,114.0526
+August 05, 2028September 05, 2028September 05, 2028CLP 5,886,566,473.0294
+September 05, 2028October 05, 2028October 05, 2028CLP 5,866,690,498.0682
+October 05, 2028November 05, 2028November 06, 2028CLP 5,845,712,181.0862
+November 05, 2028December 05, 2028December 05, 2028CLP 5,825,621,062.3494
+December 05, 2028January 05, 2029January 05, 2029CLP 5,804,433,717.7192
+January 05, 2029February 05, 2029February 05, 2029CLP 5,784,124,936.8014
+February 05, 2029March 05, 2029March 05, 2029CLP 5,763,708,943.768
+March 05, 2029April 05, 2029April 05, 2029CLP 5,740,246,039.9728
+April 05, 2029May 05, 2029May 07, 2029CLP 5,719,599,073.187
+May 05, 2029June 05, 2029June 05, 2029CLP 5,697,870,631.168
+June 05, 2029July 05, 2029July 05, 2029CLP 5,677,000,245.846
+July 05, 2029August 05, 2029August 06, 2029CLP 5,655,054,861.1904
+August 05, 2029September 05, 2029September 05, 2029CLP 5,633,958,898.699
+September 05, 2029October 05, 2029October 05, 2029CLP 5,612,751,766.5978
+October 05, 2029November 05, 2029November 05, 2029CLP 5,590,478,629.468
+November 05, 2029December 05, 2029December 05, 2029CLP 5,569,042,322.4754
+December 05, 2029January 05, 2030January 07, 2030CLP 5,546,546,126.5816
+January 05, 2030February 05, 2030February 05, 2030CLP 5,524,878,486.0644
+February 05, 2030March 05, 2030March 05, 2030CLP 5,503,096,437.987599
+March 05, 2030April 05, 2030April 05, 2030CLP 5,478,393,039.6468
+April 05, 2030May 05, 2030May 06, 2030CLP 5,456,365,986.7018
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+10 of 30
+For the Floating Payer Calculation Period
+from and including*:
+To but excluding*:The applicable Floating Payer Payment Date
+shall be**:
+The applicable Floating Payer Currency
+Amount shall be**:
+May 05, 2030June 05, 2030June 05, 2030CLP 5,433,295,234.6046
+June 05, 2030July 05, 2030July 05, 2030CLP 5,411,030,372.2354
+July 05, 2030August 05, 2030August 05, 2030CLP 5,387,728,646.3858
+August 05, 2030September 05, 2030September 05, 2030CLP 5,365,223,815.9592
+September 05, 2030October 05, 2030October 07, 2030CLP 5,342,600,260.7066
+October 05, 2030November 05, 2030November 05, 2030CLP 5,318,949,555.823
+November 05, 2030December 05, 2030December 05, 2030CLP 5,296,082,075.018801
+December 05, 2030January 05, 2031January 06, 2031CLP 5,272,193,920.4832
+January 05, 2031February 05, 2031February 05, 2031CLP 5,249,080,355.4942
+February 05, 2031March 05, 2031March 05, 2031CLP 5,225,844,827.7294
+March 05, 2031April 05, 2031April 07, 2031CLP 5,199,821,784.959001
+April 05, 2031May 05, 2031May 05, 2031CLP 5,176,326,501.665801
+May 05, 2031June 05, 2031June 05, 2031CLP 5,151,827,453.9346
+June 05, 2031July 05, 2031July 07, 2031CLP 5,128,079,610.557
+July 05, 2031August 05, 2031August 05, 2031CLP 5,103,334,478.641
+August 05, 2031September 05, 2031September 05, 2031CLP 5,079,331,197.0014
+September 05, 2031October 05, 2031October 06, 2031CLP 5,055,200,915.7752
+October 05, 2031November 05, 2031November 05, 2031CLP 5,030,084,498.9488
+November 05, 2031December 05, 2031December 05, 2031CLP 5,005,694,821.9664
+December 05, 2031January 05, 2032January 05, 2032CLP 4,980,325,485.283401
+January 05, 2032February 05, 2032February 05, 2032CLP 4,955,673,894.1394
+February 05, 2032March 05, 2032March 05, 2032CLP 4,930,892,065.459001
+March 05, 2032April 05, 2032April 05, 2032CLP 4,904,303,101.018
+April 05, 2032May 05, 2032May 05, 2032CLP 4,879,250,723.6432
+May 05, 2032June 05, 2032June 07, 2032CLP 4,853,236,675.1778
+June 05, 2032July 05, 2032July 06, 2032CLP 4,827,915,188.197401
+July 05, 2032August 05, 2032August 05, 2032CLP 4,801,639,225.5704
+August 05, 2032September 05, 2032September 07, 2032CLP 4,776,045,750.8068
+September 05, 2032October 05, 2032October 05, 2032CLP 4,750,317,361.4682
+October 05, 2032November 05, 2032November 05, 2032CLP 4,723,645,649.4212
+November 05, 2032December 05, 2032December 06, 2032CLP 4,697,641,314.805201
+December 05, 2032January 05, 2033January 05, 2033CLP 4,670,701,212.6970005
+January 05, 2033February 05, 2033February 07, 2033CLP 4,644,417,335.0816
+February 05, 2033March 05, 2033March 07, 2033CLP 4,617,995,304.9414
+March 05, 2033April 05, 2033April 05, 2033CLP 4,589,078,974.1386
+April 05, 2033May 05, 2033May 05, 2033CLP 4,562,365,168.7442
+May 05, 2033June 05, 2033June 06, 2033CLP 4,534,735,023.5564
+June 05, 2033July 05, 2033July 05, 2033CLP 4,507,734,839.4908
+July 05, 2033August 05, 2033August 05, 2033CLP 4,479,826,230.6202
+August 05, 2033September 05, 2033September 06, 2033CLP 4,452,536,789.7058
+September 05, 2033October 05, 2033October 05, 2033CLP 4,425,103,439.9114
+October 05, 2033November 05, 2033November 07, 2033CLP 4,396,773,537.7946
+November 05, 2033December 05, 2033December 05, 2033CLP 4,369,046,254.112801
+December 05, 2033January 05, 2034January 05, 2034CLP 4,340,430,333.097
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+11 of 30
+For the Floating Payer Calculation Period
+from and including*:
+To but excluding*:The applicable Floating Payer Payment Date
+shall be**:
+The applicable Floating Payer Currency
+Amount shall be**:
+January 05, 2034February 05, 2034February 06, 2034CLP 4,312,406,237.350201
+February 05, 2034March 05, 2034March 06, 2034CLP 4,284,234,275.2292004
+March 05, 2034April 05, 2034April 05, 2034CLP 4,253,729,190.3912005
+April 05, 2034May 05, 2034May 05, 2034CLP 4,225,248,183.9504004
+May 05, 2034June 05, 2034June 05, 2034CLP 4,195,898,687.4188
+June 05, 2034July 05, 2034July 05, 2034CLP 4,167,112,953.9245996
+July 05, 2034August 05, 2034August 07, 2034CLP 4,137,467,005.1002
+August 05, 2034September 05, 2034September 05, 2034CLP 4,108,373,306.6028004
+September 05, 2034October 05, 2034October 05, 2034CLP 4,079,126,345.1482
+October 05, 2034November 05, 2034November 06, 2034CLP 4,049,031,760.3904004
+November 05, 2034December 05, 2034December 05, 2034CLP 4,019,471,797.1218004
+December 05, 2034January 05, 2035January 05, 2035CLP 3,989,073,204.855
+January 05, 2035February 05, 2035February 05, 2035CLP 3,959,197,361.5948
+February 05, 2035March 05, 2035March 05, 2035CLP 3,929,164,297.8832
+March 05, 2035April 05, 2035April 05, 2035CLP 3,896,969,003.2496
+April 05, 2035May 05, 2035May 07, 2035CLP 3,866,607,827.2916
+May 05, 2035June 05, 2035June 05, 2035CLP 3,835,429,248.8952003
+June 05, 2035July 05, 2035July 05, 2035CLP 3,804,743,918.185
+July 05, 2035August 05, 2035August 06, 2035CLP 3,773,249,819.5692
+August 05, 2035September 05, 2035September 05, 2035CLP 3,742,236,736.3848
+September 05, 2035October 05, 2035October 05, 2035CLP 3,711,059,956.8494
+October 05, 2035November 05, 2035November 05, 2035CLP 3,679,088,440.5242
+November 05, 2035December 05, 2035December 05, 2035CLP 3,647,578,871.7037997
+December 05, 2035January 05, 2036January 07, 2036CLP 3,615,283,560.3986
+January 05, 2036February 05, 2036February 05, 2036CLP 3,583,437,964.3434
+February 05, 2036March 05, 2036March 05, 2036CLP 3,551,424,354.6708
+March 05, 2036April 05, 2036April 07, 2036CLP 3,518,034,616.3332
+April 05, 2036May 05, 2036May 05, 2036CLP 3,485,676,704.6652
+May 05, 2036June 05, 2036June 05, 2036CLP 3,452,555,356.3887997
+June 05, 2036July 05, 2036July 07, 2036CLP 3,419,852,423.181
+July 05, 2036August 05, 2036August 05, 2036CLP 3,386,395,407.4420004
+August 05, 2036September 05, 2036September 05, 2036CLP 3,353,343,495.2002
+September 05, 2036October 05, 2036October 06, 2036CLP 3,320,117,453.2136
+October 05, 2036November 05, 2036November 05, 2036CLP 3,286,152,079.3560004
+November 05, 2036December 05, 2036December 05, 2036CLP 3,252,571,661.7524
+December 05, 2036January 05, 2037January 05, 2037CLP 3,218,261,626.1272
+January 05, 2037February 05, 2037February 05, 2037CLP 3,184,323,954.729
+February 05, 2037March 05, 2037March 05, 2037CLP 3,150,207,116.7752004
+March 05, 2037April 05, 2037April 06, 2037CLP 3,114,304,009.8484
+April 05, 2037May 05, 2037May 05, 2037CLP 3,079,818,045.6174
+May 05, 2037June 05, 2037June 05, 2037CLP 3,044,626,927.8744
+June 05, 2037July 05, 2037July 06, 2037CLP 3,009,773,995.9994
+July 05, 2037August 05, 2037August 05, 2037CLP 2,974,225,624.4618
+August 05, 2037September 05, 2037September 08, 2037CLP 2,939,001,767.4486003
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+12 of 30
+For the Floating Payer Calculation Period
+from and including*:
+To but excluding*:The applicable Floating Payer Payment Date
+shall be**:
+The applicable Floating Payer Currency
+Amount shall be**:
+September 05, 2037October 05, 2037October 05, 2037CLP 2,903,591,908.2079997
+October 05, 2037November 05, 2037November 05, 2037CLP 2,867,502,079.5094004
+November 05, 2037December 05, 2037December 07, 2037CLP 2,831,715,898.5476003
+December 05, 2037January 05, 2038January 05, 2038CLP 2,795,259,461.9772
+January 05, 2038February 05, 2038February 05, 2038CLP 2,759,092,282.2556
+February 05, 2038March 05, 2038March 05, 2038CLP 2,722,734,423.2679996
+March 05, 2038April 05, 2038April 05, 2038CLP 2,684,796,444.778
+April 05, 2038May 05, 2038May 05, 2038CLP 2,648,047,153.6368003
+May 05, 2038June 05, 2038June 07, 2038CLP 2,610,654,230.0298
+June 05, 2038July 05, 2038July 06, 2038CLP 2,573,514,226.2794003
+July 05, 2038August 05, 2038August 05, 2038CLP 2,535,741,023.4570003
+August 05, 2038September 05, 2038September 07, 2038CLP 2,498,205,989.8310003
+September 05, 2038October 05, 2038October 05, 2038CLP 2,460,473,441.2672
+October 05, 2038November 05, 2038November 05, 2038CLP 2,422,Banco ABC,883.3804
+November 05, 2038December 05, 2038December 06, 2038CLP 2,383,990,188.8136
+December 05, 2038January 05, 2039January 05, 2039CLP 2,345,250,278.0898
+January 05, 2039February 05, 2039February 07, 2039CLP 2,306,711,839.7980003
+February 05, 2039March 05, 2039March 07, 2039CLP 2,267,969,770.441
+March 05, 2039April 05, 2039April 05, 2039CLP 2,227,867,402.3958
+April 05, 2039May 05, 2039May 05, 2039CLP 2,188,710,155.92
+May 05, 2039June 05, 2039June 06, 2039CLP 2,148,974,395.7466
+June 05, 2039July 05, 2039July 05, 2039CLP 2,109,401,252.6076002
+July 05, 2039August 05, 2039August 05, 2039CLP 2,069,261,108.4814003
+August 05, 2039September 05, 2039September 06, 2039CLP 2,029,267,751.4128
+September 05, 2039October 05, 2039October 05, 2039CLP 1,989,063,927.6072001
+October 05, 2039November 05, 2039November 07, 2039CLP 1,948,310,012.1078
+November 05, 2039December 05, 2039December 05, 2039CLP 1,907,679,498.473
+December 05, 2039January 05, 2040January 05, 2040CLP 1,866,510,405.8548
+January 05, 2040February 05, 2040February 06, 2040CLP 1,825,448,885.1244
+February 05, 2040March 05, 2040March 05, 2040CLP 1,784,170,781.5296001
+March 05, 2040April 05, 2040April 05, 2040CLP 1,742,068,439.8246
+April 05, 2040May 05, 2040May 07, 2040CLP 1,700,351,054.3736
+May 05, 2040June 05, 2040June 05, 2040CLP 1,658,124,591.2596002
+June 05, 2040July 05, 2040July 05, 2040CLP 1,615,964,686.0026002
+July 05, 2040August 05, 2040August 06, 2040CLP 1,573,307,935.3374
+August 05, 2040September 05, 2040September 05, 2040CLP 1,530,701,193.0080001
+September 05, 2040October 05, 2040October 05, 2040CLP 1,487,869,952.8258
+October 05, 2040November 05, 2040November 05, 2040CLP 1,444,559,855.8454
+November 05, 2040December 05, 2040December 05, 2040CLP 1,401,274,583.1468
+December 05, 2040January 05, 2041January 07, 2041CLP 1,357,523,045.677
+January 05, 2041February 05, 2041February 05, 2041CLP 1,313,779,063.4234002
+February 05, 2041March 05, 2041March 05, 2041CLP 1,269,804,467.1896
+March 05, 2041April 05, 2041April 05, 2041CLP 1,224,950,587.699
+April 05, 2041May 05, 2041May 06, 2041CLP 1,180,507,927.8330002
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+13 of 30
+For the Floating Payer Calculation Period
+from and including*:
+To but excluding*:The applicable Floating Payer Payment Date
+shall be**:
+The applicable Floating Payer Currency
+Amount shall be**:
+May 05, 2041June 05, 2041June 05, 2041CLP 1,135,630,303.3772
+June 05, 2041July 05, 2041July 05, 2041CLP 1,090,716,701.7014
+July 05, 2041August 05, 2041August 05, 2041CLP 1,045,381,447.0072
+August 05, 2041September 05, 2041September 05, 2041CLP 999,992,226.483
+September 05, 2041October 05, 2041October 07, 2041CLP 954,364,117.218
+October 05, 2041November 05, 2041November 05, 2041CLP 908,333,063.0890001
+November 05, 2041December 05, 2041December 05, 2041CLP 862,222,139.5316
+December 05, 2041January 05, 2042January 06, 2042CLP 815,721,222.9094
+January 05, 2042February 05, 2042February 05, 2042CLP 769,121,728.7044001
+February 05, 2042March 05, 2042March 05, 2042CLP 722,276,869.8590001
+March 05, 2042April 05, 2042April 07, 2042CLP 674,816,800.5516
+April 05, 2042May 05, 2042May 05, 2042CLP 627,475,096.2980001
+May 05, 2042June 05, 2042June 05, 2042CLP 579,776,857.7942001
+June 05, 2042July 05, 2042July 07, 2042CLP 531,934,350.6382
+July 05, 2042August 05, 2042August 05, 2042CLP 483,748,980.5756
+August 05, 2042September 05, 2042September 05, 2042CLP 435,399,914.162
+September 05, 2042October 05, 2042October 06, 2042CLP 386,796,488.803
+October 05, 2042November 05, 2042November 05, 2042CLP 337,871,067.325
+November 05, 2042December 05, 2042December 05, 2042CLP 288,753,527.4922
+December 05, 2042January 05, 2043January 05, 2043CLP 239,328,022.65620002
+January 05, 2043February 05, 2043February 05, 2043CLP 189,690,971.76659998
+February 05, 2043March 05, 2043March 05, 2043CLP 139,792,366.4876
+March 05, 2043April 05, 2043April 06, 2043CLP 89,559,892.607
+April 05, 2043May 05, 2043May 05, 2043CLP 39,133,501.5106
+* each subject to No Adjustment
+** subject to adjustment in accordance with the Modified Following Business Day Convention
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+14 of 30
+Appendix II
+Schedule
+For the Fixed Payer Calculation Period from
+and including*:
+To but excluding*:The applicable Fixed Payer Payment Date
+shall be**:
+The applicable Fixed Payer Currency Amount
+shall be**:
+May 15, 2023June 05, 2023June 05, 2023CLF 190,000.00
+June 05, 2023July 05, 2023July 05, 2023CLF 190,000.00
+July 05, 2023August 05, 2023August 07, 2023CLF 190,000.00
+August 05, 2023September 05, 2023September 05, 2023CLF 190,000.00
+September 05, 2023October 05, 2023October 05, 2023CLF 190,000.00
+October 05, 2023November 05, 2023November 06, 2023CLF 190,000.00
+November 05, 2023December 05, 2023December 05, 2023CLF 190,000.00
+December 05, 2023January 05, 2024January 05, 2024CLF 190,000.00
+January 05, 2024February 05, 2024February 05, 2024CLF 190,000.00
+February 05, 2024March 05, 2024March 05, 2024CLF 190,000.00
+March 05, 2024April 05, 2024April 05, 2024CLF 189,870.87
+April 05, 2024May 05, 2024May 06, 2024CLF 189,456.76
+May 05, 2024June 05, 2024June 05, 2024CLF 189,008.25
+June 05, 2024July 05, 2024July 05, 2024CLF 188,589.59
+July 05, 2024August 05, 2024August 05, 2024CLF 188,136.67
+August 05, 2024September 05, 2024September 05, 2024CLF 187,713.41
+September 05, 2024October 05, 2024October 07, 2024CLF 187,287.93
+October 05, 2024November 05, 2024November 05, 2024CLF 186,828.37
+November 05, 2024December 05, 2024December 05, 2024CLF 186,398.22
+December 05, 2024January 05, 2025January 06, 2025CLF 185,934.12
+January 05, 2025February 05, 2025February 05, 2025CLF 185,499.26
+February 05, 2025March 05, 2025March 05, 2025CLF 185,062.11
+March 05, 2025April 05, 2025April 07, 2025CLF 184,528.27
+April 05, 2025May 05, 2025May 05, 2025CLF 184,086.00
+May 05, 2025June 05, 2025June 05, 2025CLF 183,610.10
+June 05, 2025July 05, 2025July 07, 2025CLF 183,163.00
+July 05, 2025August 05, 2025August 05, 2025CLF 182,682.40
+August 05, 2025September 05, 2025September 05, 2025CLF 182,230.40
+September 05, 2025October 05, 2025October 06, 2025CLF 181,776.02
+October 05, 2025November 05, 2025November 05, 2025CLF 181,288.34
+November 05, 2025December 05, 2025December 05, 2025CLF 180,829.00
+December 05, 2025January 05, 2026January 05, 2026CLF 180,336.50
+January 05, 2026February 05, 2026February 05, 2026CLF 179,872.14
+February 05, 2026March 05, 2026March 05, 2026CLF 179,405.33
+March 05, 2026April 05, 2026April 06, 2026CLF 178,844.57
+April 05, 2026May 05, 2026May 05, 2026CLF 178,372.34
+May 05, 2026June 05, 2026June 05, 2026CLF 177,867.31
+June 05, 2026July 05, 2026July 06, 2026CLF 177,389.94
+July 05, 2026August 05, 2026August 05, 2026CLF 176,879.89
+August 05, 2026September 05, 2026September 08, 2026CLF 176,397.32
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+15 of 30
+For the Fixed Payer Calculation Period from
+and including*:
+To but excluding*:The applicable Fixed Payer Payment Date
+shall be**:
+The applicable Fixed Payer Currency Amount
+shall be**:
+September 05, 2026October 05, 2026October 05, 2026CLF 175,912.20
+October 05, 2026November 05, 2026November 05, 2026CLF 175,394.62
+November 05, 2026December 05, 2026December 07, 2026CLF 174,904.21
+December 05, 2026January 05, 2027January 05, 2027CLF 174,381.49
+January 05, 2027February 05, 2027February 05, 2027CLF 173,885.75
+February 05, 2027March 05, 2027March 05, 2027CLF 173,387.39
+March 05, 2027April 05, 2027April 05, 2027CLF 172,797.99
+April 05, 2027May 05, 2027May 05, 2027CLF 172,293.90
+May 05, 2027June 05, 2027June 07, 2027CLF 171,757.86
+June 05, 2027July 05, 2027July 06, 2027CLF 171,248.29
+July 05, 2027August 05, 2027August 05, 2027CLF 170,706.93
+August 05, 2027September 05, 2027September 07, 2027CLF 170,191.82
+September 05, 2027October 05, 2027October 05, 2027CLF 169,674.00
+October 05, 2027November 05, 2027November 05, 2027CLF 169,124.60
+November 05, 2027December 05, 2027December 06, 2027CLF 168,601.16
+December 05, 2027January 05, 2028January 05, 2028CLF 168,046.29
+January 05, 2028February 05, 2028February 07, 2028CLF 167,517.16
+February 05, 2028March 05, 2028March 06, 2028CLF 166,985.24
+March 05, 2028April 05, 2028April 05, 2028CLF 166,393.75
+April 05, 2028May 05, 2028May 05, 2028CLF 165,855.91
+May 05, 2028June 05, 2028June 05, 2028CLF 165,287.04
+June 05, 2028July 05, 2028July 05, 2028CLF 164,743.37
+July 05, 2028August 05, 2028August 07, 2028CLF 164,168.83
+August 05, 2028September 05, 2028September 05, 2028CLF 163,619.27
+September 05, 2028October 05, 2028October 05, 2028CLF 163,066.81
+October 05, 2028November 05, 2028November 06, 2028CLF 162,483.71
+November 05, 2028December 05, 2028December 05, 2028CLF 161,925.27
+December 05, 2028January 05, 2029January 05, 2029CLF 161,336.36
+January 05, 2029February 05, 2029February 05, 2029CLF 160,771.87
+February 05, 2029March 05, 2029March 05, 2029CLF 160,204.40
+March 05, 2029April 05, 2029April 05, 2029CLF 159,552.24
+April 05, 2029May 05, 2029May 07, 2029CLF 158,978.35
+May 05, 2029June 05, 2029June 05, 2029CLF 158,374.40
+June 05, 2029July 05, 2029July 05, 2029CLF 157,794.30
+July 05, 2029August 05, 2029August 06, 2029CLF 157,184.32
+August 05, 2029September 05, 2029September 05, 2029CLF 156,597.95
+September 05, 2029October 05, 2029October 05, 2029CLF 156,008.49
+October 05, 2029November 05, 2029November 05, 2029CLF 155,389.40
+November 05, 2029December 05, 2029December 05, 2029CLF 154,793.57
+December 05, 2029January 05, 2030January 07, 2030CLF 154,168.28
+January 05, 2030February 05, 2030February 05, 2030CLF 153,566.02
+February 05, 2030March 05, 2030March 05, 2030CLF 152,960.58
+March 05, 2030April 05, 2030April 05, 2030CLF 152,273.94
+April 05, 2030May 05, 2030May 06, 2030CLF 151,661.69
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+16 of 30
+For the Fixed Payer Calculation Period from
+and including*:
+To but excluding*:The applicable Fixed Payer Payment Date
+shall be**:
+The applicable Fixed Payer Currency Amount
+shall be**:
+May 05, 2030June 05, 2030June 05, 2030CLF 151,020.43
+June 05, 2030July 05, 2030July 05, 2030CLF 150,401.57
+July 05, 2030August 05, 2030August 05, 2030CLF 149,753.89
+August 05, 2030September 05, 2030September 05, 2030CLF 149,128.36
+September 05, 2030October 05, 2030October 07, 2030CLF 148,499.53
+October 05, 2030November 05, 2030November 05, 2030CLF 147,842.15
+November 05, 2030December 05, 2030December 05, 2030CLF 147,206.54
+December 05, 2030January 05, 2031January 06, 2031CLF 146,542.56
+January 05, 2031February 05, 2031February 05, 2031CLF 145,900.11
+February 05, 2031March 05, 2031March 05, 2031CLF 145,254.27
+March 05, 2031April 05, 2031April 07, 2031CLF 144,530.95
+April 05, 2031May 05, 2031May 05, 2031CLF 143,877.89
+May 05, 2031June 05, 2031June 05, 2031CLF 143,196.93
+June 05, 2031July 05, 2031July 07, 2031CLF 142,536.85
+July 05, 2031August 05, 2031August 05, 2031CLF 141,849.05
+August 05, 2031September 05, 2031September 05, 2031CLF 141,181.87
+September 05, 2031October 05, 2031October 06, 2031CLF 140,511.16
+October 05, 2031November 05, 2031November 05, 2031CLF 139,813.04
+November 05, 2031December 05, 2031December 05, 2031CLF 139,135.12
+December 05, 2031January 05, 2032January 05, 2032CLF 138,429.97
+January 05, 2032February 05, 2032February 05, 2032CLF 137,744.77
+February 05, 2032March 05, 2032March 05, 2032CLF 137,055.95
+March 05, 2032April 05, 2032April 05, 2032CLF 136,316.90
+April 05, 2032May 05, 2032May 05, 2032CLF 135,620.56
+May 05, 2032June 05, 2032June 07, 2032CLF 134,897.49
+June 05, 2032July 05, 2032July 06, 2032CLF 134,193.67
+July 05, 2032August 05, 2032August 05, 2032CLF 133,463.32
+August 05, 2032September 05, 2032September 07, 2032CLF 132,751.94
+September 05, 2032October 05, 2032October 05, 2032CLF 132,036.81
+October 05, 2032November 05, 2032November 05, 2032CLF 131,295.46
+November 05, 2032December 05, 2032December 06, 2032CLF 130,572.66
+December 05, 2032January 05, 2033January 05, 2033CLF 129,823.85
+January 05, 2033February 05, 2033February 07, 2033CLF 129,093.28
+February 05, 2033March 05, 2033March 07, 2033CLF 128,358.87
+March 05, 2033April 05, 2033April 05, 2033CLF 127,555.13
+April 05, 2033May 05, 2033May 05, 2033CLF 126,812.61
+May 05, 2033June 05, 2033June 06, 2033CLF 126,044.62
+June 05, 2033July 05, 2033July 05, 2033CLF 125,294.14
+July 05, 2033August 05, 2033August 05, 2033CLF 124,518.41
+August 05, 2033September 05, 2033September 06, 2033CLF Banco ABC,759.89
+September 05, 2033October 05, 2033October 05, 2033CLF 122,997.37
+October 05, 2033November 05, 2033November 07, 2033CLF 122,209.93
+November 05, 2033December 05, 2033December 05, 2033CLF 121,439.24
+December 05, 2033January 05, 2034January 05, 2034CLF 120,643.85
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+17 of 30
+For the Fixed Payer Calculation Period from
+and including*:
+To but excluding*:The applicable Fixed Payer Payment Date
+shall be**:
+The applicable Fixed Payer Currency Amount
+shall be**:
+January 05, 2034February 05, 2034February 06, 2034CLF 119,864.91
+February 05, 2034March 05, 2034March 06, 2034CLF 119,081.86
+March 05, 2034April 05, 2034April 05, 2034CLF 118,233.96
+April 05, 2034May 05, 2034May 05, 2034CLF 117,442.32
+May 05, 2034June 05, 2034June 05, 2034CLF 116,626.54
+June 05, 2034July 05, 2034July 05, 2034CLF 115,826.43
+July 05, 2034August 05, 2034August 07, 2034CLF 115,002.41
+August 05, 2034September 05, 2034September 05, 2034CLF 114,193.74
+September 05, 2034October 05, 2034October 05, 2034CLF 113,380.81
+October 05, 2034November 05, 2034November 06, 2034CLF 112,544.32
+November 05, 2034December 05, 2034December 05, 2034CLF 111,722.69
+December 05, 2034January 05, 2035January 05, 2035CLF 110,877.75
+January 05, 2035February 05, 2035February 05, 2035CLF 110,047.34
+February 05, 2035March 05, 2035March 05, 2035CLF 109,212.56
+March 05, 2035April 05, 2035April 05, 2035CLF 108,317.68
+April 05, 2035May 05, 2035May 07, 2035CLF 107,473.78
+May 05, 2035June 05, 2035June 05, 2035CLF 106,607.16
+June 05, 2035July 05, 2035July 05, 2035CLF 105,754.25
+July 05, 2035August 05, 2035August 06, 2035CLF 104,878.86
+August 05, 2035September 05, 2035September 05, 2035CLF 104,016.84
+September 05, 2035October 05, 2035October 05, 2035CLF 103,150.27
+October 05, 2035November 05, 2035November 05, 2035CLF 102,261.61
+November 05, 2035December 05, 2035December 05, 2035CLF 101,385.79
+December 05, 2035January 05, 2036January 07, 2036CLF 100,488.13
+January 05, 2036February 05, 2036February 05, 2036CLF 99,602.97
+February 05, 2036March 05, 2036March 05, 2036CLF 98,713.14
+March 05, 2036April 05, 2036April 07, 2036CLF 97,785.06
+April 05, 2036May 05, 2036May 05, 2036CLF 96,885.66
+May 05, 2036June 05, 2036June 05, 2036CLF 95,965.04
+June 05, 2036July 05, 2036July 07, 2036CLF 95,056.05
+July 05, 2036August 05, 2036August 05, 2036CLF 94,126.10
+August 05, 2036September 05, 2036September 05, 2036CLF 93,207.41
+September 05, 2036October 05, 2036October 06, 2036CLF 92,283.88
+October 05, 2036November 05, 2036November 05, 2036CLF 91,339.80
+November 05, 2036December 05, 2036December 05, 2036CLF 90,406.42
+December 05, 2036January 05, 2037January 05, 2037CLF 89,452.76
+January 05, 2037February 05, 2037February 05, 2037CLF 88,509.45
+February 05, 2037March 05, 2037March 05, 2037CLF 87,561.16
+March 05, 2037April 05, 2037April 06, 2037CLF 86,563.22
+April 05, 2037May 05, 2037May 05, 2037CLF 85,604.67
+May 05, 2037June 05, 2037June 05, 2037CLF 84,626.52
+June 05, 2037July 05, 2037July 06, 2037CLF 83,657.77
+July 05, 2037August 05, 2037August 05, 2037CLF 82,669.69
+August 05, 2037September 05, 2037September 08, 2037CLF 81,690.63
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+18 of 30
+For the Fixed Payer Calculation Period from
+and including*:
+To but excluding*:The applicable Fixed Payer Payment Date
+shall be**:
+The applicable Fixed Payer Currency Amount
+shall be**:
+September 05, 2037October 05, 2037October 05, 2037CLF 80,706.40
+October 05, 2037November 05, 2037November 05, 2037CLF 79,703.27
+November 05, 2037December 05, 2037December 07, 2037CLF 78,708.58
+December 05, 2037January 05, 2038January 05, 2038CLF 77,695.26
+January 05, 2038February 05, 2038February 05, 2038CLF 76,689.98
+February 05, 2038March 05, 2038March 05, 2038CLF 75,679.40
+March 05, 2038April 05, 2038April 05, 2038CLF 74,624.90
+April 05, 2038May 05, 2038May 05, 2038CLF 73,603.44
+May 05, 2038June 05, 2038June 07, 2038CLF 72,564.09
+June 05, 2038July 05, 2038July 06, 2038CLF 71,531.77
+July 05, 2038August 05, 2038August 05, 2038CLF 70,481.85
+August 05, 2038September 05, 2038September 07, 2038CLF 69,438.55
+September 05, 2038October 05, 2038October 05, 2038CLF 68,389.76
+October 05, 2038November 05, 2038November 05, 2038CLF 67,323.82
+November 05, 2038December 05, 2038December 06, 2038CLF 66,263.88
+December 05, 2038January 05, 2039January 05, 2039CLF 65,187.09
+January 05, 2039February 05, 2039February 07, 2039CLF 64,115.90
+February 05, 2039March 05, 2039March 07, 2039CLF 63,039.05
+March 05, 2039April 05, 2039April 05, 2039CLF 61,924.39
+April 05, 2039May 05, 2039May 05, 2039CLF 60,836.00
+May 05, 2039June 05, 2039June 06, 2039CLF 59,731.53
+June 05, 2039July 05, 2039July 05, 2039CLF 58,631.58
+July 05, 2039August 05, 2039August 05, 2039CLF 57,515.87
+August 05, 2039September 05, 2039September 06, 2039CLF 56,404.24
+September 05, 2039October 05, 2039October 05, 2039CLF 55,286.76
+October 05, 2039November 05, 2039November 07, 2039CLF 54,153.99
+November 05, 2039December 05, 2039December 05, 2039CLF 53,024.65
+December 05, 2039January 05, 2040January 05, 2040CLF 51,880.34
+January 05, 2040February 05, 2040February 06, 2040CLF 50,739.02
+February 05, 2040March 05, 2040March 05, 2040CLF 49,591.68
+March 05, 2040April 05, 2040April 05, 2040CLF 48,421.43
+April 05, 2040May 05, 2040May 07, 2040CLF 47,261.88
+May 05, 2040June 05, 2040June 05, 2040CLF 46,088.18
+June 05, 2040July 05, 2040July 05, 2040CLF 44,916.33
+July 05, 2040August 05, 2040August 06, 2040CLF 43,730.67
+August 05, 2040September 05, 2040September 05, 2040CLF 42,546.40
+September 05, 2040October 05, 2040October 05, 2040CLF 41,355.89
+October 05, 2040November 05, 2040November 05, 2040CLF 40,152.07
+November 05, 2040December 05, 2040December 05, 2040CLF 38,948.94
+December 05, 2040January 05, 2041January 07, 2041CLF 37,732.85
+January 05, 2041February 05, 2041February 05, 2041CLF 36,516.97
+February 05, 2041March 05, 2041March 05, 2041CLF 35,294.68
+March 05, 2041April 05, 2041April 05, 2041CLF 34,047.95
+April 05, 2041May 05, 2041May 06, 2041CLF 32,812.65
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+19 of 30
+For the Fixed Payer Calculation Period from
+and including*:
+To but excluding*:The applicable Fixed Payer Payment Date
+shall be**:
+The applicable Fixed Payer Currency Amount
+shall be**:
+May 05, 2041June 05, 2041June 05, 2041CLF 31,565.26
+June 05, 2041July 05, 2041July 05, 2041CLF 30,316.87
+July 05, 2041August 05, 2041August 05, 2041CLF 29,056.76
+August 05, 2041September 05, 2041September 05, 2041CLF 27,795.15
+September 05, 2041October 05, 2041October 07, 2041CLF 26,526.90
+October 05, 2041November 05, 2041November 05, 2041CLF 25,247.45
+November 05, 2041December 05, 2041December 05, 2041CLF 23,965.78
+December 05, 2041January 05, 2042January 06, 2042CLF 22,673.27
+January 05, 2042February 05, 2042February 05, 2042CLF 21,378.02
+February 05, 2042March 05, 2042March 05, 2042CLF 20,075.95
+March 05, 2042April 05, 2042April 07, 2042CLF 18,756.78
+April 05, 2042May 05, 2042May 05, 2042CLF 17,440.90
+May 05, 2042June 05, 2042June 05, 2042CLF 16,115.11
+June 05, 2042July 05, 2042July 07, 2042CLF 14,785.31
+July 05, 2042August 05, 2042August 05, 2042CLF 13,445.98
+August 05, 2042September 05, 2042September 05, 2042CLF 12,102.10
+September 05, 2042October 05, 2042October 06, 2042CLF 10,751.15
+October 05, 2042November 05, 2042November 05, 2042CLF 9,391.25
+November 05, 2042December 05, 2042December 05, 2042CLF 8,026.01
+December 05, 2042January 05, 2043January 05, 2043CLF 6,652.21
+January 05, 2043February 05, 2043February 05, 2043CLF 5,272.53
+February 05, 2043March 05, 2043March 05, 2043CLF 3,885.58
+March 05, 2043April 05, 2043April 06, 2043CLF 2,489.35
+April 05, 2043May 05, 2043May 05, 2043CLF 1,087.73
+* each subject to No Adjustment
+** subject to adjustment in accordance with the Modified Following Business Day Convention
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+20 of 30
+Appendix III
+Schedule
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+March 05, 2024CLP 0.00-
+April 05, 2024CLP 0.00-
+May 05, 2024CLP 0.00-
+June 05, 2024CLP 0.00-
+July 05, 2024CLP 0.00-
+August 05, 2024CLP 0.00-
+September 05, 2024CLP 0.00-
+October 05, 2024CLP 0.00-
+November 05, 2024CLP 0.00-
+December 05, 2024CLP 0.00-
+January 05, 2025CLP 0.00-
+February 05, 2025CLP 0.00-
+March 05, 2025CLP 0.00-
+April 05, 2025CLP 0.00-
+May 05, 2025CLP 0.00-
+June 05, 2025CLP 0.00-
+July 05, 2025CLP 0.00-
+August 05, 2025CLP 0.00-
+September 05, 2025CLP 0.00-
+October 05, 2025CLP 0.00-
+November 05, 2025CLP 0.00-
+December 05, 2025CLP 0.00-
+January 05, 2026CLP 0.00-
+February 05, 2026CLP 0.00-
+March 05, 2026CLP 0.00-
+April 05, 2026CLP 0.00-
+May 05, 2026CLP 0.00-
+June 05, 2026CLP 0.00-
+July 05, 2026CLP 0.00-
+August 05, 2026CLP 0.00-
+September 05, 2026CLP 0.00-
+October 05, 2026CLP 0.00-
+November 05, 2026CLP 0.00-
+December 05, 2026CLP 0.00-
+January 05, 2027CLP 0.00-
+February 05, 2027CLP 0.00-
+March 05, 2027CLP 0.00-
+April 05, 2027CLP 0.00-
+May 05, 2027CLP 0.00-
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+21 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+June 05, 2027CLP 0.00-
+July 05, 2027CLP 0.00-
+August 05, 2027CLP 0.00-
+September 05, 2027CLP 0.00-
+October 05, 2027CLP 0.00-
+November 05, 2027CLP 0.00-
+December 05, 2027CLP 0.00-
+January 05, 2028CLP 0.00-
+February 05, 2028CLP 0.00-
+March 05, 2028CLP 0.00-
+April 05, 2028CLP 0.00-
+May 05, 2028CLP 0.00-
+June 05, 2028CLP 0.00-
+July 05, 2028CLP 0.00-
+August 05, 2028CLP 0.00-
+September 05, 2028CLP 0.00-
+October 05, 2028CLP 0.00-
+November 05, 2028CLP 0.00-
+December 05, 2028CLP 0.00-
+January 05, 2029CLP 0.00-
+February 05, 2029CLP 0.00-
+March 05, 2029CLP 0.00-
+April 05, 2029CLP 0.00-
+May 05, 2029CLP 0.00-
+June 05, 2029CLP 0.00-
+July 05, 2029CLP 0.00-
+August 05, 2029CLP 0.00-
+September 05, 2029CLP 0.00-
+October 05, 2029CLP 0.00-
+November 05, 2029CLP 0.00-
+December 05, 2029CLP 0.00-
+January 05, 2030CLP 0.00-
+February 05, 2030CLP 0.00-
+March 05, 2030CLP 0.00-
+April 05, 2030CLP 0.00-
+May 05, 2030CLP 0.00-
+June 05, 2030CLP 0.00-
+July 05, 2030CLP 0.00-
+August 05, 2030CLP 0.00-
+September 05, 2030CLP 0.00-
+October 05, 2030CLP 0.00-
+November 05, 2030CLP 0.00-
+December 05, 2030CLP 0.00-
+January 05, 2031CLP 0.00-
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+22 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+February 05, 2031CLP 0.00-
+March 05, 2031CLP 0.00-
+April 05, 2031CLP 0.00-
+May 05, 2031CLP 0.00-
+June 05, 2031CLP 0.00-
+July 05, 2031CLP 0.00-
+August 05, 2031CLP 0.00-
+September 05, 2031CLP 0.00-
+October 05, 2031CLP 0.00-
+November 05, 2031CLP 0.00-
+December 05, 2031CLP 0.00-
+January 05, 2032CLP 0.00-
+February 05, 2032CLP 0.00-
+March 05, 2032CLP 0.00-
+April 05, 2032CLP 0.00-
+May 05, 2032CLP 0.00-
+June 05, 2032CLP 0.00-
+July 05, 2032CLP 0.00-
+August 05, 2032CLP 0.00-
+September 05, 2032CLP 0.00-
+October 05, 2032CLP 0.00-
+November 05, 2032CLP 0.00-
+December 05, 2032CLP 0.00-
+January 05, 2033CLP 0.00-
+February 05, 2033CLP 0.00-
+March 05, 2033CLP 0.00-
+April 05, 2033CLP 0.00-
+May 05, 2033CLP 0.00-
+June 05, 2033CLP 0.00-
+July 05, 2033CLP 0.00-
+August 05, 2033CLP 0.00-
+September 05, 2033CLP 0.00-
+October 05, 2033CLP 0.00-
+November 05, 2033CLP 0.00-
+December 05, 2033CLP 0.00-
+January 05, 2034CLP 0.00-
+February 05, 2034CLP 0.00-
+March 05, 2034CLP 0.00-
+April 05, 2034CLP 0.00-
+May 05, 2034CLP 0.00-
+June 05, 2034CLP 0.00-
+July 05, 2034CLP 0.00-
+August 05, 2034CLP 0.00-
+September 05, 2034CLP 0.00-
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+23 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+October 05, 2034CLP 0.00-
+November 05, 2034CLP 0.00-
+December 05, 2034CLP 0.00-
+January 05, 2035CLP 0.00-
+February 05, 2035CLP 0.00-
+March 05, 2035CLP 0.00-
+April 05, 2035CLP 0.00-
+May 05, 2035CLP 0.00-
+June 05, 2035CLP 0.00-
+July 05, 2035CLP 0.00-
+August 05, 2035CLP 0.00-
+September 05, 2035CLP 0.00-
+October 05, 2035CLP 0.00-
+November 05, 2035CLP 0.00-
+December 05, 2035CLP 0.00-
+January 05, 2036CLP 0.00-
+February 05, 2036CLP 0.00-
+March 05, 2036CLP 0.00-
+April 05, 2036CLP 0.00-
+May 05, 2036CLP 0.00-
+June 05, 2036CLP 0.00-
+July 05, 2036CLP 0.00-
+August 05, 2036CLP 0.00-
+September 05, 2036CLP 0.00-
+October 05, 2036CLP 0.00-
+November 05, 2036CLP 0.00-
+December 05, 2036CLP 0.00-
+January 05, 2037CLP 0.00-
+February 05, 2037CLP 0.00-
+March 05, 2037CLP 0.00-
+April 05, 2037CLP 0.00-
+May 05, 2037CLP 0.00-
+June 05, 2037CLP 0.00-
+July 05, 2037CLP 0.00-
+August 05, 2037CLP 0.00-
+September 05, 2037CLP 0.00-
+October 05, 2037CLP 0.00-
+November 05, 2037CLP 0.00-
+December 05, 2037CLP 0.00-
+January 05, 2038CLP 0.00-
+February 05, 2038CLP 0.00-
+March 05, 2038CLP 0.00-
+April 05, 2038CLP 0.00-
+May 05, 2038CLP 0.00-
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+24 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+June 05, 2038CLP 0.00-
+July 05, 2038CLP 0.00-
+August 05, 2038CLP 0.00-
+September 05, 2038CLP 0.00-
+October 05, 2038CLP 0.00-
+November 05, 2038CLP 0.00-
+December 05, 2038CLP 0.00-
+January 05, 2039CLP 0.00-
+February 05, 2039CLP 0.00-
+March 05, 2039CLP 0.00-
+April 05, 2039CLP 0.00-
+May 05, 2039CLP 0.00-
+June 05, 2039CLP 0.00-
+July 05, 2039CLP 0.00-
+August 05, 2039CLP 0.00-
+September 05, 2039CLP 0.00-
+October 05, 2039CLP 0.00-
+November 05, 2039CLP 0.00-
+December 05, 2039CLP 0.00-
+January 05, 2040CLP 0.00-
+February 05, 2040CLP 0.00-
+March 05, 2040CLP 0.00-
+April 05, 2040CLP 0.00-
+May 05, 2040CLP 0.00-
+June 05, 2040CLP 0.00-
+July 05, 2040CLP 0.00-
+August 05, 2040CLP 0.00-
+September 05, 2040CLP 0.00-
+October 05, 2040CLP 0.00-
+November 05, 2040CLP 0.00-
+December 05, 2040CLP 0.00-
+January 05, 2041CLP 0.00-
+February 05, 2041CLP 0.00-
+March 05, 2041CLP 0.00-
+April 05, 2041CLP 0.00-
+May 05, 2041CLP 0.00-
+June 05, 2041CLP 0.00-
+July 05, 2041CLP 0.00-
+August 05, 2041CLP 0.00-
+September 05, 2041CLP 0.00-
+October 05, 2041CLP 0.00-
+November 05, 2041CLP 0.00-
+December 05, 2041CLP 0.00-
+January 05, 2042CLP 0.00-
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+25 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+February 05, 2042CLP 0.00-
+March 05, 2042CLP 0.00-
+April 05, 2042CLP 0.00-
+May 05, 2042CLP 0.00-
+June 05, 2042CLP 0.00-
+July 05, 2042CLP 0.00-
+August 05, 2042CLP 0.00-
+September 05, 2042CLP 0.00-
+October 05, 2042CLP 0.00-
+November 05, 2042CLP 0.00-
+December 05, 2042CLP 0.00-
+January 05, 2043CLP 0.00-
+February 05, 2043CLP 0.00-
+March 05, 2043CLP 0.00-
+April 05, 2043CLP 0.00-
+March 05, 2024-UFC 0.00
+April 05, 2024-UFC 0.00
+May 05, 2024-UFC 0.00
+June 05, 2024-UFC 0.00
+July 05, 2024-UFC 0.00
+August 05, 2024-UFC 0.00
+September 05, 2024-UFC 0.00
+October 05, 2024-UFC 0.00
+November 05, 2024-UFC 0.00
+December 05, 2024-UFC 0.00
+January 05, 2025-UFC 0.00
+February 05, 2025-UFC 0.00
+March 05, 2025-UFC 0.00
+April 05, 2025-UFC 0.00
+May 05, 2025-UFC 0.00
+June 05, 2025-UFC 0.00
+July 05, 2025-UFC 0.00
+August 05, 2025-UFC 0.00
+September 05, 2025-UFC 0.00
+October 05, 2025-UFC 0.00
+November 05, 2025-UFC 0.00
+December 05, 2025-UFC 0.00
+January 05, 2026-UFC 0.00
+February 05, 2026-UFC 0.00
+March 05, 2026-UFC 0.00
+April 05, 2026-UFC 0.00
+May 05, 2026-UFC 0.00
+June 05, 2026-UFC 0.00
+July 05, 2026-UFC 0.00
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+26 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+August 05, 2026-UFC 0.00
+September 05, 2026-UFC 0.00
+October 05, 2026-UFC 0.00
+November 05, 2026-UFC 0.00
+December 05, 2026-UFC 0.00
+January 05, 2027-UFC 0.00
+February 05, 2027-UFC 0.00
+March 05, 2027-UFC 0.00
+April 05, 2027-UFC 0.00
+May 05, 2027-UFC 0.00
+June 05, 2027-UFC 0.00
+July 05, 2027-UFC 0.00
+August 05, 2027-UFC 0.00
+September 05, 2027-UFC 0.00
+October 05, 2027-UFC 0.00
+November 05, 2027-UFC 0.00
+December 05, 2027-UFC 0.00
+January 05, 2028-UFC 0.00
+February 05, 2028-UFC 0.00
+March 05, 2028-UFC 0.00
+April 05, 2028-UFC 0.00
+May 05, 2028-UFC 0.00
+June 05, 2028-UFC 0.00
+July 05, 2028-UFC 0.00
+August 05, 2028-UFC 0.00
+September 05, 2028-UFC 0.00
+October 05, 2028-UFC 0.00
+November 05, 2028-UFC 0.00
+December 05, 2028-UFC 0.00
+January 05, 2029-UFC 0.00
+February 05, 2029-UFC 0.00
+March 05, 2029-UFC 0.00
+April 05, 2029-UFC 0.00
+May 05, 2029-UFC 0.00
+June 05, 2029-UFC 0.00
+July 05, 2029-UFC 0.00
+August 05, 2029-UFC 0.00
+September 05, 2029-UFC 0.00
+October 05, 2029-UFC 0.00
+November 05, 2029-UFC 0.00
+December 05, 2029-UFC 0.00
+January 05, 2030-UFC 0.00
+February 05, 2030-UFC 0.00
+March 05, 2030-UFC 0.00
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+27 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+April 05, 2030-UFC 0.00
+May 05, 2030-UFC 0.00
+June 05, 2030-UFC 0.00
+July 05, 2030-UFC 0.00
+August 05, 2030-UFC 0.00
+September 05, 2030-UFC 0.00
+October 05, 2030-UFC 0.00
+November 05, 2030-UFC 0.00
+December 05, 2030-UFC 0.00
+January 05, 2031-UFC 0.00
+February 05, 2031-UFC 0.00
+March 05, 2031-UFC 0.00
+April 05, 2031-UFC 0.00
+May 05, 2031-UFC 0.00
+June 05, 2031-UFC 0.00
+July 05, 2031-UFC 0.00
+August 05, 2031-UFC 0.00
+September 05, 2031-UFC 0.00
+October 05, 2031-UFC 0.00
+November 05, 2031-UFC 0.00
+December 05, 2031-UFC 0.00
+January 05, 2032-UFC 0.00
+February 05, 2032-UFC 0.00
+March 05, 2032-UFC 0.00
+April 05, 2032-UFC 0.00
+May 05, 2032-UFC 0.00
+June 05, 2032-UFC 0.00
+July 05, 2032-UFC 0.00
+August 05, 2032-UFC 0.00
+September 05, 2032-UFC 0.00
+October 05, 2032-UFC 0.00
+November 05, 2032-UFC 0.00
+December 05, 2032-UFC 0.00
+January 05, 2033-UFC 0.00
+February 05, 2033-UFC 0.00
+March 05, 2033-UFC 0.00
+April 05, 2033-UFC 0.00
+May 05, 2033-UFC 0.00
+June 05, 2033-UFC 0.00
+July 05, 2033-UFC 0.00
+August 05, 2033-UFC 0.00
+September 05, 2033-UFC 0.00
+October 05, 2033-UFC 0.00
+November 05, 2033-UFC 0.00
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+28 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+December 05, 2033-UFC 0.00
+January 05, 2034-UFC 0.00
+February 05, 2034-UFC 0.00
+March 05, 2034-UFC 0.00
+April 05, 2034-UFC 0.00
+May 05, 2034-UFC 0.00
+June 05, 2034-UFC 0.00
+July 05, 2034-UFC 0.00
+August 05, 2034-UFC 0.00
+September 05, 2034-UFC 0.00
+October 05, 2034-UFC 0.00
+November 05, 2034-UFC 0.00
+December 05, 2034-UFC 0.00
+January 05, 2035-UFC 0.00
+February 05, 2035-UFC 0.00
+March 05, 2035-UFC 0.00
+April 05, 2035-UFC 0.00
+May 05, 2035-UFC 0.00
+June 05, 2035-UFC 0.00
+July 05, 2035-UFC 0.00
+August 05, 2035-UFC 0.00
+September 05, 2035-UFC 0.00
+October 05, 2035-UFC 0.00
+November 05, 2035-UFC 0.00
+December 05, 2035-UFC 0.00
+January 05, 2036-UFC 0.00
+February 05, 2036-UFC 0.00
+March 05, 2036-UFC 0.00
+April 05, 2036-UFC 0.00
+May 05, 2036-UFC 0.00
+June 05, 2036-UFC 0.00
+July 05, 2036-UFC 0.00
+August 05, 2036-UFC 0.00
+September 05, 2036-UFC 0.00
+October 05, 2036-UFC 0.00
+November 05, 2036-UFC 0.00
+December 05, 2036-UFC 0.00
+January 05, 2037-UFC 0.00
+February 05, 2037-UFC 0.00
+March 05, 2037-UFC 0.00
+April 05, 2037-UFC 0.00
+May 05, 2037-UFC 0.00
+June 05, 2037-UFC 0.00
+July 05, 2037-UFC 0.00
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+29 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+August 05, 2037-UFC 0.00
+September 05, 2037-UFC 0.00
+October 05, 2037-UFC 0.00
+November 05, 2037-UFC 0.00
+December 05, 2037-UFC 0.00
+January 05, 2038-UFC 0.00
+February 05, 2038-UFC 0.00
+March 05, 2038-UFC 0.00
+April 05, 2038-UFC 0.00
+May 05, 2038-UFC 0.00
+June 05, 2038-UFC 0.00
+July 05, 2038-UFC 0.00
+August 05, 2038-UFC 0.00
+September 05, 2038-UFC 0.00
+October 05, 2038-UFC 0.00
+November 05, 2038-UFC 0.00
+December 05, 2038-UFC 0.00
+January 05, 2039-UFC 0.00
+February 05, 2039-UFC 0.00
+March 05, 2039-UFC 0.00
+April 05, 2039-UFC 0.00
+May 05, 2039-UFC 0.00
+June 05, 2039-UFC 0.00
+July 05, 2039-UFC 0.00
+August 05, 2039-UFC 0.00
+September 05, 2039-UFC 0.00
+October 05, 2039-UFC 0.00
+November 05, 2039-UFC 0.00
+December 05, 2039-UFC 0.00
+January 05, 2040-UFC 0.00
+February 05, 2040-UFC 0.00
+March 05, 2040-UFC 0.00
+April 05, 2040-UFC 0.00
+May 05, 2040-UFC 0.00
+June 05, 2040-UFC 0.00
+July 05, 2040-UFC 0.00
+August 05, 2040-UFC 0.00
+September 05, 2040-UFC 0.00
+October 05, 2040-UFC 0.00
+November 05, 2040-UFC 0.00
+December 05, 2040-UFC 0.00
+January 05, 2041-UFC 0.00
+February 05, 2041-UFC 0.00
+March 05, 2041-UFC 0.00
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6
+
+DocControlId: XDCTRL000000308947-0Transaction ID:SDBB7MM3334CM7X6XJ.0.0.0.1-0
+30 of 30
+Interim Exchange Dates:*The applicable BANCO_A Interim Exchange Amounts shall
+be:
+The applicable Counterparty Interim Exchange Amounts shall
+be:
+April 05, 2041-UFC 0.00
+May 05, 2041-UFC 0.00
+June 05, 2041-UFC 0.00
+July 05, 2041-UFC 0.00
+August 05, 2041-UFC 0.00
+September 05, 2041-UFC 0.00
+October 05, 2041-UFC 0.00
+November 05, 2041-UFC 0.00
+December 05, 2041-UFC 0.00
+January 05, 2042-UFC 0.00
+February 05, 2042-UFC 0.00
+March 05, 2042-UFC 0.00
+April 05, 2042-UFC 0.00
+May 05, 2042-UFC 0.00
+June 05, 2042-UFC 0.00
+July 05, 2042-UFC 0.00
+August 05, 2042-UFC 0.00
+September 05, 2042-UFC 0.00
+October 05, 2042-UFC 0.00
+November 05, 2042-UFC 0.00
+December 05, 2042-UFC 0.00
+January 05, 2043-UFC 0.00
+February 05, 2043-UFC 0.00
+March 05, 2043-UFC 0.00
+April 05, 2043-UFC 0.00
+DocuSign Envelope ID: 653E6149-E554-44C6-B39B-D85BCDCB46B6

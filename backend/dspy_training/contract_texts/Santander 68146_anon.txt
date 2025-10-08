@@ -1,0 +1,1068 @@
+
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+ 
+ 
+Datos Cliente 
+Nombre del Titular Banco ABC 
+RUT  
+Condiciones Financieras 
+Tipo Producto CROSS CURRENCY SWAP 
+Fecha de Cierre 05 de Enero de 2024 
+Fecha de Inicio 09 de Enero de 2024 
+Fecha de Vencimiento 11 de Enero de 2044 
+Monto Inicial Pactado cliente CLP 2,497,600,000 
+Tasa Interés Pactada cliente TNA menos -0.42000% de spread. 
+Base cálculo cliente Lineal Actual/360 
+Monto Inicial Pactado BANCO_C USD 2,800,000.00 
+Tasa Interés Pactada BANCO_C USD SOFR COMP más 0.00000% de spread. 
+Base cálculo BANCO_C Lineal Actual/360 
+Modo Cumplimiento Compensado en CLP 
+Número contrato 33374656.24 
+ 
+ 
+ 
+ 
+ 
+Firma Cliente 
+ 
+ 
+ 
+1 
+CROSS CURRENCY SWAP 
+HOJA RESUMEN 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+CONTRATO DE DERIVADOS DE SWAP DE MONEDAS 
+(CROSS CURRENCY SWAP) 
+ 
+Ref.: 33374656.24 
+ 
+En  Santiago de  Chile,  a  05 de Enero  de 2024,  entre  el  BANCO_C,  en  adelante  también  BANCO_C,  RUT.  Debidamente  representado por  la(s)  
+persona(s)  que  suscribe(n)  y  se  individualiza(n)  al  final,  todos  domiciliados en  CL  
+BANDERA  140  8340455,  de  esta  ciudad,  por  una  parte,  y  por  otra  Banco ABC,  en  
+adelante también CLIENTE, RUT, debidamente representado por la(s) persona(s) que 
+suscribe(n)  y  se  individualiza(n)  al  final,  todos  domiciliados  en  esta  ciudad,  se  ha  
+convenido el siguiente contrato de derivados de Swap de monedas, el cual se regirá 
+por  las  disposiciones  de  este  instrumento  y  las  Condiciones  Generales  de  Contratos  
+de  Derivados  en  el  Mercado  Local  acordadas  entre  ambas  partes,  documento  que,  
+para todos los efectos, se entiende forma parte integrante del presente instrumento: 
+I.  Definiciones: 
+ 
+i. Fecha  de  Fijación:  Corresponde  al  día  efectivo  en  que  se  publica  o  está  
+disponible para el público en general, la tasa de interés a utilizar en el respectivo 
+periodo. 
+ii. Fecha  de  Inicio  del  Contrato:  Fecha  de  inicio  del  primer  periodo  (del  
+Devengo) de intereses. 
+iii. Fecha de Inicio (del Devengo): Fecha a partir de la cual se inicia cada periodo 
+(del Devengo) de intereses. 
+iv.    Fecha de término (del Devengo): Fecha en la cual termina cada periodo de 
+intereses. 
+v. Fecha de Pago: respecto de un Contrato Swap Significa las fechas pactadas 
+por las partes en las cuales deben cumplir las obligaciones de pago contraídas 
+en este Contrato. 
+vi.   Fecha  de  Vencimiento:  Significa  la  última  Fecha  de  Pago  estipulada  en  el  
+Contrato. 
+vii. Monto Contratado: Significa la cantidad de Moneda Extranjera, Unidades de 
+Fomento, y/o Moneda Nacional que cada una de las partes han acordado en 
+ 
+33374656.24 2 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+este Contrato, y que se encuentre vigente en cada Fecha de Pago, cantidad 
+sobre la cual y por el o los Períodos de Intereses pactados, se aplican las Tasas 
+de Interés convenidas en la sección II de este Contrato. 
+viii. Monto  de  Amortización:  Significa el o los montos de capital que las partes 
+han acordado pagar en cada Fecha de Pago. 
+ix.    Intercambio Inicial: Corresponde al  intercambio del  capital  contratado en 
+la  fecha  de  inicio  del  contrato  en  la  moneda  definida  por  cada  parte  en  las  
+condiciones financieras. 
+x. Intercambio Final: Corresponde al monto indicado en el último periodo de la 
+columna “amortización”. 
+xi.   Períodos  de  Intereses:  Significa  (i)  para  el  primer  Período  de  Intereses,  el  
+período que comienza en la primera Fecha de Inicio (del Devengo) y termina 
+el día que fijen las partes en este Contrato como primera Fecha de Término 
+(del  Devengo),  (ii)  y  respecto  de  los  siguientes  Períodos  de  Intereses,  cada  
+uno  de  los  períodos  que  comienzan  en  la  Fecha  de  Inicio  (del  Devengo)  
+inmediatamente siguiente y que termina en la siguiente Fecha de Término (del 
+Devengo), y así sucesivamente. 
+xii. Tasa   Promedio   Cámara:   Es  la  que  se  obtiene,  de  acuerdo  con  los  
+procedimientos  y  fórmulas  que  se  estipulan  a  continuación,  utilizando  el  
+Índice Cámara Promedio calculado por la Chilean Benchmark Facility SpA, en 
+adelante ICP, cuyo Reglamento fuera aprobado en sesión de Directorio de la 
+Asociación de Bancos e Instituciones Financieras de Chile A.G. de fecha 27 
+de Marzo del 2017, y publicado en el Diario Oficial el día 5 de Mayo del 2017. 
+ 
+ 
+A) Forma de Cálculo para Operaciones Reajustables: 
+ 
+ 
+** Redondear a 4 decimales 
+ 
+33374656.24 3 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+ 
+Donde: 
+Tasa Nominal  anual  promedio,  durante el  periodo de compensación 
+involucrado. 
+Tasa Real  Anual  Promedio,  durante el  periodo  de compensación 
+involucrado. 
+UF
+1
+ 
+:    Valor de la UF al vencimiento de cada periodo de compensación. 
+UF
+0
+ : 
+Valor de la UF al inicio de cada periodo de compensación. 
+T
+1
+ : 
+Fecha de Vencimiento de cada periodo de compensación involucrado. 
+T
+0
+ : 
+Fecha de Inicio de cada periodo de compensación involucrado. 
+(T
+1
+ - T
+0
+)   : 
+Periodo Pago de Intereses. 
+ 
+B) Forma de cálculo para Operaciones Nominales: 
+ 
+TNA = Redondear ((( ICP1/ICP0) - 1 ) * 36000 / (T
+1
+ - T
+0
+) ; 2) 
+ 
+Donde: 
+ICP : Índice Cámara Promedio publicado por la Asociación de Bancos a través 
+de SINACOFI 
+ICP1 : Valor  del  índice  cámara promedio  al  vencimiento del  periodo  de
+ 
+compensación involucrado. 
+ICP0 : Valor del índice cámara promedio al inicio del periodo de compensación 
+involucrado. 
+TNA : Tasa Nominal anual promedio, durante el periodo de compensación. 
+T
+1
+ : 
+Fecha de Vencimiento de cada periodo de compensación involucrado. 
+T
+0
+ : 
+Fecha al Inicio de cada periodo de compensación involucrado. 
+(T
+1
+ - T
+0
+)   : 
+Periodo Pago de Interés. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 4 
+TNA
+ 
+ 
+TRA
+ 
+ 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+xiii. Tasa  SOFR  Compuesta:  Con respecto a un Período de Interés, significa la 
+tasa  de  retorno  de  una  inversión  con  interés  compuesto  diario.  Que  utiliza  
+para su cálculo la  Tasa SOFR de Referencia, que será determinada por Banco 
+BANCO_C  como  agente  de  cálculo  y  que  resulte  de  aplicar  los  siguientes  
+procedimientos  y  fórmulas.  El  porcentaje  resultante  será  redondeado,  si  es  
+necesario,  al  cuarto  decimal  de  un  punto  porcentual,  con  0,00005  siendo  
+redondeado hacia arriba: 
+ 
+ 
+Donde: 
+"d" significa  el  número  de  días  calendario  en  un  determinado  Período  de  
+Referencia. 
+“d0” para  cada  Período  de  Referencia,  significa  el  número  de  Días  Hábiles  
+para U.S. Government Securities en el respectivo Período de Referencia. 
+“Día Hábil para U.S. Government Securities” significa cualquier día excepto 
+los  sábados,  domingos  o  aquellos  días  en  que  la  “Security  Industry  and  
+Financial Markets Association” (SIFMA), o aquella entidad que la reemplace, 
+recomiende que los departamentos de renta fija de sus miembros cierren por 
+todo un día para propósitos de transar U.S. Government Securities. 
+“t” es una serie de números enteros de 1 a d0, donde cada uno representa 
+un Día Hábil para U.S. Government Securities, ordenados cronológicamente 
+desde e incluyendo el primer Día Hábil para U.S. Government Securities en el 
+respectivo Período de Referencia. 
+“nt” para un Día Hábil para U.S Government Securities “t” en un determinado 
+Período  de  Referencia,  significa  el  número  de  días  calendarios,  desde  e  
+incluyendo dicho Día Hábil para U.S. Government Securities “t”, y hasta pero 
+excluyendo el siguiente Día Hábil para U.S. Government Securities. 
+ 
+xiv. Período  de  Referencia:  Significa  respecto  a  cada  Período  de  Interés,  el  
+período desde, e incluyendo, el número de Días Hábiles para U.S. Government 
+Securities  anteriores  al  primer  día  del  respectivo  Período  de  Intereses  que  
+corresponda según la Convención de Ajuste hasta, pero excluyendo, el mismo 
+número de Día Hábiles para U.S. Government Securities anteriores al último 
+día  del  respectivo Periodo  de  Intereses.  En  el  caso  del  primer  Período de 
+33374656.24 5 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+intereses,  el  Período  de  Referencia  comenzará  el  mismo  número  de  Días  
+Hábiles para U.S. Government Securities anteriores al comienzo del Período 
+de Intereses inicial que corresponda según la Convención de Ajuste. 
+xv. Convención de Ajuste: Significa el número de días que las partes acuerden 
+en la  sección  II   de este Contrato  para determinar  el  Período  de  Referencia 
+y  la  Fecha  de  Pago,  pudiendo  ser  alguna  de  las  siguientes:  (i)  SIMPLE:  Se  
+utilizará la  Tasa SOFR Compuesta sin modificaciones (es decir, con cero Días 
+Hábiles de ajuste para el Período de Referencia) y la Fecha de Pago será el 
+primer  día  del  siguiente  Período  de  Intereses.  (ii)  DIFERIDO:  Se  utilizará  la  
+Tasa SOFR Compuesta sin modificaciones (es decir, con cero Días Hábiles de 
+ajuste para el Período de Referencia), y la Fecha de Pago será N días después 
+del primer día del siguiente Período de Intereses. (iii) LOCKOUT: Se utilizará 
+la Tasa SOFR Compuesta sin modificaciones (es decir, con cero Días Hábiles 
+de ajuste para el Período de Referencia) hasta N días antes del término del 
+respectivo Período de Intereses, a partir del cual se aplicará la tasa de ese día 
+para los restantes días del Período de Intereses. (iv) LOOKBACK: Se utilizará 
+la Tasa SOFR Compuesta vigente durante cada día en el período que va desde 
+N días antes del primer día del respectivo Período de Intereses y hasta N días 
+antes del último día del respectivo Periodo de Intereses. (v) OBSERVATION 
+SHIF PERIOD: Se utilizará la Tasa SOFR Compuesta vigente durante cada día 
+en el período que corresponde entre N días, antes del primer día del respectivo 
+Período  de  Intereses  y  hasta  N  días,  antes  del  última  día  de  dicho  Período 
+de  Intereses.  El  peso  (“nt”)  estará  determinado  por  el  respectivo  período  de  
+referencia. 
+xvi. SOFR t: Significa la Tasa SOFR de Referencia para el respectivo Día Hábil de 
+U.S. Government Securities “t” en el correspondiente Período de Referencia (y 
+publicada el siguiente Día Hábil para U.S. Government Securities). 
+xvii. Tasa SOFR  de  Referencia: Significa, con  respecto  a  un  Día  Hábil  para 
+U.S.  Government  Securities,  una  tasa  de  referencia  igual  a  la  daily  secured  
+overnight financing rate (“SOFR”) para ese Día Hábil para U.S. Government 
+Securities,  determinada  por  el  Federal  Reserve  Bank  of  New  York  como  
+administrador  de  dicha  tasa  (o  cualquier  administrador  que  lo  suceda  o  
+reemplace en el futuro) y publicada a esta fecha a las 11:00 A.M., hora de New 
+York, en el siguiente sitio web 
+http://www.newyorkfed.org. 
+ 
+ 
+33374656.24 6 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+xviii. Tasa  TERM  SOFR:Significa para cada Fecha de Fijación, la Tasa SOFR de 
+Referencia estimada para un determinado período de tiempo futuro publicada 
+por CME Group Inc. en la página web https://www.cmegroup.com/market-data/ 
+cme-group-benchmark-administration/term-sofr.html  o  por  otro  proveedor  de  
+información que hubiere sido seleccionado o recomendado por la International 
+Swap Dealer Association o la Autoridad Gubernamental Relevante, de tiempo 
+en tiempo, como la fuente sucesora para efectos de la publicación de la Term 
+SOFR, a las 08:00 A.M., hora de Nueva York. 
+xix. U.S.Government   Securities:   Significa   aquellos   instrumentos   de   deuda   
+ofrecidos por una entidad gubernamental de los Estados Unidos de América, 
+que tienen derecho a la plena fe y crédito de los Estados Unidos de América, 
+y  prevén  el  pago  periódico  de  intereses  y  el  pago  total  del  capital  en  el  
+vencimiento o rescate. 
+xx. Autoridad    Gubernamental    Relevante:Significa    (i)    el    Consejo    de    
+Gobernadores  del  Sistema  de  la  Reserva Federal  (Board  of  Governors of 
+the  Federal  Reserve  System)  de  los  Estados  Unidos  de  América,  o  (ii)  el  
+Banco de la Reserva Federal de Nueva York (Federal Reserve Bank of New 
+York), o (iii) un comité oficialmente respaldado o establecido por el Consejo de 
+Gobernadores del Sistema de la Reserva Federal (Board of Governors of the 
+Federal Reserve System) de los Estados Unidos de América o por el Banco 
+de la Reserva Federal de Nueva York (Federal Reserve Bank of New York), o 
+(iv) cualquier sucesor de los mismos. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 7 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+II.   Condiciones Financieras: 
+ 
+1. Fecha Cierre :  05 de Enero de 2024 
+2. Fecha de Inicio :  09 de Enero de 2024 
+3. Fecha de Vencimiento :  11 de Enero de 2044 
+4. Monto a pagar por el Cliente : CLP 2,497,600,000 
+5. Tasa interés pactada por Cliente   : TNA menos -0.42000% de spread. 
+6. Base de Cálculo Cliente : Lineal Actual/360 
+7. Monto a pagar por BANCO_C : USD 2,800,000.00 
+8. Tasa interés pactada por BANCO_C    : USD    SOFR    COMP    más    0.00000%    de 
+spread. 
+9. Base de Cálculo BANCO_C : Lineal Actual/360 
+10.   Periodicidad :  Ver Tabla. 
+11.   Modo Cumplimiento :  Compensado en CLP. 
+12.   Forma de Pago intereses : Combanc 48hrs. 
+13.   Intercambio Inicial :  No Aplica 
+14.   Intercambio Final : 11 de Enero de 2044 
+BANCO_C paga : USD 2,800,000.00 
+Cliente paga : CLP 2,497,600,000 
+Modalidad para    días    festivos 
+Banco 
+Calendario de Cálculo :  Nueva  York-Santiago,  se  ajusta día  hábil 
+siguiente del mismo mes 
+Calendario de Pago : Nueva York-Santiago,  se ajusta día  hábil 
+siguiente 
+Calendario Fijación Variable : US GVT BOND MARKET se ajusta día hábil 
+siguiente del mismo mes 
+Modalidad para    días    festivos 
+Cliente 
+Calendario de Cálculo :  Nueva  York-Santiago,  se  ajusta día  hábil 
+siguiente del mismo mes 
+Calendario de Pago : Nueva York-Santiago,  se ajusta día  hábil 
+siguiente 
+ 
+33374656.24 8 
+15. 
+16. 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+Calendario Fijación Variable :  Santiago,  se ajusta día  hábil  siguiente  del 
+mismo mes 
+17.   Bancos de Referencia :  Chilean Bank b, Banco del 
+Estado de Chile, BANCO_B 
+18.   Obligaciones de las Partes :  Amortización e Intereses, según se detalla 
+en el punto III: 
+19.   Indexación :  Al término 
+20.   Convención de Ajuste :  Diferido, 2 Días 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 9 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+III.    Obligaciones de las Partes: 
+ 
+a)  Por  el  presente instrumento,  el  BANCO_C se obliga a  pagar  al  CLIENTE,  en cada 
+una de las Fechas de Pago, las cantidades en Dólares Americanos que se indican a 
+continuación bajo las columnas Amortización y/o Monto de Intereses según sea el caso. 
+ 
+ 
+ 
+Fecha 
+Inicio 
+ 
+ 
+Fecha 
+Término 
+ 
+Fecha 
+Pago 
+Interés 
+ 
+ 
+Fecha 
+Fijación 
+ 
+ 
+Días 
+ 
+ 
+Amortización (USD) 
+ 
+ 
+Capital Vigente (USD) 
+USD SOFR 
+COMP incluido 
+0.00000% 
+de spread 
+ 
+ 
+Monto de 
+Intereses (USD) 
+09/01/2024 09/07/2024 11/07/2024 09/07/2024 182 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2024 09/01/2025 13/01/2025 09/01/2025 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2025 09/07/2025 11/07/2025 09/07/2025 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2025 09/01/2026 13/01/2026 09/01/2026 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2026 09/07/2026 13/07/2026 09/07/2026 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2026 11/01/2027 13/01/2027 11/01/2027 186 0 2,800,000.0000 Por determinar Por determinar 
+11/01/2027 09/07/2027 13/07/2027 09/07/2027 179 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2027 10/01/2028 12/01/2028 10/01/2028 185 0 2,800,000.0000 Por determinar Por determinar 
+10/01/2028 10/07/2028 12/07/2028 10/07/2028 182 0 2,800,000.0000 Por determinar Por determinar 
+10/07/2028 09/01/2029 11/01/2029 09/01/2029 183 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2029 09/07/2029 11/07/2029 09/07/2029 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2029 09/01/2030 11/01/2030 09/01/2030 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2030 09/07/2030 11/07/2030 09/07/2030 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2030 09/01/2031 13/01/2031 09/01/2031 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2031 09/07/2031 11/07/2031 09/07/2031 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2031 09/01/2032 13/01/2032 09/01/2032 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2032 09/07/2032 13/07/2032 09/07/2032 182 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2032 10/01/2033 12/01/2033 10/01/2033 185 0 2,800,000.0000 Por determinar Por determinar 
+10/01/2033 11/07/2033 13/07/2033 11/07/2033 182 0 2,800,000.0000 Por determinar Por determinar 
+11/07/2033 09/01/2034 11/01/2034 09/01/2034 182 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2034 10/07/2034 12/07/2034 10/07/2034 182 0 2,800,000.0000 Por determinar Por determinar 
+10/07/2034 09/01/2035 11/01/2035 09/01/2035 183 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2035 09/07/2035 11/07/2035 09/07/2035 181 0 2,800,000.0000 Por determinar Por determinar 
+33374656.24 10 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+ 
+ 
+Fecha 
+Inicio 
+ 
+ 
+Fecha 
+Término 
+ 
+Fecha 
+Pago 
+Interés 
+ 
+ 
+Fecha 
+Fijación 
+ 
+ 
+Días 
+ 
+ 
+Amortización (USD) 
+ 
+ 
+Capital Vigente (USD) 
+USD SOFR 
+COMP incluido 
+0.00000% 
+de spread 
+ 
+ 
+Monto de 
+Intereses (USD) 
+09/07/2035 09/01/2036 11/01/2036 09/01/2036 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2036 09/07/2036 11/07/2036 09/07/2036 182 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2036 09/01/2037 13/01/2037 09/01/2037 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2037 09/07/2037 13/07/2037 09/07/2037 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2037 11/01/2038 13/01/2038 11/01/2038 186 0 2,800,000.0000 Por determinar Por determinar 
+11/01/2038 09/07/2038 13/07/2038 09/07/2038 179 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2038 10/01/2039 12/01/2039 10/01/2039 185 0 2,800,000.0000 Por determinar Por determinar 
+10/01/2039 11/07/2039 13/07/2039 11/07/2039 182 0 2,800,000.0000 Por determinar Por determinar 
+11/07/2039 09/01/2040 11/01/2040 09/01/2040 182 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2040 09/07/2040 11/07/2040 09/07/2040 182 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2040 09/01/2041 11/01/2041 09/01/2041 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2041 09/07/2041 11/07/2041 09/07/2041 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2041 09/01/2042 13/01/2042 09/01/2042 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2042 09/07/2042 11/07/2042 09/07/2042 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2042 09/01/2043 13/01/2043 09/01/2043 184 0 2,800,000.0000 Por determinar Por determinar 
+09/01/2043 09/07/2043 13/07/2043 09/07/2043 181 0 2,800,000.0000 Por determinar Por determinar 
+09/07/2043 11/01/2044 13/01/2044 11/01/2044 186 2,800,000.0000 2,800,000.0000 Por determinar Por determinar 
+ 
+El  Monto  de  Interés  que  el  BANCO_C  se  obliga  a  pagar  al  CLIENTE  en  cada  Fecha  de  
+Pago, será el que resulte de aplicar la tasa indicada en la  columna Tasa sobre el monto 
+indicado en la columna Capital Vigente, por el número de días que incluya cada Período 
+de Intereses. 
+ 
+b) Por su parte, el CLIENTE se obliga a pagar al BANCO_C, en cada una de las Fechas 
+de  Pago,  las  cantidades  en  Pesos  Chilenos  que  se  indican  a  continuación  bajo  las  
+columnas Amortización y/o Monto de Intereses, según sea el caso. 
+ 
+ 
+Fecha 
+Inicio 
+ 
+Fecha 
+Término 
+Fecha 
+Pago 
+Interés 
+ 
+Fecha 
+Fijación 
+ 
+ 
+Días 
+ 
+ 
+Amortización (CLP) 
+ 
+ 
+Capital Vigente (CLP) 
+TNA incluido 
+-0.42000% 
+de spread 
+ 
+Monto de 
+Intereses (CLP) 
+09/01/2024 09/07/2024 11/07/2024 09/07/2024 182 0 2,497,600,000 Por determinar Por determinar 
+33374656.24 11 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+ 
+Fecha 
+Inicio 
+ 
+Fecha 
+Término 
+Fecha 
+Pago 
+Interés 
+ 
+Fecha 
+Fijación 
+ 
+ 
+Días 
+ 
+ 
+Amortización (CLP) 
+ 
+ 
+Capital Vigente (CLP) 
+TNA incluido 
+-0.42000% 
+de spread 
+ 
+Monto de 
+Intereses (CLP) 
+09/07/2024 09/01/2025 13/01/2025 09/01/2025 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2025 09/07/2025 11/07/2025 09/07/2025 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2025 09/01/2026 13/01/2026 09/01/2026 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2026 09/07/2026 13/07/2026 09/07/2026 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2026 11/01/2027 13/01/2027 11/01/2027 186 0 2,497,600,000 Por determinar Por determinar 
+11/01/2027 09/07/2027 13/07/2027 09/07/2027 179 0 2,497,600,000 Por determinar Por determinar 
+09/07/2027 10/01/2028 12/01/2028 10/01/2028 185 0 2,497,600,000 Por determinar Por determinar 
+10/01/2028 10/07/2028 12/07/2028 10/07/2028 182 0 2,497,600,000 Por determinar Por determinar 
+10/07/2028 09/01/2029 11/01/2029 09/01/2029 183 0 2,497,600,000 Por determinar Por determinar 
+09/01/2029 09/07/2029 11/07/2029 09/07/2029 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2029 09/01/2030 11/01/2030 09/01/2030 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2030 09/07/2030 11/07/2030 09/07/2030 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2030 09/01/2031 13/01/2031 09/01/2031 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2031 09/07/2031 11/07/2031 09/07/2031 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2031 09/01/2032 13/01/2032 09/01/2032 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2032 09/07/2032 13/07/2032 09/07/2032 182 0 2,497,600,000 Por determinar Por determinar 
+09/07/2032 10/01/2033 12/01/2033 10/01/2033 185 0 2,497,600,000 Por determinar Por determinar 
+10/01/2033 11/07/2033 13/07/2033 11/07/2033 182 0 2,497,600,000 Por determinar Por determinar 
+11/07/2033 09/01/2034 11/01/2034 09/01/2034 182 0 2,497,600,000 Por determinar Por determinar 
+09/01/2034 10/07/2034 12/07/2034 10/07/2034 182 0 2,497,600,000 Por determinar Por determinar 
+10/07/2034 09/01/2035 11/01/2035 09/01/2035 183 0 2,497,600,000 Por determinar Por determinar 
+09/01/2035 09/07/2035 11/07/2035 09/07/2035 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2035 09/01/2036 11/01/2036 09/01/2036 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2036 09/07/2036 11/07/2036 09/07/2036 182 0 2,497,600,000 Por determinar Por determinar 
+09/07/2036 09/01/2037 13/01/2037 09/01/2037 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2037 09/07/2037 13/07/2037 09/07/2037 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2037 11/01/2038 13/01/2038 11/01/2038 186 0 2,497,600,000 Por determinar Por determinar 
+11/01/2038 09/07/2038 13/07/2038 09/07/2038 179 0 2,497,600,000 Por determinar Por determinar 
+09/07/2038 10/01/2039 12/01/2039 10/01/2039 185 0 2,497,600,000 Por determinar Por determinar 
+ 
+33374656.24 12 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+ 
+Fecha 
+Inicio 
+ 
+Fecha 
+Término 
+Fecha 
+Pago 
+Interés 
+ 
+Fecha 
+Fijación 
+ 
+ 
+Días 
+ 
+ 
+Amortización (CLP) 
+ 
+ 
+Capital Vigente (CLP) 
+TNA incluido 
+-0.42000% 
+de spread 
+ 
+Monto de 
+Intereses (CLP) 
+10/01/2039 11/07/2039 13/07/2039 11/07/2039 182 0 2,497,600,000 Por determinar Por determinar 
+11/07/2039 09/01/2040 11/01/2040 09/01/2040 182 0 2,497,600,000 Por determinar Por determinar 
+09/01/2040 09/07/2040 11/07/2040 09/07/2040 182 0 2,497,600,000 Por determinar Por determinar 
+09/07/2040 09/01/2041 11/01/2041 09/01/2041 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2041 09/07/2041 11/07/2041 09/07/2041 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2041 09/01/2042 13/01/2042 09/01/2042 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2042 09/07/2042 11/07/2042 09/07/2042 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2042 09/01/2043 13/01/2043 09/01/2043 184 0 2,497,600,000 Por determinar Por determinar 
+09/01/2043 09/07/2043 13/07/2043 09/07/2043 181 0 2,497,600,000 Por determinar Por determinar 
+09/07/2043 11/01/2044 13/01/2044 11/01/2044 186 2,497,600,000 2,497,600,000 Por determinar Por determinar 
+ 
+El  Monto  de  Interés  que  el  CLIENTE  se  obliga  a  pagar  al  BANCO_C  en  cada  Fecha  de  
+Pago, será el que resulte de aplicar la tasa indicada en la  columna tasa sobre el monto 
+indicado en la columna Capital Vigente, por el número de días que incluya cada Período 
+de Intereses. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 13 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+IV. Cumplimiento: 
+Compensación 
+1.- Pago de Interés 
+ 
+(A) En el último día de cada Período de Intereses, las partes calcularán los intereses 
+devengados entre la respectiva Fecha de Inicio y la respectiva Fecha de Término, por 
+sobre  los  Montos  Contratados,  conforme  a  las  Tasas  de  Interés  y  Base  de  Cálculo  
+pactadas por las partes en este Contrato. 
+(B) Establecida la cuantía en Moneda Nacional de las obligaciones de cada parte de 
+conformidad a lo establecido en la cláusula 4.3. de las Condiciones Generales, dichas 
+cantidades se compensarán extinguiéndose recíprocamente hasta la concurrencia de 
+sus valores. La parte que resultare deudora deberá pagar en cada Fecha de Pago la 
+diferencia (el "Diferencial de Intereses”) a la parte que resulte acreedora. 
+El  Diferencial  de  Intereses  se  pagará  en  Moneda  Nacional  o  en  Moneda  Extranjera,  
+según se estipule en la sección II de este Contrato. En este último caso, el Diferencial 
+de Intereses deberá convertirse a Moneda Nacional o a Moneda Extranjera conforme al 
+Tipo de Cambio de Referencia y/o Paridad Referencial, según sea el caso, pactado en la 
+sección II  de este Contrato que se encuentre vigente en la respectiva Fecha de Término. 
+2.- Pago de Capital 
+ 
+(A) Además de los pagos que las partes deban efectuarse de conformidad a la letra (B) 
+del numeral 1 de la cláusula (ii), las partes pagarán en cada Fecha de Pago los Montos 
+de Amortización que hubiere pactado en la sección III de este Contrato. 
+(B) Establecida  en  Moneda  Nacional  la  cuantía  de  los  respectivos  Montos  de  
+Amortización conforme a lo dispuesto en la cláusula 4.3 de las Condiciones Generales, 
+las  cantidades  respectivas  se  compensarán  extinguiéndose  recíprocamente  hasta  la  
+concurrencia  de  sus  valores.  La  parte  que  resultare  deudora  deberá  pagar  en  cada  
+Fecha  de  Pago  la  diferencia  (el  "Diferencial  de  Amortización")  a  la  parte  que  resulte  
+acreedora. 
+El Diferencial de Amortización se pagará en Moneda Nacional o en Moneda Extranjera, 
+según se estipule en la sección II  de este Contrato. En este último caso, el Diferencial de 
+Amortización deberá convertirse a Moneda Nacional o en Moneda Extranjera conforme 
+al Tipo de Cambio de Referencia y/o Paridad Referencial, según sea el caso, pactado 
+ 
+33374656.24 14 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+en la sección II de este Contrato que se encuentra vigente en la respectiva Fecha de 
+Término. 
+ 
+V. Autorizaciones: 
+ 
+Si la normativa internacional actual o futura, sobre operaciones de derivados exigiere 
+al  Banco,  para  su  participación  en  determinados  mercados  extranjeros  de  derivados  
+financieros,  que  el  Banco  informe  sobre  las  operaciones  de  derivados  que  realiza,  
+realice  o  haya  realizado  con  el  Cliente  y  sus  garantías  asociadas,  el  Banco  podrá  
+divulgar esa información única y exclusivamente a aquellas entidades gubernamentales 
+o privadas que las normas internacionales faculten para exigir la información. 
+ 
+El  Banco  podrá  externalizar  todo  o  parte  de  la  gestión  operativa  de  sus  procesos  
+internos, que involucre la entrega de antecedentes sujetos a secreto o reserva bancaria, 
+con alguna entidad del Grupo BANCO_C a nivel global, pero siempre bajo su exclusiva 
+responsabilidad y control. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 15 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+VI. Definiciones: 
+ 
+A menos que se exprese lo contrario en este instrumento, los términos en mayúscula 
+tendrán  el  significado  que  para  ellos  se  señala  en  las  Condiciones  Generales.  El  
+presente contrato se firma en dos ejemplares de idéntico tenor y fecha, quedando uno 
+en poder de cada parte. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 16 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+VII. Ejemplares: 
+ 
+El presente contrato se firma en dos ejemplares de idéntico tenor y fecha, quedando 
+uno en poder de cada parte. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 17 
+
+CCS_BCO_ABC_33374656.24 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+pp. 
+ 
+pp. 
+ 
+Nombre: 
+BANCO_C 
+Nombre: 
+Banco ABC 
+Domicilio: 
+CL BANDERA 140 
+8340455 
+Domicilio: 
+ 
+Teléfono:  Teléfono:  
+Fax:  Fax:  
+RUT:  RUT:  
+ 
+ 
+ 
+ 
+Rep. Legal: Rep. Legal: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Rep. Legal: Rep. Legal: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33374656.24 18 
+
+CCS_BCO_INTERNAC_33374656.24 
+ 
+ 
+ 
+ 
+ 
+ 
+  

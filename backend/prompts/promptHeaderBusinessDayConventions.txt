@@ -144,6 +144,14 @@ NOT:
 
 ## Extraction Rules
 
+### 🚨 ABSOLUTE DEFAULT RULE - READ FIRST:
+
+If you cannot find a business day convention after checking ALL sources, you MUST default to **MODFOLLOWING** (NOT FOLLOWING, NOT any other value).
+
+Set the corresponding *Clear field to `false` when using this default.
+
+**MODFOLLOWING is the industry standard for interest rate swaps.**
+
 ### Step 1: Identify General Business Day Convention and Business Centers
 First, look for general "Business Day Convention" and business center fields, typically found in:
 - Header sections
@@ -159,18 +167,18 @@ These serve as fallbacks for all specific date fields if no specific conventions
 **For tradeDateAdjustmentBusinessDayConvention and Business Centers:**
 1. Check Trade Date field for explicit business day convention AND business centers → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
 2. If and only if Step 1 yielded nothing: Use general Business Day Convention and Business Centers from Step 1
-3. If and only if Steps 1-2 yielded nothing: Leave blank or set to "N/A" / empty array
+3. If and only if Steps 1-2 yielded nothing: Use default value **MODFOLLOWING** (NOT FOLLOWING) with Clear = false
 
 **For effectiveDateAdjustmentBusinessDayConvention and Business Centers:**
 1. Check Effective Date field for explicit business day convention AND business centers → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
-2. If and only if Step 1 yielded nothing: Use general Business Day Convention and Business Centers from Step 1  
-3. If and only if Steps 1-2 yielded nothing: Leave blank or set to "N/A" / empty array
+2. If and only if Step 1 yielded nothing: Use general Business Day Convention and Business Centers from Step 1
+3. If and only if Steps 1-2 yielded nothing: Use default value **MODFOLLOWING** (NOT FOLLOWING) with Clear = false
 
 **For terminationDateAdjustmentBusinessDayConvention and Business Centers:**
 1. Check Termination Date field for explicit business day convention AND business centers → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEPS 2-3.**
 2. If and only if Step 1 yielded nothing: Check Period End Dates sections for each leg
 3. If and only if Steps 1-2 yielded nothing: Use general Business Day Convention and Business Centers from Step 1
-4. If and only if Steps 1-3 yielded nothing: Leave blank or set to "N/A" / empty array
+4. If and only if Steps 1-3 yielded nothing: Use default value **MODFOLLOWING** (NOT FOLLOWING) with Clear = false
 
 **For leg-level effective and termination date conventions and business centers:**
 1. Look for leg-specific business day conventions and business centers in each leg's documentation

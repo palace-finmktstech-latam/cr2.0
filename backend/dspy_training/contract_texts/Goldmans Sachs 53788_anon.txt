@@ -1,0 +1,1003 @@
+
+
+1 of 22 
+BANCO_A | PSEUDONYMISED ADDRESS | New York, New York 10282 | Tel: 212-902-1000 
+PATPAT52539923-62204TAPTAP 
+CONFIRMATION 
+DATE: December 1, 2022 
+TO: Banco ABC 
+Email: Backoffice_mesa@Banco ABC.cl 
+FROM: BANCO_A 
+SUBJECT: Non-Deliverable Swap Transaction 
+OUR REF NO: SDBB7MM33349WXRS9H.0.0.0 / 063474811 
+In accordance with CFTC Regulation Part 45, we hereby notify you that this trade is 
+being  reported  to  the  following  swap  data  repository:  DTCC  Data  Repository  (U.S.) 
+LLC.  
+Please see the following link for disclosures relating to material economic terms, risks 
+and conflicts relating to swaps transactions, for institutional clients: 
+https://360BANCO_Acom/go/doddfrank-disclosure, for Private Wealth Management clients: 
+https://BANCO_ABANCO_Ap/markets/doddfrank 
+The  purpose  of  this  communication  is  to  set  forth  the  terms  and  conditions  of  the 
+above  referenced  transaction  entered  into  on  the  Trade  Date  specified  below  (the 
+"Transaction")  between  BANCO_A  ("BANCO_A")  and  Banco ABC     ("Counterparty").      This communication constitutes a 
+"Confirmation" as referred to in the Swap Agreement specified below. 
+1. This  Confirmation  is  subject  to,  and  incorporates,  the  2021  ISDA  Interest  Rates
+ 
+Derivatives Definitions (the ''2021 Definitions''), published by the International Swaps 
+and  Derivatives  Association,  Inc.  ("ISDA")  and,  where  terms  used  herein  are  not 
+defined herein or in the 2021 Definitions, is subject to, and incorporates, the 1998 FX 
+and  Currency  Option  Definitions  (the  "1998  FX  Definitions"  and  together  with  the 
+2021  Definitions,  the  "Definitions"),  published  by  ISDA,  the  Emerging  Markets 
+Traders  Association  and  The  Foreign  Exchange  Committee.  This  Confirmation 
+supplements,  forms  a    part  of  and  is  subject  to  the  2002  ISDA  Master  Agreement 
+dated  as  of  August 16,  2019  as  amended  and  supplemented from  time  to  time  (the 
+"Swap   Agreement")   between   BANCO_A   and   Counterparty.   All   provisions
+
+ 
+2 of 22 
+contained in, or incorporated by reference to, the Swap Agreement shall govern this 
+Confirmation  except as expressly modified below. In the event of any inconsistency 
+between this Confirmation and the Definitions, or the Swap Agreement, as the case 
+may  be,  this  Confirmation  will  control  for  purposes  of  the  Transaction  to  which  this 
+Confirmation relates. 
+ 
+ 
+2.  The terms of the Transaction to which this Confirmation relates are as follows: 
+ 
+Trade Date: 
+ 
+December 1, 2022 
+Effective Date: 
+ 
+December 5, 2022 
+ 
+Termination Date: 
+ 
+September 5, 2042 
+ 
+Floating Amounts : 
+ 
+Floating Rate Payer: 
+ 
+BANCO_A 
+ 
+Floating    Rate    Payer Currency 
+Amount: 
+CLP 11,538,594,426.00,    subject    to    the 
+Amortization Schedule as set forth in Appendix 
+I below  
+ 
+Floating Amount Payer Payment 
+Dates: 
+Monthly,   on   the   5th   day   of   each   month, 
+commencing  on  January  5,  2023  and  ending 
+on the Termination Date, subject to adjustment 
+in   accordance   with   the   Modified   Following 
+Business  Day  Convention,  and  subject  to  the 
+Settlement Provisions as stated below  
+ 
+Floating Rate Option:   
+ 
+CLP-ICP 
+ 
+For  the  purpose  of  this  Transaction  only,  the 
+Applicable Business Day  (as mentioned in the 
+2021 ISDA Interest Rate Derivatives 
+Definitions  Floating  Rate  Matrix)  shall  be  New 
+York and Santiago Business Day 
+ 
+Floating Rate Spread: 
+ 
+None 
+Floating Rate Day Count Fraction: 
+ 
+Actual/360 
+ 
+Floating Rate Reset Dates: 
+ 
+The last day of each Calculation Period 
+ 
+Floating Rate Period End Dates: 
+ 
+No Adjustment 
+ 
+
+ 
+3 of 22 
+Floating Amounts: Notwithstanding anything to the contrary in the 
+2021 Definitions, the Floating Amount shall be 
+an  amount  in USD calculated  in  accordance 
+with the Settlement Provisions below. 
+ 
+ 
+Fixed Amounts: 
+ 
+Fixed Rate Payer: 
+ 
+Counterparty 
+Fixed Rate Payer Currency Amount: CLF  331,181.00,  subject  to  the  Amortization 
+Schedule  as   set  forth   in   Appendix   I   below 
+(subject  to  adjustment  in  accordance  with  the 
+Schedule set forth under "Additional Provisions" 
+below) 
+ 
+Fixed Rate Payer Payment Dates: Monthly,   on   the   5th   day   of   each   month, 
+commencing  on  January  5,  2023  and  ending 
+on the Termination Date, subject to adjustment 
+in   accordance   with   the   Modified   Following 
+Business  Day  Convention,  and  subject  to  the 
+Settlement Provisions as stated below 
+ 
+Fixed Rate: 
+ 
+1.75% 
+ 
+Fixed Rate Day Count Fraction: 
+ 
+Actual/360 
+ 
+Fixed Amount: Notwithstanding  anything  to  the  contrary 
+in  the  2021  Definitions,  the  Fixed  Amount 
+shall  be  an  amount  in  USD  determined  in 
+accordance with the Settlement Provisions 
+below based on the following formula:  
+ 
+An amount in CLP = Fixed Amount * CLF 
+on   the   CLF Observation   Date   for   the 
+relevant   Fixed   Amount   Payer   Payment 
+Date/   Settlement   Rate   Option   for   the 
+relevant   Fixed   Amount   Payer   Payment 
+Date 
+ 
+Fixed Rate Period End Dates: 
+ 
+No Adjustment 
+ 
+Initial Exchange: None 
+ 
+Interim Exchanges: 
+ 
+ 
+
+ 
+4 of 22 
+Interim Exchange Dates: 
+ 
+As specified in Appendix II 
+BANCO_A Interim Exchange 
+Amounts: 
+ 
+As specified in Appendix II 
+Counterparty Interim Exchange 
+Amounts: 
+ 
+As specified in Appendix II 
+Final Exchange: 
+ 
+ 
+Final Exchange Date : 
+ 
+The Termination Date, subject to adjustment in 
+accordance    with    the    Modified    Following 
+Business Day Convention. 
+ 
+BANCO_A Final Exchange 
+Amount: 
+ 
+CLP  68,667,231.28/  Settlement  Rate  Option 
+for the Final Exchange Date 
+ 
+Counterparty Final Exchange 
+Amount: 
+ 
+CLF  1,972.20  *  CLF  on  the  CLF Observation 
+Date  for  the  Final  Exchange  Date/Settlement 
+Rate Option for the Final Exchange Date 
+ 
+3.  Settlement Provisions: 
+ 
+Non-Deliverable,    with    the    effect    that    all 
+payments  in  CLP  or  CLF,  payable  hereunder 
+on   a   Payment   Date   ("Reference   Currency 
+Payment  Date")  or  the  Final    Exchange  Date 
+("Reference   Currency   Exchange   Date")   as 
+determined  above,  unless  otherwise  specified 
+herein,   will   be   converted   into   Settlement 
+Currency    amounts    by    reference    to    the 
+Settlement   Rate   Option   on   the   applicable 
+Valuation    Date.    All    payments    (including 
+exchanges)  hereunder  shall  be  made  in  the 
+Settlement  Currency, and  each  Payment  Date 
+will be deemed a “Settlement Date”. 
+ 
+Settlement Rate Option: CLP DOLAR OBS or CLP10 
+ 
+Reference Currency: CLP 
+ 
+Settlement Currency: USD 
+ 
+Valuation Date: "Valuation  Date"  means,  with  respect  to  each 
+Calculation   Period,   the   day   that   is   two 
+Business   Days   immediately   preceding   the 
+Payment  Date;  provided,  however,  that  solely 
+for  the  purposes  of  determining  each  such 
+
+ 
+5 of 22 
+Valuation  Date,  all  respective  Payment  Dates 
+shall be deemed subject to "No Adjustment" in 
+accordance with any Business Day 
+Convention    (each    such    Valuation    Date 
+hereinafter  deemed  a  "Scheduled  Valuation 
+Date").    All  Scheduled  Valuation  Dates  are 
+subject  to  adjustment  in  accordance with  the 
+Business Day Convention provided below. 
+ 
+4.  Disruption Events and Fallbacks: 
+ 
+Event Currency: Reference Currency 
+ 
+Disruption Events: 
+ 
+ 
+(a) Price Source Disruption: Applicable 
+ 
+Disruption Fallbacks: 
+ 
+ 
+      
+Valuation Postponement   
+ 
+Calculation Agent Determination of Settlement Rate 
+ 
+5.  Definitions: 
+ 
+Unscheduled Holiday: "Unscheduled   Holiday"   shall   mean,   for   the 
+purpose of this Transaction, that a day is not a 
+Business  Day  and  the  market  was  not  aware 
+of    such    fact    (by    means of    a    public 
+announcement    or    by    reference    to    other 
+publicly available information) until a time later 
+than   9:00   am   local   time   in   the   Principal 
+Financial Center(s) of the Reference Currency 
+two  Business  Days  prior  to  the  Scheduled 
+Valuation    Date;    where    the definition    of 
+Business  Day  in  Article  1.1(b)  of  the  1998  FX 
+Definitions    is    expanded    to    include    the 
+definition of UF Observation Date. 
+ 
+Deferral   Period   for   Unscheduled 
+Holiday: 
+In  the  event  the  Scheduled  Valuation  Date 
+becomes  subject  to  the  Following  Business 
+Day  Convention  after  the  occurrence  of  an 
+Unscheduled   Holiday,   and   if   the   Valuation 
+Date  has  not  occurred  on  or  before  the 14th 
+consecutive day after the Scheduled Valuation 
+
+ 
+6 of 22 
+Date   (any   such   period   being   a   "Deferral 
+Period"),  then  the  next  day  after  the  Deferral 
+Period  that  would  have  been  a  Business  Day 
+but   for   the   Unscheduled   Holiday,   shall   be 
+deemed to be the Valuation Date. 
+ 
+Valuation  Postponement  for  Price 
+Source Disruption: 
+"Valuation Postponement" means, for 
+purposes  of  obtaining  a  Settlement  Rate,  that 
+the   Spot   Rate   will   be   determined   on   the 
+Business   Day   first   succeeding   the   day   on 
+which  the  Price  Source  Disruption  ceases  to 
+exist,   unless   the   Price   Source   Disruption 
+continues  to  exist  (measured  from  the  date 
+that, but for the occurrence of the Price Source 
+Disruption,   would  have   been   the   Valuation 
+Date)  for  a  consecutive  number  of  calendar 
+days    equal    to    the    Maximum    Days    of 
+Postponement.  In  such  event,  the  Spot  Rate 
+will be  determined  on  the  next  Business  Day 
+after  the  Maximum  Days  of  Postponement  in 
+accordance with the next applicable Disruption 
+Fallback. 
+ 
+Cumulative Events: Notwithstanding  anything  contained  herein  to 
+the contrary, in no event shall the total number 
+of consecutive  calendar  days  during  which 
+either  (i)  the  valuation  is  deferred  due  to  the 
+occurrence  of  an  Unscheduled  Holiday,  or  (ii) 
+a  Valuation  Postponement  shall  occur,  or  any 
+combination  of  (i)  or  (ii)  above  has  occurred, 
+shall    exceed    14    (fourteen)    consecutive 
+calendar days in total. Accordingly, if upon the 
+lapse of any such 14 (fourteen) day period, an 
+Unscheduled  Holiday  shall  have  occurred  or 
+be  continuing  on  that  day  that  follows  such 
+period, then such day shall be deemed to be a 
+Valuation  Date  and,  if  upon  the  lapse  of  any 
+such  14  (fourteen)  day  period,  a  Price  Source 
+Disruption has occurred or is continuing on the 
+day    that    follows    such    period,    then    the 
+Valuation  Postponement  shall  not  apply  and 
+the  Spot  Rate  shall  thereby  be  determined  in 
+accordance with the Disruption Fallback that is 
+next deemed applicable to this Transaction. 
+ 
+Maximum Days of Postponement: "Maximum    Days    of    Postponement"    shall 
+
+ 
+7 of 22 
+mean,   for   purposes    of    this   Transaction, 
+fourteen (14) calendar days 
+ 
+Business Day Convention: 
+ 
+ 
+Applicable to the Scheduled 
+Valuation Date: 
+Preceding;    provided,    however,    that    the 
+adjustment  shall  be  made  in  accordance  with 
+the Following Business Day Convention in the 
+event of an Unscheduled Holiday. 
+ 
+Applicable  to  the  CLF  Observation 
+Date: 
+That  which  is  applicable  to  all  Fixed Amount 
+Payer  Payment  Dates;  provided  however,  that 
+no adjustment shall be made in the event of an 
+Unscheduled Holiday. 
+ 
+Adjustment    to    Payment    Dates, 
+Exchange   Dates  and  Termination 
+Date: 
+If the Valuation Date in respect of a Reference 
+Currency     Payment     Date,     a     Reference 
+Currency  Exchange  Date  or  the  Termination 
+Date  is  not  the  Scheduled  Valuation  Date  in 
+respect  of  such  Reference  Currency  Payment 
+Date,  Reference  Currency  Exchange  Date  or 
+Termination    Date,    then    such    Reference 
+Currency  Payment  Date,  Reference  Currency 
+Exchange   Date   or   Termination   Date   (as 
+applicable)  shall  be  as  soon  as  practicable 
+after  the  relevant  Valuation  Date,  but  in  no 
+event later than the day which is two Business 
+Days    after    the    relevant    Valuation    Date. 
+Further,   if   payments   are   scheduled   to   be  
+made  by  both  parties  on  a  Payment  Date, 
+Exchange Date or Termination Date, and such 
+date  is  adjusted  due  to  the  occurrence  of  an 
+Unscheduled  Holiday  in  accordance  with  the 
+previous  sentence,  then  such  Payment  Date, 
+Exchange  Date  or  Termination  Date  shall  be 
+adjusted in respect of both parties’ payments. 
+ 
+For  the  avoidance  of  doubt,  such  adjustments 
+shall not apply in respect of Period End Dates 
+(including    the   Termination    Date)   for    the 
+purposes    of    determining    the    Calculation 
+Periods. 
+ 
+Business  Day  (as  defined  in  the 
+1998  FX  Definitions)  for  Valuation 
+Date(s): 
+New York and Santiago 
+ 
+
+ 
+8 of 22 
+ 
+Business  Day  (as  defined  in  the 
+2021    Definitions)    for    all    other 
+purposes: 
+ 
+New York and Santiago 
+ 
+Calculation Agent: BANCO_A 
+ 
+6.  Additional Provisions  
+ 
+ 
+ 
+"CLF" means the ISO monetary unit for UF.   
+ 
+"UF"  (Unidad  de  Fomento)  means,  with  respect  to  each  CLF  Observation  Date  for 
+each  Payment  Date  or  the  Final  Exchange  Date,  as  relevant,  the  inflation  unit  of 
+adjustment  to  the  CLP,  expressed  as  the  amount  of  CLP  per  unit  of  UF,  that  is 
+published  by    Banco Central  de  Chile  (the  "Central  Bank")  on    its  website: 
+http://www.bcentral.cl/eng/.  If  an  Index  Event  has  occurred  or  is  continuing  on  a 
+Payment  Date  or  the  Final  Exchange  Date,  as  relevant,    the    UF  for  such  affected 
+date shall be determined by the Calculation Agent in good faith and in a commercially 
+reasonable manner.  
+ 
+"Index Event" means the occurrence of one or more of the following events: (a) UF is 
+not  calculated  and/or  timely  published  by  the  Central  Bank;  or  (b)  the  Central  Bank 
+ceases to publish UF or publishes a successor unit of value; or (c) the Central Bank 
+makes a material change in the method of calculating UF; or (d) the Central Bank in 
+any  way  materially  modifies  or  restates  previously  published  rates  of  UF;  or  (e)  the 
+Republic  of  Chile  ("Chile"),  or  any  of  its  agencies,  instrumentalities  or  entities 
+(including,  without  limitation,  the  Central  Bank)  by  means  of  any  law,  regulation, 
+ruling,  directive  or  interpretation,  whether  or  not  having  the  force  of  law,  takes  any 
+action which legally or de facto prevents or has the effect of restricting or limiting the 
+calculation or publication of UF or any of the values used to determine UF; 
+ 
+"CLF Observation Date" means, each Payment Date or the Final Exchange Date, as 
+applicable; provided, however, that such date shall not be adjusted on account of an 
+Unscheduled Holiday. 
+ 
+ 
+7.  Credit Support Documents: (a)    Credit    Support    Annex    to    the   Swap 
+Agreement   between   BANCO_A   and 
+Counterparty  
+ 
+(b)  For  the  purposes  of  this  Transaction,  the 
+Independent  Amount  for  Counterparty  will  be 
+calculated  based  on  0.00%  of  the  Floating 
+Rate Payer Currency Amount 
+ 
+8.  Offices: 
+
+ 
+9 of 22 
+ 
+(a) The Office of BANCO_A for this Transaction is PSEUDONYMISED ADDRESS, New York, 
+New York 10282. 
+ 
+(b) The Office of Counterparty for this Transaction is [Please Provide]. 
+ 
+           _____________________________________________________ 
+ 
+
+10 of 22 
+9.Counterparty  hereby  agrees  (a)  to  check  this  Confirmation  (Reference  No.:
+SDBB7MM33349WXRS9H.0.0.0)  carefully  and immediately  upon  receipt  so  that
+errors or discrepancies can be promptly identified and rectified and (b) to confirm that
+the foregoing correctly sets forth the terms of the agreement between BANCO_A
+and Counterparty with respect to the particular Transaction to which this Confirmation
+relates,  by  manually  signing  this  Confirmation  and  providing  the  other  information
+requested    herein    and    immediately    returning    an    executed    copy    to    Swap
+Administration, facsimile No. 212-902-5692.
+Very truly yours, 
+BANCO_A 
+Agreed and Accepted By: 
+Banco ABC 
+By: _________________________ 
+Name: 
+Title: 
+Counterparty Reference 
+Number: 
+[Please Provide] 
+
+ 
+11 of 22 
+ 
+APPENDIX I 
+For the Floating 
+Rate I and Floating 
+Rate II Calculation 
+Period from and 
+including:* 
+To but excluding* 
+The applicable CLP 
+Notional Amount for 
+the Floating Rate I 
+Payer shall be: 
+The applicable CLF 
+Notional Amount for the 
+Fixed Rate II Payer 
+shall be: 
+April 5, 2023 May 5, 2023 11,538,594,425.75 331,181.00 
+May 5, 2023 June 5, 2023 11,530,920,961.98 331,181.00 
+June 5, 2023 July 5, 2023 11,525,293,744.70 331,019.38 
+July 5, 2023 August 5, 2023 11,497,441,073.40 330,219.42 
+August 5, 2023 September 5, 2023 11,471,303,167.92 329,468.71 
+September 5, 2023 October 5, 2023 11,445,035,044.69 328,714.26 
+October 5, 2023 November 5, 2023 11,416,795,201.90 327,903.18 
+November 5, 2023 December 5, 2023 11,390,255,501.55 327,140.93 
+December 5, 2023 January 5, 2024 11,361,751,393.33 326,322.26 
+January 5, 2024 February 5, 2024 11,334,936,982.27 325,552.12 
+February 5, 2024 March 5, 2024 11,307,988,871.70 324,778.14 
+March 5, 2024 April 5, 2024 11,277,269,320.87 323,895.84 
+April 5, 2024 May 5, 2024 11,250,033,617.09 323,113.60 
+May 5, 2024 June 5, 2024 11,220,853,003.29 322,275.50 
+June 5, 2024 July 5, 2024 11,193,336,321.64 321,485.19 
+July 5, 2024 August 5, 2024 11,163,882,041.66 320,639.23 
+August 5, 2024 September 5, 2024 11,136,080,900.39 319,840.75 
+September 5, 2024 October 5, 2024 11,108,141,533.31 319,038.30 
+October 5, 2024 November 5, 2024 11,078,276,405.89 318,180.54 
+November 5, 2024 December 5, 2024 11,050,048,401.08 317,369.80 
+December 5, 2024 January 5, 2025 11,019,902,992.14 316,503.99 
+January 5, 2025 February 5, 2025 10,991,384,260.54 315,684.90 
+February 5, 2025 March 5, 2025 10,962,723,473.21 314,861.73 
+March 5, 2025 April 5, 2025 10,928,630,098.88 313,882.53 
+April 5, 2025 May 5, 2025 10,899,656,301.50 313,050.37 
+May 5, 2025 June 5, 2025 10,868,784,946.02 312,163.71 
+June 5, 2025 July 5, 2025 10,839,512,761.99 311,322.98 
+July 5, 2025 August 5, 2025 10,808,351,376.06 310,427.99 
+August 5, 2025 September 5, 2025 10,778,777,671.79 309,578.60 
+September 5, 2025 October 5, 2025 10,749,057,037.32 308,724.99 
+October 5, 2025 November 5, 2025 10,717,459,038.95 307,817.46 
+
+ 
+12 of 22 
+November 5, 2025 December 5, 2025 10,687,432,357.95 306,955.06 
+December 5, 2025 January 5, 2026 10,655,537,017.44 306,038.99 
+January 5, 2026 February 5, 2026 10,625,201,504.52 305,167.72 
+February 5, 2026 March 5, 2026 10,594,714,883.29 304,292.11 
+March 5, 2026 April 5, 2026 10,558,964,540.33 303,265.32 
+April 5, 2026 May 5, 2026 10,528,147,500.27 302,380.22 
+May 5, 2026 June 5, 2026 10,495,483,735.77 301,442.08 
+June 5, 2026 July 5, 2026 10,464,350,552.08 300,547.90 
+July 5, 2026 August 5, 2026 10,431,378,652.00 299,600.91 
+August 5, 2026 September 5, 2026 10,399,925,842.93 298,697.55 
+September 5, 2026 October 5, 2026 10,368,316,006.57 297,789.68 
+October 5, 2026 November 5, 2026 10,334,881,032.68 296,829.39 
+November 5, 2026 December 5, 2026 10,302,946,696.48 295,912.20 
+December 5, 2026 January 5, 2027 10,269,196,275.30 294,942.85 
+January 5, 2027 February 5, 2027 10,236,935,002.03 294,016.27 
+February 5, 2027 March 5, 2027 10,204,512,523.35 293,085.06 
+March 5, 2027 April 5, 2027 10,167,004,588.95 292,007.79 
+April 5, 2027 May 5, 2027 10,134,233,586.30 291,066.57 
+May 5, 2027 June 5, 2027 10,099,669,130.11 290,073.84 
+June 5, 2027 July 5, 2027 10,066,562,137.81 289,122.97 
+July 5, 2027 August 5, 2027 10,031,671,092.72 288,120.86 
+August 5, 2027 September 5, 2027 9,998,225,325.37 287,160.26 
+September 5, 2027 October 5, 2027 9,964,612,781.81 286,194.87 
+October 5, 2027 November 5, 2027 9,929,229,764.32 285,178.63 
+November 5, 2027 December 5, 2027 9,895,273,223.07 284,203.36 
+December 5, 2027 January 5, 2028 9,859,555,956.80 283,177.52 
+January 5, 2028 February 5, 2028 9,825,251,936.11 282,192.27 
+February 5, 2028 March 5, 2028 9,790,776,612.92 281,202.10 
+March 5, 2028 April 5, 2028 9,752,980,388.95 280,116.55 
+April 5, 2028 May 5, 2028 9,718,145,051.98 279,116.04 
+May 5, 2028 June 5, 2028 9,681,573,014.13 278,065.65 
+June 5, 2028 July 5, 2028 9,646,381,493.32 277,054.91 
+July 5, 2028 August 5, 2028 9,609,463,368.72 275,994.58 
+August 5, 2028 September 5, 2028 9,573,912,182.31 274,973.51 
+September 5, 2028 October 5, 2028 9,538,184,122.59 273,947.36 
+October 5, 2028 November 5, 2028 9,500,743,734.29 272,872.03 
+November 5, 2028 December 5, 2028 9,464,650,786.33 271,835.40 
+December 5, 2028 January 5, 2029 9,426,855,606.89 270,749.88 
+January 5, 2029 February 5, 2029 9,390,394,288.94 269,702.67 
+February 5, 2029 March 5, 2029 9,353,750,875.04 268,650.23 
+March 5, 2029 April 5, 2029 9,312,411,962.31 267,462.93 
+
+ 
+13 of 22 
+April 5, 2029 May 5, 2029 9,275,379,984.22 266,399.33 
+May 5, 2029 June 5, 2029 9,236,671,539.66 265,287.58 
+June 5, 2029 July 5, 2029 9,199,262,139.00 264,213.14 
+July 5, 2029 August 5, 2029 9,160,186,368.97 263,090.84 
+August 5, 2029 September 5, 2029 9,122,395,367.64 262,005.44 
+September 5, 2029 October 5, 2029 9,084,416,003.20 260,914.63 
+October 5, 2029 November 5, 2029 9,044,786,285.46 259,776.42 
+November 5, 2029 December 5, 2029 9,006,419,749.53 258,674.49 
+December 5, 2029 January 5, 2030 8,966,413,653.76 257,525.47 
+January 5, 2030 February 5, 2030 8,927,656,464.59 256,412.32 
+February 5, 2030 March 5, 2030 8,888,706,386.02 255,293.63 
+March 5, 2030 April 5, 2030 8,845,272,847.67 254,046.17 
+April 5, 2030 May 5, 2030 8,805,911,921.65 252,915.68 
+May 5, 2030 June 5, 2030 8,764,938,245.33 251,738.87 
+June 5, 2030 July 5, 2030 8,725,176,917.15 250,596.88 
+July 5, 2030 August 5, 2030 8,683,813,632.11 249,408.88 
+August 5, 2030 September 5, 2030 8,643,647,723.65 248,255.27 
+September 5, 2030 October 5, 2030 8,603,281,265.92 247,095.90 
+October 5, 2030 November 5, 2030 8,561,329,911.96 245,891.01 
+November 5, 2030 December 5, 2030 8,520,553,303.14 244,719.86 
+December 5, 2030 January 5, 2031 8,478,202,591.53 243,503.50 
+January 5, 2031 February 5, 2031 8,437,011,653.51 242,320.45 
+February 5, 2031 March 5, 2031 8,395,614,943.59 241,131.49 
+March 5, 2031 April 5, 2031 8,349,961,088.17 239,820.26 
+April 5, 2031 May 5, 2031 8,308,130,551.21 238,618.84 
+May 5, 2031 June 5, 2031 8,264,755,158.22 237,373.05 
+June 5, 2031 July 5, 2031 8,222,499,846.78 236,159.43 
+July 5, 2031 August 5, 2031 8,178,711,169.12 234,901.77 
+August 5, 2031 September 5, 2031 8,136,026,556.92 233,675.82 
+September 5, 2031 October 5, 2031 8,093,129,557.48 232,443.77 
+October 5, 2031 November 5, 2031 8,048,716,600.60 231,168.18 
+November 5, 2031 December 5, 2031 8,005,384,033.24 229,923.62 
+December 5, 2031 January 5, 2032 7,960,548,042.77 228,635.88 
+January 5, 2032 February 5, 2032 7,916,775,729.37 227,378.69 
+February 5, 2032 March 5, 2032 7,872,785,457.92 226,115.24 
+March 5, 2032 April 5, 2032 7,826,043,204.95 224,772.75 
+April 5, 2032 May 5, 2032 7,781,600,653.13 223,496.31 
+May 5, 2032 June 5, 2032 7,735,684,621.33 222,177.55 
+June 5, 2032 July 5, 2032 7,690,791,530.03 220,888.17 
+July 5, 2032 August 5, 2032 7,644,437,493.07 219,556.83 
+August 5, 2032 September 5, 2032 7,599,088,987.82 218,254.37 
+
+ 
+14 of 22 
+September 5, 2032 October 5, 2032 7,553,514,864.66 216,945.43 
+October 5, 2032 November 5, 2032 7,506,498,249.15 215,595.06 
+November 5, 2032 December 5, 2032 7,460,462,444.88 214,272.86 
+December 5, 2032 January 5, 2033 7,412,997,030.77 212,909.60 
+January 5, 2033 February 5, 2033 7,366,495,019.10 211,574.01 
+February 5, 2033 March 5, 2033 7,319,760,774.16 210,231.75 
+March 5, 2033 April 5, 2033 7,269,262,052.48 208,781.37 
+April 5, 2033 May 5, 2033 7,222,043,146.84 207,425.19 
+May 5, 2033 June 5, 2033 7,173,427,708.06 206,028.90 
+June 5, 2033 July 5, 2033 7,125,731,105.22 204,659.00 
+July 5, 2033 August 5, 2033 7,076,650,503.57 203,249.35 
+August 5, 2033 September 5, 2033 7,028,471,329.07 201,865.59 
+September 5, 2033 October 5, 2033 6,980,051,913.27 200,474.93 
+October 5, 2033 November 5, 2033 6,930,268,692.86 199,045.10 
+November 5, 2033 December 5, 2033 6,881,359,741.88 197,640.38 
+December 5, 2033 January 5, 2034 6,831,100,216.97 196,196.87 
+January 5, 2034 February 5, 2034 6,781,696,856.36 194,777.95 
+February 5, 2034 March 5, 2034 6,732,046,987.28 193,351.95 
+March 5, 2034 April 5, 2034 6,678,901,781.34 191,825.56 
+April 5, 2034 May 5, 2034 6,628,739,397.49 190,384.84 
+May 5, 2034 June 5, 2034 6,577,260,909.11 188,906.32 
+June 5, 2034 July 5, 2034 6,526,591,929.46 187,451.05 
+July 5, 2034 August 5, 2034 6,474,620,772.32 185,958.38 
+August 5, 2034 September 5, 2034 6,423,439,974.25 184,488.41 
+September 5, 2034 October 5, 2034 6,372,003,963.31 183,011.11 
+October 5, 2034 November 5, 2034 6,319,286,665.44 181,497.01 
+November 5, 2034 December 5, 2034 6,267,331,524.38 180,004.80 
+December 5, 2034 January 5, 2035 6,214,109,371.60 178,476.20 
+January 5, 2035 February 5, 2035 6,161,629,877.79 176,968.93 
+February 5, 2035 March 5, 2035 6,108,888,555.78 175,454.14 
+March 5, 2035 April 5, 2035 6,052,936,704.72 173,847.14 
+April 5, 2035 May 5, 2035 5,999,653,621.17 172,316.79 
+May 5, 2035 June 5, 2035 5,945,139,736.16 170,751.09 
+June 5, 2035 July 5, 2035 5,891,319,069.17 169,205.30 
+July 5, 2035 August 5, 2035 5,836,282,572.29 167,624.59 
+August 5, 2035 September 5, 2035 5,781,919,099.23 166,063.21 
+September 5, 2035 October 5, 2035 5,727,284,745.40 164,494.05 
+October 5, 2035 November 5, 2035 5,671,456,844.92 162,890.61 
+November 5, 2035 December 5, 2035 5,616,271,676.98 161,305.63 
+December 5, 2035 January 5, 2036 5,559,907,933.94 159,686.80 
+January 5, 2036 February 5, 2036 5,504,166,729.24 158,085.85 
+
+ 
+15 of 22 
+February 5, 2036 March 5, 2036 5,448,147,332.08 156,476.91 
+March 5, 2036 April 5, 2036 5,390,096,329.12 154,809.62 
+April 5, 2036 May 5, 2036 5,333,508,360.87 153,184.35 
+May 5, 2036 June 5, 2036 5,275,780,465.06 151,526.34 
+June 5, 2036 July 5, 2036 5,218,622,533.03 149,884.70 
+July 5, 2036 August 5, 2036 5,160,340,341.34 148,210.77 
+August 5, 2036 September 5, 2036 5,102,606,874.71 146,552.60 
+September 5, 2036 October 5, 2036 5,044,585,466.69 144,886.16 
+October 5, 2036 November 5, 2036 4,985,463,474.97 143,188.11 
+November 5, 2036 December 5, 2036 4,926,857,827.97 141,504.89 
+December 5, 2036 January 5, 2037 4,867,167,961.52 139,790.53 
+January 5, 2037 February 5, 2037 4,807,972,852.88 138,090.38 
+February 5, 2037 March 5, 2037 4,748,482,491.16 136,381.75 
+March 5, 2037 April 5, 2037 4,686,404,138.73 134,598.79 
+April 5, 2037 May 5, 2037 4,626,307,602.95 132,872.75 
+May 5, 2037 June 5, 2037 4,565,167,584.29 131,116.74 
+June 5, 2037 July 5, 2037 4,504,466,615.32 129,373.34 
+July 5, 2037 August 5, 2037 4,442,738,527.74 127,600.44 
+August 5, 2037 September 5, 2037 4,381,427,206.59 125,839.51 
+September 5, 2037 October 5, 2037 4,319,810,187.08 124,069.80 
+October 5, 2037 November 5, 2037 4,257,191,117.63 122,271.31 
+November 5, 2037 December 5, 2037 4,194,954,693.38 120,483.81 
+December 5, 2037 January 5, 2038 4,131,733,279.79 118,668.02 
+January 5, 2038 February 5, 2038 4,068,871,183.63 116,862.55 
+February 5, 2038 March 5, 2038 4,005,695,729.25 115,048.08 
+March 5, 2038 April 5, 2038 3,940,272,800.07 113,169.06 
+April 5, 2038 May 5, 2038 3,876,456,005.87 111,336.17 
+May 5, 2038 June 5, 2038 3,811,697,744.30 109,476.24 
+June 5, 2038 July 5, 2038 3,747,240,306.62 107,624.95 
+July 5, 2038 August 5, 2038 3,681,858,462.19 105,747.11 
+August 5, 2038 September 5, 2038 3,616,753,765.70 103,877.23 
+September 5, 2038 October 5, 2038 3,551,323,873.02 101,998.01 
+October 5, 2038 November 5, 2038 3,484,997,079.47 100,093.03 
+November 5, 2038 December 5, 2038 3,418,910,527.22 98,194.95 
+December 5, 2038 January 5, 2039 3,351,944,482.90 96,271.61 
+January 5, 2039 February 5, 2039 3,285,194,655.76 94,354.48 
+February 5, 2039 March 5, 2039 3,218,111,972.55 92,427.79 
+March 5, 2039 April 5, 2039 3,149,142,176.50 90,446.90 
+April 5, 2039 May 5, 2039 3,081,381,246.83 88,500.73 
+May 5, 2039 June 5, 2039 3,012,786,784.30 86,530.62 
+June 5, 2039 July 5, 2039 2,944,345,867.29 84,564.92 
+
+ 
+16 of 22 
+July 5, 2039 August 5, 2039 2,875,090,218.92 82,575.82 
+August 5, 2039 September 5, 2039 2,805,962,699.23 80,590.40 
+September 5, 2039 October 5, 2039 2,736,490,833.68 78,595.09 
+October 5, 2039 November 5, 2039 2,666,232,090.82 76,577.18 
+November 5, 2039 December 5, 2039 2,596,063,525.50 74,561.86 
+December 5, 2039 January 5, 2040 2,525,127,232.53 72,524.49 
+January 5, 2040 February 5, 2040 2,454,255,003.92 70,488.96 
+February 5, 2040 March 5, 2040 2,383,029,376.86 68,443.28 
+March 5, 2040 April 5, 2040 2,310,682,275.56 66,365.39 
+April 5, 2040 May 5, 2040 2,238,740,799.06 64,299.15 
+May 5, 2040 June 5, 2040 2,166,080,687.71 62,212.27 
+June 5, 2040 July 5, 2040 2,093,418,139.13 60,125.32 
+July 5, 2040 August 5, 2040 2,020,056,801.71 58,018.30 
+August 5, 2040 September 5, 2040 1,946,666,565.71 55,910.45 
+September 5, 2040 October 5, 2040 1,872,910,048.77 53,792.08 
+October 5, 2040 November 5, 2040 1,798,484,686.11 51,654.50 
+November 5, 2040 December 5, 2040 1,723,989,688.29 49,514.92 
+December 5, 2040 January 5, 2041 1,648,845,690.79 47,356.70 
+January 5, 2041 February 5, 2041 1,573,604,552.23 45,195.69 
+February 5, 2041 March 5, 2041 1,497,988,080.16 43,023.90 
+March 5, 2041 April 5, 2041 1,421,271,720.74 40,820.52 
+April 5, 2041 May 5, 2041 1,344,895,877.25 38,626.92 
+May 5, 2041 June 5, 2041 1,267,922,912.27 36,416.17 
+June 5, 2041 July 5, 2041 1,190,782,474.72 34,200.61 
+July 5, 2041 August 5, 2041 1,113,065,806.23 31,968.50 
+August 5, 2041 September 5, 2041 1,035,153,462.94 29,730.77 
+September 5, 2041 October 5, 2041 956,852,555.45 27,481.88 
+October 5, 2041 November 5, 2041 878,007,101.01 25,217.35 
+November 5, 2041 December 5, 2041 798,922,449.80 22,945.95 
+December 5, 2041 January 5, 2042 719,315,186.71 20,659.54 
+January 5, 2042 February 5, 2042 639,439,480.08 18,365.42 
+February 5, 2042 March 5, 2042 559,165,460.34 16,059.86 
+March 5, 2042 April 5, 2042 478,221,550.35 13,735.06 
+April 5, 2042 May 5, 2042 397,143,592.69 11,406.41 
+May 5, 2042 June 5, 2042 315,597,686.75 9,064.32 
+June 5, 2042 July 5, 2042 233,709,175.82 6,712.39 
+July 5, 2042 August 5, 2042 151,374,651.69 4,347.65 
+August 5, 2042 September 5, 2042 68,667,231.28 1,972.20 
+*Subject to No Adjustment 
+ 
+
+ 
+17 of 22 
+ 
+APPENDIX II  
+INTERIM EXCHANGES  
+Interim Exchange 
+Dates:* 
+The applicable CLP 
+GSI Interim Exchange 
+Amounts shall be : 
+The applicable CLF 
+Counterparty Interim 
+Exchange Amounts shall be: 
+May 5, 2023 7,673,463.77 - 
+June 5, 2023 5,627,217.28 161.62 
+July 5, 2023 27,852,671.30 799.96 
+August 5, 2023 26,137,905.48 750.71 
+September 5, 2023 26,268,Banco ABC.23 754.45 
+October 5, 2023 28,239,842.79 811.08 
+November 5, 2023 26,539,700.35 762.25 
+December 5, 2023 28,504,108.22 818.67 
+January 5, 2024 26,814,411.06 770.14 
+February 5, 2024 26,948,110.57 773.98 
+March 5, 2024 30,719,550.83 882.30 
+April 5, 2024 27,235,703.78 782.24 
+May 5, 2024 29,180,613.80 838.10 
+June 5, 2024 27,516,681.65 790.31 
+July 5, 2024 29,454,279.98 845.96 
+August 5, 2024 27,801,141.28 798.48 
+September 5, 2024 27,939,367.07 802.45 
+October 5, 2024 29,865,127.42 857.76 
+November 5, 2024 28,228,004.81 810.74 
+December 5, 2024 30,145,408.94 865.81 
+January 5, 2025 28,518,731.60 819.09 
+February 5, 2025 28,660,787.33 823.17 
+March 5, 2025 34,093,374.34 979.20 
+April 5, 2025 28,973,797.37 832.16 
+May 5, 2025 30,871,355.48 886.66 
+June 5, 2025 29,272,184.03 840.73 
+July 5, 2025 31,161,385.92 894.99 
+August 5, 2025 29,573,704.28 849.39 
+September 5, 2025 29,720,634.46 853.61 
+October 5, 2025 31,597,998.38 907.53 
+November 5, 2025 30,026,680.99 862.40 
+December 5, 2025 31,895,340.51 916.07 
+January 5, 2026 30,335,512.93 871.27 
+February 5, 2026 30,486,621.22 875.61 
+March 5, 2026 35,750,342.97 1,026.79 
+April 5, 2026 30,817,040.06 885.10 
+
+ 
+18 of 22 
+May 5, 2026 32,663,764.50 938.14 
+June 5, 2026 31,133,183.68 894.18 
+July 5, 2026 32,971,900.08 946.99 
+August 5, 2026 31,452,809.07 903.36 
+September 5, 2026 31,609,836.35 907.87 
+October 5, 2026 33,434,973.90 960.29 
+November 5, 2026 31,934,336.20 917.19 
+December 5, 2026 33,750,421.17 969.35 
+January 5, 2027 32,261,273.28 926.58 
+February 5, 2027 32,422,478.67 931.21 
+March 5, 2027 37,507,934.41 1,077.27 
+April 5, 2027 32,771,002.65 941.22 
+May 5, 2027 34,564,456.19 992.73 
+June 5, 2027 33,106,992.29 950.87 
+July 5, 2027 34,891,045.09 1,002.11 
+August 5, 2027 33,445,767.35 960.60 
+September 5, 2027 33,612,543.56 965.39 
+October 5, 2027 35,383,017.50 1,016.24 
+November 5, 2027 33,956,541.25 975.27 
+December 5, 2027 35,717,266.27 1,025.84 
+January 5, 2028 34,304,020.69 985.25 
+February 5, 2028 34,475,323.19 990.17 
+March 5, 2028 37,796,223.97 1,085.55 
+April 5, 2028 34,835,336.97 1,000.51 
+May 5, 2028 36,572,037.86 1,050.39 
+June 5, 2028 35,191,520.81 1,010.74 
+July 5, 2028 36,918,124.60 1,060.33 
+August 5, 2028 35,551,186.41 1,021.07 
+September 5, 2028 35,728,059.72 1,026.15 
+October 5, 2028 37,440,388.30 1,075.33 
+November 5, 2028 36,092,947.96 1,036.63 
+December 5, 2028 37,795,179.44 1,085.52 
+January 5, 2029 36,461,317.95 1,047.21 
+February 5, 2029 36,643,413.90 1,052.44 
+March 5, 2029 41,338,912.73 1,187.30 
+April 5, 2029 37,031,978.09 1,063.60 
+May 5, 2029 38,708,444.57 1,111.75 
+June 5, 2029 37,409,400.66 1,074.44 
+July 5, 2029 39,075,770.03 1,122.30 
+August 5, 2029 37,791,001.33 1,085.40 
+September 5, 2029 37,979,364.44 1,090.81 
+
+ 
+19 of 22 
+October 5, 2029 39,629,717.73 1,138.21 
+November 5, 2029 38,366,535.93 1,101.93 
+December 5, 2029 40,006,095.77 1,149.02 
+January 5, 2030 38,757,189.18 1,113.15 
+February 5, 2030 38,950,078.57 1,118.69 
+March 5, 2030 43,433,538.35 1,247.46 
+April 5, 2030 39,360,926.01 1,130.49 
+May 5, 2030 40,973,676.32 1,176.81 
+June 5, 2030 39,761,328.18 1,141.99 
+July 5, 2030 41,363,285.04 1,188.00 
+August 5, 2030 40,165,908.46 1,153.61 
+September 5, 2030 40,366,457.72 1,159.37 
+October 5, 2030 41,951,353.97 1,204.89 
+November 5, 2030 40,776,608.82 1,171.15 
+December 5, 2030 42,350,711.61 1,216.36 
+January 5, 2031 41,190,938.02 1,183.05 
+February 5, 2031 41,396,709.92 1,188.96 
+March 5, 2031 45,653,855.42 1,311.23 
+April 5, 2031 41,830,536.96 1,201.42 
+May 5, 2031 43,375,392.99 1,245.79 
+June 5, 2031 42,255,311.44 1,213.62 
+July 5, 2031 43,788,677.66 1,257.66 
+August 5, 2031 42,684,612.20 1,225.95 
+September 5, 2031 42,896,999.44 1,232.05 
+October 5, 2031 44,412,956.87 1,275.59 
+November 5, 2031 43,332,567.36 1,244.56 
+December 5, 2031 44,835,990.47 1,287.74 
+January 5, 2032 43,772,313.40 1,257.19 
+February 5, 2032 43,990,271.45 1,263.45 
+March 5, 2032 46,742,252.97 1,342.49 
+April 5, 2032 44,442,551.82 1,276.44 
+May 5, 2032 45,916,031.80 1,318.76 
+June 5, 2032 44,893,091.30 1,289.38 
+July 5, 2032 46,354,036.96 1,331.34 
+August 5, 2032 45,348,505.25 1,302.46 
+September 5, 2032 45,574,Banco ABC.17 1,308.94 
+October 5, 2032 47,016,615.50 1,350.37 
+November 5, 2032 46,035,804.28 1,322.20 
+December 5, 2032 47,465,414.11 1,363.26 
+January 5, 2033 46,502,011.67 1,335.59 
+February 5, 2033 46,734,244.93 1,342.26 
+
+ 
+20 of 22 
+March 5, 2033 50,498,721.68 1,450.38 
+April 5, 2033 47,218,905.64 1,356.18 
+May 5, 2033 48,615,438.78 1,396.29 
+June 5, 2033 47,696,602.84 1,369.90 
+July 5, 2033 49,080,601.65 1,409.65 
+August 5, 2033 48,179,174.50 1,383.76 
+September 5, 2033 48,419,415.80 1,390.66 
+October 5, 2033 49,783,220.41 1,429.83 
+November 5, 2033 48,908,950.98 1,404.72 
+December 5, 2033 50,259,524.91 1,443.51 
+January 5, 2034 49,403,360.61 1,418.92 
+February 5, 2034 49,649,869.08 1,426.00 
+March 5, 2034 53,145,205.94 1,526.39 
+April 5, 2034 50,162,383.86 1,440.72 
+May 5, 2034 51,478,488.38 1,478.52 
+June 5, 2034 50,668,979.65 1,455.27 
+July 5, 2034 51,971,157.14 1,492.67 
+August 5, 2034 51,180,798.07 1,469.97 
+September 5, 2034 51,436,010.93 1,477.30 
+October 5, 2034 52,717,297.88 1,514.10 
+November 5, 2034 51,955,141.05 1,492.21 
+December 5, 2034 53,222,152.79 1,528.60 
+January 5, 2035 52,479,493.81 1,507.27 
+February 5, 2035 52,741,322.01 1,514.79 
+March 5, 2035 55,951,851.06 1,607.00 
+April 5, 2035 53,283,083.55 1,530.35 
+May 5, 2035 54,513,885.01 1,565.70 
+June 5, 2035 53,820,666.99 1,545.79 
+July 5, 2035 55,036,496.88 1,580.71 
+August 5, 2035 54,363,473.06 1,561.38 
+September 5, 2035 54,634,353.83 1,569.16 
+October 5, 2035 55,827,900.48 1,603.44 
+November 5, 2035 55,185,167.95 1,584.98 
+December 5, 2035 56,363,743.03 1,618.83 
+January 5, 2036 55,741,204.70 1,600.95 
+February 5, 2036 56,019,397.17 1,608.94 
+March 5, 2036 58,051,002.96 1,667.29 
+April 5, 2036 56,587,968.25 1,625.27 
+May 5, 2036 57,727,895.82 1,658.01 
+June 5, 2036 57,157,932.03 1,641.64 
+July 5, 2036 58,282,191.69 1,673.93 
+
+ 
+21 of 22 
+August 5, 2036 57,733,466.63 1,658.17 
+September 5, 2036 58,021,408.02 1,666.44 
+October 5, 2036 59,121,991.72 1,698.05 
+November 5, 2036 58,605,647.01 1,683.22 
+December 5, 2036 59,689,866.45 1,714.36 
+January 5, 2037 59,195,108.64 1,700.15 
+February 5, 2037 59,490,361.72 1,708.63 
+March 5, 2037 62,078,352.44 1,782.96 
+April 5, 2037 60,096,535.78 1,726.04 
+May 5, 2037 61,140,018.66 1,756.01 
+June 5, 2037 60,700,968.97 1,743.40 
+July 5, 2037 61,728,087.58 1,772.90 
+August 5, 2037 61,311,321.15 1,760.93 
+September 5, 2037 61,617,019.50 1,769.71 
+October 5, 2037 62,619,069.45 1,798.49 
+November 5, 2037 62,236,424.25 1,787.50 
+December 5, 2037 63,221,413.59 1,815.79 
+January 5, 2038 62,862,096.16 1,805.47 
+February 5, 2038 63,175,454.38 1,814.47 
+March 5, 2038 65,422,929.17 1,879.02 
+April 5, 2038 63,816,794.21 1,832.89 
+May 5, 2038 64,758,261.57 1,859.93 
+June 5, 2038 64,457,437.68 1,851.29 
+July 5, 2038 65,381,844.43 1,877.84 
+August 5, 2038 65,104,696.49 1,869.88 
+September 5, 2038 65,429,892.69 1,879.22 
+October 5, 2038 66,326,793.55 1,904.98 
+November 5, 2038 66,086,552.25 1,898.08 
+December 5, 2038 66,966,044.32 1,923.34 
+January 5, 2039 66,749,827.15 1,917.13 
+February 5, 2039 67,082,683.21 1,926.69 
+March 5, 2039 68,969,796.05 1,980.89 
+April 5, 2039 67,760,929.67 1,946.17 
+May 5, 2039 68,594,462.53 1,970.11 
+June 5, 2039 68,440,917.01 1,965.70 
+July 5, 2039 69,255,648.38 1,989.10 
+August 5, 2039 69,127,519.68 1,985.42 
+September 5, 2039 69,471,865.55 1,995.31 
+October 5, 2039 70,258,742.86 2,017.91 
+November 5, 2039 70,168,565.33 2,015.32 
+December 5, 2039 70,936,292.96 2,037.37 
+
+ 
+22 of 22 
+January 5, 2040 70,872,228.62 2,035.53 
+February 5, 2040 71,225,627.05 2,045.68 
+March 5, 2040 72,347,101.31 2,077.89 
+April 5, 2040 71,941,476.50 2,066.24 
+May 5, 2040 72,660,111.35 2,086.88 
+June 5, 2040 72,662,548.58 2,086.95 
+July 5, 2040 73,361,337.41 2,107.02 
+August 5, 2040 73,390,236.00 2,107.85 
+September 5, 2040 73,756,516.94 2,118.37 
+October 5, 2040 74,425,362.66 2,137.58 
+November 5, 2040 74,494,997.82 2,139.58 
+December 5, 2040 75,143,997.51 2,158.22 
+January 5, 2041 75,241,138.56 2,161.01 
+February 5, 2041 75,616,472.07 2,171.79 
+March 5, 2041 76,716,359.42 2,203.38 
+April 5, 2041 76,375,843.49 2,193.60 
+May 5, 2041 76,972,964.99 2,210.75 
+June 5, 2041 77,140,437.54 2,215.56 
+July 5, 2041 77,716,668.49 2,232.11 
+August 5, 2041 77,912,343.29 2,237.73 
+September 5, 2041 78,300,907.49 2,248.89 
+October 5, 2041 78,845,454.44 2,264.53 
+November 5, 2041 79,084,651.21 2,271.40 
+December 5, 2041 79,607,263.09 2,286.41 
+January 5, 2042 79,875,706.63 2,294.12 
+February 5, 2042 80,274,019.74 2,305.56 
+March 5, 2042 80,943,909.98 2,324.80 
+April 5, 2042 81,077,957.67 2,328.65 
+May 5, 2042 81,545,905.94 2,342.09 
+June 5, 2042 81,888,510.93 2,351.93 
+July 5, 2042 82,334,524.13 2,364.74 
+August 5, 2042 82,707,420.41 2,375.45 
+*subject to adjustment in accordance with the Modified Following Business Day 
+Convention 
+ 

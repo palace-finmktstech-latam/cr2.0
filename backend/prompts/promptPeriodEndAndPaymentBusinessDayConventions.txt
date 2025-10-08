@@ -96,6 +96,14 @@ Recognize these common phrasings and map them correctly:
 
 ## Extraction Rules
 
+### 🚨 ABSOLUTE DEFAULT RULE - READ FIRST:
+
+If you cannot find a business day convention after checking ALL sources, you MUST default to **MODFOLLOWING** (NOT FOLLOWING, NOT any other value).
+
+Set the corresponding *Clear field to `false` when using this default.
+
+**MODFOLLOWING is the industry standard for interest rate swaps.**
+
 ### Step 1: Identify General Business Day Convention
 First, look for a general "Business Day Convention" field, typically found in:
 - Header sections
@@ -125,7 +133,7 @@ First, look for a general "Business Day Convention" field, typically found in:
 3. **ZERO-COUPON SPECIAL CASE**: If and only if Steps 1-2 yielded nothing AND Payment Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field and set frequency to "TERM" → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 4.**
 4. **CHILEAN BANKING SPECIAL CASE**: If and only if Steps 1-3 yielded nothing AND "Calendario de Pago" contains "según fechas de pago" or similar reference to payment schedule: Use the business day convention from "Calendario de Cálculo" (Period End Dates) → **IF FOUND: USE IT AND STOP. DO NOT CHECK STEP 5.**
 5. If and only if Steps 1-4 yielded nothing: Use general Business Day Convention from Step 1 (including undifferentiated "Convención de Días Hábiles")
-6. If and only if Steps 1-5 yielded nothing: Leave blank or set to "N/A"
+6. If and only if Steps 1-5 yielded nothing: Use default value **MODFOLLOWING** (NOT FOLLOWING) with Clear = false
 
 **For calculationDayConvention.businessDayConvention and calculationPeriodFrequency (for each leg):**
 1. Check Period End Dates field for the specific leg for explicit business day convention AND calculation frequency → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 2.**
@@ -138,7 +146,7 @@ First, look for a general "Business Day Convention" field, typically found in:
    - **CRITICAL**: If Period End Dates field does not exist, use Payment Dates frequency for BOTH calculationPeriodFrequency AND paymentFrequency
 4. **ZERO-COUPON SPECIAL CASE**: If and only if Steps 1-3 yielded nothing AND Period End Dates section only references "Termination Date" or similar single date: Use the business day convention from the Termination Date field and set frequency to "TERM" → **IF FOUND: USE THEM AND STOP. DO NOT CHECK STEP 5.**
 5. If and only if Steps 1-4 yielded nothing: Use general Business Day Convention from Step 1 (including undifferentiated "Convención de Días Hábiles")
-6. If and only if Steps 1-5 yielded nothing: Leave blank or set to "N/A"
+6. If and only if Steps 1-5 yielded nothing: Use default value **MODFOLLOWING** (NOT FOLLOWING) with Clear = false
 
 ## Validation and Quality Checks
 

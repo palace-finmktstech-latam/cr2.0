@@ -190,22 +190,50 @@ Use the same structure but populate each field with the exact contract text snip
 
 ## Processing Guidelines
 
-**CRITICAL - Conditional Application:**
+**CRITICAL - FX FIXING ASSIGNMENT LOGIC (MUST FOLLOW STRICTLY):**
 
-**BEFORE extracting FX fixing data for each leg, you MUST:**
-1. Check if `notionalCurrency` equals `settlementCurrency` for that leg
-2. If they are THE SAME → DO NOT include fxFixing object for that leg
-3. If they are DIFFERENT → Include fxFixing object with extracted data
+**STEP 1: Determine which legs need FX fixing**
 
-**Examples:**
-- Leg with notionalCurrency=CLP, settlementCurrency=CLP → NO fxFixing needed
-- Leg with notionalCurrency=CLF, settlementCurrency=CLP → NEEDS fxFixing (CLF ≠ CLP)
-- Leg with notionalCurrency=USD, settlementCurrency=CLP → NEEDS fxFixing (USD ≠ CLP)
+From the leg context provided above, identify for EACH leg:
+- What is the notionalCurrency?
+- What is the settlementCurrency?
+- Do they match?
 
-**If leg context is provided above showing both currencies, use that to determine which legs need FX fixing.**
+**STEP 2: Apply strict assignment rules**
 
-- Only include fxFixing object for legs that require currency conversion
-- If leg doesn't need FX fixing, omit the entire fxFixing object from that leg
+For EACH leg in your output:
+
+**IF notionalCurrency == settlementCurrency:**
+- **DO NOT include fxFixing object at all**
+- Example: notionalCurrency=CLP, settlementCurrency=CLP → NO fxFixing
+
+**IF notionalCurrency != settlementCurrency:**
+- **DO include fxFixing object with extracted data**
+- Example: notionalCurrency=CLF, settlementCurrency=CLP → YES, include fxFixing
+- Example: notionalCurrency=USD, settlementCurrency=CLP → YES, include fxFixing
+
+**STEP 3: Extract and assign FX fixing data**
+
+Once you've determined which leg(s) need FX fixing:
+1. Extract the FX fixing details from the contract (reference, offset, etc.)
+2. Assign the fxFixing object ONLY to the leg(s) where currencies differ
+3. Do NOT assign based on document order or section order
+4. Match the currency pair to ensure correct assignment
+
+**Example scenario from leg context:**
+```
+Leg 1: notionalCurrency=CLP, settlementCurrency=CLP → NO fxFixing
+Leg 2: notionalCurrency=CLF, settlementCurrency=CLP → YES fxFixing (UF conversion)
+```
+
+Your output MUST have:
+- Leg 1: No fxFixing object at all
+- Leg 2: Complete fxFixing object with UAH_GFI_UAH01 reference
+
+**Common mistake to avoid:**
+- Do NOT assign FX fixing based on which section appears first in the contract
+- ALWAYS check the currency mismatch for the specific leg
+- The contract may describe legs in different order than our JSON structure
 
 **Error Handling:**
 - If FX fixing section exists but specific data cannot be found, set individual fields to "N/A"

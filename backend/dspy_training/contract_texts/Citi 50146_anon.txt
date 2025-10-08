@@ -1,0 +1,735 @@
+
+
+1/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+Date:
+To:
+Attn:
+Phone:
+Fax:
+Email:
+From:
+Phone:
+Fax:
+Email confirms:
+Email queries:
+Our ref:
+January 10, 2023
+Banco ABC
+LEI: XXX
+Confirmation Unit
+backoffice_mesa@Banco ABC.cl
+US Bank C N.A., London Branch
+US Bank C Centre
+Canada Square
+Canary Wharf, London E14 5LB
+Authorized by the Prudential Regulation Authority and subject to 
+regulation by the Financial Conduct Authority and limited 
+regulation by the Prudential Regulation Authority. Registered 
+Number BR001018
+LEI: US Bank C
+212-816-0400
+646-861-6419
+646-861-6418
+nyfiderivconfirms@US Bank C
+ficonfirms@US Bank C
+      CE3G27329544
+Your ref:
+Explanation of Identifiers for Use in EMIR Reporting:
+Where a UTI is required for use in EMIR reporting, the following guidelines apply:
+1. UTI - Where provided, please use for EMIR reporting
+2. USI - In line with ISDA Best Practice, where a USI is provided, please reuse the USI as the UTI
+3. UITI - In other cases, the UITI can be used as the UTI to assist with your EMIR reporting
+UTI:E57ODZWZ7FF32TWEFA76TPSPROD9381317
+
+2/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+REVISED TRANSACTION
+This Confirmation supersedes and replaces all previous documentation sent under our 
+reference.
+The purpose of this letter (this "Confirmation") is to confirm the terms and conditions of the Swap 
+Transaction entered into between Banco ABC ('Counterparty')  and US Bank C N.A., London Branch  
+('US Bank C') on the Trade Date specified below. This confirmation constitutes a 
+"Confirmation" as referred to in the "Agreement" as specified below.
+Your counterparty to the Transaction is US Bank C, N.A., London branch, which is authorized by the 
+Prudential Regulation Authority (the " PRA ") and subject to regulation by the Financial Conduct 
+Authority (the " FCA ") and limited regulation by the PRA. In the event that you have dealt with 
+employees of an affiliate of US Bank C, N.A., London branch in placing the order for or otherwise 
+arranging the Transaction (which is likely if you are not a UK person), then the Transaction has 
+been introduced to you, and arranged, by such affiliate. Such affiliate does not act as agent for 
+US Bank C, N.A., London branch, which is the principal to the Transaction with you. In the European 
+Union, such affiliate may be US Bank C Global Markets Limited (which is authorized by the PRA and 
+regulated by the FCA and the PRA) or US Bank C Europe PLC-UK Branch (authorised by the Central 
+Bank of Ireland and by the Prudential Regulation Authority and subject to regulation by the 
+Central Bank of Ireland and limited regulation by the Financial Conduct Authority and the 
+Prudential Regulation Authority).
+US Bank C N.A., London Branch is authorized by the Prudential Regulation Authority and subject to 
+regulation by the Financial Conduct Authority and limited regulation by the Prudential Regulation 
+Authority. US Bank C N.A., London Branch is entering into this Transaction as principal and not as an 
+agent for any other party.
+Unless specified herein, information about the time of dealing and the amount or basis of any 
+charges shared with any third party in connection with this Transaction will be made available on 
+request.
+1. The definitions and provisions contained in the 2021 ISDA Interest Rate Definitions as 
+supplemented by the Annex in effect on the Trade Date (the " 2021 Definitions "), and the 1998 FX 
+and Currency Option Definitions (the "FX Definitions") as published by the International Swaps 
+and Derivatives Association, Inc. ("ISDA"), the EMTA and the Foreign Exchange Committee
+(together, the "Definitions") are incorporated into this Confirmation. In the event of any
+
+3/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+inconsistency between the Definitions and this Confirmation, this Confirmation will prevail. In the 
+event of any inconsistency between FX Definitions and the 2021 Definitions, the 2021 Definitions 
+shall govern except that the FX Definitions will prevail for the purposes of the Settlement Terms 
+set out below and the definition of Valuation Date. References herein to a   "Transaction" shall be 
+deemed to be references to a   "Swap Transaction" for purposes of the 2021 Definitions.
+This Confirmation constitutes a   "Confirmation" as referred to in, and supplements, forms part of 
+and is    subject to, the ISDA Master Agreement  dated as of November 6, 2020, as amended and 
+supplemented from time to time (the "Agreement"), between Counterparty and US Bank C .  All 
+provisions contained in the Agreement govern this Confirmation except as expressly modified 
+below.
+2. The terms of the particular  Transaction to which this Confirmation relates are as follows:
+Trade Date:December 6, 2022
+Effective Date:December 9, 2022
+Termination Date:June 25, 2034, subject to adjustment as stated below .
+Fixed Reference Currency Payment Amounts
+Fixed Reference Currency Payer:Counterparty
+Fixed Reference Currency
+Payer Currency Payment Amount:
+In respect of each Calculation Period, an amount in CLP equal to 
+the product of (i) the Fixed Rate, (ii) the Fixed Reference 
+Currency Day Count Fraction, (iii) the UF Notional Amount and 
+(iv) the CLPUF as of the corresponding Fixed Reference 
+Currency Payer Payment Date
+CLP-UF Notional Amount:With respect to each Calculation Period, the amount set forth in 
+Exhibit I  attached hereto opposite such Calculation Period 
+under the heading ‘UF Notional Amount'
+Fixed Rate:                                            1.83 Percent
+Fixed   Reference Currency 
+Day Count Fraction: Actual/360
+
+4/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+CLPUF:The CLP/UF rate, expressed as an amount of CLP per one UF for 
+settlement on the same day reported by the Banco Central de 
+Chile (the "Central Bank") which appears on the Central Bank's 
+website (currently 
+http://si3.bcentral.cl/Indicadoressiete/secure/Indicadoresdiario 
+s.aspx) under the heading "Unidad de Fomento (UF)" on such 
+Reference Currency Payer Payment Date. In the event such rate 
+does not appear on the Central Bank's website, the CLPUF shall 
+be the rate reported by the Central Bank which appears on 
+Bloomberg Page CLUFUF Index on such Reference Currency 
+Payer Payment Date. In the event such rate does not appear at 
+such time on the Central Bank's website or such Bloomberg 
+page, the CLPUF shall be determined by the Calculation Agent 
+in a commercially reasonable manner
+Fixed  Amount  Payer 
+Period End Dates:
+25
+th
+ calendar day of Each month commencing December 25, 
+2022, through and including termination date with No 
+Adjustment.
+Fixed  Rate  Payer 
+Payment Dates:
+25
+th
+ calendar day of Each month commencing December 27, 
+2022, through and including termination date subject to 
+adjustment in accordance with the modified following business 
+day
+Floating Reference Currency Payment Amounts:
+Floating Reference Currency 
+Payer:
+US Bank C
+Floating Reference Currency 
+Payment Amounts:
+In respect of each Floating Rate Reference Currency Payer 
+Calculation Period, an amount in CLP equal to the product of (i) 
+the CLP Notional Amount; (ii) the Floating Rate for such Floating 
+Rate Currency Calculation Period, and (iii) the Floating 
+Reference Currency Day Count Fraction.
+CLP Notional:                                       With respect to each Calculation Period, the amount set forth  
+                                                                in Exhibit II attached hereto opposite such Calculation Period 
+                                                                under the heading ‘CLP Notional Amount'
+
+5/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+Floating Reference Currency
+Payer Period End Dates:
+Floating Reference Currency
+Payer Payment Date:
+25
+th
+ calendar day of Each month commencing December 25, 
+2022, through and including termination date with No 
+Adjustment.
+25
+th
+ calendar day of Each month commencing December 27, 
+2022, through and including termination date subject to 
+adjustment in accordance with the modified following 
+business day
+Floating Rate Option:CLP-ICP
+Floating Reference Currency Day 
+Count Fraction:Actual/360
+Reset Dates:
+The Period End Date of the related Calculation Period.
+Interim Exchange
+Interim Exchange Date(s):The Interim Payment Dates set forth in Exhibit I  & II   attached 
+hereto opposite such Calculation Period under the heading 
+'Interim Exchange Payment Date'
+Fixed Reference Currency Payer 
+Interim Exchange Amount:
+With respect to each Interim Payment Dates, the amount set 
+forth in Exhibit I  attached hereto opposite such Interim 
+Payment Dates under the heading ‘UF Interim Exchange 
+Amount’
+Floating Reference Currency 
+Payer Interim Exchange Amount:
+With respect to each Interim Payment Dates, the amount set 
+forth in Exhibit II   attached hereto opposite such Interim 
+Payment Dates under the heading ‘CLP Interim Exchange 
+
+6/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+Amount’
+Final Exchange
+Final Exchange Date:The Termination Date
+Fixed Reference Currency Payer
+Final Exchange Amount:  An Amount in CLP equal to the product of (i) the UF Notional 
+Amount and (ii) the CLPUF as of the Termination Date.
+Floating Reference Currency Payer
+Final Exchange Amount: The CLP Notional Amount
+Calculation Agent:US Bank C, unless otherwise stated in the Master Agreement.
+Mutual Optional Early Termination
+Optional Early Termination:Applicable
+Option Style:Bermuda
+Exercise Business Days:New York, Santiago
+Procedure for Exercise
+Bermuda Option   Potential 
+Exercise Dates:Five  Exercise Business Days preceding a Cash Settlement 
+Payment Date
+Expiration Date:Five  Exercise Business Days preceding the  final  Cash Settlement 
+Payment Date
+
+7/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+Earliest Exercise Time:9:00 AM, New York time
+Expiration Time:11:00 AM  New York  time
+Settlement Terms
+Cash SettlementApplicable
+Cash Settlement 
+Valuation Time:11:00 AM  New York time
+Cash Settlement 
+Valuation Date:The Cash Settlement Payment Date
+Valuation Business 
+Days:New York, Santiago
+Cash Settlement 
+Payment Date: December 6, 2027 and every five years thereafter.
+Business Day Convention 
+ for Cash Settlement 
+Payment Date: Following
+Cash Settlement 
+Method:
+Mid-Market Valuation (Indicative Quotations)
+MMV Applicable CSA:Existing CSA
+Settlement Rate Option:                     CLP_USD_FIXT2
+
+8/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+Cash Settlement 
+Reference Banks:
+As per the definitions of “Cash Settlement reference Banks”
+in    the 2021 ISDA Interest Rate Derivatives Definitions.
+SETTLEMENT PROVISIONS: 
+Settlement: 
+Non-deliverable, with the effect that any amounts denominated in the Reference Currency 
+payable hereunder on any Payment or Exchange Date shall be converted into the Settlement 
+Currency by reference to the Settlement Rate Option on the applicable Valuation Date and 
+payable on the related Settlement Date. All payments (including exchanges) hereunder shall 
+be made in the Settlement Currency. 
+Settlement Rate Option: CLP Dollar OBS (as defined below) 
+Reference Currency: CLP 
+Settlement Currency: USD 
+Settlement Date: Each Payment Date or Exchange Date, provided however, that if   Valuation 
+Postponement applies the Settlement Date shall be as soon as practical, but in no event 
+later than, two Business Days after the date on which the Settlement Rate is    determined. 
+Further, if   payments are scheduled to be made by both parties on a   Settlement Date, and 
+such date is    adjusted due to the occurrence of an Unscheduled Holiday, then such 
+Settlement Date shall be adjusted in respect of both parties' payments. 
+Valuation Date: In respect of any Settlement Date, the date which is    2  Business Day(s) prior 
+to that Settlement Date (each, a "Scheduled Valuation Date"); provided however that in the 
+event of an Unscheduled Holiday, the Valuation Date shall be subject to adjustment in 
+accordance with the Following Business Day Convention. 
+In the event the Scheduled Valuation Date becomes subject to the Following Business Day 
+Convention after the occurrence of an Unscheduled Holiday, and if   the Valuation Date has 
+not occurred on or before the 14th consecutive day after the Scheduled Valuation Date (any 
+such period being a   "Deferral Period"), then the next day after the Deferral Period that 
+would have been a   Business Day but for the Unscheduled Holiday, shall be deemed to be the 
+Valuation Date. 
+DISRUPTION EVENT AND FALLBACK: 
+Event Currency: Reference Currency 
+Applicable Disruption Events: Price Source Disruption 
+
+9/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+FALLBACKS: 
+(1) Valuation Postponement 
+(2) Calculation Agent Determination of Settlement Rate 
+Adjustment to Termination Date, Payment Dates and Exchange Dates: If the Valuation Date 
+in respect of a Payment Date, an Exchange Date or the Termination Date is    not the 
+Scheduled Valuation Date in respect of such Payment Date, Exchange Date or Termination 
+Date or if   Valuation Postponement applies, then such Payment Date, Exchange Date or 
+Termination Date (as applicable) shall be as soon as practicable after the relevant Spot Rate 
+is determined, but in no event later than the day which is    two Business Days after the 
+relevant Spot Rate is    determined. Further, if   payments are scheduled to be made by both 
+parties on a   Payment Date, Exchange Date or Termination Date, and such date is    adjusted 
+due to the occurrence of an Unscheduled Holiday or Valuation Postponement in accordance 
+with the previous sentence, then such Payment Date, Exchange Date or Termination Date 
+shall be adjusted in respect of both parties' payments. For the avoidance of doubt, such 
+adjustments shall not apply in respect of Period End Dates (including the Termination Date) 
+for the purpose of determining the Calculation Periods. 
+Additional Definitions: 
+"CLP" means the lawful currency of the Republic of Chile. CLP will be deemed to include any 
+lawful successor currency (the "Successor Currency") of the Republic of Chile. If, after the 
+Trade Date and on or before the Termination Date, the Republic of Chile has lawfully 
+eliminated, converted, redenominated or exchanged its currency in effect on such Trade 
+Date or any Successor Currency, as the case may be (the "Original Currency"), for a 
+Successor Currency, then for purposes of calculating any amounts of such currency pursuant 
+to this Transaction, and for purposes of effecting settlement hereof, any Original Currency 
+amounts will be converted to the Successor Currency by multiplying the amount of Original 
+Currency by a   ratio of Successor Currency to Original Currency, which ratio will be calculated 
+on the basis of the exchange rate set forth by the Republic of Chile for converting the 
+Original Currency into the Successor Currency on the date on which the elimination, 
+conversion, redenomination or exchange took place. If   there is    more than one such date, the 
+date closest to the relevant Payment Date will be selected. 
+"CLP Dollar OBS Rate" in respect of any Valuation Date shall mean Chilean Peso/U.S. Dollar 
+"observado" rate, expressed as the amount of Chilean Pesos per one U.S. Dollar, for 
+settlement in one Business Day reported by the Banco Central de Chile (www.bcentral.cl) as 
+the "Dólar Observado" (Dollar Observado) rate by not later than 10:30 a.m., Santiago time, 
+on the first Business Day following that Valuation Date. 
+"Maximum Days of Postponement" means Fourteen (14) calendar days 
+
+10/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+"Unscheduled Holiday" shall mean, for the purpose of this Transaction, that a day is    not a 
+Business Day and the market was not aware of such fact (by means of public announcement 
+or by reference to other publicly available information) until a   time later than 9:00 a.m. local 
+time in Santiago, two Business Days prior to the Valuation Date. 
+"Valuation Postponement" means, for purposes of obtaining a   Settlement Rate, that the 
+Spot Rate will be determined on the Business Day first succeeding the day on which the Price 
+Source Disruption ceases to exist, unless the Price Source Disruption continues to exist 
+(measured from the date, that, but for the occurrence of the Price Source Disruption, would 
+have been the Valuation Date) for a consecutive number of calendar days equal to the 
+Maximum Days of Postponement. In such event, the Spot Rate will be determined on the 
+next Business Day after the Maximum Days of Postponement in accordance with the next 
+applicable Disruption Fallback. 
+Notwithstanding anything herein to the contrary, in no event shall the total number of 
+consecutive calendar days during which either (i) valuation is    deferred due to an 
+Unscheduled Holiday, or (ii) a   Valuation Postponement shall occur (or any combination of (i) 
+and (ii)), exceed 14 consecutive calendar days in the aggregate. Accordingly, (x) if, upon the 
+lapse of any such 14 day period, an Unscheduled Holiday shall have occurred or be 
+continuing on the day following such period, then such day shall be deemed to be a 
+Valuation Date, and (y) if, upon the lapse of any such 14 day period, a   Price Source 
+Disruption shall have occurred or be continuing on the day following such period, then 
+Valuation Postponement shall not apply and the Settlement Rate shall be determined in 
+accordance with the next Disruption Fallback. 
+Relevant Cities for Business Day(s) 
+for Valuation Date(s):  New York, Santiago
+Relevant Cities for Business Day(s) 
+for Settlement/Payment Date(s): New York, Santiago 
+ 3. Representations: 
+Each party represents to the other party that: 
+ (a) Non-Reliance. It    is    acting for its own account, and it   has made its own independent decisions to 
+enter into this Transaction and as to whether this Transaction is    appropriate or proper for it based 
+upon its own judgment and upon advice from such advisors as it   has deemed necessary. It    is    not 
+relying on any communication (written or oral) of the other party as investment advice or as a 
+recommendation to enter into this Transaction; it   being understood that information and 
+explanations related to the terms and conditions of this Transaction shall not be considered 
+
+11/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+investment advice or a   recommendation to enter into this Transaction. It    has not received from the 
+other party any assurance or guarantee as to the expected results of this Transaction. 
+ (b) Evaluation and Understanding. It is    capable of evaluating and understanding (on its own behalf 
+or through independent professional advice), and understands and accepts, the terms, conditions 
+and risks of this Transaction. It is    also capable of assuming, and assumes, the financial and other risks 
+of this Transaction. 
+ (c) Status of Parties. The other party is    not acting as a   fiduciary or an advisor for it in respect of this 
+Transaction. 
+ (d) Risk Management. It    has entered into this Transaction for the purpose of (i) managing its 
+borrowings or investments, (ii) hedging its underlying assets or liabilities or (iii) in connection with its 
+line of business. 
+  
+ 4. Account Details 
+Payments to US Bank C 
+in CLP : 
+ 
+To be advised 
+Payments to Counterparty: Please provide to expedite payment 
+If   you have any questions regarding this letter agreement, please contact the Swap Operations 
+Department at the telephone numbers or the facsimile numbers indicated on this Confirmation. 
+Please confirm that the foregoing correctly sets forth the terms of our agreement by executing the 
+copy of this Confirmation enclosed for that purpose and returning it   to us. 
+Very truly yours, 
+US Bank C N.A., London 
+
+12/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+By:______________________ 
+Accepted and confirmed as 
+of the Trade Date: 
+Banco ABC 
+By: ________________________________________ 
+Authorized Signatory 
+
+13/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+Exhibit I
+From and 
+including
+To but 
+excluding
+UF Notional Amount
+UF Interim Exchange 
+Amount
+Interim Exchange 
+Payment Date
+9-Dec-2225-Dec-22330,625.261,874.5527-Dec-22
+25-Dec-2225-Jan-23328,750.711,915.3925-Jan-23
+25-Jan-2325-Feb-23326,835.321,817.9527-Feb-23
+25-Feb-2325-Mar-23325,017.371,995.8327-Mar-23
+25-Mar-2325-Apr-23323,021.541,967.6325-Apr-23
+25-Apr-2325-May-23321,053.911,939.7625-May-23
+25-May-2325-Jun-23319,114.151,844.8527-Jun-23
+25-Jun-2325-Jul-23317,269.302,018.7325-Jul-23
+25-Jul-2325-Aug-23315,250.571,924.8625-Aug-23
+25-Aug-2325-Sep-23313,325.711,931.1625-Sep-23
+25-Sep-2325-Oct-23311,394.551,970.3525-Oct-23
+25-Oct-2325-Nov-23309,424.201,878.6027-Nov-23
+25-Nov-2325-Dec-23307,545.602,015.0026-Dec-23
+25-Dec-2325-Jan-24305,530.601,988.9225-Jan-24
+25-Jan-2425-Feb-24303,541.681,931.1326-Feb-24
+25-Feb-2425-Mar-24301,610.542,065.0125-Mar-24
+25-Mar-2425-Apr-24299,545.541,976.2525-Apr-24
+25-Apr-2425-May-24297,569.291,951.3128-May-24
+25-May-2425-Jun-24295,617.982,051.5125-Jun-24
+25-Jun-2425-Jul-24293,566.462,026.8125-Jul-24
+25-Jul-2425-Aug-24291,539.661,971.6726-Aug-24
+25-Aug-2425-Sep-24289,567.982,039.4725-Sep-24
+25-Sep-2425-Oct-24287,528.522,045.9325-Oct-24
+25-Oct-2425-Nov-24285,482.592,022.2725-Nov-24
+25-Nov-2425-Dec-24283,460.322,028.8926-Dec-24
+25-Dec-2425-Jan-25281,431.442,005.8227-Jan-25
+25-Jan-2525-Feb-25279,425.622,101.0825-Feb-25
+
+14/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-Feb-2525-Mar-25277,324.542,136.7925-Mar-25
+25-Mar-2525-Apr-25275,187.752,055.9625-Apr-25
+25-Apr-2525-May-25273,131.802,062.6827-May-25
+25-May-2525-Jun-25271,069.112,098.0525-Jun-25
+25-Jun-2525-Jul-25268,971.072,104.6925-Jul-25
+25-Jul-2525-Aug-25266,866.372,083.1925-Aug-25
+25-Aug-2525-Sep-25264,783.192,090.0025-Sep-25
+25-Sep-2525-Oct-25262,693.192,069.1127-Oct-25
+25-Oct-2525-Nov-25260,624.072,158.6325-Nov-25
+25-Nov-2525-Dec-25258,465.442,110.6826-Dec-25
+25-Dec-2525-Jan-26256,354.772,117.5826-Jan-26
+25-Jan-2625-Feb-26254,237.182,151.3525-Feb-26
+25-Feb-2625-Mar-26252,085.842,211.3825-Mar-26
+25-Mar-2625-Apr-26249,874.462,086.0327-Apr-26
+25-Apr-2625-May-26247,788.422,224.0826-May-26
+25-May-2625-Jun-26245,564.342,152.8925-Jun-26
+25-Jun-2625-Jul-26243,411.452,134.2427-Jul-26
+25-Jul-2625-Aug-26241,277.212,217.8625-Aug-26
+25-Aug-2625-Sep-26239,059.352,174.1825-Sep-26
+25-Sep-2625-Oct-26236,885.182,181.2926-Oct-26
+25-Oct-2625-Nov-26234,703.892,213.2025-Nov-26
+25-Nov-2625-Dec-26232,490.682,146.5928-Dec-26
+25-Dec-2625-Jan-27230,344.092,275.6425-Jan-27
+25-Jan-2725-Feb-27228,068.462,210.1425-Feb-27
+25-Feb-2725-Mar-27225,858.312,288.9025-Mar-27
+25-Mar-2725-Apr-27223,569.422,201.2626-Apr-27
+25-Apr-2725-May-27221,368.152,278.8025-May-27
+25-May-2725-Jun-27219,089.352,239.5225-Jun-27
+25-Jun-2725-Jul-27216,849.832,246.8526-Jul-27
+25-Jul-2725-Aug-27214,602.982,276.8625-Aug-27
+25-Aug-2725-Sep-27212,326.122,216.8327-Sep-27
+25-Sep-2725-Oct-27210,109.302,335.4425-Oct-27
+25-Oct-2725-Nov-27207,773.852,276.5526-Nov-27
+25-Nov-2725-Dec-27205,497.302,262.3127-Dec-27
+25-Dec-2725-Jan-28203,235.002,334.3125-Jan-28
+25-Jan-2825-Feb-28200,900.692,299.0425-Feb-28
+25-Feb-2825-Mar-28198,601.652,348.4927-Mar-28
+
+15/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-Mar-2825-Apr-28196,253.162,314.2525-Apr-28
+25-Apr-2825-May-28193,938.912,342.2925-May-28
+25-May-2825-Jun-28191,596.622,329.4827-Jun-28
+25-Jun-2825-Jul-28189,267.132,357.0925-Jul-28
+25-Jul-2825-Aug-28186,910.052,344.8225-Aug-28
+25-Aug-2825-Sep-28184,565.232,352.4925-Sep-28
+25-Sep-2825-Oct-28182,212.732,379.4325-Oct-28
+25-Oct-2825-Nov-28179,833.312,367.9827-Nov-28
+25-Nov-2825-Dec-28177,465.332,394.4626-Dec-28
+25-Dec-2825-Jan-29175,070.872,383.5625-Jan-29
+25-Jan-2925-Feb-29172,687.312,391.3626-Feb-29
+25-Feb-2925-Mar-29170,295.952,453.1126-Mar-29
+25-Mar-2925-Apr-29167,842.842,407.2125-Apr-29
+25-Apr-2925-May-29165,435.622,432.5525-May-29
+25-May-2925-Jun-29163,003.072,423.0525-Jun-29
+25-Jun-2925-Jul-29160,580.022,447.9325-Jul-29
+25-Jul-2925-Aug-29158,132.092,438.9927-Aug-29
+25-Aug-2925-Sep-29155,693.102,446.9725-Sep-29
+25-Sep-2925-Oct-29153,246.132,471.1525-Oct-29
+25-Oct-2925-Nov-29150,774.982,463.0626-Nov-29
+25-Nov-2925-Dec-29148,311.922,486.7826-Dec-29
+25-Dec-2925-Jan-30145,825.142,479.2625-Jan-30
+25-Jan-3025-Feb-30143,345.882,487.3725-Feb-30
+25-Feb-3025-Mar-30140,858.512,540.1225-Mar-30
+25-Mar-3025-Apr-30138,318.392,503.8225-Apr-30
+25-Apr-3025-May-30135,814.572,526.3528-May-30
+25-May-3025-Jun-30133,288.222,520.2825-Jun-30
+25-Jun-3025-Jul-30130,767.932,542.3325-Jul-30
+25-Jul-3025-Aug-30128,225.602,536.8526-Aug-30
+25-Aug-3025-Sep-30125,688.752,545.1525-Sep-30
+25-Sep-3025-Oct-30123,143.602,566.4825-Oct-30
+25-Oct-3025-Nov-30120,577.122,561.8825-Nov-30
+25-Nov-3025-Dec-30118,015.252,582.7226-Dec-30
+25-Dec-3025-Jan-31115,432.532,578.7127-Jan-31
+25-Jan-3125-Feb-31112,853.822,587.1525-Feb-31
+25-Feb-3125-Mar-31110,266.672,630.5325-Mar-31
+25-Mar-3125-Apr-31107,636.132,604.2225-Apr-31
+
+16/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-Apr-3125-May-31105,031.912,623.8327-May-31
+25-May-3125-Jun-31102,408.082,621.3325-Jun-31
+25-Jun-3125-Jul-3199,786.752,640.4425-Jul-31
+25-Jul-3125-Aug-3197,146.312,638.5525-Aug-31
+25-Aug-3125-Sep-3194,507.762,647.1825-Sep-31
+25-Sep-3125-Oct-3191,860.582,665.5427-Oct-31
+25-Oct-3125-Nov-3189,195.042,664.5725-Nov-31
+25-Nov-3125-Dec-3186,530.482,682.4226-Dec-31
+25-Dec-3125-Jan-3283,848.062,682.0626-Jan-32
+25-Jan-3225-Feb-3281,165.992,690.8425-Feb-32
+25-Feb-3225-Mar-3278,475.162,716.2125-Mar-32
+25-Mar-3225-Apr-3275,758.942,708.5326-Apr-32
+25-Apr-3225-May-3273,050.412,725.1125-May-32
+25-May-3225-Jun-3270,325.312,726.3125-Jun-32
+25-Jun-3225-Jul-3267,599.002,742.3726-Jul-32
+25-Jul-3225-Aug-3264,856.632,744.2125-Aug-32
+25-Aug-3225-Sep-3262,112.422,753.1927-Sep-32
+25-Sep-3225-Oct-3259,359.232,768.4625-Oct-32
+25-Oct-3225-Nov-3256,590.772,771.2526-Nov-32
+25-Nov-3225-Dec-3253,819.522,786.0027-Dec-32
+25-Dec-3225-Jan-3351,033.512,789.4425-Jan-33
+25-Jan-3325-Feb-3348,244.082,798.5725-Feb-33
+25-Feb-3325-Mar-3345,445.512,822.1225-Mar-33
+25-Mar-3325-Apr-3342,623.392,816.9625-Apr-33
+25-Apr-3325-May-3339,806.432,830.3825-May-33
+25-May-3325-Jun-3336,976.062,835.4428-Jun-33
+25-Jun-3325-Jul-3334,140.622,848.3225-Jul-33
+25-Jul-3325-Aug-3331,292.302,854.0425-Aug-33
+25-Aug-3325-Sep-3328,438.262,863.3826-Sep-33
+25-Sep-3325-Oct-3325,574.892,875.4525-Oct-33
+25-Oct-3325-Nov-3322,699.442,882.1525-Nov-33
+25-Nov-3325-Dec-3319,817.292,893.6827-Dec-33
+25-Dec-3325-Jan-3416,923.612,901.0525-Jan-34
+25-Jan-3425-Feb-3414,022.562,910.5527-Feb-34
+25-Feb-3425-Mar-3411,112.012,923.5927-Mar-34
+25-Mar-3425-Apr-348,188.422,929.6425-Apr-34
+25-Apr-3425-May-345,258.782,939.7825-May-34
+
+17/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-May-3425-Jun-342,319.002,319.0027-Jun-34
+Exhibit II
+ 
+From and 
+including
+To but 
+excluding
+CLP Notional 
+Amount
+CLP Interim 
+Exchange 
+Amount
+Interim Exchange 
+Payment Date
+9-Dec-2225-Dec-2211,526,892,625.0865,354,241.4227-Dec-22
+25-Dec-2225-Jan-2311,461,538,383.6666,777,947.9525-Jan-23
+25-Jan-2325-Feb-2311,394,760,435.7163,381,002.8227-Feb-23
+25-Feb-2325-Mar-2311,331,379,432.8969,582,342.4027-Mar-23
+25-Mar-2325-Apr-2311,261,797,090.4968,599,228.6725-Apr-23
+25-Apr-2325-May-2311,193,197,861.8267,627,693.2425-May-23
+25-May-2325-Jun-2311,125,570,168.5864,318,681.8927-Jun-23
+25-Jun-2325-Jul-2311,061,251,486.6870,380,722.6825-Jul-23
+25-Jul-2325-Aug-2310,990,870,764.0067,108,224.3225-Aug-23
+25-Aug-2325-Sep-2310,923,762,539.6867,327,818.2125-Sep-23
+25-Sep-2325-Oct-2310,856,434,721.4768,694,107.3425-Oct-23
+25-Oct-2325-Nov-2310,787,740,614.1365,495,454.2427-Nov-23
+25-Nov-2325-Dec-2310,722,245,159.8970,250,858.0726-Dec-23
+25-Dec-2325-Jan-2410,651,994,301.8269,341,502.4425-Jan-24
+25-Jan-2425-Feb-2410,582,652,799.3867,326,922.2026-Feb-24
+25-Feb-2425-Mar-2410,515,325,877.1771,994,235.3625-Mar-24
+25-Mar-2425-Apr-2410,443,331,641.8168,899,895.1125-Apr-24
+25-Apr-2425-May-2410,374,431,746.7068,030,249.4928-May-24
+25-May-2425-Jun-2410,306,401,497.2071,523,802.5425-Jun-24
+25-Jun-2425-Jul-2410,234,877,694.6670,662,374.3525-Jul-24
+25-Jul-2425-Aug-2410,164,215,320.3168,740,312.4926-Aug-24
+25-Aug-2425-Sep-2410,095,475,007.8271,103,814.3325-Sep-24
+25-Sep-2425-Oct-2410,024,371,193.4971,328,975.9925-Oct-24
+
+18/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-Oct-2425-Nov-249,953,042,217.5070,504,231.6125-Nov-24
+25-Nov-2425-Dec-249,882,537,985.9070,734,936.6326-Dec-24
+25-Dec-2425-Jan-259,811,803,049.2769,930,681.7727-Jan-25
+25-Jan-2525-Feb-259,741,872,367.5073,251,888.5225-Feb-25
+25-Feb-2525-Mar-259,668,620,478.9874,496,718.7325-Mar-25
+25-Mar-2525-Apr-259,594,Banco ABC,760.2571,678,692.4825-Apr-25
+25-Apr-2525-May-259,522,445,067.7771,913,239.5027-May-25
+25-May-2525-Jun-259,450,531,828.2773,146,135.7925-Jun-25
+25-Jun-2525-Jul-259,377,385,692.4773,377,764.7025-Jul-25
+25-Jul-2525-Aug-259,304,007,927.7772,628,016.1025-Aug-25
+25-Aug-2525-Sep-259,231,379,911.6772,865,669.5025-Sep-25
+25-Sep-2525-Oct-259,158,514,242.1772,137,348.2727-Oct-25
+25-Oct-2525-Nov-259,086,376,893.9075,258,432.6325-Nov-25
+25-Nov-2525-Dec-259,011,118,461.2873,586,414.8126-Dec-25
+25-Dec-2525-Jan-268,937,532,046.4773,827,205.9626-Jan-26
+25-Jan-2625-Feb-268,863,704,840.5175,004,421.0825-Feb-26
+25-Feb-2625-Mar-268,788,700,419.4477,097,371.9225-Mar-26
+25-Mar-2625-Apr-268,711,603,047.5172,727,332.9527-Apr-26
+25-Apr-2625-May-268,638,875,714.5677,540,185.5426-May-26
+25-May-2625-Jun-268,561,335,529.0275,058,202.1625-Jun-26
+25-Jun-2625-Jul-268,486,277,326.8674,408,014.4627-Jul-26
+25-Jul-2625-Aug-268,411,869,312.4077,323,175.0725-Aug-26
+25-Aug-2625-Sep-268,334,546,137.3375,800,308.5925-Sep-26
+25-Sep-2625-Oct-268,258,745,828.7476,048,344.4626-Oct-26
+25-Oct-2625-Nov-268,182,697,484.2777,160,942.7925-Nov-26
+25-Nov-2625-Dec-268,105,536,541.4874,838,465.3328-Dec-26
+25-Dec-2625-Jan-278,030,698,076.1579,337,689.0725-Jan-27
+25-Jan-2725-Feb-277,951,360,387.0877,054,179.0125-Feb-27
+25-Feb-2725-Mar-277,874,306,208.0679,799,914.9225-Mar-27
+25-Mar-2725-Apr-277,794,506,293.1476,744,664.1026-Apr-27
+25-Apr-2725-May-277,717,761,629.0479,447,914.8425-May-27
+25-May-2725-Jun-277,638,313,714.1978,078,536.7625-Jun-27
+25-Jun-2725-Jul-277,560,235,177.4378,334,026.5426-Jul-27
+25-Jul-2725-Aug-277,481,901,150.8979,380,132.4125-Aug-27
+25-Aug-2725-Sep-277,402,521,018.4877,287,303.5927-Sep-27
+25-Sep-2725-Oct-277,325,233,714.8981,422,729.2925-Oct-27
+25-Oct-2725-Nov-277,243,810,985.6079,369,436.1626-Nov-27
+
+19/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-Nov-2725-Dec-277,164,441,549.4478,872,883.2927-Dec-27
+25-Dec-2725-Jan-287,085,568,666.1581,383,127.3725-Jan-28
+25-Jan-2825-Feb-287,004,185,538.7880,153,543.1525-Feb-28
+25-Feb-2825-Mar-286,924,031,995.6381,877,609.3227-Mar-28
+25-Mar-2825-Apr-286,842,154,386.3180,683,746.6725-Apr-28
+25-Apr-2825-May-286,761,470,639.6481,661,494.8525-May-28
+25-May-2825-Jun-286,679,809,144.7981,214,975.1927-Jun-28
+25-Jun-2825-Jul-286,598,594,169.6082,177,271.6825-Jul-28
+25-Jul-2825-Aug-286,516,416,897.9181,749,630.8425-Aug-28
+25-Aug-2825-Sep-286,434,667,267.0782,017,134.7325-Sep-28
+25-Sep-2825-Oct-286,352,650,132.3582,956,093.3125-Oct-28
+25-Oct-2825-Nov-286,269,694,039.0482,556,964.1827-Nov-28
+25-Nov-2825-Dec-286,187,137,074.8783,480,216.5626-Dec-28
+25-Dec-2825-Jan-296,103,656,858.3183,100,273.0525-Jan-29
+25-Jan-2925-Feb-296,020,556,585.2683,372,197.6826-Feb-29
+25-Feb-2925-Mar-295,937,184,387.5885,525,187.6826-Mar-29
+25-Mar-2925-Apr-295,851,659,199.9083,924,867.5125-Apr-29
+25-Apr-2925-May-295,767,734,332.3984,808,326.2125-May-29
+25-May-2925-Jun-295,682,926,006.1884,477,000.4425-Jun-29
+25-Jun-2925-Jul-295,598,449,005.7485,344,397.3425-Jul-29
+25-Jul-2925-Aug-295,513,104,608.4185,032,692.9727-Aug-29
+25-Aug-2925-Sep-295,428,071,915.4385,310,938.4325-Sep-29
+25-Sep-2925-Oct-295,342,760,977.0086,154,077.0125-Oct-29
+25-Oct-2925-Nov-295,256,606,899.9985,872,010.4726-Nov-29
+25-Nov-2925-Dec-295,170,734,889.5286,698,825.7626-Dec-29
+25-Dec-2925-Jan-305,084,036,063.7686,436,701.3825-Jan-30
+25-Jan-3025-Feb-304,997,599,362.3886,719,541.9025-Feb-30
+25-Feb-3025-Mar-304,910,879,820.4788,558,484.6925-Mar-30
+25-Mar-3025-Apr-304,822,321,335.7887,293,088.2525-Apr-30
+25-Apr-3025-May-304,735,028,247.5388,078,561.9128-May-30
+25-May-3025-Jun-304,646,949,685.6287,866,944.8925-Jun-30
+25-Jun-3025-Jul-304,559,082,740.7388,635,722.2225-Jul-30
+25-Jul-3025-Aug-304,470,447,018.5288,444,500.5926-Aug-30
+25-Aug-3025-Sep-304,382,002,517.9388,733,909.4725-Sep-30
+25-Sep-3025-Oct-304,293,268,608.4589,477,469.7325-Oct-30
+25-Oct-3025-Nov-304,203,791,138.7289,317,057.3525-Nov-30
+25-Nov-3025-Dec-304,114,474,081.3890,043,649.3326-Dec-30
+
+20/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-Dec-3025-Jan-314,024,430,432.0589,903,963.5527-Jan-31
+25-Jan-3125-Feb-313,934,526,468.5090,198,152.2825-Feb-31
+25-Feb-3125-Mar-313,844,328,316.2291,710,737.3925-Mar-31
+25-Mar-3125-Apr-313,752,617,578.8390,793,397.9325-Apr-31
+25-Apr-3125-May-313,661,824,180.9091,477,041.0527-May-31
+25-May-3125-Jun-313,570,347,139.8591,389,825.4725-Jun-31
+25-Jun-3125-Jul-313,478,957,314.3892,056,120.3025-Jul-31
+25-Jul-3125-Aug-313,386,901,194.0891,990,101.9825-Aug-31
+25-Aug-3125-Sep-313,294,911,092.1092,291,113.5825-Sep-31
+25-Sep-3125-Oct-313,202,619,978.5292,931,187.2627-Oct-31
+25-Oct-3125-Nov-313,109,688,791.2592,897,201.9125-Nov-31
+25-Nov-3125-Dec-313,016,791,589.3493,519,644.9126-Dec-31
+25-Dec-3125-Jan-322,923,271,944.4393,507,201.9826-Jan-32
+25-Jan-3225-Feb-322,829,764,742.4593,813,178.2025-Feb-32
+25-Feb-3225-Mar-322,735,951,564.2694,697,790.9025-Mar-32
+25-Mar-3225-Apr-322,641,253,773.3694,430,025.5326-Apr-32
+25-Apr-3225-May-322,546,823,747.8395,007,877.5825-May-32
+25-May-3225-Jun-322,451,815,870.2595,049,909.5225-Jun-32
+25-Jun-3225-Jul-322,356,765,960.7395,609,726.4526-Jul-32
+25-Jul-3225-Aug-322,261,156,234.2895,673,788.9125-Aug-32
+25-Aug-3225-Sep-322,165,482,445.3795,986,856.4527-Sep-32
+25-Sep-3225-Oct-322,069,495,588.9296,519,416.7725-Oct-32
+25-Oct-3225-Nov-321,972,976,172.1596,616,777.7626-Nov-32
+25-Nov-3225-Dec-321,876,359,394.4097,131,013.6027-Dec-32
+25-Dec-3225-Jan-331,779,228,380.7997,250,764.2025-Jan-33
+25-Jan-3325-Feb-331,681,977,616.6097,568,991.6025-Feb-33
+25-Feb-3325-Mar-331,584,408,625.0098,390,057.8325-Mar-33
+25-Mar-3325-Apr-331,486,018,567.1798,210,212.3025-Apr-33
+25-Apr-3325-May-331,387,808,354.8798,678,093.0825-May-33
+25-May-3325-Jun-331,289,130,261.7998,854,476.6228-Jun-33
+25-Jun-3325-Jul-331,190,275,785.1699,303,611.0725-Jul-33
+25-Jul-3325-Aug-331,090,972,174.0999,502,893.2425-Aug-33
+25-Aug-3325-Sep-33991,469,280.8599,828,487.3926-Sep-33
+25-Sep-3325-Oct-33891,640,793.46100,249,287.9325-Oct-33
+25-Oct-3325-Nov-33791,391,505.53100,483,186.4825-Nov-33
+25-Nov-3325-Dec-33690,908,319.04100,884,940.8727-Dec-33
+25-Dec-3325-Jan-34590,023,378.18101,142,107.6025-Jan-34
+
+21/21Deal No: 68923026, Deal Alias: 
+CE3G27329544, ID: 
+1006264477(1-1)
+25-Jan-3425-Feb-34488,881,270.58101,473,067.3127-Feb-34
+25-Feb-3425-Mar-34387,408,203.27101,927,856.6827-Mar-34
+25-Mar-3425-Apr-34285,480,346.59102,138,640.4625-Apr-34
+25-Apr-3425-May-34183,341,706.14102,492,237.3125-May-34
+25-May-3425-Jun-3480,849,468.8380,849,468.8327-Jun-34

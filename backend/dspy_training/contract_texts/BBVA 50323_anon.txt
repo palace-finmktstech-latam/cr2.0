@@ -1,0 +1,367 @@
+
+
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -1-
+CONFIRMATION OF A  
+CROSS-CURRENCY RATE SWAP TRANSACTION 
+TO: 
+ATTENTION: 
+Banco ABC BACK OFFICE 
+Phone: 
+Fax: 
+FROM: Spanish Bank S.A. 
+Documentacion 
+C/ Sauceda, 28 
+Edificio Oceanía Centro, planta 1 
+28050 Madrid Spain 
+Email: envios@Spanish Bank.com 
+Date: 15/05/2023 
+YOUR REF:  
+OUR REF: GMRT-MXMA51154390-2023 
+If no USI/UTI informed, please complete it before returning the confirmation 
+UTI: K8MS7FD7N5Z2WQ51AZ71000000000000MX51154390 
+Dear Sirs, 
+The purpose of this letter agreement (this "Confirmation") is to confirm the terms and conditions of the Transaction 
+entered into between us on the Trade Date specified below. 
+The  definitions  and  provisions  contained  in  the  2021  ISDA  Interest  Rate  Derivatives  Definitions  (the  “Swap 
+Definitions”), as published by the International Swaps and Derivatives Association, Inc., and the 1998 FX and 
+Currency  Option  Definitions  (the  “FX  Definitions”)  as  published  by  ISDA,  the  Emerging  Markets  Traders 
+Association and The Foreign Exchange Committee (together, the “Swap Definitions” with the “FX Definitions”, the 
+“Definitions”), as supplemented by the ISDA Benchmarks Supplement, as published by ISDA are incorporated into 
+this Confirmation. 
+In the event of any inconsistency between the Swap Definitions and the FX Definitions, the Swap Definitions shall 
+govern except that  the  FX  Definitions shall  govern for the  purposes of the  Settlement Provisions set  out below. In 
+the  event  of  any  inconsistency  between  the  Definitions  and  this  Confirmation,  this  Confirmation  will  govern. 
+
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -2-
+References herein to a “Transaction” sh all be deemed to be references to a “Swap Transaction” for th  e purposes of 
+the Swap Definitions. 
+This Confirmation constitutes a  "Confirmation" as referred to in, and supplements forms  part of, and is  subject to, 
+the  ISDA  Master  Agreement  dated  as  of  12/11/2019  as  amended  and  supplemented  from  time  to  time  (the 
+"Agreement"), between Banco ABC   ("Counterparty") and Spanish Bank,  S.A.  ("Spanish Bank").  All  provisions  contained  in  the  Agreement  govern  this  Confirmation  except  as 
+expressly modified below. 
+The terms of the particular Transaction to which this Confirmation relates are as follows: 
+1.
+ General Terms
+Trade Date: 09/05/2023 
+Effective Date: 11/05/2023 
+Termination Date: 01/06/2025, subject to adjustment in accordance with the Business Day 
+Convention 
+Calculation Agent: Spanish Bank,  S.A.  The  Calculation  Agent  has  a  mere 
+administrative   function,   its   failure   to   comply   with   its   obligations   as 
+Calculation  Agent  in  the  time  required  shall  not  constitute  an  Event  of 
+Default. 
+2.  Fixed Amounts
+Fixed Amount Payer :Spanish Bank 
+Fixed Amount Payer 
+Currency Amount : CLF 500,000.00 
+Fixed Amount Payer 
+Payment Date(s) : Semi-Annually, on the 1
+st
+ of June and December, beginning on 01/06/2023, to 
+and  including  02/06/2025  subject  to  adjustment  in  accordance  with   the 
+Business Day Convention, with no adjustment to Period End Dates 
+Fixed Amount Payer 
+Period End Dates : Semi-Annually,  on  the  1
+st
+  of  June  and  December,  beginning  on  01/06/2023, 
+to and including the Termination Date 
+Fixed Rate : 3.75 % 
+Fixed Rate Day 
+
+ 
+ 
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -3-  
+ 
+ 
+Count Fraction : Act/360 
+Compounding : Inapplicable 
+Compounding Dates : N/A 
+ 
+3.    Floating Amounts  
+Floating Amount Payer : Counterparty 
+Floating Amount Payer  
+Currency Amount : CLP 17,981,660,000.00  
+ 
+Floating Amount Payer 
+Payment Date(s) : Semi-Annually, on the 1
+st
+ of June and December beginning on 01/06/2023, to 
+and  including 02/06/2025 subject  to  adjustment  in  accordance  with  the  
+Business Day Convention, with no adjustment to Period End Dates. 
+Floating Amount Payer 
+Period End Dates : Semi-Annually, on the 1
+st
+ of June and December beginning on 01/06/2023, to 
+and including the Termination Date. 
+ 
+ 
+Floating Rate Option : CLP-ICP 
+Spread : None 
+ 
+Floating Rate Day  
+Count Fraction : Act/360 
+Reset Dates : The  last  day  of  each Calculation  Period  subject  to  adjustment  in  accordance 
+with the Business Day Convention. 
+   
+ 
+4.    Exchanges 
+Final Exchange: 
+Final Exchange Date: 02/06/2025 subject  to  adjustment  in  accordance with the Modified 
+Following Business Day Convention 
+
+ 
+ 
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -4-  
+ 
+ 
+Spanish Bank final Exchange Amount:  CLF 500,000.00 
+Counterparty Final  
+Exchange Amount: CLP  17,981,660,000.00  
+ 
+5.    Business Days 
+ 
+ 
+Business Days for CLF: Santiago and New York 
+ 
+Business Days for CLP: Santiago and New York 
+ 
+ 
+ 
+Business Day  
+Convention: Modifed Following 
+ 
+ 
+ 
+6. Index provisions 
+ 
+Index Methods:  Compounded Index Method 
+ 
+ 
+7. Settlement Provisions: 
+Settlement: Non deliverable, with the effect that any Reference Currency amounts payable 
+hereunder on a Payment Date (“Reference Currency Payment Date”) or an 
+Exchange  Date  (“Reference  Currency  Exchange  Date”)  shall  be  converted 
+into   Settlement   Currency   amounts.   All   payments   (including   exchanges) 
+hereunder shall be made in the Settlement Currency 
+Settlement Date:  Each  Payment  Date  or  Exchange  Date,  as  the  case  may  be,  subject  to 
+adjustment if the Scheduled Valuation Date is adjusted in accordance with the 
+Following  Business  Day  Convention or  if  Valuation  Postponement  applies, 
+and in each such case, the Settlement Date shall be as soon as practicable, but 
+in no event later than two Business Days after the date on which the Spot Rate 
+is determined. 
+Settlement Rate Option: CLP DÓLAR OBS (CLP10) 
+Reference Currency: CLP and CLF 
+Reference Currency Amount: An  amount  that  represents  the  amount  that  one  party  was,  but  for  these 
+Settlement Terms, due to pay the other party in the Reference Currency. 
+Settlement Currency: USD 
+
+ 
+ 
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -5-  
+ 
+ 
+Valuation Date: In  respect  of  a  Reference  Currency  Payment  Date  or  a  Reference  Currency 
+Exchange  Date,  the  date  which  is  two  Business  Days  prior  to  that  Reference 
+Currency  Payment  Date  or  a  Reference  Currency  Exchange  Date,  provided 
+that  if  a  day  that,  but  for  the  occurrence  on  that  day  of  an  Unscheduled 
+Holiday would have been a Valuation Date (a “Scheduled Valuation Date”), is 
+as  a  result  of  such  occurrence  not  a  Business  Day,  the  Valuation  Date  in 
+question   shall   be   the   next   following   Business   Day   to   such   Scheduled 
+Valuation  Date  on  which  an  Unscheduled  Holiday  does  not  occur,  provided 
+that if the Valuation Date has not occurred on or before the 14th consecutive 
+day  after  the  relevant  Scheduled  Valuation  Date  (any  such  period  being  the 
+“Deferral Period”), then the next day after the Deferral Period that would have 
+been a Business Day but for the Unscheduled Holiday, shall be deemed to be 
+the relevant Valuation Date. 
+Settlement Amount: Any   Reference   Currency   Amount   otherwise   payable   hereunder   on   a 
+Settlement Date, shall be converted into an amount in the Settlement Currency 
+(a “Settlement Currency Amount”) as follows:  
+  where  the  Settlement  Currency  is  USD,  the  Spot  Rate  to  be determined  in 
+accordance  with  the  Settlement  Rate  Option  is expressed  as  an  amount  of 
+USD  per  one  unit  of the  Reference Currency,  by  multiplying,  or  if  the  Spot 
+Rate  to  be  determined  in accordance  with  the  Settlement  Rate  Option  is 
+expressed as an amount of the Reference Currency per USD1.00, by dividing, 
+any such  Reference  Currency  Amount  by  the  Spot  Rate  determined  for the 
+Valuation  Date  in  respect  of  such  Settlement  Date,  in accordance  with  the 
+Settlement Rate Option and if applicable, Article 5 of the FX Definitions, and 
+Additional Definitions: 
+Unidad de Fomento (CLF): The  Inflation-Indexed  Accounting  Unit (UF).  Any  amount  in  CLF  will  be 
+converted  into  CLP  at  the  exchange  rate  CPI – INDEXED  UNIT  OF 
+ACCOUNT (UF) expressed as the amount of CLPs per one CLF, reported by 
+the Banco Central de Chile (www.bcentral.cl) for that Valuation Date. 
+DISRUPTION EVENTS: 
+Event Currency: Each Reference Currency 
+Price Source Disruption: Applicable 
+DISRUPTION FALLBACKS: 
+1. Valuation Postponement 
+2. Calculation Agent Determination  
+of Settlement Rate 
+OTHER TERMS: 
+
+ 
+ 
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -6-  
+ 
+ 
+Unscheduled Holiday “Unscheduled  Holiday”  means  that  a  day  is  not  a Business  Day  and  the 
+market was not aware of such fact (by means of a public announcement or by 
+reference  to  other  publicly  available  information)  until  a  time  later  than  9:00 
+a.m. local time in the Principal Financial Center(s) of the Reference Currency 
+two Business Days prior to the Scheduled Valuation Date. 
+“Deferral Period” for Unscheduled  
+Holiday: In the  event the  Scheduled  Valuation Date becomes  subject to the Following 
+Business  Day  Convention  after  the  occurrence  of  an  Unscheduled  Holiday, 
+and if the  Valuation Date has not occurred on or before  the  14th consecutive 
+day after the Scheduled Valuation Date (any such period being a “Deferral 
+Period”), then the next day after the Deferral Period that would have been a 
+Business  Day  but  for  the  Unscheduled Holiday,  shall  be  deemed  to  be  the 
+Valuation Date. 
+Valuation Postponement 
+for Price Source Disruption: “Valuation  Postponement”  means,  for  purposes  of  obtaining  a  Settlement 
+Rate,  that  the  Spot  Rate  will  be  determined  on  the  Business  Day  first 
+succeeding the  day  on  which  the  Price  Source  Disruption  ceases  to  exist, 
+unless the Price Source Disruption continues to exist (measured from the date 
+that,  but  for  the  occurrence  of  the  Price  Source  Disruption,  would  have  been 
+the  Valuation  Date)  for  a  consecutive  number  of  calendar  days  equal  to  the 
+Maximum  Days  of  Postponement.  In  such  event,  the  Spot  Rate  will  be 
+determined   on   the   next   Business   Day   after   the   Maximum   Days   of 
+Postponement   in accordance with the next applicable Disruption Fallback. 
+Cumulative Events: Except  as  provided  below,  in  no  event  shall  the  total  number  of  consecutive 
+calendar   days   during   which   either   (i)   valuation   is   deferred   due   to   an 
+Unscheduled  Holiday,  or  (ii)  a  Valuation  Postponement  shall  occur  (or  any 
+combination  of  (i)  and  (ii)),  exceed  14  consecutive  calendar  days  in  the 
+aggregate.  Accordingly,  (x)  if,  upon  the  lapse  of  any  such  14  calendar  day 
+period,  an  Unscheduled  Holiday  shall  have  occurred  or  be  continuing  on  the 
+day  following  such  period  that  otherwise  would  have  been  a  Business  Day, 
+then  such  day  shall  be  deemed  to  be  a  Valuation  Date,  and  (y)  if,  upon  the 
+lapse of any such 14 calendar day period, a Price Source Disruption shall have 
+occurred or be continuing on the day following such period on which the Spot 
+Rate  otherwise  would  be  determined,  then  Valuation  Postponement  shall  not 
+apply  and  the  Spot  Rate  shall  be  determined  in  accordance  with  the  next 
+Disruption Fallback.  
+Maximum Days of Postponement: Fourteen (14) calendar days 
+Adjustment to Termination Date,  
+Payment Dates and  
+Exchange Dates: If  the  Valuation  Date  in  respect  of  a  Reference  Currency  Payment  Date,    a 
+Reference  Currency  Exchange  Date  or  the  Termination  Date  is  not  the 
+Scheduled  Valuation  Date  in  respect  of  such  Reference  Currency  Payment 
+
+ 
+ 
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -7-  
+ 
+ 
+Date,  Reference  Currency  Exchange  Date  or  Termination  Date,  then  such 
+Reference  Currency  Payment  Date,  a  Reference  Currency  Exchange  Date  or 
+Termination  Date  (as  applicable)  shall  be  as  soon  as  practicable  after  the 
+relevant  Valuation  Date,  but  in  no  event  later  than  the  day  which  is  two 
+Business  Days  after  the  relevant  Valuation  Date.    Further,  if  payments  are 
+scheduled  to  be  made  by  both  parties  on  a  Payment  Date,  Exchange  Date  or 
+Termination  Date,  and  such  date  is  adjusted  due  to  the  occurrence  of  an 
+Unscheduled Holiday  in  accordance  with  the  previous  sentence,  then  such 
+Payment  Date,  Exchange  Date  or  Termination  Date  shall  be  adjusted  in 
+respect of both parties’ payments.  
+ For  the  avoidance  of  doubt,  such  adjustments  shall  not  apply  in  respect  of 
+Period  End  Dates  (including  the  Termination  Date)  for  the  purposes  of 
+determining the Calculation Periods. 
+Business Day (as defined in the  
+FX Definitions) for Valuation Date(s): New York and Santiago 
+Business Day (as defined in the  
+2006 Definitions) for all other purposes: New York 
+ 
+8.    Other Provisions 
+Relationship Between Parties.  Each  party  will  be  deemed  to  represent  to  the  other  party  on  the  date  on  which  it 
+enters into this Transaction that (absent a  written agreement between the parties that expressly imposes affirmative 
+obligations to the contrary for that Transaction): 
+(1) Non Reliance 
+Section 3 of the Agreement is hereby amended by adding the following Subsection (g): 
+In connection with the negotiation of, the entering into, and the confirming of the execution of, this Transaction, the 
+Agreement, any Credit Support Document, and any other documentation relating to this Transaction to which it is a 
+party or that is required by this Transaction to deliver:(i) each party is relying upon its own independent judgment; 
+(ii) the other party hereto or thereto is not acting as a fiduciary or financial or investment advisor for it; (iii) it is not 
+relying (for purposes of making any investment decision or otherwise) upon any advice, counsel or representations 
+(whether written or oral) of the other party hereto or thereto other than the representations expressly set forth in the 
+Agreement, in such Credit Support Document and in this Confirmation; (iv) the other party hereto or thereto has not 
+given to it (directly or indirectly through any other person) any assurance, guaranty, or representation whatsoever as 
+to the expected or projected success, profitability, return, performance, result, effect, consequence, or benefit (either 
+legal,  regulatory,  tax,  financial,  accounting,  or  otherwise)  of  the  Agreement,  such  Credit  Support  Document,  this 
+Transaction  or  other  documentation;  (v)  it  has  consulted  with  its  own  legal,  regulatory,  tax,  business,  investment, 
+financial,  and  accounting  advisors  to  the  extent  it  has  deemed necessary,  and  it  has  made  its  own  investment, 
+hedging  and  trading  decisions  based  upon  its  own  judgment  and  upon  any  advice  from  such  advisors  as  it  has 
+deemed necessary and not upon any view expressed by the other party hereto or thereto; (vi) it has determined that 
+the rates, prices or amounts and other terms of this Transaction and the indicative quotations (if any) provided by the 
+
+ 
+ 
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -8-  
+ 
+ 
+other  party  hereto  or  thereto  reflect  those  in  the  relevant  market  for  similar  transactions,  and  all  trading  decisions 
+have been the result of arms length negotiations between the parties; (vii) it is entering into this Transaction and any 
+other  documentation  relating  to  the  Agreement  with  a  full  understanding  of  all  of  the  terms,  conditions  and  risks 
+hereof and thereof (economic and otherwise), and it is capable  of assuming and  willing  to assume  (financially and 
+otherwise) those risks, (viii) it is a sophisticated investor and this Transaction is suitable for its investment criteria; 
+and  (ix)  the  individual(s)  executing  this Confirmation   and  any  other  related  documentation  (including  the 
+Agreement) are duly empowered and authorized to do so. 
+ 
+ 
+ 
+9.    Notices 
+Section  12(a)  of  the  Agreement is  hereby  amended  by  deleting  the  clause  in  its  entirety  and  substituting  the 
+following in lieu thereof:  
+(a) Effectiveness. Any  notice  or  other  communication  in  respect  of  this  Agreement  may  be  given  in  any  manner 
+described below (except that  a notice or other communication under Section 5 or 6 may not be given by electronic 
+system  or  e-mail)  to  the  address  or  number  in  accordance  with  the  electronic  messaging  system  or  e-mail  details 
+provided (see the Schedule) and will be deemed effective as indicated: 
+(i)  If in writing and delivered in person or by courier, on the date it is delivered; 
+(ii) If sent by telex, on the date the recipient’s answerback is received; 
+(iii) If sent by facsimile transmission, on the date it is received by a responsible employee of the recipient in legible 
+form (it being agreed that  the burden of proving receipt  will be  on the  sender and  will  not be  met by transmission 
+report generated by the sender’s facsimile machine): 
+(iv) If sent by certified or registered  mail (airmail, if overseas) or the  equivalent (return  receipt requested), on the 
+date it is delivered or its delivery attempted; 
+(v) If sent by electronic messaging system, on the date it is received;   
+(vi) If sent by email, on the date it is delivered; or 
+(vii) If  made available in a webpage to which the Parties have access through a personalized code and/or electronic 
+signature, on the date it is uploaded unless the date of delivery (or attempted delivery) or that receipt, as applicable, 
+is not a  Local Business Day  or that  communication is delivered (or attempted) or received, as applicable, after the 
+close of business on a Local Business Day, in which case that communication will be deemed given and effective on 
+the first following day that is a Local Business Day. 
+  
+ 
+10.    Account Details: 
+
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -9-
+Accounts for Payments to: Spanish Bank, S.A. 
+To be advised 
+Accounts for Payments to: Banco ABC To be advised 
+11.Offices:
+(a)   The Office of the Spanish Bank for the Transaction is MADRID
+(b)   The Office of Counterparty for the Transaction is SANTIAGO DE CHILE
+Please  confirm  that  the  foregoing  correctly  sets  forth  the  terms  of  our  agreement  by  executing  the  copy  of  this 
+Confirmation enclosed for that purpose and returning it to us to the following email address: 
+Spanish Bank, S.A. 
+TESORERIA – DOCUMENTACION 
+C/ Sauceda, 28 
+Edificio Oceanía Centro, planta 1 
+28050  - Madrid 
+Spain 
+Contact Details: 
+Customer Support Documentation Fixing/Payments 
+Phone: (+34) 915379397 Phone: (+34) 91 537 84 65 
+Fax: (+34) 91 537 09 55 
+Phone: (+34) 91 374 33 75 
+Fax: (+34) 91 374 31 35 
+Yours sincerely, 
+Spanish Bank, S.A. 
+P.p. (P. of A.)
+
+GMRT-MXMA51154390-CONF-NEW-51226114-12052023 -10-
+By: By: 
+Name: Miguel Ángel Alonso Simón Name:  Eduardo Becerril Morencos 
+Title: Authorised Signatory Title: Authorised Signatory 
+CONFIRMED AS OF THE DATE FIRST ABOVE WRITTEN: 
+Banco ABC (“Counterparty”) 
+By: By: 
+Name: Name: 
+Title: Authorised Signatory Title: Authorised Signatory 

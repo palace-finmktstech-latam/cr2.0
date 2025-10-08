@@ -58,6 +58,9 @@ yarn-error.log
 /frontend/public/assets/*.json
 !email_entities.json
 
+# DSPy training contract texts
+backend/dspy_training/contract_texts/*.txt
+
 # Misc
 .DS_Store
 Thumbs.db

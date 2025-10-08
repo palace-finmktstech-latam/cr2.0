@@ -1,0 +1,605 @@
+
+
+24219818.24 
+ 
+ 
+ 
+ 
+ 
+Datos Cliente 
+Nombre del Titular 
+Banco ABC, SANTIAGO DE 
+CHILE 
+RUT  
+Condiciones Financieras 
+Tipo Producto CALL MONEY SWAP 
+Fecha de Cierre 05 de Octubre de 2021 
+Fecha de Inicio 07 de Octubre de 2021 
+Fecha de Vencimiento 07 de Octubre de 2031 
+Monto Contratado CLP 3,170,000,000.00 
+Tasa de Interés pactada por cliente   5.83% 
+Base cálculo cliente Lineal Actual/360 
+Tasa interés pactada por BANCO_C TNA más 0% de spread. 
+Base cálculo BANCO_C Lineal Actual/360 
+Modo Cumplimiento Compensado en CLP 
+Número Contrato 24219818.24 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Firma Cliente 
+ 
+ 
+ 
+ 
+1 
+CALL MONEY SWAP 
+HOJA RESUMEN 
+
+24219818.24 
+ 
+ 
+Ref.: 14277734 / 24219818.24 
+CONTRATO SWAP DE TASA INTERES - PROMEDIO CAMARA 
+En  Santiago  de  Chile,  a  05  de  Octubre  de  2021,  entre,  por  una  parte,  BANCO_C,  Rol  Único  Tributario,  representado  por  la(s)  persona(s)  que  
+suscriben al final, todos domiciliados en esta ciudad, CL BANDERA 140 8340455, en 
+adelante BANCO_C y  por  la  otra,  Banco ABC,  SANTIAGO  DE  CHILE,  Rol  Único  
+Tributario  N°  debidamente  representada  por  la(s)  persona(s)  que  suscriben  al  final,  
+todos domiciliados en esta ciudad, Santiago, en adelante el "Cliente", se ha convenido 
+el  Contrato  Swap  que  más  adelante  se  indica,  el  cual  se  regirá  por  las  Condiciones  
+Generales de Contratos de Derivados en Mercado Local suscrito entre ambas Partes, 
+en  adelante  las  Condiciones  Generales,  documento que,  para todos  los  efectos,  se 
+entiende formar parte integrante del presente instrumento: 
+I.  Definiciones: 
+ 
+a. Fecha  de  Cierre:  Fecha  en  que  se  pactan  entre  las  partes  las  condiciones  
+financieras de la operación. 
+b. Fecha de Inicio del Contrato: Fecha de inicio del primer periodo de devengo de 
+intereses. 
+c. Fecha de Inicio (del devengo): Fecha a partir de la  cual se inicia cada periodo de 
+devengo de intereses. 
+d. Fecha  de  Término  (del  devengo):  Fecha  en  la  cual  termina  cada  periodo  de  
+intereses. 
+e. Fecha de Fijación: Significa el día en que se determinará la tasa de interés a utilizar 
+para cada periodo. 
+f.  Fecha  de  Vencimiento:  Significa  la  última  de  Fecha  de  Término  (del  devengo)  
+estipulada en el presente Contrato. 
+g. Monto  Contratado:  Significa  la  cantidad  de  Moneda  Extranjera,  Unidades  de  
+Fomento, IVP y/o Moneda Nacional que cada una de las partes han acordado en 
+este Contrato, y que se encuentre vigente en cada Fecha de Término (del devengo), 
+cantidad sobre la cual y por el o los Períodos de Intereses pactados, se aplican las 
+Tasas de Interés convenidas en la sección II de este Contrato. 
+24219818.24 2 
+
+24219818.24 
+ 
+ 
+h. Monto  de  Amortización:  Significa el o los montos de capital que las partes han 
+acordado pagar en cada Fecha de Término (del devengo). 
+i. Períodos  de  Intereses:  Significa (i) para el primer Período de Interés, el período 
+que  comienza  en  la  primera  Fecha  de  Inicio  (del  devengo)  y  termina  el  día  que  
+fijen las Partes en este Contrato como primera Fecha de Término (del devengo), 
+(ii) y respecto de los siguientes Períodos de Interés, cada uno de los períodos que 
+comienzan en la Fecha de Término (del devengo) inmediatamente precedente que 
+termina en la siguiente Fecha de Término (del devengo), y así sucesivamente. 
+j. Tasa Promedio Cámara: Es la que se obtiene, de acuerdo con los procedimientos 
+y fórmulas que se estipulan a continuación, utilizando el Índice Cámara Promedio 
+calculado por la Asociación de Bancos e Instituciones Financieras de Chile A.G., en 
+adelante ICP, cuyo Reglamento fuera aprobado en sesión de Directorio de dicha 
+Asociación de fecha 10 de Octubre de 2002, y publicado en el Diario Oficial el día 
+16 de Noviembre del 2002. 
+ 
+A) Forma de Cálculo para Operaciones Reajustables: 
+ 
+ 
+** Redondear a 4 decimales 
+ 
+Donde: 
+TNA : 
+Tasa Nominal anual promedio, durante el periodo de compensación 
+involucrado. 
+TRA : 
+Tasa Real  Anual  Promedio,  durante el  periodo de  compensación 
+involucrado. 
+UF
+1
+ 
+:   Valor de la UF al vencimiento de cada periodo de compensación. 
+UF
+0
+ 
+:   Valor de la UF al inicio de cada periodo de compensación. 
+ 
+ 
+ 
+ 
+24219818.24 3 
+
+24219818.24 
+ 
+ 
+T 
+: 
+Fecha   de   Vencimiento de   cada periodo de   compensación 
+1
+ involucrado. 
+T
+0
+ 
+:   Fecha de Inicio de cada periodo de compensación involucrado. 
+(T
+1
+ - T
+0
+) 
+:   Periodo Pago de Intereses. 
+B) Forma de cálculo para Operaciones Nominales: 
+TNA = Redondear ((( ICP
+1
+/ICP
+0
+) - 1 ) * 36000 / (T
+1
+ - T
+0
+) ; 2) 
+ 
+Donde: 
+ICP :   Índice  Cámara  Promedio  publicado por  la  Asociación de  Bancos a 
+través de SINACOFI 
+ICP
+1
+ :   Valor  del  índice  cámara promedio  al  vencimiento del  periodo  de 
+compensación involucrado. 
+ICP
+0
+ :   Valor del índice cámara promedio al inicio del periodo de compensación 
+involucrado. 
+TNA :   Tasa Nominal anual promedio, durante el periodo de compensación. 
+T
+1
+ 
+:   Fecha de Vencimiento de cada periodo de compensación involucrado. 
+T
+0
+ 
+:   Fecha al Inicio de cada periodo de compensación involucrado. 
+(T
+1
+ - T
+0
+) 
+:   Periodo Pago de Interés. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+24219818.24 4 
+
+24219818.24 
+ 
+ 
+ 
+II.   Condiciones Financieras: 
+ 
+1. Monto Contratado por el Cliente: CLP 3,170,000,000.00 
+2. Monto Contratado por BANCO_C: CLP 3,170,000,000.00 
+3. Plazo: 3,652 Días 
+4. Fecha de cierre: 05 de Octubre de 2021 
+5. Fecha de Inicio: 07 de Octubre de 2021 
+6. Fecha de Vencimiento: 07 de Octubre de 2031 
+7. Tasa de Interés Pactada por el Cliente: 5.83% 
+8. Base de Cálculo Cliente: Lineal Actual/360 
+9. Tasa de Interés Pactada por el BANCO_C: TNA  más 0% de spread. 
+10.   Base de Cálculo BANCO_C: Lineal Actual/360 
+11.   Periodicidad: Ver tabla 
+12.   Lugar de Cumplimiento: Santiago, Chile 
+13.   Modalidad de cumplimiento: Compensado en CLP 
+14.   Forma de Pago: Combanc 24hrs. 
+15.   Modalidad para días festivos Banco: 
+Calendario de Cálculo: Santiago, se ajusta día hábil siguiente del mismo mes 
+Calendario de Pago: Santiago, se ajusta día hábil siguiente 
+Calendario Fijación Variable:Santiago, se ajusta día hábil siguiente del mismo 
+mes 
+16.   Modalidad para días festivos Cliente: 
+Calendario de Cálculo: Santiago, se ajusta día hábil siguiente del mismo mes 
+Calendario de Pago: Santiago, se ajusta día hábil siguiente 
+Calendario Fijación Variable: No Aplica 
+17.   Bancos de Referencia: Chilean Bank b, Banco del Estado de 
+Chile, BANCO_B 
+ 
+ 
+24219818.24 5 
+
+24219818.24 
+ 
+ 
+18.   Indexación: No aplica 
+ 
+III.    Obligaciones de las Partes: 
+ 
+a) Por el presente instrumento, BANCO_C se obliga a pagar al CLIENTE, en cada una de 
+las Fechas de Pago, las cantidades que se indican a continuación: 
+ 
+1. El "Monto de Intereses" determinado para cada una de dichas fechas, y que 
+resulte de aplicar la tasa indicada en la columna "Tasa" sobre el monto indicado 
+en  la  columna  "Capital  Vigente",  por  el  número  de  días  que  incluya  cada  
+Período de Intereses, según se indica en la columna "Días", y 
+2. El  monto  determinado  para  cada  una  de  dichas  fechas  en  la  columna  
+"Amortización". 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fecha 
+Pago 
+Fecha 
+Fijación 
+ 
+Días 
+ 
+Amortización (CLP) 
+ 
+Capital Vigente (CLP) 
+TNA incluido 
+0% de spread 
+Monto de 
+Intereses (CLP) 
+07/10/2021 07/04/2022 08/04/2022 07/04/2022 182 0 3,170,000,000.0000 Por determinar Por determinar 
+07/04/2022 07/10/2022 11/10/2022 07/10/2022 183 0 3,170,000,000.0000 Por determinar Por determinar 
+07/10/2022 10/04/2023 11/04/2023 10/04/2023 185 0 3,170,000,000.0000 Por determinar Por determinar 
+10/04/2023 10/10/2023 11/10/2023 10/10/2023 183 0 3,170,000,000.0000 Por determinar Por determinar 
+10/10/2023 08/04/2024 09/04/2024 08/04/2024 181 0 3,170,000,000.0000 Por determinar Por determinar 
+08/04/2024 07/10/2024 08/10/2024 07/10/2024 182 0 3,170,000,000.0000 Por determinar Por determinar 
+07/10/2024 07/04/2025 08/04/2025 07/04/2025 182 0 3,170,000,000.0000 Por determinar Por determinar 
+07/04/2025 07/10/2025 08/10/2025 07/10/2025 183 0 3,170,000,000.0000 Por determinar Por determinar 
+07/10/2025 07/04/2026 08/04/2026 07/04/2026 182 0 3,170,000,000.0000 Por determinar Por determinar 
+07/04/2026 07/10/2026 08/10/2026 07/10/2026 183 0 3,170,000,000.0000 Por determinar Por determinar 
+07/10/2026 07/04/2027 08/04/2027 07/04/2027 182 0 3,170,000,000.0000 Por determinar Por determinar 
+07/04/2027 07/10/2027 08/10/2027 07/10/2027 183 0 3,170,000,000.0000 Por determinar Por determinar 
+07/10/2027 07/04/2028 10/04/2028 07/04/2028 183 0 3,170,000,000.0000 Por determinar Por determinar 
+07/04/2028 10/10/2028 11/10/2028 10/10/2028 186 0 3,170,000,000.0000 Por determinar Por determinar 
+10/10/2028 09/04/2029 10/04/2029 09/04/2029 181 0 3,170,000,000.0000 Por determinar Por determinar 
+ 
+24219818.24 6 
+
+24219818.24 
+ 
+ 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fecha 
+Pago 
+Fecha 
+Fijación 
+ 
+Días 
+ 
+Amortización (CLP) 
+ 
+Capital Vigente (CLP) 
+TNA incluido 
+0% de spread 
+Monto de 
+Intereses (CLP) 
+09/04/2029 08/10/2029 09/10/2029 08/10/2029 182 0 3,170,000,000.0000 Por determinar Por determinar 
+08/10/2029 08/04/2030 09/04/2030 08/04/2030 182 0 3,170,000,000.0000 Por determinar Por determinar 
+08/04/2030 07/10/2030 08/10/2030 07/10/2030 182 0 3,170,000,000.0000 Por determinar Por determinar 
+07/10/2030 07/04/2031 08/04/2031 07/04/2031 182 0 3,170,000,000.0000 Por determinar Por determinar 
+07/04/2031 07/10/2031 08/10/2031 07/10/2031 183 3,170,000,000.0000 3,170,000,000.0000 Por determinar Por determinar 
+ 
+b) Por el presente instrumento, el CLIENTE se obliga a pagar a BANCO_C, en cada una de 
+las Fechas de Pago, las cantidades que se indican a continuación: 
+ 
+1. El  "Monto  de  Intereses"  determinado  para  cada  una  de  dichas  fechas,  y  que  
+resulte de aplicar la tasa indicada en la  columna "Tasa" sobre el monto indicado 
+en la columna "Capital Vigente", por el número de días que incluya cada Período 
+de Intereses, según se indica en la columna "Días", y 
+2. El   monto   determinado   para   cada   una   de   dichas   fechas   en   la   columna   
+"Amortización". 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fecha 
+Pago 
+ 
+Días 
+ 
+Amortización (CLP) 
+ 
+Capital Vigente (CLP) 
+ 
+Tasa Fija (%) 
+ 
+Monto de Intereses (CLP) 
+07/10/2021 07/04/2022 08/04/2022 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+07/04/2022 07/10/2022 11/10/2022 183 0 3,170,000,000.0000 5.83000000 93,945,591.6700 
+07/10/2022 10/04/2023 11/04/2023 185 0 3,170,000,000.0000 5.83000000 94,972,319.4400 
+10/04/2023 10/10/2023 11/10/2023 183 0 3,170,000,000.0000 5.83000000 93,945,591.6700 
+10/10/2023 08/04/2024 09/04/2024 181 0 3,170,000,000.0000 5.83000000 92,918,863.8900 
+08/04/2024 07/10/2024 08/10/2024 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+07/10/2024 07/04/2025 08/04/2025 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+07/04/2025 07/10/2025 08/10/2025 183 0 3,170,000,000.0000 5.83000000 93,945,591.6700 
+07/10/2025 07/04/2026 08/04/2026 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+07/04/2026 07/10/2026 08/10/2026 183 0 3,170,000,000.0000 5.83000000 93,945,591.6700 
+07/10/2026 07/04/2027 08/04/2027 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+ 
+24219818.24 7 
+
+24219818.24 
+ 
+ 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fecha 
+Pago 
+ 
+Días 
+ 
+Amortización (CLP) 
+ 
+Capital Vigente (CLP) 
+ 
+Tasa Fija (%) 
+ 
+Monto de Intereses (CLP) 
+07/04/2027 07/10/2027 08/10/2027 183 0 3,170,000,000.0000 5.83000000 93,945,591.6700 
+07/10/2027 07/04/2028 10/04/2028 183 0 3,170,000,000.0000 5.83000000 93,945,591.6700 
+07/04/2028 10/10/2028 11/10/2028 186 0 3,170,000,000.0000 5.83000000 95,485,683.3300 
+10/10/2028 09/04/2029 10/04/2029 181 0 3,170,000,000.0000 5.83000000 92,918,863.8900 
+09/04/2029 08/10/2029 09/10/2029 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+08/10/2029 08/04/2030 09/04/2030 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+08/04/2030 07/10/2030 08/10/2030 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+07/10/2030 07/04/2031 08/04/2031 182 0 3,170,000,000.0000 5.83000000 93,432,227.7800 
+07/04/2031 07/10/2031 08/10/2031 183 3,170,000,000.0000 3,170,000,000.0000 5.83000000 93,945,591.6700 
+ 
+Las   obligaciones   de   pago   de   las   Partes   se   cumplirán   bajo   la   modalidad   de   
+Compensación, según se establece en la Sección IV siguiente de este instrumento. 
+IV. Cumplimiento: 
+ 
+Las Partes acuerdan que las obligaciones derivadas del presente Contrato, según se 
+establecen en la Sección III   anterior, se cumplirán bajo la modalidad de Compensación 
+en conformidad con el siguiente procedimiento. 
+ 
+Una vez establecida su cuantía en Moneda Nacional, las respectivas obligaciones se 
+extinguirán recíprocamente por compensación, hasta la concurrencia de sus valores, 
+en los términos de los artículos 1656 y siguientes del Código Civil. Si una vez operada 
+esta compensación, el monto adeudado por una parte excediere el monto que la otra 
+parte le adeuda a su vez; la primera deberá pagar a la segunda, en la Fecha de Pago 
+correspondiente, la diferencia de la que esta última resulte acreedora. 
+ 
+Asimismo,  si  cualquiera  de  las  Partes  no  da  cumplimiento  a  sus  obligaciones  en  la  
+respectiva  Fecha  de  pago,  el  Contrato  se  cumplirá  siempre  bajo  la  modalidad  de  
+compensación, salvo que la parte incumplidora ya hubiere recibido la contraprestación 
+de  la  otra  parte,  en  cuyo  caso,  la  parte  incumplidora  estará  obligada  a  pagar  
+íntegramente los montos pactados que adeude, ello sin perjuicio de su obligación de 
+ 
+ 
+ 
+24219818.24 8 
+
+24219818.24 
+ 
+ 
+indemnizar,  de  acuerdo  a  derecho,  todo  daño,  menoscabo  o  perjuicio  que  hubiere  
+ocasionado. 
+ 
+Compensación 
+A. En el último día de cada Período de Intereses las partes calcularán los intereses 
+devengados  entre  la  respectiva  Fecha  de  Inicio  (del  devengo)  y  la  respectiva  
+Fecha  de  Término  (del  devengo)  o  de  Liquidación  Anticipada,  por  sobre  el  
+respectivo  Capital  Vigente,  y  conforme  las  Tasas  de  Interés  pactadas  por  las  
+partes en este Contrato. 
+B. Además de los pagos que las partes deban efectuarse de conformidad a la letra A 
+de esta cláusula las partes pagarán en cada Fecha de Término (del devengo) los 
+Montos de Amortización que hubieren pactado en la sección II  de este Contrato. 
+C. Establecida la cuantía en Moneda Nacional de las obligaciones de cada parte, de 
+conformidad a lo establecido en la cláusula 4.3. de las Condiciones Generales, 
+dichas  cantidades  se  compensarán  extinguiéndose  recíprocamente  hasta  la  
+concurrencia  de  sus  valores.  La  parte  que  resultare  deudora  deberá  pagar  en  
+cada Fecha de Término (del devengo) la diferencia (el "Diferencial de Intereses") 
+a la parte que resulte acreedora. 
+ 
+El Diferencial de Intereses y Amortización se pagará en Moneda Nacional o en Dólares, 
+según se estipule en la sección II de este Contrato. 
+V. Autorizaciones: 
+ 
+Si la normativa internacional actual o futura, sobre operaciones de derivados exigiere 
+al  Banco,  para  su  participación  en  determinados  mercados  extranjeros  de  derivados  
+financieros,  que  el  Banco  informe  sobre  las  operaciones  de  derivados  que  realiza,  
+realice  o  haya realizado con  el  Cliente  y  sus  garantías  asociadas,  el  cliente acepta 
+y autoriza que el Banco entregue esa información única y exclusivamente a aquellas 
+entidades  gubernamentales  o  privadas  que  las  normas  internacionales  faculten  para  
+exigir la información. 
+ 
+El  Banco  podrá  externalizar  todo  o  parte  de  la  gestión  operativa  de  sus  procesos  
+internos, que involucre la entrega de antecedentes sujetos a secreto o reserva bancaria, 
+ 
+ 
+ 
+24219818.24 9 
+
+24219818.24 
+ 
+ 
+con alguna entidad del Grupo BANCO_C a nivel global, pero siempre bajo su exclusiva 
+responsabilidad y control. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+24219818.24 10 
+
+24219818.24 
+ 
+ 
+ 
+VI. Definiciones; Ejemplares: 
+ 
+A menos que se exprese lo contrario en este instrumento, los términos en mayúscula 
+tendrán  el  significado  que  para  ellos  se  señala  en  las  Condiciones  Generales.  El  
+presente Contrato se firma en dos ejemplares de idéntico tenor y fecha, quedando uno 
+en poder de cada parte. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+p.p. BANCO_C p.p. BANCO_C 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+p.p. Banco ABC, SANTIAGO 
+DE CHILE 
+p.p. Banco ABC, SANTIAGO 
+DE CHILE 
+ 
+ 
+ 
+Rep. Legal: Rep. Legal: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+24219818.24 11 
+
+24219818.24 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

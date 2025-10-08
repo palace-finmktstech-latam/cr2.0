@@ -1,0 +1,482 @@
+
+
+Página: 1 
+ 
+ANEXO No. 7 
+ 
+Operación: 39593 
+ 
+CONTRATO CROSS CURRENCY SWAP 
+SOBRE UNIDADES DE INTERES Y DIVISAS 
+ 
+En  Santiago  de  Chile,  a  15  de  marzo  de  2023,  entre,  por  una  parte,  Chilean Bank S,  empresa  
+bancaria,  con  Rol  Único  Tributario  N°   representada  por  ,  cédula  nacional  de  identidad  N°  ,  cédula  de  
+identidad  N,  domiciliados  en  esta  ciudad,  AVDA.COSTANERA  SUR  2710  TORRE  A  ,  en  adelante  el  
+“BANCO”,  y  por  la  otra,  Banco ABC,  Rol  único  Tributario  N°    representado  por  la(s)  persona(s)  que  se  
+individualiza(n)  al  final  del  presente  instrumento,  domiciliados  en  esta  ciudad,  calle,  en  adelante  el  
+"CLIENTE",  se  ha  convenido  el  Contrato  Cross  Currency  Swap  que  más  adelante  se  indica,  el  cual  se  
+regirá por las Condiciones Generales de Contratos de Derivados en el Mercado Local suscrito entre ambas 
+partes con fecha 14 de octubre de 2014, documento que, para todos los efectos, se entiende formar parte 
+integrante del presente instrumento: 
+ 
+I. Definiciones: 
+ 
+i) Día Hábil: adicional a la definición establecida en las Condiciones Generales Contratos de Derivados 
+en el Mercado Local, numeral 3,    punto iv,    Día Hábil significa un día que en los bancos comerciales del 
+exterior o mercados financieros internacionales están generalmente abiertos para realizar cotizaciones 
+y/o pagos en el país de la moneda y/o tasa de interés extranjera, debiendo las partes convenir  en el 
+contrato la o las plazas que se utilizarán para efectuar el cálculo de la tasa de interés variable que se 
+deba pagar por la parte que corresponda y la Convención de Días Hábiles que se aplicará en el caso 
+que la Fecha de Fijación, de Pago o de Vencimiento recayere en un día inhábil. 
+ii) Fecha de Fijación significa el primer día de cada Período de Intereses. 
+iii) Fecha de Pago respecto de este Contrato significa las fechas pactadas por las partes en las cuales 
+deben cumplir las obligaciones de pago contraídas en este Contrato. 
+iv)    Fecha de Inicio es la Primera fecha de Fijación, esto es, la fecha en que comienza a devengarse los 
+respectivos intereses sobre los Montos de Capital establecidos por las Partes en el presente Contrato. 
+v) Fecha de Vencimiento significa la última Fecha de Pago estipulada en el Contrato. 
+vi)   Monto Contratado significa la cantidad de Moneda Extranjera, Unidades de Fomento, IVP y/o Moneda 
+Nacional que cada una de las partes han acordado en este Contrato, y que se encuentre vigente en 
+cada Fecha de Pago, cantidad sobre la cual y por el o los Periodos de Intereses pactados, se aplican 
+las Tasas de Interés convenidas en la sección III de este Contrato. 
+vii) Monto  de  Amortización  significa el o los montos de capital que las partes han acordado pagar en 
+cada Fecha de Pago. 
+viii) Periodos de Intereses significa (i) para el primer Período de Intereses, el período que comienza en la 
+primera Fecha de Fijación y termina el día que fijen las partes en este Contrato como primera Fecha de 
+Pago, (ii) y respecto de los siguientes Períodos de Intereses, cada uno de los periodos que comienzan 
+
+Página: 2 
+ 
+en la Fecha de Pago inmediatamente precedente y que termina en la siguiente Fecha de Pago, y así 
+sucesivamente. 
+ix)    Forma de Pago, (a) Los pagos que las partes deban efectuar en Moneda Extranjera deberán hacerse 
+mediante la entrega de cheque bancario girado sobre la ciudad de Nuevo York, Nueva York, Estados 
+Unidos de América (Cheque Bancario Nueva York) o a través de transferencia sobre la misma plaza o 
+ciudad con disponibilidad de cuarenta y ocho horas (valuta 48 horas) o entregando fondos disponibles 
+a las 14:00 horas de la respectiva Fecha de Pago, mediante abono acreditado en la cuenta corriente en 
+esa misma moneda que la parte acreedora haya indicado en el Contrato o que indique posteriormente 
+por  escrito  con  una  anticipación  de  tres  días  de  la  Fecha  de  Pago  o  cualquier  otra  que  se  pacte  
+expresamente en el Contrato respectivo. (b) Los pagos en Moneda Nacional deberán efectuarse en 
+cada  fecha  de  pago  mediante  la  entrega  de  vale  vista  de  la  plaza  o  a  través  de  depósitos  en  la 
+cuenta corriente indicada por cada parte o en cualquier otra que se pacte expresamente en el Contrato 
+Respectivo. 
+ 
+II. Convención de Días Hábiles 
+ 
+Se denomina Convención de Días Hábiles el acuerdo de las partes en el Contrato para ajustar alguna fecha 
+que recayere en un día inhábil, de manera que las Fechas de Fijación, de Pago o de Vencimiento que hubieren 
+estipulado, serán aquellas que resulten de aplicar la Convención de Días Hábiles que hubieren establecido 
+para cada una de ellas, de acuerdo a lo siguiente: 
+a)   Si se estipula como “Siguiente” o “Following”, significará que si cualquier Fecha de Fijación, de Pago o 
+de Vencimiento recayere en un día no hábil, se entenderá prorrogada al Día Hábil siguiente. 
+b)   Si se estipula como “Siguiente Modificado” o “Modified Following”, significará que si cualquier Fecha de 
+Fijación, de Pago o de Vencimiento recayere en un Día no Hábil, se entenderá prorrogada al Día Hábil 
+siguiente, salvo que ese día corresponda a un día del mes calendario siguiente. En tal caso, la Fecha 
+de Fijación, de Pago, o de Vencimiento, será el Día Hábil inmediatamente anterior al especificado. 
+c)   Si se estipula como “Anterior” o “Preceding”, significará que si cualquier Fecha de Fijación, de Pago o 
+de Vencimiento recayere en un Día no Hábil, la Fecha de Fijación, de Pago, o de Vencimiento, será 
+el Día Hábil inmediatamente anterior. 
+
+Página: 3 
+ 
+III. Condiciones Financieras: 
+01. Monto Contratado por Cliente: CLP 1.490.400.000 
+02. Monto Contratado por Banco: USD 1.800.000,00 
+03. Fecha de Inicio: 17/03/2023 
+04. Fecha de Vencimiento: 18/03/2030 
+05. Tasa de Interés Pactada por Cliente: ÍNDICE CÁMARA PROMEDIO 
+Spread: -0.54% 
+Base de Cálculo: ACT/360 
+Calendario Pago: NYC y SAN 
+Calendario Fijación Tasa: SAN 
+Calendario Paridad / Tipo de Cambio: N/A 
+06. Tasa de Interés Pactada por Banco: SOFR (SF) / Compounded 
+Spread: 0% 
+Base de Cálculo: ACT/360 
+Calendario Pago: NYC y SAN 
+Calendario Fijación Tasa: BMA 
+Calendario Paridad / Tipo de Cambio: N/A 
+07. Tipo de Cambio Referencial: 
+Dólar Observado publicado en la página del Banco Central 
+de Chile 1 día hábil antes de la Fecha Término 
+08. Paridad Referencial: N/A 
+09. Lugar de Cumplimiento: Santiago de Chile 
+10. Banco de Referencia: Banco BANCO_C, BANCO_B y   Banco Estado 
+11. Modalidad de Cumplimiento Compensación en CLP 
+12. Forma de Pago: 
+LBTR / LBTR 
+13. Intercambio de Principales: FINAL 
+14. Valuta de Pago: T + 2 
+15. Convención de Días Hábiles: Modified Following 
+16. Break Clause: Sí (5Y) 15/03/2028 
+17. Broker: DIRECTO 
+18. Observaciones: 
+SOFR: Reset Lag T-0 
+ 
+ 
+IV. Obligaciones de las Partes; Swap 
+ 
+(i)   Banco ABC se obliga a pagar a Chilean Bank S en cada una de las Fechas de Pago que se indican a 
+continuación, (i) los intereses devengados conforme la  Tasa de Interés Pactada por sobre el Monto Contratado 
+en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización: 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fijación 
+Tasa 
+Fecha 
+Pago 
+Plazo Saldo Capital Amortiza Interés Tasa Tipo Tasa Spread Moneda 
+17/03/2023 20/09/2023 20/09/2023 22/09/2023 187 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+20/09/2023 18/03/2024 18/03/2024 20/03/2024 180 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+18/03/2024 17/09/2024 17/09/2024 24/09/2024 183 1.490.400.000 0 Por Determinar 
+Dete
+P
+r
+o
+m
+r
+inar 
+ICP -0.54% CLP 
+
+Página: 4 
+ 
+17/09/2024 17/03/2025 17/03/2025 19/03/2025 181 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+17/03/2025 17/09/2025 17/09/2025 23/09/2025 184 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+17/09/2025 17/03/2026 17/03/2026 19/03/2026 181 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+17/03/2026 17/09/2026 17/09/2026 22/09/2026 184 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+17/09/2026 17/03/2027 17/03/2027 19/03/2027 181 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+17/03/2027 20/09/2027 20/09/2027 22/09/2027 187 1.490.400.000 0 Por Determinar 
+Dete
+P
+r
+o
+m
+r
+inar 
+ICP -0.54% CLP 
+20/09/2027 17/03/2028 17/03/2028 21/03/2028 179 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+17/03/2028 20/09/2028 20/09/2028 22/09/2028 187 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+20/09/2028 19/03/2029 19/03/2029 21/03/2029 180 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+19/03/2029 20/09/2029 20/09/2029 24/09/2029 185 1.490.400.000 0 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+20/09/2029 18/03/2030 18/03/2030 20/03/2030 179 1.490.400.000 1.490.400.000 Por Determinar 
+Det 
+Por
+inar 
+erm 
+ICP -0.54% CLP 
+ 
+ 
+ 
+(ii)  Por su parte, Chilean Bank S se obliga a pagar a Banco ABC en cada una de las Fechas de Pago que se 
+indican a continuación, (i)   los intereses  devengados conforme la  Tasa de Interés  Pactada  por sobre  el  Monto  
+Contratado en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización: 
+ 
+Fecha 
+Inicio 
+Fecha 
+Término 
+Fijación 
+Tasa 
+Fecha 
+Paridad 
+Fecha 
+Pago 
+Plazo Saldo Capital Amortiza Interés Tasa Tipo Tasa Spread Moneda 
+17/03/2023 20/09/2023 19/09/2023 14/09/2023 22/09/2023 187 1.800.000,00 0 Por Determinar 
+Dete
+P
+r
+o
+m
+r
+inar 
+SOFR 0% USD 
+20/09/2023 18/03/2024 15/03/2024 14/03/2024 20/03/2024 180 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+18/03/2024 17/09/2024 16/09/2024 13/09/2024 24/09/2024 183 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+17/09/2024 17/03/2025 14/03/2025 13/03/2025 19/03/2025 181 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+17/03/2025 17/09/2025 16/09/2025 15/09/2025 23/09/2025 184 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+17/09/2025 17/03/2026 16/03/2026 13/03/2026 19/03/2026 181 1.800.000,00 0 Por Determinar 
+Dete
+P
+r
+o
+m
+r
+inar 
+SOFR 0% USD 
+17/03/2026 17/09/2026 16/09/2026 15/09/2026 22/09/2026 184 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+17/09/2026 17/03/2027 16/03/2027 15/03/2027 19/03/2027 181 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+17/03/2027 20/09/2027 17/09/2027 15/09/2027 22/09/2027 187 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+20/09/2027 17/03/2028 16/03/2028 15/03/2028 21/03/2028 179 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+17/03/2028 20/09/2028 19/09/2028 14/09/2028 22/09/2028 187 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+20/09/2028 19/03/2029 16/03/2029 15/03/2029 21/03/2029 180 1.800.000,00 0 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+19/03/2029 20/09/2029 19/09/2029 13/09/2029 24/09/2029 185 1.800.000,00 0 Por Determinar 
+Dete
+P
+r
+o
+m
+r
+inar 
+SOFR 0% USD 
+20/09/2029 18/03/2030 15/03/2030 14/03/2030 20/03/2030 179 1.800.000,00 1.800.000,00 Por Determinar 
+Det 
+Por 
+nar 
+ermi 
+SOFR 0% USD 
+ 
+ 
+(iii) Las  obligaciones  de  pago  de  las  partes  se  cumplirán  bajo  la  modalidad  de  Compensación.  El  Diferencial  de  
+Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o 
+Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago. 
+ 
+V.   Intercambios 
+ 
+(i)   Intercambio Inicial: 
+• Fecha Intercambio Inicial: N/A 
+• Monto Intercambio Inicial para Chilean Bank S: N/A 
+• Monto Intercambio Inicial para Banco ABC: N/A 
+(ii)  Intercambio Final: 
+• Fecha Intercambio Final: 20/03/2030 
+• Monto Intercambio Final para Chilean Bank S: USD 1.800.000,00 + Intereses 
+• Monto Intercambio Final para Banco ABC:  CLP 1.490.400.000 + Intereses 
+ 
+ 
+VI. Cumplimiento 
+(i)   Entrega Física 
+
+Página: 5 
+ 
+(A)  En cada Fecha de Pago o Fecha de Liquidación Anticipada, según corresponda, cada Parte se obliga 
+a pagar a la otra los intereses devengados durante el periodo transcurrido entre la respectiva Fecha 
+de Fijación y la respectiva Fecha de Pago o Fecha de Liquidación Anticipada, según corresponda, por 
+sobre el o    los Montos Contratados acordados en este Contrato y vigentes durante el respectivo Periodo 
+de Intereses, y conforme a la Tasas de Interés pactadas por cada una de las Partes. 
+(B)  Además de los pagos que las Partes deban efectuarse de conformidad a la letra (A) anterior, las Partes 
+podrán acordar el pago en cada Fecha de Pago, del Monto de Amortización pactado en este Contrato 
+para cada Fecha de Pago. 
+ 
+(ii)  Compensación 
+ 
+1. Pago de Intereses 
+ 
+(A) En el último día de cada Periodo de Intereses las Partes calcularán los intereses devengados entre la 
+respectiva Fecha de Fijación y    la respectiva Fecha de Pago o Fecha de Liquidación Anticipada, según 
+corresponda,  por  sobre  los  Montos  Contratados,  y  conforme  las  Tasas  de  Interés  pactadas  por  las  
+Partes en este Contrato. 
+(B) Establecida  la  cuantía  en  Moneda  Nacional  de  las  obligaciones  de  cada  parte  de  conformidad  a  lo  
+establecido  en  la  cláusula  4.3.  de  las  Condiciones  Generales,  dichas  cantidades  se  compensarán  
+extinguiéndose recíprocamente hasta la concurrencia de sus valores. La parte que resultare deudora 
+deberá pagar en cada Fecha de Pago la diferencia (el “Diferencial de Intereses”) a la parte que resulte 
+acreedora. 
+El Diferencial de Intereses se pagará en Moneda Nacional, en Dólares u otra Moneda Extranjera según se 
+estipule en la  sección III    de este Contrato. En este último caso, el Diferencial de Intereses deberá convertirse 
+a   Dólares o a la Moneda Extranjera conforme al Tipo de Cambio Referencial o Paridad Referencial pactada 
+en  la  sección  III  de  este  Contrato  que  se  encuentre  vigente  en  la  respectiva  Fecha  de  Pago  o  Fecha  de  
+Liquidación Anticipada, según corresponda. 
+ 
+2. Pago de Capital 
+(A) Además de los pagos que las Partes deban efectuarse de conformidad a la letra (B) del numeral 1 ítem ii) de 
+esta sección V, las Partes pagarán en cada Fecha de Pago los Montos de Amortización que hubieren pactado 
+en la sección IV de este Contrato. 
+(B) Establecida en Moneda Nacional la cuantía de los respectivos Montos de Amortización conforme lo dispuesto 
+en  la  cláusula  4.3  de  las  Condiciones  Generales,  las  cantidades  respectivas  se  compensarán  extinguiéndose  
+recíprocamente  hasta  la  concurrencia  de  sus  valores.  La  Parte  que  resultare  deudora  deberá  pagar  en  cada  
+Fecha de Pago la diferencia (el “Diferencial de Amortización”) a la Parte que resulte acreedora. 
+El Diferencial de Amortización se pagará en Moneda Nacional o en Dólares, según se estipule en la sección III de 
+este Contrato. En este último caso, el Diferencial de Intereses deberá convertirse a    Dólares o a la  Moneda Extranjera 
+
+Página: 6 
+ 
+conforme  al  Tipo  de  Cambio  Referencial  o  Paridad  Referencial  pactada  en  la  sección  III  de  este  Contrato  que  se  
+encuentre vigente en la respectiva Fecha de Pago. 
+VII. Término Anticipado. 
+Las  partes  acuerdan  que  dentro  del  plazo  de  diez  (10)  días  Hábiles  contados  desde  la  fecha  en  que  se  
+cumpla  cada  cinco  años  (5Y)  desde  la  fecha  de  celebración  de  este  Contrato,  cualquiera  de  las  partes  
+tendrá la facultad de terminar en forma unilateral y anticipada el presente Contrato. La terminación deberá 
+comunicarse a la otra parte antes de las 11:00 horas a.m. de cualquiera de los días comprendidos en el 
+citado plazo (en adelante, la “Fecha de Terminación Anticipada”). Dentro de los 2 días Hábiles siguientes 
+a  la  Fecha  de  Terminación  Anticipada  deberá  procederse  al  pago,  por  la  parte  que  resulte  deudora,  del  
+Valor de Mercado del Contrato, calculado conforme a la Tasa de Valorización Referencial de Mercado y al 
+Plazo Residual a la Fecha de Terminación Anticipada. Al efecto: 
+(i)   El  “Valor  de  Mercado  del  Contrato”  corresponderá:  (i)  a  la  valorización  -   positiva  o  negativa  -   que 
+efectúen las partes de común acuerdo o, (ii) en caso de no haber acuerdo, lo cual se presumirá en forma 
+irrevocable si las partes no llegan a un acuerdo dentro del plazo de cinco (5) Días Hábiles contados desde 
+la Fecha de Terminación Anticipada, a la valorización – positiva o negativa – que efectúen los Bancos de 
+Referencia, en la forma que continuación se indica. 
+Para  los  efectos  de  la  valorización  a  que  se  refiere  el  numeral  (ii)  precedente,  el  Banco  procederá  a  
+requerir  a  los  tres  bancos  comerciales  indicados  en  el  respectivo  Contrato  (los  “Bancos  de  Referencia”)  
+que  valoricen,  a  valor  presente,  las  obligaciones  de  las  partes  a  los  precios  de  mercado  vigentes  en  la  
+Fecha de Terminación Anticipada y por el Plazo Residual a la Fecha de Terminación Anticipada, utilizando 
+la  Tasa  Referencial  de  Mercado  como  tasa  de  descuento  para  cada  uno  de  los  flujos  del  Contrato.  Para  
+estos efectos: 
+Los Bancos de Referencia deberán proporcionar, tan pronto como sea posible, su valorización conforme a 
+la  Tasa  Referencial  de  Mercado,  mediante  escrito  con  la  firma  del  Tesorero  o  de  quien  haga  sus  veces  
+después de esa fecha; 
+Los  valores  finales  proporcionados  por  cada  uno  de  los  Bancos  de  Referencia  serán  promediados,  y  el  
+resultado de ello será el Valor de Mercado del Contrato, determinación que será definitiva para las partes. 
+Ninguna de las partes estará autorizada para proporcionar a los Bancos de Referencia la individualización 
+de su contraparte. 
+La  “Tasa  Referencial  de  Mercado”  corresponderá  a  la  tasa  de  interés  anual  al  valor  "promedio  simple"  
+(promedio de los “bid” y “offer”) publicada en la página “TRCH Opción 1” por Bloomberg a las 11:00 horas 
+a.m. (hora de Santiago, Chile) de la Fecha de Terminación Anticipada, y que corresponda según el Plazo 
+Residual  a  la  Fecha  de  Terminación  Anticipada.  En  el  evento  que  dicho  Plazo  Residual  a  la  Fecha  de  
+Terminación  Anticipada  no  coincida  exactamente  con  ninguno  de  los  plazos  para  los  cuales  exista  
+cotización  de  la  Tasa  Referencial  de  Mercado,  se  procederá  a  la  interpolación  lineal  de  las  tasas  
+publicadas (utilizando para cada una de ellas el promedio simple entre sus “bids” y “offers”, si los hubiere) 
+para los plazos entre los cuales se encuentre el Plazo Residual a la Fecha de Terminación Anticipada. En 
+caso de que en la fecha de valorización esta Tasa Referencial de Mercado no se encontrare disponible o 
+no  fuere  publicada  por  cualquiera  causa  o  motivo,  se  entenderá  por  “Tasa  Referencial  de  Mercado”  el  
+promedio de las tasas que para este efecto informen los Bancos de Referencia, con arreglo a los precios y 
+condiciones  de  mercado  vigentes  a  las  11:00  horas  a.m.  (hora  de  Santiago,  Chile)  de  la  Fecha  de  
+Terminación Anticipada. 
+(ii)  El "Plazo Residual a la Fecha de Terminación Anticipada" corresponderá a aquel período que medie 
+
+Página: 7 
+ 
+entre la Fecha de Terminación Anticipada y la Fecha de Vencimiento. 
+La valorización efectuada conforme a esta cláusula se entenderá concluyente, definitiva y obligatoria para 
+ambas partes 
+ 
+ 
+VIII. Definiciones: Ejemplares 
+ 
+A   menos que se exprese lo contrario en este instrumento, los términos en mayúsculas tendrán el significado 
+que para ellos se señala en las Condiciones Generales. El presente contrato se firma en dos ejemplares de 
+idéntico tenor y fecha, quedando uno en poder de cada parte. 
+ 
+  
+pp. Chilean Bank S: 
+RUT: PSEUDONYMISED RUT 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pp. Banco ABC RUT:  
+Domicilio: AVDA.COSTANERA SUR 2710 
+TORRE A 
+Teléfono:  
+Rep. Legal: RUT:  
+Rep. Legal:  RUT:  
+Domicilio:  
+Teléfono:  Rep. 
+Legal: 
+RUT: 
+Rep. Legal: 
+RUT: 

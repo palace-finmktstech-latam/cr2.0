@@ -130,14 +130,35 @@ Create two JSON files with identical structure but different content:
 3. Common variations: "Actual/360" → "ACT/360"
 
 **settlementType & settlementCurrency:**
-1. Extract settlement method from "Modalidad de Cumplimiento" or "Modalidad de Pago" fields
-2. Map Spanish terms to standardized values:
-   - "Compensación" or "Compensado" → "CASH"
-   - "Entrega Física" → "PHYSICAL"
-3. For settlement currency:
-   - **CASH settlement**: Both legs MUST have the same settlement currency (cannot be different)
-   - **PHYSICAL settlement**: Legs will have different settlement currencies matching their respective notional currencies
-4. Convert currency codes to ISO format using standardization rules
+
+**CRITICAL RULE - Settlement Type Determination:**
+The settlement type is determined by the SETTLEMENT CURRENCIES, not by contract terminology:
+
+1. **If both legs have the SAME settlement currency** → settlementType = "CASH" for both legs
+   - This means the net difference is calculated and only one party pays
+   - Even if the contract says "Entrega Física", ignore this and use CASH when settlement currencies match
+   - Example: Leg 0 settles in CLP, Leg 1 settles in CLP → BOTH legs are CASH
+
+2. **If legs have DIFFERENT settlement currencies** → settlementType = "PHYSICAL" for both legs
+   - This means each party delivers their full leg amount in their respective currency
+   - Example: Leg 0 settles in USD, Leg 1 settles in CLP → BOTH legs are PHYSICAL
+
+**How to determine settlement currency for each leg:**
+- Look for "Modalidad de Cumplimiento" or "Modalidad de Pago" fields
+- Common Spanish patterns:
+  - "Compensado CLP" / "Compensado en CLP" / "Compensación en CLP" → settlementCurrency = CLP
+  - "Compensado USD" / "Compensado en USD" → settlementCurrency = USD
+  - "Moneda Nacional" → settlementCurrency = CLP (Chile's national currency)
+  - "se pagará en [currency]" → settlementCurrency = [currency]
+- **SPECIAL RULE**: It is IMPOSSIBLE to settle CLF in CLF as it is not a physical currency. If a CLF leg does not have an explicit settlement currency, default to CLP.
+- Convert currency codes to ISO format (UF → CLF, but remember CLF cannot be settlement currency)
+
+**Step-by-step process:**
+1. First, determine the settlement currency for each leg (CLP, USD, EUR, etc.)
+2. Then, compare the two settlement currencies:
+   - Same currency → settlementType = "CASH" for both legs
+   - Different currencies → settlementType = "PHYSICAL" for both legs
+3. Apply the same settlementType to BOTH legs (never have one CASH and one PHYSICAL)
 
 **Date Inheritance:**
 - Copy effectiveDate and terminationDate from header to each leg

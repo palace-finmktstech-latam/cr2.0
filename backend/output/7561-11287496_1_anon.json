@@ -1,0 +1,151 @@
+{
+  "header": {
+    "source": "contrato",
+    "tradeDate": {
+      "date": "01/10/2025",
+      "businessDayConvention": "FOLLOWING",
+      "tradeDateBusinessDayConventionClear": false,
+      "businessCenters": [
+        "CLSA"
+      ],
+      "tradeDateBusinessCentersClear": true
+    },
+    "effectiveDate": {
+      "date": "01/10/2025",
+      "businessDayConvention": "FOLLOWING",
+      "effectiveDateBusinessDayConventionClear": false,
+      "businessCenters": [
+        "CLSA"
+      ],
+      "effectiveDateBusinessCentersClear": true
+    },
+    "terminationDate": {
+      "date": "10/04/2026",
+      "businessDayConvention": "FOLLOWING",
+      "terminationDateBusinessDayConventionClear": false,
+      "businessCenters": [
+        "CLSA"
+      ],
+      "terminationDateBusinessCentersClear": true
+    },
+    "party1": {
+      "partyId": "ThisBank",
+      "partyName": "Banco ABC"
+    },
+    "party2": {
+      "partyId": "OurCounterparty",
+      "partyName": "BANCO_D"
+    },
+    "tradeId": "11287496",
+    "tradeIdType": "INTERNAL",
+    "contractName": "7561-11287496_1_anon"
+  },
+  "legs": [
+    {
+      "legId": "Pata-Activa",
+      "payerPartyReference": "OurCounterparty",
+      "receiverPartyReference": "ThisBank",
+      "notionalAmount": 32219200000.0,
+      "notionalCurrency": "CLP",
+      "rateType": "FIXED",
+      "fixedRate": 0.0,
+      "dayCountFraction": "ACT/360",
+      "effectiveDate": {
+        "date": "01/10/2025",
+        "businessDayConvention": "FOLLOWING",
+        "effectiveDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "effectiveDateBusinessCentersClear": true
+      },
+      "terminationDate": {
+        "date": "10/04/2026",
+        "businessDayConvention": "FOLLOWING",
+        "terminationDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "terminationDateBusinessCentersClear": true
+      },
+      "settlementType": "PHYSICAL",
+      "settlementCurrency": "CLP",
+      "paymentBusinessCenters": [
+        "CLSA"
+      ],
+      "paymentDayConvention": "FOLLOWING",
+      "paymentDayConventionClear": false,
+      "paymentFrequency": "TERM",
+      "paymentFrequencyClear": true,
+      "calculationDayConvention": {
+        "businessCenters": [
+          "CLSA"
+        ],
+        "businessDayConvention": "FOLLOWING",
+        "calculationDayConventionClear": true
+      },
+      "calculationPeriodFrequency": "TERM",
+      "calculationPeriodFrequencyClear": true,
+      "fxFixing": {
+        "fxFixingReference": "UAH_GFI_UAH01",
+        "fxFixingOffset": 0,
+        "fxFixingDayType": "BUSINESS",
+        "dateRelativeTo": "CALCULATION_PERIOD_DATES",
+        "fxFixingDayConvention": "FOLLOWING",
+        "fxFixingBusinessCenters": [
+          "CLSA"
+        ]
+      },
+      "paymentDateOffset": 1,
+      "paymentDateOffsetClear": true
+    },
+    {
+      "legId": "Pata-Pasiva",
+      "payerPartyReference": "ThisBank",
+      "receiverPartyReference": "OurCounterparty",
+      "notionalAmount": 800000.0,
+      "notionalCurrency": "CLF",
+      "rateType": "FIXED",
+      "fixedRate": 0.0,
+      "dayCountFraction": "ACT/360",
+      "effectiveDate": {
+        "date": "01/10/2025",
+        "businessDayConvention": "FOLLOWING",
+        "effectiveDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "effectiveDateBusinessCentersClear": true
+      },
+      "terminationDate": {
+        "date": "10/04/2026",
+        "businessDayConvention": "FOLLOWING",
+        "terminationDateBusinessDayConventionClear": false,
+        "businessCenters": [
+          "CLSA"
+        ],
+        "terminationDateBusinessCentersClear": true
+      },
+      "settlementType": "PHYSICAL",
+      "settlementCurrency": "CLP",
+      "paymentBusinessCenters": [
+        "CLSA"
+      ],
+      "paymentDayConvention": "FOLLOWING",
+      "paymentDayConventionClear": false,
+      "paymentFrequency": "TERM",
+      "paymentFrequencyClear": true,
+      "calculationDayConvention": {
+        "businessCenters": [
+          "CLSA"
+        ],
+        "businessDayConvention": "FOLLOWING",
+        "calculationDayConventionClear": false
+      },
+      "calculationPeriodFrequency": "TERM",
+      "calculationPeriodFrequencyClear": true,
+      "paymentDateOffset": 1,
+      "paymentDateOffsetClear": true
+    }
+  ]
+}

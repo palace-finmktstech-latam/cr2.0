@@ -1,0 +1,219 @@
+
+
+ 
+EnSantiago,Chile,a01deOctubrede2025,entre,porunaparte,BANCO_D,sociedad
+anónimabancaria,RolÚnicoTributarioN°PSEUDONYMISED RUT,debidamenterepresentadoporlos
+apoderadosfacultadosqueseindividualizanenlapartefinaldeesteinstrumento,todosdomiciliados
+enPresidenteRiescoN°5537,LasCondes,RegiónMetropolitana,enadelanteel“BANCO”;yporla
+otra,Banco ABC,RolÚnicoTributarioN°97011000-3debidamenterepresentadapor
+losapoderadosfacultadosqueseindividualizanenlapartefinaldeesteinstrumento,todos
+domiciliadosen,PSEUDONYMISED ADDRESS,SANTIAGOenadelanteel"CLIENTE",sehaconvenidoelsiguiente
+ContratodeDerivados,elcualseregiráporlasestipulacionescontenidasenelpresenteinstrumento
+comotambiénportodolodispuestaenelcontratodeCondicionesGeneralesdeDerivadosen
+MercadoLocalsuscritoentrelasmismaspartes,documentoque,paratodoslosefectos,seentiende
+formar parte integrante del presente instrumento:
+I.                    DEFINICIONES:
+ 
+i)         DíaHábil:AdicionalaladefiniciónestablecidaenlasCondicionesGenerales.DíaHábil
+significaundíaenquelosbancoscomercialesdelexterioromercadosfinancieros
+internacionalesestángeneralmenteabiertospararealizarcotizacionesy/opagosenelpaís
+delamoneday/otasadeinterésextranjera,debiendolaspartesconvenirenelContratola
+olasplazasqueseutilizaránparaefectuarelcálculodelatasadeinterésvariablequese
+debapagarporlapartequecorrespondaylaConvencióndedíasHábilesqueseaplicará
+en el caso que la Fecha de Fijación, de Pago o Vencimiento recayere en un día inhábil.
+ii)        FechadeCierre:Fechaenquesepactanentrelasparteslascondicionesfinancierasde
+la operación.
+iii)      Fecha de Inicio: Fecha de inicio del primer periodo de intereses.
+iv)      Fecha de Término: Fecha en la cual termina cada periodo de intereses.
+v)        FechadeVencimiento:Significalaúltimadefechadetérminoestipuladaenelpresente
+Contrato.
+vi)      FechadeFijación:Significaeldíaenquesedeterminarálatasadeinterésautilizarpara
+cada periodo.
+vii)    FechadePago:Significalasfechaspactadasporlaspartesenlascualesdebencumplir
+las obligaciones de pago
+viii)   MontoContratado:SignificalacantidaddeMonedaExtranjera,UnidadesdeFomento,
+IVPy/oMonedaNacionalquecadaunadelasparteshanacordadoenesteContrato,y
+queseencuentrevigenteencadafechadetérmino,cantidadsobrelacualyporelolos
+PeríodosdeInteresespactados,seaplicanlasTasasdeInterésconvenidasenlasección
+II de este Contrato.
+ix)      MontodeAmortización:Significaelolosmontosdecapitalquelasparteshanacordado
+pagar en cada fecha de término.
+x)        IntercambioInicial:Correspondealintercambiodelcapitalcontratadoenlafechade
+inicio del contrato en la moneda definida por cada parte en las condiciones financieras.
+xi)      IntercambioFinal:Correspondealmontoindicadoenelúltimoperiododelacolumna
+“amortización”.
+xii)    PeriodosdeIntereses:Significa(i)paraelprimerPeríododeInterés,elperíodoque
+comienzaenlaprimeraFechadeInicioyterminaeldíaquefijenlasParteseneste
+ContratocomoprimeraFechadeTérmino(ii)yrespectodelossiguientesPeríodosde
+Interés,cadaunodelosperíodosquecomienzanenlaFechadeTérminoinmediatamente
+precedente que termina en la siguiente Fecha de Término, y así sucesivamente.
+ 
+1/6
+Folio: 11287496
+ 
+
+II.                  CONDICIONES FINANCIERAS.
+ 
+      1.              Monto Contratado por el Cliente: CLF800.000,0000
+       2.             Monto Contratado por el Banco: CLP32.219.200.000
+       3.             Fecha de Inicio: 01 de Octubre 2025
+       4.             Fecha de Vencimiento: 10 de Abril 2026
+       5.             Tasa de Interés Pactada por el Cliente: Fija, 0,0000%
+       6.             Spread pactado por el Cliente: No Aplica
+       7.             Base de Cálculo Cliente: LIN ACT/360
+       8.             Tasa de Interés Pactada por el Banco: Fija, 0,0000%
+       9.             Spread pactado por el Banco: No Aplica
+   10.             Base de Cálculo Banco: LIN ACT/360
+   11.             Tipo de cambio Referencia: No Aplica
+   12.             ParidaddeReferencia:UnidaddeFomentopublicadaenlapáginadelBancoCentral
+de Chile, según fecha de término.
+   13.             Periodicidad: Ver Tabla
+   14.             Lugar de Cumplimiento: Santiago, Chile.
+   15.             Modalidad de Pago: Compensado CLP
+   16.             Forma de Pago: Según instrucciones acordadas con el cliente
+   17.             Valuta de Pago: T+1
+   18.             Intercambio Inicial: No Aplica
+   19.             Intercambio Final: 13 de Abril 2026
+Banco Itaú paga: CLP 32.219.200.000
+Cliente paga: CLF 800.000,0000
+   20.             Intercambio Adicional: No Aplica
+   21.             Modalidad para días festivos Banco:
+-           Calendario de Cálculo: Santiago.
+-           Calendario de Pago: Santiago.
+-           Calendario de Fijación: No Aplica
+   22.             Modalidad para días festivos Cliente:
+-           Calendario de Cálculo: Santiago.
+-        Calendario de Pago: Santiago.
+-           Calendario de Fijación: No Aplica
+   23.             BancosdeReferencia:BANCO_B,BANCO_C,BANCODE
+CREDITO E INVERSIONES (Chilean Bank b) y BANCO Chilean Bank S
+   24.             Obligaciones de las Partes: Amortización e Intereses, según se detalla a continuación.
+   25.             Indexación: No Aplica
+ 
+ 
+ 
+III.                OBLIGACIONES ENTRE LAS PARTES.
+ 
+i)         Porelpresenteinstrumento,elBANCOseobligaapagaralCLIENTE,encadaunadelas
+Fechas de Pago, las cantidades que se indican a continuación:
+a)El"MontodeIntereses"determinadoparacadaunadedichasfechas,yqueresultede
+aplicarlatasaindicadaenlacolumna"Tasa"sobreelmontoindicadoenlacolumna
+"CapitalVigente",porelnúmerodedíasqueincluyacadaPeríododeIntereses,segúnse
+indica en la columna "Días".
+b)El monto determinado para cada una de dichas fechas en la columna "Amortización".
+2/6
+Folio: 11287496
+ 
+
+ 
+BANCO_D CHILE Paga
+Fecha
+Inicio
+Fecha
+Termino
+Fecha
+Pago
+DiasCapital VigenteTasa (%)AmortizacionInteresCuota
+01/10/202510/04/202613/04/202619132.219.200.0000,00000%32.219.200.000032.219.200.000
+*ElMontodeInterésqueelBANCOseobligaapagaralCLIENTEencadaFechadePago,seráelque
+resultedeaplicarlatasaindicadaenlacolumnatasasobreelmontoindicadoenlacolumnaCapitalVigente,
+por el número de días que incluya cada Período de Intereses.
+3/6
+Folio: 11287496
+ 
+
+ 
+ii)        Porelpresenteinstrumento,elCLIENTEseobligaapagaralBANCO,encadaunadelas
+Fechas de Pago, las cantidades que se indican a continuación:
+a)El"MontodeIntereses"determinadoparacadaunadedichasfechas,yqueresultede
+aplicarlatasaindicadaenlacolumna"Tasa"sobreelmontoindicadoenlacolumna
+"CapitalVigente",porelnúmerodedíasqueincluyacadaPeríododeIntereses,segúnse
+indica en la columna "Días".
+b)El monto determinado para cada una de dichas fechas en la columna "Amortización".
+ 
+BANCO_D CHILE Recibe
+Fecha
+Inicio
+Fecha
+Termino
+Fecha
+Pago
+DiasCapital VigenteTasa (%)AmortizacionInteresCuota
+01/10/202510/04/202613/04/2026191800.000,00000,00000%800.000,00000,0000800.000,0000
+*ParatodosloscálculosaefectuarencadaunadelasFechasdePagoseñaladasenesteliteral,seutilizará
+elvalordelaUFpublicadoparalarespectivaFechadetérmino(Ajustadoaldíahábilsiguientesi
+corresponde).**ElMontodeInterésqueelBANCOseobligaapagaralCLIENTEencadaFechadePago,
+seráelqueresultedeaplicarlatasaindicadaenlacolumnatasasobreelmontoindicadoenlacolumna
+Capital Vigente, por el número de días que incluya cada Período de Intereses.
+4/6
+Folio: 11287496
+ 
+
+ 
+IV.                CUMPLIMIENTO.
+LasPartesacuerdanquelasobligacionesderivadasdelpresenteContrato,segúnseestablecenenla
+SecciónIIIanterior,secumpliránbajolamodalidaddeCompensadoenconformidadconelsiguiente
+procedimiento.
+i)         Entrega Física
+A)EncadaFechadePagocadaparteseobligaapagaralaotralosinteresesdevengados
+duranteelperiodotranscurridoentrelarespectivaFechadeInicioylarespectivaFechade
+TérminoodeLiquidaciónAnticipada,segúncorresponda,porsobreelolosMontos
+ContratadosacordadosenesteContratoyvigentesduranteelrespectivoPeriodode
+Intereses,conformealasTasasdeInterésyBasesdeCálculopactadaporcadaunade
+las partes.
+B)AdemásdelospagosquelaspartesdebanefectuarsedeconformidadalaletraA,
+cláusula(i)laspartespagaránencadaFechadeTérminolosMontosdeAmortizaciónque
+hubieren pactado en la sección II de este Contrato.
+ii)        Compensación
+A)EnelúltimodíadecadaPeriododeIntereses,laspartescalcularánlosintereses
+devengadosentrelarespectivaFechadeInicioylarespectivaFechadeTérminoode
+LiquidaciónAnticipada,porsobreelrespectivoCapitalVigente,conformealasTasasde
+Interés y Bases de Cálculo pactadas por las partes de este Contrato.
+B)AdemásdelospagosquelaspartesdebanefectuarsedeconformidadalaletraAdeesta
+cláusulalaspartespagaránencadaFechadeTérminolosMontosdeAmortizaciónque
+hubieren pactado en la sección II de este Contrato.
+C)EstablecidalacuantíaenMonedaNacionaldelasobligacionesdecadaparte,de
+conformidadaloestablecidoenlacláusula4.3.delasCondicionesGenerales,dichas
+cantidadessecompensaránextinguiéndoserecíprocamentehastalaconcurrenciadesus
+valores.LapartequeresultaredeudoradeberápagarencadaFechadeTérminola
+diferencia (el "Diferencial de Intereses o Amortización") a la parte que resulte acreedora.
+ElDiferencialdeInteresesyAmortizaciónsepagaráenMonedaNacionaloenDólares,segúnse
+estipule en la sección II de este Contrato.
+5/6
+Folio: 11287496
+ 
+
+   
+   
+______________________________ _______________________________
+p.p. BANCO_D CHILE p.p. BANCO_D CHILE
+Nombre:
+Rut:
+ 
+ 
+Nombre:
+Rut:
+ 
+   
+   
+_______________________________ _______________________________
+p.p. CLIENTE p.p. CLIENTE
+Nombre:
+Rut:
+ 
+ 
+Nombre:
+Rut:
+ 
+ 
+V.         DEFINICIONES EJEMPLARES
+Amenosqueseexpreselocontrarioenesteinstrumento,lostérminosenmayúsculatendránel
+significado que para ellos se señala en las Condiciones Generales.
+Asimismo,encasodeconflictoodiscrepanciaentrelasdisposicionesdelasCondicionesGeneralesy
+las de este Contrato de Derivados, prevalecerán las disposiciones de este último.
+ElpresenteContratosefirmaendosejemplaresdeidénticotenoryfecha,quedandounoenpoderde
+cada parte.
+ 
+6/6
+Folio: 11287496
+ 

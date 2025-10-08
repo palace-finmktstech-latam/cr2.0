@@ -65,6 +65,7 @@ _session_all_contracts = []  # List of all extracted contract JSONs
 _session_date_folder = None  # Path to current date folder being processed
 _session_bank_name = None  # Bank name for current processing session
 _session_mapped_trades = None  # Cached mapped trades JSON data from mapping_program output
+_session_pending_corrections = []  # Stores pending corrections from cross_validate for apply_corrections
 
 
 # ==================== FILE I/O TOOLS ====================
@@ -201,16 +202,21 @@ def run_cdm_generator() -> str:
                 error_msg += f"Standard output:\n{result.stdout}"
             return error_msg
 
-        # Validate output files were created
+        # Validate output files were created (check both root and subfolders)
         output_files = list(output_dir.glob("*.json"))
-        if not output_files:
+        output_files_recursive = list(output_dir.glob("**/*.json"))
+
+        if not output_files and not output_files_recursive:
             return f"WARNING: CDM generator completed but no output files found in {output_dir}\n\nOutput:\n{result.stdout}"
 
+        # Use recursive search if no files in root
+        files_to_report = output_files if output_files else output_files_recursive
+
         # Success!
-        file_list = "\n".join([f"  - {f.name}" for f in output_files])
+        file_list = "\n".join([f"  - {f.relative_to(output_dir)}" for f in files_to_report])
         msg = f"SUCCESS: CDM generation completed!\n"
         msg += f"Input files: {len(input_files)}\n"
-        msg += f"Output files: {len(output_files)}\n"
+        msg += f"Output files: {len(files_to_report)}\n"
         msg += f"Output directory: {output_dir}\n\n"
         msg += f"Generated CDM files:\n{file_list}"
 
@@ -298,6 +304,92 @@ def run_pdf_report() -> str:
         return "ERROR: PDF report generation timed out after 5 minutes"
     except Exception as e:
         return f"ERROR running PDF report generator: {str(e)}"
+
+
+def resume_workflow(date_str: str, bank_name: str, start_from: str) -> str:
+    """
+    Resume the bank processing workflow from a specific step.
+
+    Use this when you've manually fixed files and want to continue from a certain point
+    without re-running previous steps (like extraction).
+
+    Args:
+        date_str: Date in dd/mm/yyyy format (e.g., "01/10/2025")
+        bank_name: Bank name with country code (e.g., "BankAlias1CL")
+        start_from: Where to resume from:
+            - "mapping": Re-run mapping program, then continue full workflow
+            - "cdm_generator": Run CDM generator and PDF report (skip extraction)
+            - "pdf_report": Run only PDF report (skip everything else)
+
+    Returns:
+        Status message with results of each step executed
+    """
+    global _session_date_folder, _session_bank_name
+    from datetime import datetime
+    from pathlib import Path
+
+    try:
+        # Parse date and set up session
+        date_obj = datetime.strptime(date_str, "%d/%m/%Y")
+        date_folder_name = date_obj.strftime("%d%m%Y")
+
+        base_path = Path(r"C:\Users\bencl\OneDrive - palace.cl\Documents\Palace\Ideas\Contract Extraction\v2.0\Servicio")
+        _session_date_folder = base_path / bank_name / date_folder_name
+        _session_bank_name = bank_name
+
+        if not _session_date_folder.exists():
+            return f"ERROR: Date folder not found: {_session_date_folder}"
+
+        results = []
+        results.append(f"Session initialized: {_session_date_folder}")
+        results.append(f"Bank: {_session_bank_name}")
+        results.append(f"Resuming workflow from: {start_from}")
+        results.append("")
+
+        # Load mapped trades into session (needed for matching and PDF report)
+        results.append("=== Loading mapped trades into session ===")
+        load_result = load_mapped_trades()
+        results.append(load_result)
+        results.append("")
+
+        # Execute requested steps
+        if start_from == "mapping":
+            results.append("=== STEP 1: Running mapping program ===")
+            mapping_result = run_mapping_program(date_str, bank_name)
+            results.append(mapping_result)
+            results.append("")
+
+            results.append("=== STEP 2: Running CDM generator ===")
+            cdm_result = run_cdm_generator()
+            results.append(cdm_result)
+            results.append("")
+
+            results.append("=== STEP 3: Running PDF report ===")
+            pdf_result = run_pdf_report()
+            results.append(pdf_result)
+
+        elif start_from == "cdm_generator":
+            results.append("=== STEP 1: Running CDM generator ===")
+            cdm_result = run_cdm_generator()
+            results.append(cdm_result)
+            results.append("")
+
+            results.append("=== STEP 2: Running PDF report ===")
+            pdf_result = run_pdf_report()
+            results.append(pdf_result)
+
+        elif start_from == "pdf_report":
+            results.append("=== Running PDF report ===")
+            pdf_result = run_pdf_report()
+            results.append(pdf_result)
+
+        else:
+            return f"ERROR: Unknown start_from value '{start_from}'. Valid options: mapping, cdm_generator, pdf_report"
+
+        return "\n".join(results)
+
+    except Exception as e:
+        return f"ERROR resuming workflow: {str(e)}"
 
 
 def read_contract_file(filename: str) -> str:
@@ -1639,18 +1731,19 @@ def query_contract_data(question: str) -> str:
 
 def validate_extraction() -> str:
     """
-    Validates the extracted contract data and generates a quality report.
+    Validates the structural integrity of extracted contract data.
 
-    Performs comprehensive validation including:
-    - Structural validation (leg count, expected combinations, unusual structures)
-    - Completeness validation (critical fields populated)
-    - Clarity validation (fields marked as unclear)
-    - Data quality validation (suspicious values, invalid data)
-    - Consistency validation (FX fixing logic, payer/receiver relationships)
+    Performs structural validation only:
+    - Leg count and structure (expected 2-leg swaps)
+    - Rate type combinations (FIXED/FLOATING patterns)
+    - Payer/receiver relationships (valid swap directions)
+    - Critical field presence (not values, just existence)
+
+    Does NOT validate extraction quality or field values.
+    Use cross_validate() for quality verification.
 
     Returns:
-        Human-readable validation report with quality score, structural analysis,
-        and flags for manual review
+        Human-readable structural validation report
     """
     global _session_merged_contract
 
@@ -1662,11 +1755,7 @@ def validate_extraction() -> str:
 
         # Initialize validation results
         critical_issues = []
-        warnings = []
         structural_issues = []
-        total_fields = 0
-        populated_fields = 0
-        unclear_fields = []
 
         # Helper function to get nested field
         def get_nested(obj, path):
@@ -1709,7 +1798,7 @@ def validate_extraction() -> str:
                     structural_validation = f"? Unknown combination: {' vs '.join(rate_types[:2])}"
             else:
                 structural_validation = "✗ Cannot determine leg combination (missing rate types)"
-                warnings.append("Some legs missing rate type information")
+                structural_issues.append("Some legs missing rate type information")
         else:
             structural_validation = "N/A (insufficient legs)"
 
@@ -1737,7 +1826,7 @@ def validate_extraction() -> str:
         leg_id_status = "✓ All legs have proper identifiers" if has_leg_ids else "⚠ Some legs missing leg identifiers"
 
         # ============================================================
-        # CRITICAL FIELDS VALIDATION
+        # CRITICAL HEADER FIELDS PRESENCE CHECK
         # ============================================================
 
         CRITICAL_FIELDS = [
@@ -1750,40 +1839,8 @@ def validate_extraction() -> str:
 
         for field_path, field_name in CRITICAL_FIELDS:
             value = get_nested(data, field_path)
-            total_fields += 1
-            if value and value not in ["", "N/A", None]:
-                populated_fields += 1
-            else:
+            if not value or value in ["", "N/A"]:
                 critical_issues.append(f"Missing critical field: {field_name}")
-
-        # ============================================================
-        # CLARITY VALIDATION (*Clear fields)
-        # ============================================================
-
-        def check_unclear_recursive(obj, path=""):
-            nonlocal unclear_fields, total_fields, populated_fields
-
-            if isinstance(obj, dict):
-                for key, value in obj.items():
-                    current_path = f"{path}.{key}" if path else key
-
-                    if key.endswith("Clear") and value is False:
-                        base_field = key.replace("Clear", "")
-                        unclear_fields.append(f"{path}.{base_field}" if path else base_field)
-
-                    elif not key.endswith("Clear"):
-                        if isinstance(value, (str, int, float, bool)):
-                            total_fields += 1
-                            if value not in ["", "N/A", None, 0]:
-                                populated_fields += 1
-
-                        check_unclear_recursive(value, current_path)
-
-            elif isinstance(obj, list):
-                for i, item in enumerate(obj):
-                    check_unclear_recursive(item, f"{path}[{i}]")
-
-        check_unclear_recursive(data)
 
         # ============================================================
         # LEG-LEVEL VALIDATION
@@ -1804,53 +1861,21 @@ def validate_extraction() -> str:
             if not leg.get("rateType"):
                 critical_issues.append(f"Leg {leg_num}: Missing rate type (FIXED/FLOATING)")
 
-            # Check rate-specific fields
+            # Check rate-specific fields exist (presence only, not values)
             if leg.get("rateType") == "FIXED":
                 if "fixedRate" not in leg:
-                    warnings.append(f"Leg {leg_num}: FIXED leg but no fixedRate specified")
+                    critical_issues.append(f"Leg {leg_num}: FIXED leg but no fixedRate field")
             elif leg.get("rateType") == "FLOATING":
                 if not leg.get("floatingRateIndex"):
-                    warnings.append(f"Leg {leg_num}: FLOATING leg but no floatingRateIndex")
-
-            # Check FX fixing consistency
-            notional_curr = leg.get("notionalCurrency")
-            settlement_curr = leg.get("settlementCurrency")
-            has_fx_fixing = "fxFixing" in leg
-
-            if notional_curr and settlement_curr:
-                if notional_curr != settlement_curr and not has_fx_fixing:
-                    warnings.append(f"Leg {leg_num}: Different currencies ({notional_curr}→{settlement_curr}) but no FX fixing data")
-                elif notional_curr == settlement_curr and has_fx_fixing:
-                    warnings.append(f"Leg {leg_num}: Same currencies ({notional_curr}) but FX fixing data present")
-
-        # ============================================================
-        # QUALITY SCORE CALCULATION
-        # ============================================================
-
-        completeness_score = int((populated_fields / total_fields * 100)) if total_fields > 0 else 0
-
-        # Determine overall quality
-        if structural_issues or critical_issues:
-            quality = "POOR ✗"
-        elif completeness_score >= 90 and len(warnings) == 0 and len(unclear_fields) <= 5:
-            quality = "EXCELLENT ✓"
-        elif completeness_score >= 75 and len(warnings) <= 3 and len(unclear_fields) <= 10:
-            quality = "GOOD ✓"
-        elif completeness_score >= 60:
-            quality = "FAIR ⚠"
-        else:
-            quality = "POOR ✗"
+                    critical_issues.append(f"Leg {leg_num}: FLOATING leg but no floatingRateIndex field")
 
         # ============================================================
         # BUILD REPORT
         # ============================================================
 
         report = "=" * 60 + "\n"
-        report += "EXTRACTION QUALITY REPORT\n"
+        report += "EXTRACTION STRUCTURAL REPORT\n"
         report += "=" * 60 + "\n\n"
-
-        report += f"Quality: {quality}\n"
-        report += f"Completeness: {completeness_score}% ({populated_fields}/{total_fields} fields)\n\n"
 
         # Structural validation section
         report += "STRUCTURAL VALIDATION:\n"
@@ -1906,49 +1931,59 @@ def validate_extraction() -> str:
                 report += f"  Settlement: {leg.get('settlementCurrency', 'N/A')}\n"
 
                 if leg.get('rateType') == 'FIXED':
-                    report += f"  Fixed Rate: {leg.get('fixedRate', 'N/A')}\n"
+                    fixed_rate = leg.get('fixedRate', 'N/A')
+                    if fixed_rate != 'N/A':
+                        report += f"  Fixed Rate: {fixed_rate}%\n"
+                    else:
+                        report += f"  Fixed Rate: N/A\n"
                 elif leg.get('rateType') == 'FLOATING':
                     report += f"  Index: {leg.get('floatingRateIndex', 'N/A')}\n"
-                    report += f"  Spread: {leg.get('spread', 'N/A')}\n"
+                    spread = leg.get('spread', 'N/A')
+                    if spread != 'N/A':
+                        report += f"  Spread: {spread}\n"
 
                 report += f"  Payer: {leg.get('payerPartyReference', 'N/A')} → Receiver: {leg.get('receiverPartyReference', 'N/A')}\n"
                 report += "\n"
 
-        # Critical issues section
-        if critical_issues:
-            report += "⚠ CRITICAL ISSUES (MUST REVIEW):\n"
-            report += "-" * 60 + "\n"
-            for issue in critical_issues:
-                report += f"  ✗ {issue}\n"
+        # Critical field checks summary
+        report += "CRITICAL FIELD CHECKS:\n"
+        report += "-" * 60 + "\n"
+
+        if not critical_issues:
+            report += "✓ Trade date present\n"
+            report += "✓ Effective date present\n"
+            report += "✓ Termination date present\n"
+            report += "✓ Party names present\n"
+            report += "✓ All legs have notional amounts\n"
+            report += "✓ All legs have currencies\n"
+            report += "✓ All legs have rate types\n"
             report += "\n"
 
-        # Warnings section
-        if warnings:
-            report += "⚠ WARNINGS (REVIEW RECOMMENDED):\n"
+        # Structural issues section
+        if structural_issues or critical_issues:
+            report += "⚠ STRUCTURAL ISSUES:\n"
             report += "-" * 60 + "\n"
-            for warning in warnings:
-                report += f"  ⚠ {warning}\n"
+            if structural_issues:
+                for issue in structural_issues:
+                    report += f"  ✗ {issue}\n"
+            if critical_issues:
+                for issue in critical_issues:
+                    report += f"  ✗ {issue}\n"
             report += "\n"
-
-        # Unclear fields section
-        if unclear_fields:
-            report += f"⚠ UNCLEAR EXTRACTIONS ({len(unclear_fields)} field(s)):\n"
+        else:
+            report += "⚠ STRUCTURAL ISSUES:\n"
             report += "-" * 60 + "\n"
-            for field in unclear_fields[:10]:
-                report += f"  ? {field}\n"
-            if len(unclear_fields) > 10:
-                report += f"  ... and {len(unclear_fields) - 10} more\n"
+            report += "(none found)\n"
             report += "\n"
 
         # Final summary
-        if not critical_issues and not structural_issues and len(warnings) == 0 and len(unclear_fields) <= 5:
-            report += "✓ ALL CRITICAL VALIDATIONS PASSED\n"
-            report += "✓ Extraction quality is high - ready for processing\n\n"
-        elif not critical_issues and not structural_issues:
-            report += "✓ No critical issues found\n"
-            report += "⚠ Review warnings and unclear fields before processing\n\n"
+        report += "=" * 60 + "\n"
+        if not critical_issues and not structural_issues:
+            report += "✓ STRUCTURAL VALIDATION PASSED\n"
+            report += "→ Proceed to cross-validation for quality verification\n"
         else:
-            report += "✗ Critical issues found - manual review required\n\n"
+            report += "✗ STRUCTURAL ISSUES FOUND\n"
+            report += "⚠ Review issues above before proceeding\n"
 
         report += "=" * 60
 
@@ -1956,6 +1991,851 @@ def validate_extraction() -> str:
 
     except Exception as e:
         return f"ERROR during validation: {str(e)}"
+
+
+def cross_validate() -> str:
+    """
+    Cross-validates specific critical fields using Claude Sonnet 4.5.
+
+    Validates field-by-field:
+    - legs[].settlementType (CASH vs PHYSICAL)
+    - legs[].settlementCurrency (ISO currency code)
+    - legs[].fxFixing placement (correct leg assignment)
+    - header date business day conventions (tradeDate, effectiveDate, terminationDate)
+    - leg date business day conventions (effectiveDate, terminationDate for each leg)
+
+    Uses original Gemini extraction prompts as validation context for consistency.
+    Provides numeric confidence scores (0-100) for each field.
+
+    Returns:
+        Human-readable cross-validation report with disagreements flagged for manual review
+    """
+    global _session_merged_contract, _session_contract_text, _session_date_folder, _session_contract_name
+
+    if _session_merged_contract is None:
+        return "ERROR: No extracted data in session. Run extraction steps first."
+
+    if _session_contract_text is None:
+        return "ERROR: No contract text in session. Call read_contract_file() first."
+
+    try:
+        import anthropic
+        import os
+
+        # Initialize Claude client
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not api_key:
+            return "ERROR: ANTHROPIC_API_KEY environment variable not set"
+
+        client = anthropic.Anthropic(api_key=api_key)
+
+        data = _session_merged_contract
+        contract_text = _session_contract_text
+        legs = data.get("legs", [])
+
+        if len(legs) == 0:
+            return "ERROR: No legs found in extracted data"
+
+        # ============================================================
+        # LOAD ORIGINAL EXTRACTION PROMPTS
+        # ============================================================
+
+        def extract_prompt_section(prompt_text, section_marker):
+            """Extract relevant section from prompt file"""
+            # For settlement fields, look for settlement-related sections
+            if "settlement" in section_marker.lower():
+                # Find settlement type/currency definitions
+                lines = prompt_text.split('\n')
+                start_idx = None
+                end_idx = None
+
+                for i, line in enumerate(lines):
+                    if 'settlementType' in line or 'Settlement Type' in line:
+                        start_idx = max(0, i - 5)
+                    if start_idx and (i - start_idx > 50 or 'fxFixing' in line):
+                        end_idx = i
+                        break
+
+                if start_idx:
+                    return '\n'.join(lines[start_idx:end_idx if end_idx else start_idx + 50])
+
+            return prompt_text[:2000]  # Fallback: first 2000 chars
+
+        # Load Core Values prompt for settlement definitions
+        core_values_path = BACKEND_DIR / "prompts" / "promptCoreValues.txt"
+        settlement_instructions = ""
+        if core_values_path.exists():
+            with open(core_values_path, 'r', encoding='utf-8') as f:
+                core_values_prompt = f.read()
+                settlement_instructions = extract_prompt_section(core_values_prompt, "settlement")
+
+        # Load FX Fixing prompt for assignment logic
+        fx_fixing_path = BACKEND_DIR / "prompts" / "promptFXFixingData.txt"
+        fx_fixing_instructions = ""
+        if fx_fixing_path.exists():
+            with open(fx_fixing_path, 'r', encoding='utf-8') as f:
+                fx_fixing_prompt = f.read()
+                # Extract the CRITICAL section
+                if "CRITICAL - FX FIXING ASSIGNMENT LOGIC" in fx_fixing_prompt:
+                    start = fx_fixing_prompt.index("CRITICAL - FX FIXING ASSIGNMENT LOGIC")
+                    # Find end (look for next major section or 1000 chars)
+                    end = start + min(1500, len(fx_fixing_prompt) - start)
+                    fx_fixing_instructions = fx_fixing_prompt[start:end]
+                else:
+                    fx_fixing_instructions = fx_fixing_prompt[:1500]
+
+        # Load Business Day Conventions prompt for header dates
+        header_bdc_path = BACKEND_DIR / "prompts" / "promptHeaderBusinessDayConventions.txt"
+        header_bdc_instructions = ""
+        if header_bdc_path.exists():
+            with open(header_bdc_path, 'r', encoding='utf-8') as f:
+                header_bdc_instructions = f.read()[:3000]  # First 3000 chars for context
+
+        # Load Period End and Payment Business Day Conventions prompt for leg dates
+        period_payment_bdc_path = BACKEND_DIR / "prompts" / "promptPeriodEndAndPaymentBusinessDayConventions.txt"
+        period_payment_bdc_instructions = ""
+        if period_payment_bdc_path.exists():
+            with open(period_payment_bdc_path, 'r', encoding='utf-8') as f:
+                period_payment_bdc_instructions = f.read()[:3000]  # First 3000 chars for context
+
+        # ============================================================
+        # BUILD FIELDS TO VALIDATE
+        # ============================================================
+
+        fields_to_validate = []
+
+        # Header date business day conventions
+        header = data.get("header", {})
+
+        # Trade Date business day convention
+        trade_date = header.get("tradeDate", {})
+        trade_bdc = trade_date.get("businessDayConvention", "")
+        trade_bdc_clear = trade_date.get("tradeDateBusinessDayConventionClear", True)
+        fields_to_validate.append({
+            "field": "header.tradeDate.businessDayConvention",
+            "extractedValue": trade_bdc,
+            "geminiConfidence": "high" if trade_bdc_clear else "low"
+        })
+
+        # Effective Date business day convention
+        effective_date = header.get("effectiveDate", {})
+        effective_bdc = effective_date.get("businessDayConvention", "")
+        effective_bdc_clear = effective_date.get("effectiveDateBusinessDayConventionClear", True)
+        fields_to_validate.append({
+            "field": "header.effectiveDate.businessDayConvention",
+            "extractedValue": effective_bdc,
+            "geminiConfidence": "high" if effective_bdc_clear else "low"
+        })
+
+        # Termination Date business day convention
+        termination_date = header.get("terminationDate", {})
+        termination_bdc = termination_date.get("businessDayConvention", "")
+        termination_bdc_clear = termination_date.get("terminationDateBusinessDayConventionClear", True)
+        fields_to_validate.append({
+            "field": "header.terminationDate.businessDayConvention",
+            "extractedValue": termination_bdc,
+            "geminiConfidence": "high" if termination_bdc_clear else "low"
+        })
+
+        # For each leg, validate settlement type and currency
+        for i, leg in enumerate(legs):
+            leg_num = i + 1
+
+            # Settlement Type
+            settlement_type = leg.get("settlementType", "")
+            settlement_type_clear = leg.get("settlementTypeClear", True)
+            fields_to_validate.append({
+                "field": f"legs[{i}].settlementType",
+                "extractedValue": settlement_type,
+                "geminiConfidence": "high" if settlement_type_clear else "low"
+            })
+
+            # Settlement Currency
+            settlement_currency = leg.get("settlementCurrency", "")
+            settlement_currency_clear = leg.get("settlementCurrencyClear", True)
+            fields_to_validate.append({
+                "field": f"legs[{i}].settlementCurrency",
+                "extractedValue": settlement_currency,
+                "geminiConfidence": "high" if settlement_currency_clear else "low"
+            })
+
+            # Leg effective date business day convention
+            leg_effective_date = leg.get("effectiveDate", {})
+            leg_effective_bdc = leg_effective_date.get("businessDayConvention", "")
+            leg_effective_bdc_clear = leg_effective_date.get("effectiveDateBusinessDayConventionClear", True)
+            fields_to_validate.append({
+                "field": f"legs[{i}].effectiveDate.businessDayConvention",
+                "extractedValue": leg_effective_bdc,
+                "geminiConfidence": "high" if leg_effective_bdc_clear else "low"
+            })
+
+            # Leg termination date business day convention
+            leg_termination_date = leg.get("terminationDate", {})
+            leg_termination_bdc = leg_termination_date.get("businessDayConvention", "")
+            leg_termination_bdc_clear = leg_termination_date.get("terminationDateBusinessDayConventionClear", True)
+            fields_to_validate.append({
+                "field": f"legs[{i}].terminationDate.businessDayConvention",
+                "extractedValue": leg_termination_bdc,
+                "geminiConfidence": "high" if leg_termination_bdc_clear else "low"
+            })
+
+        # FX Fixing placement validation
+        fx_fixing_info = []
+        for i, leg in enumerate(legs):
+            notional_curr = leg.get("notionalCurrency", "")
+            settlement_curr = leg.get("settlementCurrency", "")
+            has_fx_fixing = "fxFixing" in leg
+            fx_fixing_info.append({
+                "leg": i,
+                "notionalCurrency": notional_curr,
+                "settlementCurrency": settlement_curr,
+                "hasFxFixing": has_fx_fixing
+            })
+
+        fields_to_validate.append({
+            "field": "legs[].fxFixing.placement",
+            "extractedValue": fx_fixing_info,
+            "geminiConfidence": "N/A"
+        })
+
+        # ============================================================
+        # AUTOMATIC VALIDATIONS
+        # ============================================================
+
+        # 1. Settlement Type Validation
+        # Check if settlement currencies are the same → must be CASH
+        # If different → must be PHYSICAL
+
+        settlement_type_validation = None
+        business_day_convention_validations = []
+        if len(legs) >= 2:
+            leg0_settlement_curr = legs[0].get("settlementCurrency", "")
+            leg1_settlement_curr = legs[1].get("settlementCurrency", "")
+            leg0_settlement_type = legs[0].get("settlementType", "")
+            leg1_settlement_type = legs[1].get("settlementType", "")
+
+            if leg0_settlement_curr and leg1_settlement_curr:
+                # Determine expected settlement type based on currencies
+                expected_settlement_type = "CASH" if leg0_settlement_curr == leg1_settlement_curr else "PHYSICAL"
+
+                # Check if actual matches expected
+                if leg0_settlement_type != expected_settlement_type or leg1_settlement_type != expected_settlement_type:
+                    # Dynamic evidence and reasoning based on whether currencies match
+                    if leg0_settlement_curr == leg1_settlement_curr:
+                        evidence_msg = f"Settlement currencies: Leg 0 = {leg0_settlement_curr}, Leg 1 = {leg1_settlement_curr}. BOTH legs settle in the SAME currency ({leg0_settlement_curr})."
+                        reasoning_msg = f"CRITICAL ERROR: Both legs have the SAME settlement currency ({leg0_settlement_curr}), therefore settlement type MUST be CASH (net settlement), not PHYSICAL. The rule is: same settlement currency → CASH, different settlement currencies → PHYSICAL."
+                    else:
+                        evidence_msg = f"Settlement currencies: Leg 0 = {leg0_settlement_curr}, Leg 1 = {leg1_settlement_curr}. Legs settle in DIFFERENT currencies."
+                        reasoning_msg = f"CRITICAL ERROR: Legs have DIFFERENT settlement currencies ({leg0_settlement_curr} vs {leg1_settlement_curr}), therefore settlement type MUST be PHYSICAL (full delivery), not CASH. The rule is: same settlement currency → CASH, different settlement currencies → PHYSICAL."
+
+                    settlement_type_validation = {
+                        "field": "legs[].settlementType",
+                        "extractedValue": f"Leg 0: {leg0_settlement_type}, Leg 1: {leg1_settlement_type}",
+                        "suggestedValue": expected_settlement_type,
+                        "geminiConfidence": "N/A",
+                        "confidence": 5,  # STRONG_DISAGREE
+                        "evidence": evidence_msg,
+                        "reasoning": reasoning_msg
+                    }
+                    # Add to beginning of validations list for prominence
+                    fields_to_validate.insert(0, {
+                        "field": "legs[].settlementType",
+                        "extractedValue": f"Leg 0: {leg0_settlement_type}, Leg 1: {leg1_settlement_type}",
+                        "geminiConfidence": "high"
+                    })
+
+        # 2. Business Day Convention Validation
+        # Check if BDC is FOLLOWING with Clear=false → should be MODFOLLOWING
+
+        # Check header dates
+        header = data.get("header", {})
+        for date_field, date_name in [("tradeDate", "Trade Date"), ("effectiveDate", "Effective Date"), ("terminationDate", "Termination Date")]:
+            date_obj = header.get(date_field, {})
+            bdc = date_obj.get("businessDayConvention", "")
+            bdc_clear = date_obj.get(f"{date_field}BusinessDayConventionClear", True)
+
+            if bdc == "FOLLOWING" and not bdc_clear:
+                business_day_convention_validations.append({
+                    "field": f"header.{date_field}.businessDayConvention",
+                    "extractedValue": "FOLLOWING",
+                    "suggestedValue": "MODFOLLOWING",
+                    "geminiConfidence": "low",
+                    "confidence": 5,  # STRONG_DISAGREE
+                    "evidence": f"No explicit business day convention found in contract for {date_name}. Gemini defaulted to FOLLOWING (Clear=false).",
+                    "reasoning": f"When no explicit business day convention is found, the default MUST be MODFOLLOWING (industry standard), not FOLLOWING. Since Gemini set Clear=false, this indicates it used a default value, which should have been MODFOLLOWING."
+                })
+
+        # Check leg dates
+        for i, leg in enumerate(legs):
+            for date_field, date_name in [("effectiveDate", "Effective Date"), ("terminationDate", "Termination Date")]:
+                date_obj = leg.get(date_field, {})
+                bdc = date_obj.get("businessDayConvention", "")
+                bdc_clear = date_obj.get(f"{date_field}BusinessDayConventionClear", True)
+
+                if bdc == "FOLLOWING" and not bdc_clear:
+                    business_day_convention_validations.append({
+                        "field": f"legs[{i}].{date_field}.businessDayConvention",
+                        "extractedValue": "FOLLOWING",
+                        "suggestedValue": "MODFOLLOWING",
+                        "geminiConfidence": "low",
+                        "confidence": 5,  # STRONG_DISAGREE
+                        "evidence": f"No explicit business day convention found in contract for Leg {i} {date_name}. Gemini defaulted to FOLLOWING (Clear=false).",
+                        "reasoning": f"When no explicit business day convention is found, the default MUST be MODFOLLOWING (industry standard), not FOLLOWING. Since Gemini set Clear=false, this indicates it used a default value, which should have been MODFOLLOWING."
+                    })
+
+        # ============================================================
+        # BUILD CLAUDE PROMPT
+        # ============================================================
+
+        prompt = f"""You are validating a contract extraction performed by another AI system (Gemini).
+
+The original AI was given specific extraction instructions. Your job is to verify if the extracted values are correct according to BOTH:
+1. The contract text
+2. The original extraction instructions
+
+---
+
+ORIGINAL EXTRACTION INSTRUCTIONS:
+
+## Business Day Conventions for Header Dates:
+{header_bdc_instructions}
+
+## Business Day Conventions for Leg Dates (Period End & Payment):
+{period_payment_bdc_instructions}
+
+## Settlement Type and Currency:
+{settlement_instructions}
+
+**CRITICAL VALIDATION RULE FOR SETTLEMENT TYPE:**
+
+**DO NOT confuse notional currency with settlement currency!**
+- Notional currency = the currency the leg is denominated in
+- Settlement currency = the currency payments are actually made in
+- These can be DIFFERENT on the same leg (e.g., notional in CLF, settlement in CLP)
+
+**The settlement type is determined by comparing SETTLEMENT currencies ACROSS legs:**
+- Compare: legs[0].settlementCurrency vs legs[1].settlementCurrency
+- **DO NOT compare**: notional currencies
+- **DO NOT compare**: notional vs settlement on the same leg
+
+**Rule:**
+- If legs[0].settlementCurrency == legs[1].settlementCurrency → BOTH legs MUST be "CASH"
+- If legs[0].settlementCurrency != legs[1].settlementCurrency → BOTH legs MUST be "PHYSICAL"
+
+**Ignore contract terminology** like "Entrega Física" or "Physical Delivery" - these are misleading.
+
+**Examples:**
+1. Leg 0: notional=CLF, settlement=CLP | Leg 1: notional=CLP, settlement=CLP
+   → BOTH settlement currencies are CLP → BOTH legs MUST be CASH (confidence: 0-5 if PHYSICAL)
+
+2. Leg 0: notional=USD, settlement=USD | Leg 1: notional=CLP, settlement=CLP
+   → Different settlement currencies (USD vs CLP) → BOTH legs MUST be PHYSICAL (confidence: 0-5 if CASH)
+
+## FX Fixing Assignment Logic:
+{fx_fixing_instructions}
+
+---
+
+CONTRACT TEXT:
+{contract_text}
+
+---
+
+EXTRACTED DATA (JSON):
+{json.dumps(data, indent=2)}
+
+---
+
+VALIDATE THESE SPECIFIC FIELDS:
+
+"""
+
+        # Add each field to validate
+        for idx, field_info in enumerate(fields_to_validate[:-1], 1):  # Exclude FX fixing for now
+            prompt += f"""Field {idx}: {field_info['field']}
+  Extracted Value: "{field_info['extractedValue']}"
+  Gemini Confidence: {field_info['geminiConfidence']}
+  {"⚠️ LOW CONFIDENCE - extra scrutiny needed" if field_info['geminiConfidence'] == "low" else ""}
+
+"""
+
+        # Add FX fixing validation
+        prompt += f"""Field {len(fields_to_validate)}: legs[].fxFixing.placement
+
+"""
+        for leg_info in fx_fixing_info:
+            prompt += f"""  Leg {leg_info['leg']}: notionalCurrency={leg_info['notionalCurrency']}, settlementCurrency={leg_info['settlementCurrency']}
+    - Has fxFixing? {"Yes" if leg_info['hasFxFixing'] else "No"}
+"""
+
+        prompt += """
+  VERIFY: According to the FX fixing rules above, fxFixing should ONLY appear on legs where notionalCurrency ≠ settlementCurrency. Is the placement correct?
+
+---
+
+RESPONSE FORMAT:
+
+For EACH field, provide a JSON object with:
+- confidence: 0-100 numeric score
+  - 90-100 = Strong agreement (extracted value is definitely correct per instructions + contract)
+  - 70-89 = Mild agreement (extracted value is probably correct)
+  - 30-69 = Uncertain (cannot determine from contract or ambiguous)
+  - 10-29 = Mild disagreement (extracted value is probably wrong)
+  - 0-9 = Strong disagreement (extracted value is definitely wrong per instructions + contract)
+- suggestedValue: What the value should be (null if agreeing, or string/object if disagreeing)
+- evidence: Quote from contract supporting your assessment
+- reasoning: Brief explanation referencing the original instructions
+
+Return ONLY valid JSON in this exact format:
+{
+  "fieldValidations": [
+    {
+      "field": "legs[0].settlementType",
+      "extractedValue": "CASH",
+      "confidence": 95,
+      "suggestedValue": null,
+      "evidence": "...",
+      "reasoning": "..."
+    },
+    ...
+  ]
+}
+
+Return JSON only, no other text."""
+
+        # ============================================================
+        # CALL CLAUDE API
+        # ============================================================
+
+        print("Calling Claude API for cross-validation...")
+
+        response = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=4096,
+            temperature=0,
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+        )
+
+        # Extract response text
+        response_text = response.content[0].text.strip()
+
+        # Parse JSON (handle markdown code blocks)
+        if response_text.startswith("```json"):
+            response_text = response_text.split("```json")[1].split("```")[0].strip()
+        elif response_text.startswith("```"):
+            response_text = response_text.split("```")[1].split("```")[0].strip()
+
+        claude_result = json.loads(response_text)
+
+        # ============================================================
+        # INJECT AUTOMATIC VALIDATIONS
+        # ============================================================
+        claude_result.setdefault("fieldValidations", [])
+
+        # If we detected a settlement type error, inject it into Claude's validations
+        if settlement_type_validation:
+            claude_result["fieldValidations"].insert(0, settlement_type_validation)
+
+        # Inject business day convention validations
+        for bdc_validation in business_day_convention_validations:
+            claude_result["fieldValidations"].insert(0, bdc_validation)
+
+        # ============================================================
+        # BUILD HUMAN-READABLE REPORT
+        # ============================================================
+
+        def confidence_to_label(conf):
+            if conf >= 90:
+                return "STRONG_AGREE"
+            elif conf >= 70:
+                return "MILD_AGREE"
+            elif conf >= 30:
+                return "UNCERTAIN"
+            elif conf >= 10:
+                return "MILD_DISAGREE"
+            else:
+                return "STRONG_DISAGREE"
+
+        validations = claude_result.get("fieldValidations", [])
+
+        # Count agreement levels
+        strong_agree = sum(1 for v in validations if v.get("confidence", 0) >= 90)
+        mild_agree = sum(1 for v in validations if 70 <= v.get("confidence", 0) < 90)
+        uncertain = sum(1 for v in validations if 30 <= v.get("confidence", 0) < 70)
+        mild_disagree = sum(1 for v in validations if 10 <= v.get("confidence", 0) < 30)
+        strong_disagree = sum(1 for v in validations if v.get("confidence", 0) < 10)
+
+        # Count double uncertainties (Gemini low confidence + Claude < 70)
+        double_uncertainty_count = 0
+        for field_info in fields_to_validate[:-1]:  # Exclude FX fixing
+            matching_validation = next((v for v in validations if v.get("field") == field_info["field"]), None)
+            if matching_validation and field_info["geminiConfidence"] == "low" and matching_validation.get("confidence", 100) < 70:
+                double_uncertainty_count += 1
+
+        # Overall assessment
+        if strong_disagree > 0 or double_uncertainty_count > 0:
+            overall_assessment = "NEEDS_REVIEW"
+        elif mild_disagree > 0 or uncertain > 0:
+            overall_assessment = "REVIEW_RECOMMENDED"
+        else:
+            overall_assessment = "PASSED"
+
+        # Build report
+        report = "=" * 60 + "\n"
+        report += "CLAUDE CROSS-VALIDATION REPORT\n"
+        report += "=" * 60 + "\n\n"
+
+        report += f"Model: Claude Sonnet 4.5 (claude-sonnet-4-20250514)\n"
+        report += f"Validation Method: Field-by-field with original prompt context\n"
+        report += f"Fields Validated: {len(validations)}\n"
+        report += f"Overall Assessment: {overall_assessment}\n\n"
+
+        report += "VALIDATIONS:\n"
+        report += "-" * 60 + "\n\n"
+
+        # Show each validation
+        for validation in validations:
+            field = validation.get("field", "")
+            extracted_value = validation.get("extractedValue", "")
+            confidence = validation.get("confidence", 0)
+            suggested_value = validation.get("suggestedValue")
+            evidence = validation.get("evidence", "")
+            reasoning = validation.get("reasoning", "")
+
+            label = confidence_to_label(confidence)
+
+            # Find Gemini confidence for this field
+            gemini_conf = "N/A"
+            for field_info in fields_to_validate:
+                if field_info["field"] == field:
+                    gemini_conf = field_info["geminiConfidence"]
+                    break
+
+            # Determine if double uncertainty
+            is_double_uncertain = (gemini_conf == "low" and confidence < 70)
+
+            # Icon based on agreement level
+            if confidence >= 70:
+                icon = "✓"
+                status_text = f"{label} (confidence: {confidence})"
+            elif confidence >= 30:
+                icon = "?"
+                status_text = f"{label} (confidence: {confidence})"
+            else:
+                icon = "✗"
+                status_text = f"{label} (confidence: {confidence})"
+
+            report += f"{icon} {status_text}\n"
+            report += f"  Field: {field}\n"
+
+            # Handle different value types
+            if isinstance(extracted_value, (list, dict)):
+                report += f"  Extracted Value: {json.dumps(extracted_value, indent=2)}\n"
+            else:
+                report += f"  Extracted Value: {extracted_value}\n"
+
+            if suggested_value:
+                if isinstance(suggested_value, (list, dict)):
+                    report += f"  Claude's Suggested Value: {json.dumps(suggested_value, indent=2)}\n"
+                else:
+                    report += f"  Claude's Suggested Value: {suggested_value}\n"
+
+            report += f"  Gemini Confidence: {gemini_conf}"
+            if is_double_uncertain:
+                report += " ⚠️⚠️ [BOTH MODELS UNCERTAIN]"
+            report += "\n"
+
+            # Wrap evidence text
+            report += f"  Evidence: {evidence}\n"
+            report += f"  Reasoning: {reasoning}\n"
+
+            if confidence < 70:
+                report += "  \n  ⚠️ MANUAL REVIEW REQUIRED\n"
+
+            report += "\n"
+
+        # Summary section
+        report += "-" * 60 + "\n"
+        report += "SUMMARY:\n"
+        report += "-" * 60 + "\n"
+        report += f"  ✓ Strong Agreements: {strong_agree}\n"
+        report += f"  ✓ Mild Agreements: {mild_agree}\n"
+        report += f"  ⚠ Uncertainties: {uncertain}\n"
+        report += f"  ✗ Mild Disagreements: {mild_disagree}\n"
+        report += f"  ✗ Strong Disagreements: {strong_disagree}\n"
+
+        if double_uncertainty_count > 0:
+            report += f"\n  🚨 Double Uncertainty Flags: {double_uncertainty_count}\n"
+            report += f"     (Both Gemini AND Claude uncertain/disagreeing)\n"
+
+        report += "\n"
+
+        if strong_disagree > 0 or double_uncertainty_count > 0:
+            review_count = strong_disagree + double_uncertainty_count
+            report += f"ACTION REQUIRED:\n"
+            report += f"------------------------------------------------------------\n"
+            report += f"  ⚠️ {review_count} field(s) need HIGH PRIORITY manual review\n"
+            if double_uncertainty_count > 0:
+                report += f"  ⚠️ {double_uncertainty_count} field(s) flagged by both models\n"
+        elif mild_disagree > 0 or uncertain > 0:
+            report += f"ACTION RECOMMENDED:\n"
+            report += f"------------------------------------------------------------\n"
+            report += f"  ⚠️ Consider reviewing {mild_disagree + uncertain} field(s) with lower confidence\n"
+        else:
+            report += f"✓ ALL VALIDATIONS PASSED\n"
+            report += f"✓ Claude confirms extraction quality is high\n"
+
+        report += "\n" + "=" * 60
+
+        # ============================================================
+        # INTERACTIVE CORRECTION FOR STRONG DISAGREEMENTS
+        # ============================================================
+
+        # Store strong disagreements in global session variable for apply_corrections() to use
+        global _session_pending_corrections
+        strong_disagreements = [v for v in validations if v.get("confidence", 0) < 10]
+
+        if strong_disagreements:
+            # Store for later application
+            _session_pending_corrections = strong_disagreements
+
+            # Add interactive prompt section to report
+            report += "\n\n" + "=" * 60 + "\n"
+            report += "🚨 STRONG DISAGREEMENTS REQUIRE YOUR DECISION\n"
+            report += "=" * 60 + "\n\n"
+            report += f"Found {len(strong_disagreements)} field(s) with STRONG disagreement.\n"
+            report += "Review each disagreement below and decide whether to apply Claude's correction.\n\n"
+
+            for idx, disagreement in enumerate(strong_disagreements, 1):
+                field = disagreement.get("field", "")
+                extracted_value = disagreement.get("extractedValue", "")
+                suggested_value = disagreement.get("suggestedValue")
+                reasoning = disagreement.get("reasoning", "")
+
+                report += f"DISAGREEMENT #{idx}:\n"
+                report += f"  Field: {field}\n"
+                report += f"  Current (Gemini): {extracted_value}\n"
+                report += f"  Suggested (Claude): {suggested_value}\n"
+                report += f"  Reasoning: {reasoning}\n\n"
+
+            report += "=" * 60 + "\n"
+            report += "TO APPLY CORRECTIONS:\n"
+            report += "  Use: apply_corrections(\"field_index1,field_index2,...\" or \"all\" or \"none\")\n"
+            report += f"  Example: apply_corrections(\"1,2\") to apply disagreements 1 and 2\n"
+            report += f"  Example: apply_corrections(\"all\") to apply all {len(strong_disagreements)} corrections\n"
+            report += f"  Example: apply_corrections(\"none\") to skip all corrections\n"
+            report += "=" * 60
+        else:
+            _session_pending_corrections = []
+
+        # ============================================================
+        # SAVE REPORT TO FILE
+        # ============================================================
+
+        # Save to extraction_metadata folder if session date folder is set
+        if _session_date_folder and _session_contract_name:
+            try:
+                metadata_dir = _session_date_folder / "extraction_metadata"
+                metadata_dir.mkdir(parents=True, exist_ok=True)
+
+                report_filename = f"{_session_contract_name}_cross_validation.txt"
+                report_path = metadata_dir / report_filename
+
+                with open(report_path, 'w', encoding='utf-8') as f:
+                    f.write(report)
+
+                report += f"\n\n✓ Cross-validation report saved to: {report_path}"
+            except Exception as file_error:
+                report += f"\n\n⚠ Warning: Could not save report to file: {str(file_error)}"
+
+        return report
+
+    except json.JSONDecodeError as e:
+        return f"ERROR: Claude returned invalid JSON.\n\nParsing error: {str(e)}\n\nRaw response:\n{response_text[:500]}"
+    except Exception as e:
+        import traceback
+        return f"ERROR during cross-validation: {str(e)}\n\nTraceback:\n{traceback.format_exc()}"
+
+
+def apply_corrections(corrections_to_apply: str) -> str:
+    """
+    Applies corrections from cross_validate() based on user selection.
+
+    Args:
+        corrections_to_apply: Comma-separated indices (e.g., "1,3"), "all", or "none"
+
+    Returns:
+        Success message with details of applied corrections, or error if no pending corrections
+    """
+    global _session_pending_corrections, _session_merged_contract, _session_date_folder, _session_contract_name
+
+    if not _session_pending_corrections:
+        return "ERROR: No pending corrections found. Run cross_validate() first."
+
+    if _session_merged_contract is None:
+        return "ERROR: No extracted data in session."
+
+    try:
+        # Parse user input
+        corrections_to_apply = corrections_to_apply.strip().lower()
+
+        if corrections_to_apply == "none":
+            count = len(_session_pending_corrections)
+            _session_pending_corrections = []
+            return f"✓ Skipped all {count} correction(s). No changes made."
+
+        # Determine which corrections to apply
+        if corrections_to_apply == "all":
+            selected_corrections = list(range(len(_session_pending_corrections)))
+        else:
+            # Parse comma-separated indices
+            try:
+                selected_corrections = [int(idx.strip()) - 1 for idx in corrections_to_apply.split(",")]
+                # Validate indices
+                for idx in selected_corrections:
+                    if idx < 0 or idx >= len(_session_pending_corrections):
+                        return f"ERROR: Invalid index {idx + 1}. Valid range is 1-{len(_session_pending_corrections)}"
+            except ValueError:
+                return f"ERROR: Invalid format. Use comma-separated numbers (e.g., '1,2'), 'all', or 'none'"
+
+        # Apply selected corrections
+        corrections_applied = []
+
+        for idx in selected_corrections:
+            disagreement = _session_pending_corrections[idx]
+            field = disagreement.get("field", "")
+            extracted_value = disagreement.get("extractedValue", "")
+            suggested_value = disagreement.get("suggestedValue")
+
+            # Special handling for settlement type (apply to BOTH legs)
+            if field == "legs[].settlementType":
+                legs = _session_merged_contract.get("legs", [])
+                if len(legs) >= 2:
+                    # Apply the same settlement type to both legs
+                    legs[0]["settlementType"] = suggested_value
+                    legs[1]["settlementType"] = suggested_value
+                    corrections_applied.append({
+                        "field": field,
+                        "oldValue": extracted_value,
+                        "newValue": f"Set both legs to {suggested_value}"
+                    })
+                else:
+                    return f"ERROR: Not enough legs to apply settlement type correction"
+            # Special handling for fxFixing.placement (move fxFixing object between legs)
+            elif field == "legs[].fxFixing.placement":
+                legs = _session_merged_contract.get("legs", [])
+                if len(legs) >= 2:
+                    # Determine which leg should have fxFixing based on notional vs settlement currency
+                    leg0_notional = legs[0].get("notionalCurrency", "")
+                    leg0_settlement = legs[0].get("settlementCurrency", "")
+                    leg1_notional = legs[1].get("notionalCurrency", "")
+                    leg1_settlement = legs[1].get("settlementCurrency", "")
+
+                    leg0_needs_fx = (leg0_notional != leg0_settlement)
+                    leg1_needs_fx = (leg1_notional != leg1_settlement)
+
+                    # Find which leg currently has fxFixing
+                    fx_fixing_data = None
+                    current_fx_leg = None
+                    if "fxFixing" in legs[0]:
+                        fx_fixing_data = legs[0]["fxFixing"]
+                        current_fx_leg = 0
+                    elif "fxFixing" in legs[1]:
+                        fx_fixing_data = legs[1]["fxFixing"]
+                        current_fx_leg = 1
+
+                    # Apply correction
+                    correction_made = False
+                    if leg0_needs_fx and not leg1_needs_fx:
+                        # Move fxFixing to leg 0
+                        if current_fx_leg == 1:
+                            legs[0]["fxFixing"] = fx_fixing_data
+                            del legs[1]["fxFixing"]
+                            corrections_applied.append({
+                                "field": field,
+                                "oldValue": "Leg 1 had fxFixing",
+                                "newValue": "Moved to Leg 0"
+                            })
+                            correction_made = True
+                    elif leg1_needs_fx and not leg0_needs_fx:
+                        # Move fxFixing to leg 1
+                        if current_fx_leg == 0:
+                            legs[1]["fxFixing"] = fx_fixing_data
+                            del legs[0]["fxFixing"]
+                            corrections_applied.append({
+                                "field": field,
+                                "oldValue": "Leg 0 had fxFixing",
+                                "newValue": "Moved to Leg 1"
+                            })
+                            correction_made = True
+
+                    if not correction_made:
+                        return f"ERROR: Could not determine correct fxFixing placement"
+                else:
+                    return f"ERROR: Not enough legs to apply fxFixing correction"
+            else:
+                # Standard field update for simple paths
+                parts = field.replace('[', '.').replace(']', '').split('.')
+                parts = [p for p in parts if p]
+
+                # Navigate to the parent object
+                current = _session_merged_contract
+                for i, part in enumerate(parts[:-1]):
+                    if part.isdigit():
+                        current = current[int(part)]
+                    else:
+                        if part not in current:
+                            current[part] = {}
+                        current = current[part]
+
+                # Set the new value
+                final_key = parts[-1]
+                current[final_key] = suggested_value
+                corrections_applied.append({
+                    "field": field,
+                    "oldValue": extracted_value,
+                    "newValue": suggested_value
+                })
+
+        # Save corrected data back to cdm_inputs file
+        if _session_date_folder and _session_contract_name:
+            cdm_inputs_dir = _session_date_folder / "cdm_inputs"
+            output_path = cdm_inputs_dir / f"{_session_contract_name}.json"
+
+            # Remove *Clear fields for clean output
+            corrected_clean = _remove_clear_fields(_session_merged_contract)
+
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(corrected_clean, f, indent=2, ensure_ascii=False)
+
+            # Build success report
+            result = "=" * 60 + "\n"
+            result += f"✓ APPLIED {len(corrections_applied)} CORRECTION(S)\n"
+            result += "=" * 60 + "\n\n"
+
+            for correction in corrections_applied:
+                result += f"Field: {correction['field']}\n"
+                result += f"  Old Value: {correction['oldValue']}\n"
+                result += f"  New Value: {correction['newValue']}\n\n"
+
+            result += f"✓ Corrected data saved to: {output_path}\n"
+            result += "=" * 60
+
+            # Clear pending corrections
+            _session_pending_corrections = []
+
+            return result
+        else:
+            return "ERROR: Session folder not set. Cannot save corrections."
+
+    except Exception as e:
+        import traceback
+        return f"ERROR applying corrections: {str(e)}\n\nTraceback:\n{traceback.format_exc()}"
 
 
 def match_with_mapped_trade() -> str:
@@ -2129,6 +3009,8 @@ root_agent = Agent(
         "  Bank name format: BankNameCL (e.g., 'BancoInternacionalCL')\n"
         "- run_cdm_generator(): Converts JSON to CDM format (call after write_consolidated_output)\n"
         "- run_pdf_report(): Generates PDF comparison report (call after run_cdm_generator)\n"
+        "- resume_workflow(date, bank_name, start_from): Resume from specific step after manual fixes\n"
+        "  start_from options: 'mapping', 'cdm_generator', 'pdf_report'\n"
         "\n"
         "**Session Management:**\n"
         "- list_contract_files(): Lists all *_anon.txt files in date folder\n"
@@ -2149,8 +3031,12 @@ root_agent = Agent(
         "- extract_fx_fixing(): Extracts & merges into session\n"
         "- extract_payment_date_offset(): Extracts payment offset & merges into session\n"
         "\n"
-        "**Validation Tool:**\n"
-        "- validate_extraction(): Validates extracted data quality & completeness\n"
+        "**Validation Tools:**\n"
+        "- validate_extraction(): Validates structural integrity (leg count, combinations, field presence)\n"
+        "- cross_validate(): Cross-validates critical fields using Claude Sonnet 4.5\n"
+        "  Validates: settlementType, settlementCurrency, fxFixing placement,\n"
+        "  header/leg date business day conventions (tradeDate, effectiveDate, terminationDate)\n"
+        "  Provides confidence scores and flags disagreements for manual review\n"
         "\n"
         "All extractions automatically merge into session. No manual merging needed!\n"
         "\n"
@@ -2170,8 +3056,9 @@ root_agent = Agent(
         "5. extract_period_payment_data() → wait for response\n"
         "6. extract_fx_fixing() → wait for response\n"
         "7. extract_payment_date_offset() → wait for response\n"
-        "8. validate_extraction() → wait for response (reviews quality)\n"
-        "9. write_output_json('filename.json') → wait for response (use same base name as input)\n"
+        "8. validate_extraction() → wait for response (checks structure)\n"
+        "9. cross_validate() → wait for response (quality check with Claude)\n"
+        "10. write_output_json('filename.json') → wait for response (use same base name as input)\n"
         "\n"
         "**Follow-up questions about same contract:**\n"
         "- DO NOT clear session - data is already loaded\n"
@@ -2199,9 +3086,10 @@ root_agent = Agent(
         "   e. extract_period_payment_data()\n"
         "   f. extract_fx_fixing()\n"
         "   g. extract_payment_date_offset()\n"
-        "   h. validate_extraction() → show validation report\n"
-        "   i. match_with_mapped_trade() → adds matchingTradeId to header\n"
-        "   j. save_contract_to_batch()\n"
+        "   h. validate_extraction() → show structural validation\n"
+        "   i. cross_validate() → show Claude cross-validation\n"
+        "   j. match_with_mapped_trade() → adds matchingTradeId to header\n"
+        "   k. save_contract_to_batch()\n"
         "\n"
         "5. write_consolidated_output()\n"
         "   Writes ddmmyyyy_bancoabc_contracts.json to cdm_inputs folder (CDM ready)\n"
@@ -2228,6 +3116,7 @@ root_agent = Agent(
         run_mapping_program,
         run_cdm_generator,
         run_pdf_report,
+        resume_workflow,
         list_contract_files,
         load_mapped_trades,
         clear_session,
@@ -2244,6 +3133,8 @@ root_agent = Agent(
         extract_fx_fixing,
         extract_payment_date_offset,
         validate_extraction,
+        cross_validate,
+        apply_corrections,
         greet_user,
         calculate_sum
     ]

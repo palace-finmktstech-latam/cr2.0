@@ -1,0 +1,236 @@
+
+
+DocControlId: XDCTRL000000182400-0Transaction ID:SDBB7MT33364LDXNP4.0.0.0.1-0
+1 of 6
+BANCO_A | PSEUDONYMISED ADDRESS | New York, New York 10282-2198 | Tel: 212-902-1000
+Date:
+To:
+From:
+Subject:
+Our Reference Number:
+CFTC/SEC UTI:
+CONFIRMATION
+March 28, 2023
+Banco ABC
+BANCO_A
+Non-Deliverable Swap Transaction 
+SDBB7MT33364LDXNP4.0.0.0.1-0
+KD3XUN7C6T14HNAYLU02 
+SDBB7MT33364LDXNP400000010000000
+In  accordance  with  CFTC  Regulation  Part  45,  we  hereby  notify  you  that  this  trade  is  being  reported  to  the 
+following swap data repository: DTCC Data Repository (U.S.) LLC.
+Please see the following link for disclosures relating to material economic terms, risks and conflicts relating 
+to swaps transactions, for institutional clients:https://360BANCO_Acom/go/doddfrank-disclosure, for Private Wealth 
+Management clients:https://BANCO_ABANCO_Ap/markets/doddfrank
+The purpose of this communication (this "Confirmation") is to set forth the terms and conditions of the above 
+referenced  transaction  entered  into  on  the  Trade  Date  specified  below  (the  "Transaction")  between  BANCO_A  ("BANCO_A")  and  Banco ABC ("Counterparty").  This  communication constitutes  a 
+"Confirmation" as referred to in the Swap Agreement specified below.
+1.
+ The definitions and provisions contained in the 2021 ISDA Interest Rate Derivatives Definitions (the “2021 
+Definitions”), as published by the International Swaps and Derivatives Association, Inc. and the 1998 FX and 
+Currency Option Definitions (the “FX Definitions”) as published by the International Swaps and Derivatives 
+Association Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee (together 
+the “Definitions”) are incorporated into this Confirmation. In the event of any inconsistency between the 2021 
+Definitions  and  the  FX  Definitions,  the  2021  Definitions  shall  govern  except  that  the  FX  Definitions  shall 
+govern for the purposes of the Settlement Provisions set out below. In the event of any inconsistency between 
+the Definitions and this Confirmation, this Confirmation will govern. References herein to a "Transaction" shall 
+be deemed to be references to a "Swap Transaction" for the purposes of the 2021 Definitions.
+This Confirmation supplements, forms a part of and is subject to the 2002 ISDA Master Agreement dated as of 
+August 16, 2019 as amended and supplemented from time to time (the “Swap Agreement”) between BANCO_A and Counterparty. All provisions contained in, or incorporated by reference to, the Swap Agreement shall 
+govern this Confirmation except as expressly modified below. In the event of any inconsistency between this 
+Confirmation, the Definitions, or the Swap Agreement, as the case may be, this Confirmation will control for 
+purposes of the Transaction to which this Confirmation relates
+2.
+ The terms of the Transaction to which this Confirmation relates are as follows:
+Notional Amount:CLP 21,500,000,000.00
+DocuSign Envelope ID: BE460B8F-56F0-4D54-87A8-67F29062EB61
+
+DocControlId: XDCTRL000000182400-0Transaction ID:SDBB7MT33364LDXNP4.0.0.0.1-0
+2 of 6
+Trade Date:March 28, 2023
+Effective Date:March 30, 2023
+Termination Date:March  30,  2025,  subject  to  adjustment  in  accordance  with  the
+Modified Following Business Day Convention.
+Fixed Amounts:
+Fixed Amount Payer:BANCO_A
+Fixed Amount Payer Period End
+Dates:
+Semianually, on each September 30 and March 30, commencing
+on   September   30,   2023   and   ending   on   the   Termination
+Date,  subject  to  adjustment  in  accordance  with  the  Modified
+Following Business Day Convention
+Fixed Amount Payer Payment
+Dates:
+Each Fixed Amount Payer Period End Date, subject to adjustment
+in   accordance   with   the   Modified   Following   Business   Day
+Convention
+Fixed Rate:7.57%
+Fixed Rate Day Count Fraction:Actual/360
+Floating Amounts:
+Floating Amount Payer:Counterparty
+Floating Amount Payer Period End
+Dates:
+Semianually, on each September 30 and March 30, commencing
+on   September   30,   2023   and   ending   on   the   Termination
+Date,  subject  to  adjustment  in  accordance  with  the  Modified
+Following Business Day Convention
+Floating Amount Payer Payment
+Dates:
+Each   Floating   Amount   Payer   Period   End   Date,   subject   to
+adjustment in accordance with the Modified Following Business
+Day Convention
+Floating Rate Option:CLP-ICP
+For the purpose of this Transaction only, the Applicable Business
+Day  (as  mentioned  in  the  2021  ISDA  Interest  Rate  Derivatives
+Definitions Floating Rate Matrix) shall be New York, Santiago
+Floating Rate Spread:None
+Floating Rate Day Count Fraction:Actual/360
+SETTLEMENT PROVISIONS
+Settlement:Non-Deliverable,  with  the  effect  that  any  Reference  Currency
+amounts  payable  hereunder  on  a  Payment  Date  ("Reference
+Currency  Payment  Date")  or  an  Exchange  Date  ("Reference
+Currency  Exchange  Date"),  unless  otherwise  specified  herein,
+shall be converted into Settlement Currency amounts by reference
+to the Settlement Rate Option on the applicable Valuation Date.
+All payments (including exchanges) hereunder shall be made in
+DocuSign Envelope ID: BE460B8F-56F0-4D54-87A8-67F29062EB61
+
+DocControlId: XDCTRL000000182400-0Transaction ID:SDBB7MT33364LDXNP4.0.0.0.1-0
+3 of 6
+the  Settlement  Currency  on  the  Settlement  Date  or  Reference
+Currency Exchange Date as the case may be.
+Settlement Rate Option:CLP DOLAR OBS or CLP10
+Reference Currency:CLP
+Settlement Currency:USD
+Valuation Date:"Valuation Date" means, with respect to each Calculation Period,
+the   day   that   is   two   Business   Days   immediately   preceding
+the   Payment   Date;   provided,   however,   that   solely   for   the
+purposes of determining each such Valuation Date, all respective
+Payment  Dates  shall  be  deemed  subject  to  "No  Adjustment"
+in  accordance  with  any  Business  Day  Convention  (each  such
+Valuation  Date  hereinafter  deemed  a  "Scheduled  Valuation
+Date"). All Scheduled Valuation Dates are subject to adjustment
+in accordance with the Business Day Convention provided below.
+3 Disruption Events and Fallbacks:
+Event Currency:Reference Currency
+Price Source Disruption :Applicable
+4 Disruption Events and Fallbacks applicable to the particular Transaction to which this Confirmation relates
+are as follows:
+Valuation Postponement
+Calculation Agent Determination of Settlement Rate
+Definitions:
+Unscheduled Holiday:"Unscheduled  Holiday"  shall  mean,  for  the  purpose  of  this
+Transaction, that a day is not a Business Day and the market was
+not aware of such fact (by means of a public announcement or by
+reference to other publicly available information) until a time later
+than 9:00 am local time in the Principal Financial Center(s) of the
+Reference  Currency  two  Business  Days  prior  to  the  Scheduled
+Valuation Date; where the definition of Business Day in Article
+1.1(b)  of  the  1998  FX  Definitions  is  expanded  to  include  the
+definition of UF Observation Date.
+Deferral Period for Unscheduled
+Holiday:
+In  the  event  the  Scheduled  Valuation  Date  becomes  subject  to
+the  Following  Business  Day  Convention  after  the  occurrence
+of  an  Unscheduled  Holiday,  and  if  the  Valuation  Date  has
+not  occurred  on  or  before  the  14th  consecutive  day  after  the
+Scheduled  Valuation  Date  (any  such  period  being  a  "Deferral
+Period"), then the next day after the Deferral Period that would
+have been a Business Day but for the Unscheduled Holiday, shall
+be deemed to be the Valuation Date.
+Valuation Postponement for Price
+Source Disruption:
+"Valuation  Postponement"  means,  for  purposes  of  obtaining  a
+Settlement  Rate,  that  the  Spot  Rate  will  be  determined  on  the
+Business Day first succeeding the day on which the Price Source
+DocuSign Envelope ID: BE460B8F-56F0-4D54-87A8-67F29062EB61
+
+DocControlId: XDCTRL000000182400-0Transaction ID:SDBB7MT33364LDXNP4.0.0.0.1-0
+4 of 6
+Disruption  ceases  to  exist,  unless  the  Price  Source  Disruption
+continues  to  exist  (measured  from  the  date  that,  but  for  the
+occurrence  of  the  Price  Source  Disruption,  would  have  been
+the  Valuation  Date)  for  a  consecutive  number  of  calendar  days
+equal to the Maximum Days of Postponement. In such event, the
+Spot Rate will be determined on the next Business Day after the
+Maximum  Days  of  Postponement  in  accordance  with  the  next
+applicable Disruption Fallback.
+Cumulative Events:Notwithstanding anything contained herein to the contrary, in no
+event shall the total number of consecutive calendar days during
+which  either  (i)  the  valuation  is  deferred  due  to  the  occurrence
+of  an  Unscheduled  Holiday,  or  (ii)  a  Valuation  Postponement
+shall occur, or any combination of (i) or (ii) above has occurred,
+shall  exceed  14  (fourteen)  consecutive  calendar  days  in  total.
+Accordingly,  if  upon  the  lapse  of  any  such  14  (fourteen)  day
+period,  an  Unscheduled  Holiday  shall  have  occurred  or  be
+continuing  on  that  day  that  follows  such  period,  then  such  day
+shall be deemed to be a Valuation Date and, if upon the lapse of
+any such 14 (fourteen) day period, a Price Source Disruption has
+occurred or is continuing on the day that follows such period, then
+the  Valuation  Postponement  shall  not  apply  and  the  Spot  Rate
+shall  thereby  be  determined  in  accordance  with  the  Disruption
+Fallback that is next deemed applicable to this Transaction.
+Maximum Days of Postponement:"Maximum Days of Postponement" shall mean, for purposes of
+this Transaction, fourteen (14) calendar days
+Business Day Convention:
+Applicable to the Scheduled
+Valuation Date:
+Preceding; provided, however, that the adjustment shall be made
+in  accordance  with  the  Following  Business  Day  Convention  in
+the event of an Unscheduled Holiday.
+Adjustment to Payment Dates,
+Exchange Date and Termination
+Date:
+If  the  Valuation  Date  in  respect  of  a  Reference  Currency
+Payment  Date,  a  Reference  Currency  Exchange  Date  or  the
+Termination Date is not the Scheduled Valuation Date in respect
+of such Reference Currency Payment Date, Reference Currency
+Exchange   Date   or   Termination   Date,   then   such   Reference
+Currency Payment Date, Reference Currency Exchange Date or
+Termination Date (as applicable) shall be as soon as practicable
+after  the  relevant  Valuation  Date,  but  in  no  event  later  than  the
+day which is two Business Days after the relevant Valuation Date.
+Further, if payments are scheduled to be made by both parties on a
+Payment Date, Exchange Date or Termination Date, and such date
+is adjusted due to the occurrence of an Unscheduled Holiday in
+accordance with the previous sentence, then such Payment Date,
+Exchange Date or Termination Date shall be adjusted in respect
+of both parties’ payments.
+For the avoidance of doubt, such adjustments shall not apply in
+respect of Period End Dates (including the Termination Date) for
+the purposes of determining the Calculation Periods.
+DocuSign Envelope ID: BE460B8F-56F0-4D54-87A8-67F29062EB61
+
+DocControlId: XDCTRL000000182400-0Transaction ID:SDBB7MT33364LDXNP4.0.0.0.1-0
+5 of 6
+Business Day (as defined in the
+1998 FX Definitions) for Valuation
+Date(s):
+New York and Santiago
+Business Day (as defined in the
+2021 Definitions) for all other
+purposes:
+New York and Santiago
+Calculation Agent:BANCO_A
+5. Additional Provisions:None
+DocuSign Envelope ID: BE460B8F-56F0-4D54-87A8-67F29062EB61
+
+DocControlId: XDCTRL000000182400-0Transaction ID:SDBB7MT33364LDXNP4.0.0.0.1-0
+6 of 6
+6.Counterparty hereby agrees (a) to check this Confirmation (Reference No.:
+SDBB7MT33364LDXNP4.0.0.0.1-0) carefully and promptly upon receipt so that errors or discrepancies can
+be promptly identified and rectified and (b) to confirm that the foregoing correctly sets forth the terms of the
+agreement between BANCO_A and Counterparty with respect to the particular Transaction to which this
+Confirmation relates, by manually signing this Confirmation and providing the other information requested
+herein and promptly returning an executed copy via Email.
+Very truly yours,
+BANCO_A
+Agreed and Accepted by: 
+Banco ABC
+DOCUSIGN_SIGNER1
+By:________________________
+Name:
+Title:
+Counterparty Reference Number: 
+ DOCUSIGN_ALTERNATIVE_ID
+DocuSign Envelope ID: BE460B8F-56F0-4D54-87A8-67F29062EB61

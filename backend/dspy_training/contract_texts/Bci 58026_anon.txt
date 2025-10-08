@@ -1,0 +1,304 @@
+
+
+12934961-1 
+ 
+ 
+ 
+ 
+Referencia:12934961 - 1 
+ 
+ 
+CONTRATO SWAP 
+ 
+En Santiago de Chile  a 09 de Marzo  de 2023 entre, por una parte Chilean Bank b,    R.U.T.    ,    representado    por    la(s)    persona(s)    que    suscribe(n)    y    se 
+individualiza(n)  al  final  de este contrato, todos  domiciliados  en esta  ciudad, en HUERFANOS  1102  - 
+PISO 5, SANTIAGO,  Santiago, en  adelante también "Chilean Bank b",  y por la   otra, Banco ABC, 
+R.U.T. ,   representado   por   la(s)   persona(s)   que   suscribe(n)   y   se   individualiza(n)   al   final,   todos   
+domiciliados  en  ,  en  adelante  "CLIENTE",  se  ha  convenido  el  Contrato  Swap  que  más  adelante  se  
+indica,  en  adelante  el  "Contrato",  el  cual  se  regirá por  las  Condiciones  Generales  de  Contratos  de  
+Derivados en el Mercado Local suscritas y vigentes  entre ambas partes, documento que, para todos los 
+efectos, se entiende formar parte integrante del presente instrumento: 
+I.- D
+efiniciones: 
+ 
+i) Fecha de Cierre: Fecha en que se pactan entre las partes las condiciones financieras de la operación. 
+ 
+ii) Fecha de Inicio: Fecha en la cual inicia cada periodo de intereses. 
+ 
+iii) Fecha de Fijación: Significa el  día  en que se  determinará la  tasa  de interés  a utilizar para  cada 
+periodo. 
+iv)    Fecha de Pago: Respecto de un Contrato Swap significa las fechas pactadas por las partes en las 
+cuales deben cumplir las obligaciones de pago contraídas en este Contrato. 
+v) Fecha de Término: Fecha en la cual termina cada periodo de intereses. 
+ 
+vi)   Fecha de Vencimiento: Significa la última Fecha de Término estipulada en el Contrato. 
+ 
+vii) Monto Contratado: Significa la  cantidad de  Moneda Extranjera, Unidades  de Fomento  IVP y/o 
+Moneda  Nacional  que  cada  una  de  las  partes  han  acordado  en  este  Contrato,  y  que  se  encuentre  
+vigente  a  la  Fecha  de  Pago,  cantidad  sobre  la  cual  y  por  el  o  los  Períodos  de  Intereses  pactados,  se  
+aplican las Tasas de Interés convenidas en la sección II de este Contrato. 
+ 
+viii) Monto de Amortización: Significa el o los montos de capital que las partes han acordado pagar en 
+cada Fecha de Pago. 
+ix)    Períodos de Intereses: Significa (i) para el primer Período de Intereses, el período que comienza en 
+la primera Fecha de Inicio y termina el día que fijen las partes en este Contrato como primera Fecha de 
+Término,  (ii)  y  respecto  de  los  siguientes  Períodos  de  Intereses,  cada  uno  de  los  períodos  que  
+comienzan  en  la  Fecha  de  Inicio  inmediatamente  precedente  y  que  termina  en  la  siguiente  Fecha  de  
+Término, y así - sucesivamente. 
+x) SOFR Compuesta: Con respecto a un Perodo de Interés, significa la tasa de retorno de una inversión 
+con  interés  compuesto  diario,  que  utiliza  para  su  cálculo  la  Tasa  SOFR  de  Referencia,  que  será  
+determinada  por  Chilean Bank b  como  agente  de  cálculo  y  que  resulte  de  aplicar  los  siguientes  procedimientos  y  
+fórmulas.  El  porcentaje  resultante  será  redondeado,  si  es  necesario,  al  cuarto  decimal  de  un  punto  
+porcentual, con 0,00005 siendo redondeado hacia arriba: 
+
+12934961 - 1 
+12934961-1 
+ 
+ 
+ 
+ 
+Donde: 
+ 
+"d" significa el número de días calendario en un determinado Periodo de Referencia. 
+ 
+"d0" para cada Período de Referencia, significa el número de Días Hábiles para U.S. Government 
+Securities en el respectivo Periodo de Referencia. 
+ 
+"Día  Hábil  para  U.S.  Government  Securities"  significa  cualquier  día  excepto  los  sábados,  
+domingos o aquellos días en que la "Security Industry and Financial Markets Association (SIFMA) 
+",  o  aquella  entidad  que  la  reemplace,  recomiende  que  los  departamentos  de  renta  fija  de  sus  
+miembros cierren por todo un día para propósitos de transar U.S. Government Securities. 
+ 
+"t" es una serie de números enteros de 1 a d0, donde cada uno representa un Día Hábil para U.S. 
+Goverment Securities, ordenados cronológicamente desde e incluyendo el primer Día Hábil para 
+U.S. Government Securities en el respectivo Periodo de Referencia. 
+ 
+"nt"  para  un  Día  Hábil  para  U.S.  Government  Securities  "t"  en  un  determinado  Periodo  de  
+Referencia, significa el número de días calendarios, desde e incluyendo dicho Día Hábil para U.S. 
+Government  Securities  "t",  y  hasta  pero  excluyendo  el  siguiente  Día  Hábil  para  U.S.  Goverment  
+Securities. 
+ 
+"Periodo  de  Referencia"  significa  respecto  a  cada  Período  de  Interés,  el  período  desde,  e  
+incluyendo, el número de Días Hábiles para U.S. Government Securities anteriores al primer día 
+del respectivo Período de Intereses que corresponda según la Convención de Ajuste hasta, pero 
+excluyendo,  el  mismo  número  de  Días  Hábiles  para  U.S.  Government  Securities  anteriores  al  
+último  día  del  respectivo  Periodo  de  Intereses.  En  el  caso  del  primer  Período  de  Intereses,  el  
+Período  de  Referencia  comenzará  el  mismo  número  de  Días  Hábiles  para  U.S.  Government  
+Securities  anteriores  al  comienzo  del  Período  de  Intereses  inicial  que  corresponda  según  la  
+Convención de Ajuste. 
+ 
+"Convención de Ajuste" significa el número de días que las partes acuerden en la Sección II de 
+este Contrato para determinar el Período de Referencia y la Fecha de Pago, pudiendo ser alguna 
+de las siguientes: 
+ 
+(i)  SIMPLE:  Se  utilizará  la  Tasa  SOFR  Compuesta  sin  modificaciones  (es  decir,  con  cero  Días  
+Hábiles  de  ajuste  para  el  Período  de  Referencia)  y  la  Fecha  de  Pago  será  el  primer  día  del  
+siguiente Período de Intereses. 
+(ii)  D
+IFERIDO: Se utilizará la Tasa SOFR Compuesta sin modificaciones (es decir, con cero Días 
+Hábiles de ajuste para el Período de Referencia), y la Fecha de Pago será N/A días después 
+del primer día del siguiente Período de Intereses. 
+(iii) L
+OCKOUT: Se utilizará la  Tasa SOFR Compuesta sin modificaciones (es decir, con cero Días 
+Hábiles  de ajuste para  el  Período de Referencia)  hasta N/A días  antes  del  término del 
+respectivo  Período  de  Intereses,  a  partir  del  cual  se  aplicará  la  tasa  de  ese  día  para  los  
+restantes días del Período de Intereses. 
+(iv) LOOKBACK:  Se  utilizará  la  Tasa  SOFR  Compuesta  vigente  durante  cada  día  en  el  período  
+que va desde N/A días antes del primer día del respectivo Período de Intereses y hasta N/A 
+días antes del último día del respectivo Periodo de Intereses. 
+ 
+"SOFR t" significa la Tasa SOFR de Referencia para el respectivo Día Hábil de U.S. Government 
+Securities  "t"  en  el  correspondiente  Período  de  Referencia  (y  publicada  el  siguiente  Día  Hábil 
+para U.S. Government Securities). 
+ 
+"Tasa  SOFR  de Referencia" significa, con  respecto  a un  Día  Hábil  para U.S.  Government 
+
+12934961 - 1 
+12934961-1 
+ 
+ 
+Securities, una tasa de referencia igual a la daily secured overnight financing rate ("SOFR") para 
+ese Día Hábil para U.S. Government Securities, determinada por el Federal Reserve Bank of New 
+York como administrador de dicha tasa (o cualquier administrador que lo suceda ) y publicada a 
+esta fecha en el siguiente sitio web http://www.newyorkfed.org. 
+ 
+"U.S.  Government  Securities"  significa  aquellos  instrumentos  de  deuda  ofrecidos  por  una  
+entidad  gubernamental  de  los  Estados  Unidos  de  América,  que  tienen  derecho  a  la  plena  fe  y  
+crédito de los Estados Unidos de América y prevén el pago periódico de intereses y el pago total 
+del capital en el vencimiento o rescate. 
+ 
+ 
+xi)   Modalidad  para  días  festivos:  En caso que una Fecha de Término y/o Fecha de Pago recaiga en 
+un  da  festivo,  tales  fechas  se  entenderán  modificadas  según  la  modalidad  que  las  partes  acuerden  y 
+que podrá ser alguna de las siguientes: 
+ 
+(i) END_MONTH La respectiva fecha se entenderá que recae el último día hábil del mes. 
+(ii)  FOLLOWING La respectiva fecha se entenderá que recae el día hábil siguiente. 
+(iii) MOD_FOLLOW La  respectiva  fecha  se  entenderá  que  recae  el  día  hábil  siguiente,  a  
+menos  que  dicho  día  corresponda  al  próximo  mes  calendario,  en  cuyo  
+caso la respectiva fecha será día hábil anterior a la original. 
+(iv) NO_CHANGE 
+(UNADJUSTED) 
+La respectiva fecha no se ajusta. 
+ 
+ 
+xii) Term SOFR: significa, para cada Fecha de Fijación o de Liquidación Anticipada, según sea el caso, 
+la Tasa SOFR estimada para un determinado periodo de tiempo futuro publicada por CME Group Inc. en 
+el  sitio  web  https://www.cmegroup.com/market-data/cme-group-benchmark-administration/term-sofr.html 
+o  por  otro  proveedor  de  información  que  hubiere  sido  seleccionado  o  recomendado  por  ISDA  o  la  
+Autoridad Gubernamental Relevante, de tiempo en tiempo, como la fuente sucesora para efectos de la 
+publicación de la Term SOFR, a las 06:00 A.M., hora de Nueva York, dos Días Hábiles anteriores a cada 
+Fecha de Fijación o de Liquidación Anticipada, según sea el caso. 
+II.- Condiciones Financieras: 
+1.    Monto Contratado por Chilean Bank b: USD 200.000,00 
+2.    Monto Contratado por CLIENTE: USD 200.000,00 
+3.    Fecha de Inicio: 13/03/2023 
+4.    Fecha de Vencimiento: 13/03/2025 
+5.    Tasa de Interés Pactada por Chilean Bank b: Tasa Fija, 4,980000% 
+6.    Spread pactado por Chilean Bank b: 0,000000% 
+7.    Tasa de Interés Pactada por CLIENTE: Tasa Flotante, USD TERM_SOFR 6M 
+8.    Spread pactado por CLIENTE: 0,000000% 
+9.    Tipo de Cambio Referencial: N/A 
+10. Paridad Referencial: N/A 
+11. Lugar de Cumplimiento: Santiago de Chile 
+12. Bancos de Referencia: BANCO_B, BANCO_C, BANCO DEL ESTADO 
+DE CHILE 
+13. Modalidad de Pago: Compensación en USD 
+14. Forma de Pago: SWIFT 
+15. Valuta de Pago: T+0 
+16. Base de Cálculo Chilean Bank b: ACT/360 
+17. Base de Cálculo CLIENTE: ACT/360 
+18. Modalidad para días festivos Chilean Bank b: 
+Calendario de Cálculo: SAN, NYC, MOD_FOLLOW. 
+Calendario de Pago: SAN, NYC, según fechas de pago. 
+Calendario Fijación Variable: N/A. 
+19. Modalidad para días festivos CLIENTE: 
+Calendario de Cálculo: NYC, SAN, MOD_FOLLOW. 
+Calendario de Pago: NYC, SAN, según fechas de pago. 
+
+12934961 - 1 
+12934961-1 
+ 
+ 
+Calendario Fijación Variable: NYC_BOND, según fechas de fijación 
+20. Convención de Ajuste: N/A 
+ 
+III.- Obligaciones entre las partes 
+(i) Por el presente instrumento, Chilean Bank b se obliga a pagar al CLIENTE en cada una de las Fechas de Pago, 
+las cantidades que se indican a continuación: 
+a) "Monto de Intereses"; es el determinado para cada una de dichas fechas y que resulte de aplicar la 
+tasa  indicada  en  la  columna  "Tasa"  más  la  columna  "Spread",  sobre  el  monto  indicado  en  la  columna  
+"Capital", por el número de días que incluya cada Periodo de Intereses, de acuerdo a la Base de Cálculo 
+definida en las Condiciones Financieras. 
+b) El monto determinado para cada una de dichas fechas en la columna "Amortización". 
+ 
+ 
+Chilean Bank b Paga 
+Fecha Fijación Fecha Inicio Fecha Término Fecha Pago Días Capital %Tasa %Spread Amortización Interés Cuota 
+- 13/03/2023 13/09/2023 13/09/2023 184 200.000,00 4,980000 0,000000 0,00 5.090,67 5.090,67 
+- 13/09/2023 13/03/2024 13/03/2024 182 200.000,00 4,980000 0,000000 0,00 5.035,33 5.035,33 
+- 13/03/2024 13/09/2024 13/09/2024 184 200.000,00 4,980000 0,000000 0,00 5.090,67 5.090,67 
+- 13/09/2024 13/03/2025 13/03/2025 181 200.000,00 4,980000 0,000000 200.000,00 5.007,67 205.007,67 
+(ii) Por el presente instrumento, CLIENTE se obliga a pagar a Chilean Bank b en cada una de las Fechas de Pago, 
+las cantidades que se indican a continuación: 
+a) "Monto de Intereses"; es el determinado para cada una de dichas fechas y que resulte de aplicar la 
+tasa  indicada  en  la  columna  "Tasa"  más  la  columna  "Spread",  sobre  el  monto  indicado  en  la  columna  
+"Capital", por el número de días que incluya cada Periodo de Intereses, de acuerdo a la Base de Cálculo 
+definida en las Condiciones Financieras. 
+b) El monto determinado para cada una de dichas fechas en la columna "Amortización". 
+ 
+ 
+Chilean Bank b Recibe 
+Fecha Fijación Fecha Inicio Fecha Término Fecha Pago Días Capital %Tasa %Spread Amortización Interés Cuota 
+09/03/2023 13/03/2023 13/09/2023 13/09/2023 184 200.000,00 5,389000 0,000000 0,00 5.508,76 5.508,76 
+11/09/2023 13/09/2023 13/03/2024 13/03/2024 182 200.000,00 USD TERM_SOFR 6M 0,000000 0,00 Por Determinar Por Determinar 
+11/03/2024 13/03/2024 13/09/2024 13/09/2024 184 200.000,00 USD TERM_SOFR 6M 0,000000 0,00 Por Determinar Por Determinar 
+11/09/2024 13/09/2024 13/03/2025 13/03/2025 181 200.000,00 USD TERM_SOFR 6M 0,000000 200.000,00 Por Determinar Por Determinar 
+(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad establecida en la Sección II 
+de este instrumento (Entrega Física o Compensación). 
+ 
+IV.- Cumplimiento: 
+(i) Entrega Física 
+(A) En cada Fecha de Pago cada parte se obliga a pagar a la otra los intereses devengados durante el 
+período  transcurrido  entre  la  respectiva  Fecha  de  Inicio  y  la  respectiva  Fecha  de  Término  o  de  
+Liquidación  Anticipada,  según  corresponda,  por  sobre  el  o  los  Montos  Contratados  acordados  en  este  
+Contrato y vigentes durante el respectivo Período de Intereses, conforme a las Tasas de Interés y Base 
+de Cálculo pactadas por cada una de las partes. 
+(B) Además de los pagos que las partes deban efectuarse de conformidad a la letra (A) de esta cláusula 
+(i),  las  partes  podrán  acordar  el  pago  en  cada  Fecha  de  Pago,  del  Monto  de  Amortización  pactado  en  
+este Contrato para cada Fecha de Término. 
+(ii) Compensación 
+1.- Pago de Interés 
+
+12934961 - 1 
+12934961-1 
+ 
+ 
+(A) En el último día de cada Período de Intereses, las partes calcularán los intereses devengados entre 
+la  respectiva  Fecha  de  Inicio  y  la  respectiva  Fecha  de  Término,  por  sobre  los  Montos  Contratados,  
+conforme a las Tasas de Interés y Base de Cálculo pactadas por las partes en este Contrato. 
+(B) Establecida  la  cuantía  en  Moneda  Nacional  de  las  obligaciones  de  cada  parte  de  conformidad  a  lo  
+establecido  en  la  cláusula  4.3.  de  las  Condiciones  Generales,  dichas  cantidades  se  compensarán  
+extinguiéndose  recíprocamente  hasta  la  concurrencia  de  sus  valores.  La  parte  que  resultare  deudora  
+deberá pagar en cada Fecha de Pago la diferencia (el "Diferencial de Intereses") a la parte que resulte 
+acreedora. 
+El  Diferencial  de  Intereses  se  pagará  en  Moneda  Nacional  o  en  Moneda  Extranjera,  según  se  estipule 
+en la sección II de este Contrato. En este último caso, el Diferencial de Intereses deberá convertirse a 
+Moneda  Nacional  o  a  Moneda  Extranjera  conforme  al  Tipo  de  Cambio  de  Referencia  y/o  Paridad  
+Referencial, según sea el caso, pactado en la sección II   de este Contrato que se encuentre vigente en la 
+respectiva Fecha de Término. 
+ 
+2.- Pago de Capital 
+(A) Además de los pagos que las partes deban efectuarse de conformidad a la letra (B) del numeral 1 de 
+la  cláusula  (ii),  las  partes  pagarán  en  cada  Fecha  de  Pago  los  Montos  de  Amortización  que  hubiere  
+pactado en la sección III de este Contrato. 
+(B) Establecida en Moneda Nacional la cuantía de los respectivos Montos de Amortización conforme a lo 
+dispuesto en la cláusula 4.3 de las Condiciones Generales, las cantidades respectivas se compensarán 
+extinguiéndose  recíprocamente  hasta  la  concurrencia  de  sus  valores.  La  parte  que  resultare  deudora  
+deberá  pagar  en  cada  Fecha  de  Pago  la  diferencia  (el  "Diferencial  de  Amortización")  a  la  parte  que  
+resulte acreedora. 
+El  Diferencial  de  Amortización  se  pagará  en  Moneda  Nacional  o  en  Moneda  Extranjera,  según  se  
+estipule  en  la  sección  II  de  este  Contrato.  En  este  último  caso,  el  Diferencial  de  Amortización  deberá  
+convertirse a Moneda Nacional o en Moneda Extranjera conforme al Tipo de Cambio de Referencia y/o 
+Paridad  Referencial,  según  sea  el  caso,  pactado  en  la  sección  II  de  este  Contrato  que  se  encuentra  
+vigente en la respectiva Fecha de Término. 
+ 
+V.- Definiciones; Ejemplares 
+A  menos  que  se  exprese  lo  contrario  en  este  instrumento,  los  términos  en  mayúscula  tendrán  el  
+significado que para ellos se señala en las Condiciones Generales. El presente contrato se firma en dos 
+ejemplares de idéntico tenor y fecha, quedando uno en poder de cada parte. 
+ 
+ 
+Saludos cordiales, 
+Chilean Bank b 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pp. Banco ABC pp. Chilean Bank b 
+Nombre: Nombre: 
+Rut: Rut: 
+Nombre: Nombre: 
+Rut: Rut: 
+
+12934961-1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

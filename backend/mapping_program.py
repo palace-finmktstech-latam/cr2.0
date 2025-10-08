@@ -423,6 +423,18 @@ class TradeDataMapper:
             return float(value)
         elif transformation_type == 'notional':
             return self._transform_notional(value)
+        elif transformation_type.startswith('arithmetic:'):
+            # Generic arithmetic transformation: "arithmetic:x-2", "arithmetic:x+1", "arithmetic:x*2", etc.
+            # 'x' represents the input value
+            expression = transformation_type.split(':', 1)[1]
+            try:
+                # Convert value to int first for arithmetic operations
+                x = int(value)
+                # Evaluate the expression safely (only basic arithmetic)
+                result = eval(expression, {"__builtins__": {}}, {"x": x})
+                return int(result) if isinstance(result, (int, float)) and result == int(result) else result
+            except Exception as e:
+                raise ValueError(f"Invalid arithmetic expression '{expression}': {e}")
         elif transformation_type == 'fx_fixing_lag':
             # Special handling for fx_fixing_lag which has custom logic
             mapping = transformations.get(transformation_type, {})

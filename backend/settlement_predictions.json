@@ -1,0 +1,1417 @@
+{
+  "model_type": "OPTIMIZED",
+  "total_contracts": 83,
+  "results": [
+    {
+      "contract_id": "7560-11287435_1_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Contratado por el Banco: CLF1.000.000,0000\"\n\"Monto Contratado por el Cliente: CLP40.067.000.000\"\n\"Modalidad de Pago: Compensado CLP\"\n\"Banco Itaú paga: CLF 1.000.000,0000\nCliente paga: CLP 40.067.000.000\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"II. CONDICIONES FINANCIERAS.\n...\n15. Modalidad de Pago: Compensado CLP\"\n\"19. Intercambio Final: 03 de Marzo 2026\nBanco Itaú paga: CLF 1.000.000,0000\nCliente paga: CLP 40.067.000.000\""
+        }
+      ]
+    },
+    {
+      "contract_id": "7561-11287496_1_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Contratado por el Cliente: CLF800.000,0000\"\n\"Modalidad de Pago: Compensado CLP\"\n\"Cliente paga: CLF 800.000,0000\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Contratado por el Cliente: CLF800.000,0000\"\n\"Modalidad de Pago: Compensado CLP\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Bank Of America 34571_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Lines 88-91: \"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\nSettlement:Non-Deliverable\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Lines 89-91: \"Reference Currency: Chilean Peso (CLP)\nSettlement Currency: United States Dollar (USD)\nSettlement: Non-Deliverable\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Bank Of America 40001_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency: Chilean Peso (CLP)\nSettlement Currency: United States Dollar (USD)\nSettlement:Non-Deliverable, with the effect that any amounts denominated in the\nReference Currency payable under this Transaction shall be converted\nto an amount denominated in the Settlement Currency by application of\nthe Settlement Rate Option determined in respect of the Valuation Date\nimmediately preceding the relevant Payment Date or Exchange Date, if\nany, and the amount denominated in the Settlement Currency resulting\nfrom such conversion shall be paid on such Payment Date or Exchange\nDate,  as  applicable,  by  the  applicable  party\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency: Chilean Peso (CLP)\nSettlement Currency: United States Dollar (USD)\nSettlement:Non-Deliverable, with the effect that any amounts denominated in the\nReference Currency payable under this Transaction shall be converted\nto an amount denominated in the Settlement Currency by application of\nthe Settlement Rate Option determined in respect of the Valuation Date\nimmediately preceding the relevant Payment Date or Exchange Date, if\nany, and the amount denominated in the Settlement Currency resulting\nfrom such conversion shall be paid on such Payment Date or Exchange\nDate,  as  applicable,  by  the  applicable  party\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Bank Of America 48810_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\nSettlement:Non-Deliverable\"\n\"A.Floating Amounts I:\nFloating Rate Payer I\nCurrency Amount:CLP 32,640,000,000\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Section D: \"All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\nSettlement:Non-Deliverable\"\nSection B: \"Floating Rate Payer II Currency Amount:USD 40,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Bank Of America 51934_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\nSettlement:Non-Deliverable\"\nSchedule A: \"Currency Amount: UF 119,999.35\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3-4: \"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\nSettlement:Non-Deliverable, with the effect that any amounts denominated in the\nReference Currency payable under this Transaction shall be converted\nto an amount denominated in the Settlement Currency\"\nSchedule B lists the currency amount as CLP."
+        }
+      ]
+    },
+    {
+      "contract_id": "Bank Of America 52780_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Line 69: Fixed Rate Payer Currency Amount:UF 163,576.16\nLines 114-115: \"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\"\nLine 116: Settlement Currency:United States Dollar (USD)\nLine 117: Settlement:Non-Deliverable"
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency: Chilean Peso (CLP)\nSettlement Currency: United States Dollar (USD)\nSettlement:Non-Deliverable, with the effect that any amounts denominated in the\nReference Currency payable under this Transaction shall be converted\nto an amount denominated in the Settlement Currency by application of\nthe Settlement Rate Option determined in respect of the Valuation Date\nimmediately preceding the relevant Payment Date or Exchange Date, if\nany, and the amount denominated in the Settlement Currency resulting\nfrom such conversion shall be paid on such Payment Date or Exchange\nDate, as applicable, by the applicable party\"\nLine 83: Floating Rate Payer Currency Amount:CLP 5,699,116,131"
+        }
+      ]
+    },
+    {
+      "contract_id": "Bank Of America 58181_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\nSettlement:Non-Deliverable\"\nSchedule A: \"Currency Amount: UF 119,999.35\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3-4: \"D. All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency: Chilean Peso (CLP)\nSettlement Currency: United States Dollar (USD)\nSettlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable under this Transaction shall be converted to an amount denominated in the Settlement Currency by application of the Settlement Rate Option determined in respect of the Valuation Date immediately preceding the relevant Payment Date or Exchange Date, if any, and the amount denominated in the Settlement Currency resulting from such conversion shall be paid on such Payment Date or Exchange Date, as applicable, by the applicable party\"\nPage 12: \"SCHEDULE B\nCalculation Period scheduled to commence on:Currency Amount:\n7th December 2023CLP 4,391,730,288\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Bank Of America 58723_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"A.Floating Amounts I:\nFloating Rate Payer I:Party B\nFloating Rate Payer I\nCurrency Amount:CLP 7,200,000,000\"\n\"D.All amounts payable under this Transaction on each Payment Date and Exchange Date, if any, will be paid in USD:\nReference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\nSettlement:Non-Deliverable, with the effect that any amounts denominated in the\nReference Currency payable under this Transaction shall be converted\nto an amount denominated in the Settlement Currency by application of\nthe Settlement Rate Option determined in respect of the Valuation Date\nimmediately preceding the relevant Payment Date or Exchange Date, if\nany, and the amount denominated in the Settlement Currency resulting\nfrom such conversion shall be paid on such Payment Date or Exchange\nDate, as applicable, by the applicable party\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Line 77: Floating Rate Payer II Currency Amount:USD 9,000,000.00\nLines 98-100: \"Settlement:Non-Deliverable, with the effect that any amounts denominated in the\nReference Currency payable under this Transaction shall be converted\nto an amount denominated in the Settlement Currency\"\nLines 96-97: \"Reference Currency:Chilean Peso (CLP)\nSettlement Currency:United States Dollar (USD)\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Barclays 51284_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement:Non-deliverable, with the effect that any amounts\ndenominated in the Reference Currency payable\nhereunder on any Payment Date shall be converted\ninto Settlement Currency amounts by dividing such\namounts by the Spot Rate determined in respect\nof the Valuation Date related to the applicable\nPayment Date. All payments (including exchanges)\nhereunder shall be made in the Settlement Currency.\"\n\"Reference Currency:CLP\"\n\"Settlement Currency:USD\"\n\"Notional Amount:CLP 21,000,000,000\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Settlement:Non-deliverable, with the effect that any amounts\ndenominated in the Reference Currency payable\nhereunder on any Payment Date shall be converted\ninto Settlement Currency amounts by dividing such\namounts by the Spot Rate determined in respect\nof the Valuation Date related to the applicable\nPayment Date. All payments (including exchanges)\nhereunder shall be made in the Settlement Currency.\nReference Currency:CLP\nSettlement Currency:USD\nNotional Amount:CLP 21,000,000,000"
+        }
+      ]
+    },
+    {
+      "contract_id": "Barclays 51295_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Settlement Provisions :\nSettlement Rate Option :CLP DÓLAR OBS (CLP10)\nReference Currency :CLP\nSettlement Currency :USD"
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3:\n\"Settlement Provisions :\nSettlement Rate Option :CLP DÓLAR OBS (CLP10)\nReference Currency :CLP\nSettlement Currency :USD\"\nPage 2:\n\"Floating Amounts:\nFloating Amount Payer:UK Bank B\"\nPage 13-17:\n\"Schedule for UK Bank B:\nFrom and includingTo but excludingCurrencyCurrency Amount\nDecember 7, 2023December 28, 2023CLP8,392,257,341\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Barclays 53108_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Settlement:Non-deliverable, with the effect that any amounts\ndenominated in the Reference Currency payable\nhereunder on any Payment Date shall be converted\ninto Settlement Currency amounts by dividing such\namounts by the Spot Rate determined in respect\nof the Valuation Date related to the applicable\nPayment Date. All payments (including exchanges)\nhereunder shall be made in the Settlement Currency.\nReference Currency:CLP\nSettlement Currency:USD\nNotional Amount:CLP 2,300,000,000"
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Settlement:Non-deliverable, with the effect that any amounts\ndenominated in the Reference Currency payable\nhereunder on any Payment Date shall be converted\ninto Settlement Currency amounts by dividing such\namounts by the Spot Rate determined in respect\nof the Valuation Date related to the applicable\nPayment Date. All payments (including exchanges)\nhereunder shall be made in the Settlement Currency.\nReference Currency:CLP\nSettlement Currency:USD\nNotional Amount:CLP 2,300,000,000"
+        }
+      ]
+    },
+    {
+      "contract_id": "Barclays 53190_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment Date shall be converted into Settlement Currency amounts by dividing such amounts by the Spot Rate determined in respect of the Valuation Date related to the applicable Payment Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Notional Amount: CLP 18,800,000,000\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment Date shall be converted into Settlement Currency amounts by dividing such amounts by the Spot Rate determined in respect of the Valuation Date related to the applicable Payment Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Settlement Currency: USD\"\n\"Notional Amount: CLP 18,800,000,000\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Barclays 53891_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment Date shall be converted into Settlement Currency amounts by dividing such amounts by the Spot Rate determined in respect of the Valuation Date related to the applicable Payment Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"UF Notional: UF 106,807.42 ; Subject to adjustment in accordance with the relevant shedule\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Floating Amounts:\nFloating Amount Payer:UK Bank B\n...\nSettlement:Non-deliverable, with the effect that any amounts\ndenominated in the Reference Currency payable\nhereunder on any Payment Date shall be converted\ninto Settlement Currency amounts by dividing such\namounts by the Spot Rate determined in respect\nof the Valuation Date related to the applicable\nPayment Date. All payments (including exchanges)\nhereunder shall be made in the Settlement Currency.\n...\nReference Currency:CLP\nSettlement Currency:USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 38013_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Reference Currency: CLP\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 39149_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Reference Currency: CLP\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 41920_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Reference Currency: CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Reference Currency: CLP\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 43977_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 2: \"Notional Amount: USD 500,000.00\"\nPage 3: \"Cash Settlement: Applicable\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3: \"Cash Settlement: Applicable\"\nPage 2: \"Notional Amount: USD 500,000.00\"\nPage 3: \"Floating Rate Option : USD-SOFR-OIS Compouns\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 45900_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Floating Amount Payer Currency Amount I: USD 26,000,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 46129_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Section 2: \"Floating Amount Payer Currency Amount I: USD 3,300,000.00\"\nSection 7: \"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\nSection 7: \"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Floating Amount Payer Currency Amount II: CLP 2,839,650,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 49164_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Floating Amount Payer Currency Amount I: USD 26,000,000.00\nSettlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\nSettlement Currency: USD"
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Floating Amount Payer Currency Amount II: CLP 21,216,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 49925_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 2: \"Notional Amount: USD 900,000.00\"\nPage 3: \"Cash Settlement: Applicable\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Floating Amount Payer : Counterparty\nFloating Rate Option : USD-SOFR-OIS Compound\nCash Settlement: Applicable"
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 50323_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Fixed Amount Payer Currency Amount : CLF 500,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Floating Amount Payer Currency Amount : CLP 17,981,660,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "BBVA 59121_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\"\n\"Fixed Amount Payer Currency Amount : CLF 580,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Floating Amount Payer Currency Amount : CLP 20,993,163,800.00\"\n\"Settlement: Non deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (“Reference Currency Payment Date”) or an Exchange Date (“Reference Currency Exchange Date”) shall be converted into Settlement Currency amounts. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Bci 41912_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"1. Monto Contratado por Chilean Bank b: CLP 2.371.750.000,00\"\n\"14. Modalidad de Pago: Compensación en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Section II, item 14: \"Modalidad de Pago: Compensación en CLP\"\nSection IV (ii): \"Compensación\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Bci 58026_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "II.1 Monto Contratado por Chilean Bank b: USD 200.000,00\nII.2 Monto Contratado por CLIENTE: USD 200.000,00\nII.13 Modalidad de Pago: Compensación en USD"
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"13. Modalidad de Pago: Compensación en USD\"\n\"II.- Condiciones Financieras:\n1. Monto Contratado por Chilean Bank b: USD 200.000,00\n2. Monto Contratado por CLIENTE: USD 200.000,00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 40044_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall \nbe made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Floating Rate Payer: US Bank C\n Notional Amount: CLP 5,000,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 40303_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Floating Rate Payer: US Bank C\n Notional Amount: CLP 8,800,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 40590_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Notional Amount: CLP 5,000,000,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 5:\n\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall \nbe made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\"\n\nPage 4:\n\"Floating Amounts \nFloating   Rate  Payer: US Bank C\n Notional Amount: CLP 5,000,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 41157_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3: First Floating Amount Payer Currency Amount: USD1,000,000.00\nPage 7: Settlement: Non-deliverable\nSettlement Currency: USD"
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nReference Currency: CLP \nSettlement Currency: USD\"\n\"Second Floating Amount Payer Currency Amount: CLP 883,500,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 42138_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall \nbe made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Floating Rate Payer: US Bank C\n Notional Amount: CLP 3,280,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 42217_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Notional Amount: CLP 2,000,000,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 42265_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 44800_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Notional Amount: CLP 40,000,000,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 45181_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Floating Rate Payer: US Bank C\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 45298_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"First Floating Amount Payer: US Bank C\"\n\"First Floating Amount Payer Currency Amount: USD2,000,000.00\"\n\"Settlement Currency: USD\"\n\"Settlement: Non-deliverable\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Second Floating Amount Payer Currency Amount: CLP 1,760,000,000.00\"\n\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 45609_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Fixed Reference Currency Payer Currency Payment Amount: In respect of each Calculation Period, an amount in CLP equal to the product of (i) the Fixed Rate, (ii) the Fixed Reference Currency Day Count Fraction, (iii) the UF Notional Amount and (iv) the CLPUF as of the corresponding Fixed Reference Currency Payer Payment Date\"\n\"CLP-UF Notional Amount: UF 250.000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 46688_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3: \"First Floating Amount Payer Currency Amount: CLP 5,236,000,000.00\"\nPage 7: \"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\nPage 7: \"Reference Currency: Chilean Peso (CLP)\"\nPage 7: \"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 4/11: \"Second Floating Amount Payer: Counterparty\nSecond Floating Amount Payer Currency Amount: USD 5,600,000.00\"\nPage 7/11: \"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 48699_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Floating Reference Currency Payer Payment Amounts: In respect of each Floating Rate Reference Currency Payer Calculation Period, an amount in CLP equal to the product of (i) the CLP Notional Amount; (ii) the Floating Rate for such Floating Rate Currency Calculation Period, and (iii) the Floating Reference Currency Day Count Fraction.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 49044_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "UNKNOWN",
+          "evidence": "\"Cash Settlement Applicable\"\n\"Cash Settlement Payment Date: October 13, 2027 and every five years thereafter.\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Page 6/23: \"Cash Settlement Applicable\"\nPage 6/23: \"Cash Settlement Payment Date: October 13, 2027 and every five years thereafter.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 50046_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 6/10:\n\"Settlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\nSettlement Rate Option: CLP Dollar OBS (as defined below)\nReference Currency: CLP\nSettlement Currency: USD\"\nPage 3/10:\n\"First Fixed Reference Currency Payer CLP-UF Notional Amount: UF 200,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 6/10:\n\"Settlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\nPage 4/10:\n\"Second Fixed Reference Currency Payer CLP Notional: CLP 7,623,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 50146_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall \nbe made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 51483_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": null,
+          "settlement_currency": null,
+          "evidence": null
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Pages 5-6:\n\"SETTLEMENT PROVISIONS: \nSettlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\"\nPage 4:\n\"Floating Rate Payer: US Bank C\nFloating Rate Payer Notional Amount: CLP 5,700,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 52740_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-Deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall be \nmade in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-Deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall be \nmade in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\"\n\"Floating Reference Currency Payer \nCurrency Payment Amount: \nIn respect of each Floating Rate Reference Currency Payer \nCalculation Period, an amount in CLP equal to the product of \n(i) the Floating Reference Currency Payer CLP Notional \nAmount; (ii) the Floating Rate for such Floating Rate Currency \nCalculation Period, and (iii) the Floating Reference Currency \nPayer Day Count Fraction. \""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 55005_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\"\n\"Notional Amount: CLP 4,000,000,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall \nbe made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 55389_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 4/10: \"Floating Rate Payer Notional Amount: CLP 13,200,000,000.00\"\nPage 5/10: \"Settlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\nPage 5/10: \"Reference Currency: CLP\"\nPage 5/10: \"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 56240_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-Deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall be \nmade in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Pages 6-7:\n\"SETTLEMENT PROVISIONS:\nSettlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\nSettlement Rate Option: CLP Dollar OBS (as defined below)\nReference Currency: CLP\nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 57758_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 6/10:\n\"SETTLEMENT PROVISIONS: \nSettlement: \nNon-Deliverable, with the effect that any amounts denominated in the Reference Currency \npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement \nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and \npayable on the related Settlement Date. All payments (including exchanges) hereunder shall be \nmade in the Settlement Currency. \nSettlement Rate Option: CLP Dollar OBS (as defined below) \nReference Currency: CLP \nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 6/10:\n\"SETTLEMENT PROVISIONS:\nSettlement:\nNon-Deliverable, with the effect that any amounts denominated in the Reference Currency\npayable hereunder on any Payment or Exchange Date shall be converted into the Settlement\nCurrency by reference to the Settlement Rate Option on the applicable Valuation Date and\npayable on the related Settlement Date. All payments (including exchanges) hereunder shall be\nmade in the Settlement Currency.\nSettlement Rate Option: CLP Dollar OBS (as defined below)\nReference Currency: CLP\nSettlement Currency: USD\"\n\nPage 5/10:\n\"Floating Reference Currency\nPayer CLP Notional:\nCLP 15,505,984,900.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 58672_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 5/10:\n\"Notional Amount: CLP 40,000,000,000.00\"\n\"Settlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 5/10:\n\"Floating Rate Payer: US Bank C\nNotional Amount: CLP 40,000,000,000.00\"\n\"SETTLEMENT PROVISIONS:\nSettlement: Non-deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\nReference Currency: CLP\nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Citi 58941_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 5/11: \"SETTLEMENT PROVISIONS: Settlement: Non-Deliverable...Settlement Currency: USD\"\nPage 3/11: \"Fixed Rate Payer Notional Amount: CLP 17,200,000,000.00\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 5/11: \"Floating Rate Payer Notional Amount: CLP 17,200,000,000.00\"\nPage 5/11: \"SETTLEMENT PROVISIONS: Settlement: Non-Deliverable, with the effect that any amounts denominated in the Reference Currency payable hereunder on any Payment or Exchange Date shall be converted into the Settlement Currency by reference to the Settlement Rate Option on the applicable Valuation Date and payable on the related Settlement Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency.\"\nPage 6/11: \"Reference Currency: CLP\"\nPage 6/11: \"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldman Sachs 38010_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-Deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (\"Reference Currency Payment Date\"), unless otherwise specified herein, shall be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments hereunder shall be made in the Settlement Currency on the Payment Date.\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Settlement: Non-Deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (\"Reference Currency Payment Date\"), unless otherwise specified herein, shall be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments hereunder shall be made in the Settlement Currency on the Payment Date.\nReference Currency: CLP\nSettlement Currency: USD"
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldman Sachs 41374_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"3. Settlement Provisions: \n\nNon-Deliverable, with the effect that all \npayments in CLP or CLF, payable hereunder \non a Payment Date (\"Reference Currency \nPayment Date\") or the Final Exchange Date \n(\"Reference Currency Exchange Date\") as \ndetermined above, unless otherwise specified \nherein, will be converted into Settlement \nCurrency amounts by reference to the \nSettlement Rate Option on the applicable \nValuation Date. All payments (including \nexchanges) hereunder shall be made in the \nSettlement Currency, and each Payment Date \nwill be deemed a “Settlement Date”. \n\nSettlement Rate Option: CLP DOLAR OBS or CLP10 \n\nReference Currency: CLP \n\nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Fixed Rate Payer Currency Amount: CLF  243,605.00\"\n\"Settlement Provisions: Non-Deliverable, with the effect that all payments in CLP or CLF, payable hereunder on a Payment Date...will be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency\"\n\"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldman Sachs 44801_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"3.Settlement Provisions: Non-Deliverable, with the effect that all payments in CLP or CLF, payable hereunder on a Payment Date (\"Reference Currency Payment Date\") or the Final Exchange Date (\"Reference Currency Exchange Date\") as determined above, unless otherwise specified herein, will be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency, and each Payment Date will be deemed a “Settlement Date”.\nSettlement Rate Option: CLP DOLAR OBS or CLP10\nReference Currency: CLP\nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Fixed Rate Payer Currency Amount: CLF 316,764.00\nSettlement Provisions: Non-Deliverable, with the effect that all payments in CLP or CLF, payable hereunder on a Payment Date (\"Reference Currency Payment Date\") or the Final Exchange Date (\"Reference Currency Exchange Date\") as determined above, unless otherwise specified herein, will be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency, and each Payment Date will be deemed a “Settlement Date”.\nSettlement Currency: USD"
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldman Sachs 52038_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS\nSettlement:Non-Deliverable, with the effect that all payments in CLP or\nCLF, payable hereunder on a Payment Date (\"Reference Currency\nPayment   Date\")   or   the   Final   Exchange   Date   (\"Reference\nCurrency Exchange Date\") as determined above, unless otherwise\nspecified  herein,  will  be  converted  into  Settlement  Currency\namounts  by  reference  to  the  Settlement  Rate  Option  on  the\napplicable  Valuation  Date.  All  payments  (including  exchanges)\nhereunder  shall  be  made  in  the  Settlement  Currency,  and  each\nPayment Date will be deemed a “Settlement Date”.\nSettlement Rate Option:CLP DOLAR OBS or CLP10\nReference Currency:CLP\nSettlement Currency:USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Fixed Amounts:\nFixed Amount Payer:Counterparty\nFixed Amount Payer Currency\nAmount:\nCLF 83,514.55, subject to the Schedule as set forth in Appendix\nII attached hereto.\"\n\n\"SETTLEMENT PROVISIONS\nSettlement:Non-Deliverable, with the effect that all payments in CLP or\nCLF, payable hereunder on a Payment Date (\"Reference Currency\nPayment   Date\")   or   the   Final   Exchange   Date   (\"Reference\nCurrency Exchange Date\") as determined above, unless otherwise\nspecified  herein,  will  be  converted  into  Settlement  Currency\namounts  by  reference  to  the  Settlement  Rate  Option  on  the\napplicable  Valuation  Date.  All  payments  (including  exchanges)\nhereunder  shall  be  made  in  the  Settlement  Currency,  and  each\nPayment Date will be deemed a “Settlement Date”.\nSettlement Rate Option:CLP DOLAR OBS or CLP10\nReference Currency:CLP\nSettlement Currency:USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldman Sachs 53928_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"3.Settlement Provisions:Non-Deliverable, with the effect that all payments in CLP or CLF, payable hereunder on a Payment Date (\"Reference Currency Payment Date\") or the Final Exchange Date (\"Reference Currency Exchange Date\") as determined above, unless otherwise specified herein, will be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency, and each Payment Date will be deemed a “Settlement Date”.\nSettlement Rate Option: CLP DOLAR OBS or CLP10\nReference Currency: CLP\nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"3.Settlement Provisions:Non-Deliverable, with the effect that all payments in CLP or CLF, payable hereunder on a Payment Date (\"Reference Currency Payment Date\") or the Final Exchange Date (\"Reference Currency Exchange Date\") as determined above, unless otherwise specified herein, will be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency, and each Payment Date will be deemed a “Settlement Date”.\nSettlement Rate Option: CLP DOLAR OBS or CLP10\nReference Currency: CLP\nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldman Sachs 58230_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS\nSettlement:Non-Deliverable, with the effect that all payments in CLP or\nCLF, payable hereunder on a Payment Date (\"Reference Currency\nPayment   Date\")   or   the   Final   Exchange   Date   (\"Reference\nCurrency Exchange Date\") as determined above, unless otherwise\nspecified  herein,  will  be  converted  into  Settlement  Currency\namounts  by  reference  to  the  Settlement  Rate  Option  on  the\napplicable  Valuation  Date.  All  payments  (including  exchanges)\nhereunder  shall  be  made  in  the  Settlement  Currency,  and  each\nPayment Date will be deemed a “Settlement Date”.\nSettlement Rate Option:CLP DOLAR OBS or CLP10\nReference Currency:CLP\nSettlement Currency:USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Fixed Amounts:\nFixed Amount Payer Currency Amount: CLF 190,000.00\nSETTLEMENT PROVISIONS\nSettlement:Non-Deliverable, with the effect that all payments in CLP or\nCLF, payable hereunder on a Payment Date (\"Reference Currency\nPayment Date\") or the Final Exchange Date (\"Reference\nCurrency Exchange Date\") as determined above, unless otherwise\nspecified herein, will be converted into Settlement Currency\namounts by reference to the Settlement Rate Option on the\napplicable Valuation Date. All payments (including exchanges)\nhereunder shall be made in the Settlement Currency, and each\nPayment Date will be deemed a “Settlement Date”.\nSettlement Currency:USD"
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldmans Sachs 51800_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"SETTLEMENT PROVISIONS\nSettlement:Non-Deliverable, with the effect that any Reference Currency\namounts payable hereunder on a Payment Date (\"Reference\nCurrency Payment Date\") or an Exchange Date (\"Reference\nCurrency Exchange Date\"), unless otherwise specified herein,\nshall be converted into Settlement Currency amounts by reference\nto the Settlement Rate Option on the applicable Valuation Date.\nAll payments (including exchanges) hereunder shall be made in\nthe Settlement Currency on the Settlement Date or Reference\nCurrency Exchange Date as the case may be.\nSettlement Rate Option:CLP DOLAR OBS or CLP10\nReference Currency:CLP\nSettlement Currency:USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Settlement: Non-Deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date (\"Reference Currency Payment Date\") or an Exchange Date (\"Reference Currency Exchange Date\"), unless otherwise specified herein, shall be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date.\nAll payments (including exchanges) hereunder shall be made in the Settlement Currency on the Settlement Date or Reference Currency Exchange Date as the case may be.\nSettlement Rate Option:CLP DOLAR OBS or CLP10\nReference Currency:CLP\nSettlement Currency:USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Goldmans Sachs 53788_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"3. Settlement Provisions: \nNon-Deliverable, with the effect that all payments in CLP or CLF, payable hereunder on a Payment Date (\"Reference Currency Payment Date\") or the Final Exchange Date (\"Reference Currency Exchange Date\") as determined above, unless otherwise specified herein, will be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments (including exchanges) hereunder shall be made in the Settlement Currency, and each Payment Date will be deemed a “Settlement Date”. \n\nSettlement Rate Option: CLP DOLAR OBS or CLP10 \n\nReference Currency: CLP \n\nSettlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Fixed Rate Payer Currency Amount: CLF 331,181.00\nSettlement Currency: USD\nSettlement: Non-Deliverable, with the effect that all payments in CLF or CLP, payable hereunder on a Payment Date (\"Reference Currency Payment Date\") or the Final Exchange Date (\"Reference Currency Exchange Date\") as determined above, unless otherwise specified herein, will be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date."
+        }
+      ]
+    },
+    {
+      "contract_id": "J.P. Morgan 48114_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Cash Settlement Currency: USD\"\n\"Cash Settlement Method: Cash Price\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Cash Settlement Currency: USD\"\n\"Cash Settlement Method: Cash Price\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Morgan Stanley 52180_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3 of 7:\n\"Settlement: Non-deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date shall be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments hereunder shall be made in the Settlement Currency, and each Payment Date shall be deemed a \"Settlement Date\"\"\n\"Reference Currency: CLP\"\n\"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3 of 7:\n\"Settlement Provisions:\nSettlement: Non-deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date shall be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments hereunder shall be made in the Settlement Currency, and each Payment Date shall be deemed a \"Settlement Date\"\nReference Currency: CLP\nSettlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Morgan Stanley 53092_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 2: \"Floating Rate 1 Payer Currency Amount: CLP 1,740,590,000.00\"\nPage 4: \"Settlement: Non-deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date shall be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments hereunder shall be made in the Settlement Currency, and each Payment Date shall be deemed a “Settlement Date”.\"\nPage 4: \"Reference Currency: CLP\"\nPage 4: \"Settlement Currency: USD\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "Page 3: \"Floating Rate 2 Payer Currency Amount: USD 1,900,000.00\"\nPage 4: \"Settlement: Non-deliverable, with the effect that any Reference Currency amounts payable hereunder on a Payment Date shall be converted into Settlement Currency amounts by reference to the Settlement Rate Option on the applicable Valuation Date. All payments hereunder shall be made in the Settlement Currency, and each Payment Date shall be deemed a “Settlement Date”.\"\nPage 4: \"Settlement Currency: USD\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 38104_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modo Cumplimiento Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modo Cumplimiento Compensado en CLP\"\n\"Modalidad de cumplimiento: Compensado en CLP\"\n\"Monto Contratado CLP 6,500,000,000.00\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 40791_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modo Cumplimiento Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modo Cumplimiento Compensado en CLP\" (Page 1)\n\"Modalidad de cumplimiento: Compensado en CLP\" (Page 5)\n\"Las obligaciones de pago de las Partes se cumplirán bajo la modalidad de Compensación\" (Page 8)"
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 41370_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado cliente USD 10,000.00\"\n\"Modo Cumplimiento Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Section III b): \"Por su parte, el CLIENTE se obliga a pagar al BANCO_C, en cada una de las Fechas de Pago, las cantidades en Dólares Americanos que se indican a continuación bajo las columnas Amortización y/o Monto de Intereses, según sea el caso.\"\nSection IV: \"El Diferencial de Intereses y Amortización se pagará en Moneda Nacional o en Dólares, según se estipule en la sección II de este Contrato.\"\nSection II: \"Modo Cumplimiento : Compensado en CLP.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 42741_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado cliente CLP 10,456,200,000\"\n\"Monto Inicial Pactado BANCO_C USD 11,100,000.00\"\n\"Modo Cumplimiento Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Page 1, \"Modo Cumplimiento Compensado en CLP\"\nPage 8, \"7. Monto a pagar por BANCO_C : USD 11,100,000.00\"\nPage 12, \"El Diferencial de Intereses se pagará en Moneda Nacional o en Moneda Extranjera, según se estipule en la sección II de este Contrato.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 42938_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modo Cumplimiento Compensado en CLP\"\n\"Modalidad de cumplimiento: Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modo Cumplimiento Compensado en CLP\"\n\"Modalidad de cumplimiento: Compensado en CLP\"\n\"Las obligaciones de pago de las Partes se cumplirán bajo la modalidad de Compensación\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 43184_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado cliente USD 3,200,000.00\"\n\"Modo Cumplimiento Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto a pagar por el Cliente : USD 3,200,000.00\"\n\"Modo Cumplimiento : Compensado en CLP.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 49139_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Page 1, \"Modo Cumplimiento Compensado en CLP\"\nPage 13, \"Compensación\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Page 8, line 11: \"Modo Cumplimiento : Compensado en CLP.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 58033_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado BANCO_C CLP 3,888,416,359\"\n\"Modo Cumplimiento Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Line 15: \"Monto Inicial Pactado cliente UF 107,829.6000\"\nLine 17: \"Tasa Interés Pactada cliente 1.75%\"\nLine 19: \"Modo Cumplimiento Compensado en CLP\"\nPage 17 onwards: Table showing payments in UF, converted to CLP for settlement."
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 58136_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado BANCO_C CLP 6,277,489,953\"\n\"Modo Cumplimiento Compensado en CLP\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modo Cumplimiento :  Compensado en CLP.\"\n\"Establecida la cuantía en Moneda Nacional de las obligaciones de cada parte de \nconformidad a lo establecido en la cláusula 4.3. de las Condiciones Generales, dichas \ncantidades se compensarán extinguiéndose recíprocamente hasta la concurrencia de \nsus valores. La parte que resultare deudora deberá pagar en cada Fecha de Pago la \ndiferencia (el \"Diferencial de Intereses”) a la parte que resulte acreedora.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 58931_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "USD",
+          "evidence": "\"Monto Inicial Pactado BANCO_C USD 5,200,000.00\"\n\"Modo Cumplimiento :  Compensado en CLP.\"\n\"el BANCO_C se obliga a pagar al CLIENTE, en cada una de las Fechas de Pago, las cantidades en Dólares Americanos\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado BANCO_C USD 5,200,000.00\"\n\"Modo Cumplimiento :  Compensado en CLP.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Santander 68146_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado BANCO_C USD 2,800,000.00\"\n\"Modo Cumplimiento Compensado en CLP\"\n\"BANCO_C paga : USD 2,800,000.00\"\n\"Cliente paga : CLP 2,497,600,000\"\n\"Establecida la cuantía en Moneda Nacional de las obligaciones de cada parte de conformidad a lo establecido en la cláusula 4.3. de las Condiciones Generales, dichas cantidades se compensarán extinguiéndose recíprocamente hasta la concurrencia de sus valores. La parte que resultare deudora deberá pagar en cada Fecha de Pago la diferencia (el \"Diferencial de Intereses”) a la parte que resulte acreedora.\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Monto Inicial Pactado BANCO_C USD 2,800,000.00\"\n\"Modo Cumplimiento Compensado en CLP\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 37490_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "(i) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago."
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "( i) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de\nAmortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o\nParidad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago."
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 37913_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modalidad de Cumplimiento\nCompensación en CLP\"\n\"Las  obligaciones  de  pago  de  las  partes  se  cumplirán  bajo  la  modalidad  de  Compensación.  El  Diferencial  de  \nAmortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o \nParidad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\"\n\"Monto Contratado por Cliente: \nCLP 5.735.154.000\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "( i) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de\nAmortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o\nParidad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\nPage 4."
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 41704_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"01. Monto Contratado por Cliente: USD 5.500.000,00\"\n\"11. Modalidad de Cumplimiento Compensación en CLP\"\n\"El Diferencial de Intereses se pagará en Moneda Nacional\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Página 3, item 11: \"Modalidad de Cumplimiento Compensación en CLP\"\nPágina 4, section (ii): \"Por su parte, Chilean Bank S se obliga a pagar a Banco ABC en cada una de las Fechas de Pago que se indican a continuación, (i) los intereses devengados conforme la Tasa de Interés Pactada por sobre el Monto Contratado en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización\"\nPágina 4, table: \"CLP\" is the currency for the amounts."
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 41739_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"01. Monto Contratado por Cliente: USD 6.300.000,00\"\n\"02. Monto Contratado por Banco: CLP 5.172.300.000\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"02. Monto Contratado por Banco: CLP 5.172.300.000\"\n\"06. Tasa de Interés Pactada por Banco: ÍNDICE CÁMARA PROMEDIO\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 48130_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "III.11 \"Modalidad de Cumplimiento Compensación en CLP\"\nIII.01 \"Monto Contratado por Cliente: USD 7.500.000,00\"\nIV.(i) \"Banco ABC se obliga a pagar a Chilean Bank S\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Página 3, item 02: \"Monto Contratado por Banco: CLP 6.150.000.000\"\nPágina 3, item 11: \"Modalidad de Cumplimiento Compensación en CLP\"\nPágina 5, section VI (ii): \"Compensación\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 50282_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modalidad de Cumplimiento Compensación en CLP\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"Modalidad de Cumplimiento Compensación en CLP\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 51790_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "III. Condiciones Financieras:\n11. Modalidad de Cumplimiento Compensación en CLP\nIV. Obligaciones de las Partes; Swap\n(i) Banco ABC se obliga a pagar a Chilean Bank S en cada una de las Fechas de Pago que se indican a continuación, (i) los intereses devengados conforme la Tasa de Interés Pactada por sobre el Monto Contratado en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización:\nMonto Contratado por Cliente: CLF 403.169,0200"
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"02. Monto Contratado por Banco: CLP 14.051.379.731\"\n\"06. Tasa de Interés Pactada por Banco: ÍNDICE CÁMARA PROMEDIO\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 58011_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"01. Monto Contratado por Cliente: CLF 244.908,0000\"\n\"11. Modalidad de Cumplimiento Compensación en CLP\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"02. Monto Contratado por Banco: CLP 8.534.196.418\"\n\"(ii)  Por su parte, Chilean Bank S se obliga a pagar a Banco ABC en cada una de las Fechas de Pago que se indican a continuación, (i)   los intereses  devengados conforme la  Tasa de Interés  Pactada  por sobre  el  Monto  Contratado en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización:\"\n\"(iii) Las  obligaciones  de  pago  de  las  partes  se  cumplirán  bajo  la  modalidad  de  Compensación.  El  Diferencial  de  Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 60164_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"01. Monto Contratado por Cliente: CLF 100.000,0000\"\n\"11. Modalidad de Cumplimiento Compensación en CLP\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de\nAmortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o\nParidad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"02. Monto Contratado por Banco: CLP 3.653.469.000\"\n\"11. Modalidad de Cumplimiento Compensación en CLP\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de\nAmortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o\nParidad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 63197_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Página 3: \"01. Monto Contratado por Cliente: CLF 500.000,0000\"\nPágina 4: \"( i) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "Página 4: \"(i) Por su parte, Chilean Bank S se obliga a pagar a Banco ABC en cada una de las Fechas de Pago que se indican a continuación, (i) los intereses devengados conforme la Tasa de Interés Pactada por sobre el Monto Contratado en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización\"\nPágina 4: \"02. Monto Contratado por Banco: CLP 14.358.260.000\"\nPágina 4: \"( i) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        }
+      ]
+    },
+    {
+      "contract_id": "Scotiabank 69133_anon",
+      "predictions": [
+        {
+          "leg_number": 1,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"01. Monto Contratado por Cliente: CLF 120.000,0000\"\n\"Modalidad de Cumplimiento Compensación en CLP\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de Amortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o Paridad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\"\n\"Banco ABC se obliga a pagar a Chilean Bank S en cada una de las Fechas de Pago que se indican a continuación, (i) los intereses devengados conforme la Tasa de Interés Pactada por sobre el Monto Contratado en el respectivo Periodo de Intereses, y (ii) el Monto de Amortización\""
+        },
+        {
+          "leg_number": 2,
+          "settlement_type": "CASH",
+          "settlement_currency": "CLP",
+          "evidence": "\"02. Monto Contratado por Banco: CLP 4.388.248.800\"\n\"11. Modalidad de Cumplimiento Compensación en CLP\"\n\"(iii) Las obligaciones de pago de las partes se cumplirán bajo la modalidad de Compensación. El Diferencial de\nAmortización y el Diferencial de Intereses se pagarán en Moneda Nacional según el Tipo de Cambio Referencial o\nParidad Referencial, que pactado en este contrato, se encuentre vigente en cada una de dichas Fechas de Pago.\""
+        }
+      ]
+    }
+  ]
+}
